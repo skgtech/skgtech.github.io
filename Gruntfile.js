@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       css : {
         files: {
-          '_site/assets/themes/thanpolas/css/tpstyle.css': 'assets/themes/thanpolas/css/tpstyle.css'
+          '_site/assets/themes/twitter/css/styles.css': 'temp/styles-expanded.css'
         }
       }
     },
@@ -33,10 +33,10 @@ module.exports = function(grunt) {
     less: {
       development: {
         options: {
-          paths: ['assets/themes/thanpolas/less']
+          paths: ['assets/styles']
         },
         files: {
-          'assets/themes/thanpolas/css/tpstyle.css': ['assets/themes/thanpolas/less/main.less']
+          'temp/styles-expanded.css': ['assets/styles/boot.less']
         }
       }
     },
