@@ -18,20 +18,16 @@ module.exports = function(grunt) {
           '_site_git/' : '_site/**'
         }
       },
-      css : {
-        files: {
-          '_site/assets/themes/twitter/css/styles.css': 'temp/styles-expanded.css'
-        }
-      }
     },
     shell: {
+      options: {
+        stdout: true,
+      },
       jekyllServer: {
-        command: 'rm -rf _site/*; jekyll build --watch',
-        stdout: true
+        command: 'echo "YO";rm -rf _site/*; jekyll build --watch',
       },
       jekyllBuild: {
         command: 'rm -rf _site/*; jekyll build',
-        stdout: true
       }
     },
     less: {
@@ -58,14 +54,6 @@ module.exports = function(grunt) {
       },
     },
 
-    connect: {
-      server: {
-        options: {
-          base: '_site/',
-          port: 9009
-        }
-      }
-    },
     open: {
       server: {
         path: 'http://localhost:4000/'
@@ -86,9 +74,6 @@ module.exports = function(grunt) {
       },
     },
   });
-
-  // less watch
-  grunt.registerTask('lessCopy', ['less:development', 'copy:css']);
 
   grunt.registerTask('server', [
     'parallel:devel',
