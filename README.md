@@ -65,6 +65,11 @@ The default Grunt task will:
 * The project's homepage is the file `index.md` in the root folder.
 * All the site's data are in the `_data/` folder.
 
+
+## Colophon
+
+* Uses [Bolt template](http://bootstrapzero.com/bootstrap-template/bolt)
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)

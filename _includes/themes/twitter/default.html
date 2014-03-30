@@ -2,22 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
-    <!-- Enable responsive viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolt - Free Bootstrap 3 Theme</title>
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="assets/themes/twitter/css/styles.css" rel="stylesheet"> -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- Le styles -->
-    <link href="assets/themes/twitter/css/styles.css" rel="stylesheet">
-
-    <!-- Le fav and touch icons -->
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -26,34 +30,48 @@
   </head>
 
   <body>
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-narrow">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <ul class="nav">
-            {% assign pages_list = site.pages %}
-            {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">SKG Tech</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#contact">Contact</a></li>
           </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    {{ content }}
+
+
+    <footer id="f">
+      <div class="container">
+        <div class="row">
+          <p> <a href="https://github.com/thessaloniki/meetups/">View the source of this site and contribute</a></p>
+          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}, <span class="license">
+            Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a>
+          </span></p>
+
+
+          <p>Crafted with <i class="fa fa-heart"></i> by BlackTie.co.</p>
         </div>
       </div>
-    </div>
-
-    <div class="container-narrow">
-
-      <div class="content">
-        {{ content }}
-      </div>
-      <hr>
-      <footer class="footer">
-        <p> <a href="https://github.com/thessaloniki/meetups/">View the source of this site and contribute</a></p>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}, <span class="license">
-          Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a>
-        </span></p>
-      </footer>
-
-    </div>
+    </footer>
 
     {% include JB/analytics %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>
