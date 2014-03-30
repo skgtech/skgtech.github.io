@@ -1,6 +1,23 @@
-<p>{{ include.meetup.name }}</p>
-
-<p><b>Period</b>: {{ include.meetup.period }}</p>
-<p><b>Description</b>: {{ include.meetup.description }}</p>
-<p><b>Website</b>: <a href="{{ include.meetup.website }}">{{ include.meetup.website }}</a></p>
-<p><b>Maintainers</b>:</p>
+<div class="panel panel-info meetup">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{ include.meetup.name }}</h3>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <li><b>Period</b>: {{ include.meetup.period }}</li>
+      <li><b>Website</b>: <a href="{{ include.meetup.website }}">{{ include.meetup.website }}</a></li>
+      <li><b>Description</b>: {{ include.meetup.description }}</li>
+      <li><b>Maintainers</b>:
+        {% for maintainer in meetup.maintainers %}
+          {% if maintainer.email %}
+          <a href="mailto:{{ maintainer.email }}">{{ maintainer.name }}</a>
+          {% elsif maintainer.website %}
+          <a href="{{ maintainer.website }}">{{ maintainer.name }}</a>
+          {% else %}
+          {{ maintainer.name }}
+          {% endif %}
+        {% endfor %}
+      </li>
+    </ul>
+  </div>
+</div>

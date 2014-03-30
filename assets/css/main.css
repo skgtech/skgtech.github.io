@@ -150,23 +150,23 @@ a:after {
   font-size: 18px;
 }
 
-/* Green */
-#green {
+/* meetups */
+#meetups {
 	background-color: #74cfae;
 	padding-top: 50px;
 	margin-bottom: 0px;
 }
 
-#green h3 {
+#meetups h3 {
 	color: white;
 	font-weight: 400;
 	margin-bottom: 35px;
 }
 
-#green p {
-	color: white;
-	font-weight: 400;
-	font-size: 20px;
+#meetups .meetup h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
 }
 
 /* Skills */
