@@ -8,7 +8,6 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "node_modules", "Gruntfile.js", "bootstrap", "_site_git",
   "assets/themes/twitter/less"
 ]
-auto: false
 pygments: auto
 
 # Themes are encouraged to use these universal variables
