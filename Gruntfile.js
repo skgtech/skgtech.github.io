@@ -40,7 +40,13 @@ module.exports = function(grunt) {
         }
       }
     },
-
+    cssmin: {
+      combine: {
+        files: {
+          'assets/themes/twitter/css/styles.css': ['temp/styles-expanded.css']
+        }
+      }
+    },
     watch: {
       options: {
         livereload: true
@@ -82,6 +88,11 @@ module.exports = function(grunt) {
     'connect:server',
     'open:server',
     'watch'
+  ]);
+
+  grunt.registerTask('css', 'Compile and minify less styles', [
+    'less:development',
+    'cssmin:combine',
   ]);
 
   // Default task.
