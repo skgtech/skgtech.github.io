@@ -25,7 +25,11 @@ module.exports = function(grunt) {
       }
     },
     shell: {
-      jekyll: {
+      jekyllServer: {
+        command: 'rm -rf _site/*; jekyll build --watch',
+        stdout: true
+      },
+      jekyllBuild: {
         command: 'rm -rf _site/*; jekyll build',
         stdout: true
       }
@@ -48,22 +52,10 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      options: {
-        livereload: true
+      styles: {
+        files: ['assets/styles/*.less'],
+        tasks: ['css'],
       },
-      less: {
-        files: ['assets/themes/thanpolas/less/*.less'],
-        tasks: ['lessCopy']
-      },
-      jekyllSources: {
-        files: [
-          // capture all except css
-          '*.html', '*.yml', 'assets/js/**.js', '_posts/**',
-          'projects/**', 'blog/**', 'about/**', '_includes/**',
-          'atom.xml', '**/*.md'
-        ],
-        tasks: ['shell:jekyll']
-      }
     },
 
     connect: {
@@ -76,18 +68,31 @@ module.exports = function(grunt) {
     },
     open: {
       server: {
-        path: 'http://localhost:<%= connect.server.options.port %>/'
+        path: 'http://localhost:4000/'
       }
-    }
+    },
+    parallel: {
+      devel: {
+        options: {
+          stream: true
+        },
+        tasks: [{
+          grunt: true,
+          args: ['shell:jekyllServer']
+        }, {
+          grunt: true,
+          args: ['watch:styles']
+        }]
+      },
+    },
   });
 
   // less watch
   grunt.registerTask('lessCopy', ['less:development', 'copy:css']);
 
   grunt.registerTask('server', [
-    'connect:server',
+    'parallel:devel',
     'open:server',
-    'watch'
   ]);
 
   grunt.registerTask('css', 'Compile and minify less styles', [
