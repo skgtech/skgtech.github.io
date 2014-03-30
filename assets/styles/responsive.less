@@ -1,0 +1,82 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    padding: 0;
+  }
+  .container-narrow {
+    top: 0;
+  }
+}
+
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+@media (max-width: 767px) {
+
+  body {
+    padding: 0;
+  }
+  .header-master {
+    //height: @header-height * 2;
+  }
+
+  .header-unit {
+    margin-top: 0;
+  }
+
+  .header-unit-inner {
+    .border-top-left-radius(0);
+    height: 170px;
+  }
+  .site-description-title {
+    text-align: left;
+  }
+
+  .footer-social > .social-unit {
+    float: left;
+  }
+
+  .footer-note {
+    margin-top: 160px;
+  }
+
+  .header-nav {
+    text-align: left;
+  }
+  .polas-nav{ display: block;}
+
+  .front-content {
+    margin-top: 40px;
+    .text-center {text-align: left;}
+    .span3 {
+      margin-bottom:50px;
+    }
+  }
+
+  @smallContentGutter: 5px;
+
+  .container-narrow {
+    top: 0;
+    padding: @smallContentGutter;
+  }
+
+  article .content {
+    padding: @smallContentGutter;
+  }
+
+  .content-gutter-left {
+    padding-left: @smallContentGutter;
+  }
+
+  .content-gutter-right {
+    padding-right: @smallContentGutter;
+    padding-left: @smallContentGutter;
+  }
+
+  // allow word breaking for inline code
+  .content p>code {
+    white-space: normal;
+  }
+}
