@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Welcome / Καλώς ήρθατε!
-tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
