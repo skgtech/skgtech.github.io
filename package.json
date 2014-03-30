@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "thessaloniki",
+  "version": "0.0.1",
+  "description": "Thessaloniki tech community",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thessaloniki/meetups.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thessaloniki/meetups/issues"
+  },
+  "keywords": [
+    "thessaloniki",
+    "skg"
+  ],
+  "author": {
+    "name": "Thessaloniki",
+    "url": "http://github.com/thessaloniki"
+  },
+  "contributors": [
+    {
+      "name": "Thanasis Polychronakis"
+    }
+  ],
+  "license": "MIT"
+}
