@@ -1,4 +1,4 @@
-# [thessaloniki.github.io](http://thessaloniki.github.io)
+# [thessaloniki.github.io/meetups](http://thessaloniki.github.io/meetups)
 
 Thessaloniki's tech and developer Meetups.
 
