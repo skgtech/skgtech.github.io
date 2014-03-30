@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         stdout: true,
       },
       jekyllServer: {
-        command: 'echo "YO";rm -rf _site/*; jekyll build --watch',
+        command: 'rm -rf _site/*; jekyll build --watch',
       },
       jekyllBuild: {
         command: 'rm -rf _site/*; jekyll build',
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 
     open: {
       server: {
-        path: 'http://localhost:4000/'
+        path: 'http://localhost:9003/'
       }
     },
     parallel: {
@@ -66,18 +66,34 @@ module.exports = function(grunt) {
         },
         tasks: [{
           grunt: true,
+          args: ['connect:server'],
+        }, {
+          grunt: true,
           args: ['shell:jekyllServer']
         }, {
           grunt: true,
           args: ['watch:styles']
+        }, {
+          grunt: true,
+          args: ['open:server']
+
         }]
       },
+    },
+    connect: {
+      server: {
+        options: {
+          port: 9003,
+          base: '_site',
+          livereload: true,
+          keepalive: true,
+        }
+      }
     },
   });
 
   grunt.registerTask('server', [
     'parallel:devel',
-    'open:server',
   ]);
 
   grunt.registerTask('css', 'Compile and minify less styles', [
