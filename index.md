@@ -18,7 +18,13 @@ This is an open website about Thessaloniki's developers and tech lovers communit
 * **Website**: {{ meetup.website }}
 * **Maintainers**:
 {% for maintainer in meetup.maintainers %}
-  * [{{maintainer.name}}](mailto:{{maintainer.email}})
+  {% if maintainer.email %}
+  * [{{ maintainer.name }}](mailto:{{ maintainer.email }})
+  {% elsif maintainer.website %}
+  * [{{ maintainer.website }}]({{ maintainer.website }})
+  {% else %}
+  * {{ maintainer.name }}
+  {% endif %}
 {% endfor %}
 {% endfor %}
 
