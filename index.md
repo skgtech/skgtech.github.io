@@ -11,17 +11,17 @@ This is an open website about Thessaloniki's developers and tech lovers communit
 ## Meetups in Thessaloniki
 
 {% for meetup in site.data.meetups %}
-#### {{ meetup.name }}
+### {{ meetup.name }}
 
 * **Period**: {{ meetup.period }}
 * **Description**: {{ meetup.description }}
-* **Website**: {{ meetup.website }}
+* **Website**: [{{ meetup.website }}]({{ meetup.website }})
 * **Maintainers**:
 {% for maintainer in meetup.maintainers %}
   {% if maintainer.email %}
   * [{{ maintainer.name }}](mailto:{{ maintainer.email }})
   {% elsif maintainer.website %}
-  * [{{ maintainer.website }}]({{ maintainer.website }})
+  * [{{ maintainer.name }}]({{ maintainer.website }})
   {% else %}
   * {{ maintainer.name }}
   {% endif %}
