@@ -1,11 +1,17 @@
+/*jshint camelcase:false */
+/*
+ * thessaloniki meetups
+ * https://github.com/thessaloniki/meetups
+ *
+ * Copyright (c) 2014 Thessaloniki contributors
+ * Licensed under the MIT license.
+ */
 module.exports = function(grunt) {
-
-  // load all grunt tasks
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  // Load all grunt tasks
+  require('load-grunt-tasks')(grunt);
 
   // Project configuration.
   grunt.initConfig({
-
     copy: {
       dist: {
         files: {
