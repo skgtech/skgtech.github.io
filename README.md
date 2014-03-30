@@ -55,16 +55,15 @@ The default Grunt task will:
 
 * Launch a jekyll watch and auto-build on every file change.
 * Launch a local static webserver on port 9003.
-* Watch for changes on all `.less` files and auto-build and minify them on change.
 * Open your browser on http://localhost:9003
 
 ### Assets and pages locations
 
-* Edit styles from the `assets/styles` folder, [we use less](http://lesscss.org/).
+* Edit styles from the `assets/css/main.css` file.
 * Edit the layout from the `_includes/themes/twitter/` folder.
-* The project's homepage is the file `index.md` in the root folder.
+* The project's homepage is the file `index.html` in the root folder.
+* Edit the markup for the *Meetups* and *Agenda* items in the `_includes/widgets/` folder.
 * All the site's data are in the `_data/` folder.
-
 
 ## Colophon
 
