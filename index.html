@@ -14,25 +14,49 @@ layout: page
     </div> <!-- /container -->
 </div><!-- /hello -->
 
+
+<div id="agenda">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">
+        <h3>THESSALONIKI MEETUP AGENDA</h3>
+      </div>
+    </div>
+    <div class="row">
+      {% for item in site.data.agenda %}
+        {% capture rowIter %}{% cycle 1, 2 %}{% endcapture %}
+        <div class="col-lg-5">
+          {% include widgets/agenda.html item=item %}
+        </div>
+        {% if '2' == rowIter %}
+        </div>
+        <div class="row">
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
 <div id="meetups">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10">
         <h3>MEETUPS IN THESSALONIKI</h3>
       </div>
-      <div class="row">
-        {% for meetup in site.data.meetups %}
-          {% capture rowIter %}{% cycle 1, 2 %}{% endcapture %}
-          <div class="col-lg-5">
-            {% include widgets/meetup.html meetup=meetup %}
-          </div>
-          {% if '2' == rowIter %}
-          </div>
-          <div class="row">
-          {% endif %}
-        {% endfor %}
-      </div>
-		</div>
+    </div>
+    <div class="row">
+      {% for meetup in site.data.meetups %}
+        {% capture rowIter %}{% cycle 1, 2 %}{% endcapture %}
+        <div class="col-lg-5">
+          {% include widgets/meetup.html meetup=meetup %}
+        </div>
+        {% if '2' == rowIter %}
+        </div>
+        <div class="row">
+        {% endif %}
+      {% endfor %}
+    </div>
 	</div>
 </div>
 

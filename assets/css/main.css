@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
+h3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 42px;
+}
 
 /* Paragraph & Typographic */
 p {
@@ -140,9 +145,8 @@ a:after {
 	color: #74cfae;
 }
 
-#hello h2 {
+#hello h3 {
 	color: #c0c0c0;
-	font-weight: 400;
 }
 
 #hello p {
@@ -150,26 +154,25 @@ a:after {
   font-size: 18px;
 }
 
+#agenda {
+  background-color: #74cfae;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* meetups */
 #meetups {
-	background-color: #74cfae;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#meetups h3 {
-	color: white;
-	font-weight: 400;
-	margin-bottom: 35px;
-}
-
-#meetups .meetup h3 {
+.panel h3 {
   font-size: 32px;
   font-weight: 400;
   color: #000;
 }
 
-#meetups .meetup h3 {
+.panel h3 {
   font-size: 32px;
   font-weight: 400;
   color: #000;
@@ -177,21 +180,23 @@ a:after {
 
 
 #contact {
+  background-color: #74cfae;
+  color: white;
   padding-top: 100px;
   padding-bottom: 250px;
 }
-
+#contact a {
+  color: #fff;
+  font-size: 22px;
+}
 
 /* Footer */
 #f {
-	padding-top: 20px;
+	padding-top: 200px;
   padding-bottom: 40px;
-	background-color: #74cfae;
-
 }
 
 #f .pull-right {
-	color: white;
 	text-align: right;
 }
 #f .pull-left {
