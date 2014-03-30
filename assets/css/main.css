@@ -6,7 +6,7 @@
  * Version: 1.0
  * URL: http://blacktie.co
  */
- 
+
 /* FONTS */
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,900);
@@ -22,7 +22,7 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-    
+
     margin-top: 70px;
 }
 
@@ -129,12 +129,12 @@ a:after {
 /* hello */
 #hello {
 	width: 100%;
-	padding-top: 250px;
-	padding-bottom: 250px;
+	padding-top: 90px;
+	padding-bottom: 180px;
 }
 
 #hello h1 {
-	font-size: 90px;
+	font-size: 80px;
 	font-weight: 700;
 	letter-spacing: 3px;
 	color: #74cfae;
@@ -143,6 +143,11 @@ a:after {
 #hello h2 {
 	color: #c0c0c0;
 	font-weight: 400;
+}
+
+#hello p {
+  margin-top: 40px;
+  font-size: 18px;
 }
 
 /* Green */

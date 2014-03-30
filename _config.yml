@@ -18,9 +18,10 @@ tagline: "The insiders SKG scoop"
 author :
   name : "Thessaloniki organization contributors"
   email : "skg-developers@googlegroups.com"
-  github : thessaloniki
+  github : "thessaloniki"
   # twitter : username
   # feedburner : feedname
+githubrepo: "https://github.com/thessaloniki/meetups/"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
