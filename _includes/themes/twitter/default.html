@@ -55,13 +55,15 @@
     <footer id="f">
       <div class="container">
         <div class="row">
-          <p> <a href="{{ site.githubrepo }}">View the source of this site and contribute</a></p>
-          <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}, <span class="license">
-            Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a>
-          </span></p>
-
-
-          <p>Crafted with <i class="fa fa-heart"></i> by BlackTie.co.</p>
+          <div class="col-lg-6 pull-left">
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+            <p class="license">
+              Licensed under <a href="http://creativecommons.org/publicdomain/zero/1.0/">Creative Commons CC0</a>
+            </p>
+          </div>
+          <div class="col-lg-4 pull-right">
+            <p> <a href="{{ site.githubrepo }}">View the source of this site and contribute</a></p>
+          </div>
         </div>
       </div>
     </footer>

@@ -154,7 +154,7 @@ a:after {
 #meetups {
 	background-color: #74cfae;
 	padding-top: 50px;
-	margin-bottom: 0px;
+	padding-bottom: 50px;
 }
 
 #meetups h3 {
@@ -185,13 +185,28 @@ a:after {
 /* Footer */
 #f {
 	padding-top: 20px;
+  padding-bottom: 40px;
 	background-color: #74cfae;
+
+}
+
+#f .pull-right {
+	color: white;
+	text-align: right;
+}
+#f .pull-left {
+  color: #000;
+  text-align: left;
+  font-size: 14px;
+}
+
+#f a {
+  color: #444;
 }
 
 #f p {
-	color: white;
-	text-align: right;
-	font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 /* Image Opacity */
