@@ -1,0 +1,7 @@
+- name: "Open Coffee"
+  period: "Monthly"
+  description: "Open Coffee aims to be the single point of reference for greek start-ups."
+  maintainers:
+    - name: "Georgios Gatos"
+      email: "georgiosgatos@gmail.com"
+  website: "http://opencoffee.gr/"
