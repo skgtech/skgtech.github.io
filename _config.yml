@@ -6,7 +6,7 @@ permalink: /:categories/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "Rakefile", "changelog.md", "*.less", "sandbox",
   "node_modules", "Gruntfile.js", "bootstrap", "_site_git",
-  "assets/themes/twitter/less"
+  "assets/components/*", "assets/styles", "bower.json"
 ]
 pygments: auto
 
