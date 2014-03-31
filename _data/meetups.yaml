@@ -37,7 +37,7 @@
 - name: "Open Startup Showcase"
   period: "Monthly"
   happensAt: "Last Thursday of each month"
-  description: "To Open Startup Showcase είναι ένα μηνιαίο meeting που απευθύνεται σε δημιουργικούς ανθρώπους της Θεσσαλονίκης. Σκοπός του είναι να παρουσιαστούν περιπτώσεις ομάδων της πόλης, οι οποίες παρά τις αντίξοες συνθήκες της εποχής, έχουν ξεκινήσει να υλοποιούν την επιχειρηματική τους ιδέα βασισμένοι σε προσωπική δουλειά και μεράκι."
+  description: "Open Startup Showcase is a monthly meetup for creative people. We present local startup in all stages and answer all questions regarding features, issues, strategy and future plans."
   website: "https://www.eventora.com/en/Events/open-startup-showcase/"
   maintainers:
     - name: "Dimitri Ntempos"
