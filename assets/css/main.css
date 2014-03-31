@@ -131,6 +131,12 @@ a:after {
 
 /* WRAP SECTIONS */
 
+.share ul li {
+  float: left;
+  padding-right: 10px;
+}
+
+
 /* hello */
 #hello {
 	width: 100%;
