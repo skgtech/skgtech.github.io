@@ -5,6 +5,9 @@
   <div class="panel-body">
     <ul>
       <li><b>Period</b>: {{ include.meetup.period }}</li>
+      {% if include.meetup.happensAt %}
+      <li><b>Happens At</b>: {{ include.meetup.happensAt }}</li>
+      {% endif %}
       <li><b>Website</b>: <a href="{{ include.meetup.website }}">{{ include.meetup.website }}</a></li>
       <li><b>Description</b>: {{ include.meetup.description }}</li>
       <li><b>Maintainers</b>:
