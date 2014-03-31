@@ -28,7 +28,7 @@
       website: "http://www.meetup.com/Agile-Greece/members/112275812/"
 - name: "OpenThessaloniki"
   period: "Weekly"
-  happensAT: "Every Thursday"
+  happensAt: "Every Thursday"
   website: "http://www.openthessaloniki.org/"
   description: "OpenThessaloniki aspires to be a platform for collecting data related to the town of Thessaloniki and develop, in tandem, applications and services aiming at open government."
   maintainers:
