@@ -1,6 +1,6 @@
-# [thessaloniki.github.io/meetups](http://thessaloniki.github.io/meetups)
+# [skgtech.github.io](http://skgtech.io)
 
-Thessaloniki's tech and developer Meetups.
+Thessaloniki's tech and developer Events, Meetups & News.
 
 ## Meetup Organizers
 
