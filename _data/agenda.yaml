@@ -1,3 +1,8 @@
+- name: "OpenThessaloniki"
+  date: "4/Apr/2014"
+  location: "Make DIY"
+  address: "Mitropoleos 110, Thessaloniki 54621, Greece"
+  locationUrl: "https://maps.google.com/maps?q=Mitropoleos+110,+Thessaloniki,+Greece&hl=en&sll=37.990837,23.738339&sspn=0.179392,0.313454&oq=110+mitropoleos,+thessalo&hnear=Mitropoleos+110,+Thessaloniki,+Greece&t=m&z=16"
 - name: "Open Coffee"
   date: "8/Apr/2014"
   location: "Municipality of Thessaloniki"
