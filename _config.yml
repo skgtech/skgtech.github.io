@@ -13,12 +13,12 @@ pygments: auto
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : "Thessaloniki Tech Community"
+title : "Thessaloniki Community, Events & Meetups"
 tagline: "The insiders SKG scoop"
 author :
-  name : "Thessaloniki organization contributors"
+  name : "skgtech contributors"
   email : "skg-developers@googlegroups.com"
-  github : "thessaloniki"
+  github : "skgtech"
   # twitter : username
   # feedburner : feedname
 githubrepo: "https://github.com/skgtech/skgtech.github.io"
