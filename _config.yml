@@ -21,7 +21,7 @@ author :
   github : "thessaloniki"
   # twitter : username
   # feedburner : feedname
-githubrepo: "https://github.com/thessaloniki/meetups/"
+githubrepo: "https://github.com/skgtech/skgtech.github.io"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -31,7 +31,7 @@ githubrepo: "https://github.com/thessaloniki/meetups/"
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://thessaloniki.github.io/meetups
+production_url : http://skgtech.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
