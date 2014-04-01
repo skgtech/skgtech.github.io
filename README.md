@@ -8,7 +8,7 @@ If you are not familiar with Git then [please use our Online Form](https://docs.
 
 ## Contributors and Maintainers
 
-If you know your way with Github, editing and updating the meetups and the agenda is very simple, just [edit the `_data/meetups.yaml` or `_data/agenda.yaml` files](https://github.com/thessaloniki/meetups/blob/master/_data/) and send a Pull Request.
+If you know your way with Github, editing and updating the meetups and the agenda is very simple, just [edit the `_data/meetups.yaml` or `_data/agenda.yaml` files](https://github.com/skgtech/skgtech.github.io/blob/master/_data/) and send a Pull Request.
 
 ## Web Developers
 
