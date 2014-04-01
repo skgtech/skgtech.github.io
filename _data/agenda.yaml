@@ -18,3 +18,20 @@
 # Add to Google Calendar link
 # http://stackoverflow.com/questions/10488831/link-to-add-to-google-calendar
 # <a href="http://www.google.com/calendar/event?action=TEMPLATE&text={{ include.item.name }}&dates=[start-custom format='Ymd\\THi00\\Z']/[end-custom format='Ymd\\THi00\\Z']&location={{ include.item.address }}&trp=false&sprop=&sprop=name:" target="_blank" rel="nofollow">Add to my calendar</a>
+
+
+#
+# Common Addresses
+#
+
+# location: "Make DIY"
+# address: "Mitropoleos 110, Thessaloniki 54621, Greece"
+# locationUrl: "https://maps.google.com/maps?q=Mitropoleos+110,+Thessaloniki,+Greece&hl=en&sll=37.990837,23.738339&sspn=0.179392,0.313454&oq=110+mitropoleos,+thessalo&hnear=Mitropoleos+110,+Thessaloniki,+Greece&t=m&z=16"
+
+# location: "Municipality of Thessaloniki"
+# address: "Leoforos Vasileos Georgiou 1, Thessaloniki 54640, Greece"
+# locationUrl: "https://maps.google.com/?ll=40.623831,22.955267&spn=0.002699,0.004898&t=m&z=18&iwloc=lyrftr:m,16051082708899861943,40.62346,22.95383"
+
+# location: "coho, the coworking home"
+# address: "Napoleontos Zerva 10, Thessaloniki 54640, Greece"
+# locationUrl: "https://www.google.com/maps/place/40%C2%B037'16.3%22N+22%C2%B057'18.0%22E/@40.621193,22.954988,15z"
