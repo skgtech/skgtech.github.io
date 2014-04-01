@@ -4,17 +4,13 @@ Thessaloniki's tech and developer Events, Meetups & News.
 
 ## Meetup Organizers
 
-If you don't see your meetup on the page please [open a new issue](https://github.com/thessaloniki/meetups/issues/new) and ask for your meetup to be included. Make sure to include the following information:
+If you are not familiar with Git then [please use our Online Form](https://docs.google.com/forms/d/15OfvYWpwuFXW-zOMOWFoYR6skHUNqzEdJts5hWtcL08/viewform).
 
-* Your meetup's name
-* The period of your meetup (weekly, monthly, etc)
-* A short description about your meetup
-* Your meetups url
-* The meetups organizers and contact details (email, twitter, facebook, etc)
+## Contributors and Maintainers
 
-If you know your way with Github then please send a pull request [by editing the `_data/meetups.yaml` file](https://github.com/thessaloniki/meetups/blob/master/_data/meetups.yaml).
+If you know your way with Github, editing and updating the meetups and the agenda is very simple, just [edit the `_data/meetups.yaml` or `_data/agenda.yaml` files](https://github.com/thessaloniki/meetups/blob/master/_data/) and send a Pull Request.
 
-## Web Designers
+## Web Developers
 
 If you want to contribute to the development of this site you first need to setup your environment based on the project's requirements.
 
@@ -30,10 +26,10 @@ This project was built using [Jekyll](http://jekyllrb.com/) and is based on the 
 
 ### Installing the project
 
-First [fork this repository](https://github.com/thessaloniki/meetups/fork) and clone it to your local:
+First [fork this repository](https://github.com/skgtech/skgtech.github.io/fork) and clone it to your local:
 
 ```shell
-git clone git@github.com:YOUR_USERNAME/meetups.git
+git clone git@github.com:YOUR_USERNAME/skgtech.github.io.git
 cd meetups
 ```
 
