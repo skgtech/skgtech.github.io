@@ -7,6 +7,9 @@
       <li><b>When</b>: {{ include.item.date }}</li>
       <li><b>Location</b>: <a href="{{ include.item.locationUrl }}">{{ include.item.location }}</a></li>
       <li><b>Address</b>: {{ include.item.address }}</li>
+      {% if include.item.website %}
+        <li><b>More Info</b>: {{ include.item.website }}</li>
+      {% endif %}
     </ul>
   </div>
 </div>
