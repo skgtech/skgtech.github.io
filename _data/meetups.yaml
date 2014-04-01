@@ -1,6 +1,6 @@
 - name: "Open Coffee"
   period: "Monthly"
-  happensAt: "Every second Tuesday of each month"
+  happensAt: "Every third Tuesday of each month"
   description: "Open Coffee aims to be the single point of reference for greek start-ups."
   website: "http://opencoffee.gr/"
   maintainers:
