@@ -196,6 +196,24 @@ a:after {
   font-size: 22px;
 }
 
+#contact i {
+  font-size: 50px;
+  color: white;
+}
+
+#contact .social a:hover {
+  background-color: #f85c37;
+}
+
+#contact .social {
+  float: left;
+}
+#contact .social a {
+  display: inline-block;
+  padding:50px;
+}
+
+
 /* Footer */
 #f {
 	padding-top: 200px;
