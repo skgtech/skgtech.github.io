@@ -71,7 +71,7 @@ layout: page
     </div>
     <div class="row">
       {% for meetup in site.data.meetups %}
-        {% capture rowIter %}{% cycle 1, 2 %}{% endcapture %}
+        {% capture rowIter %}{% cycle 3, 4 %}{% endcapture %}
         <div class="col-lg-5">
           {% include widgets/meetup.html meetup=meetup %}
         </div>
