@@ -5,10 +5,10 @@
   <div class="panel-body">
     <ul>
       <li><b>When</b>: {{ include.item.date }}</li>
-      <li><b>Location</b>: <a href="{{ include.item.locationUrl }}">{{ include.item.location }}</a></li>
+      <li><b>Location</b>: <a target="_blank" href="{{ include.item.locationUrl }}">{{ include.item.location }}</a></li>
       <li><b>Address</b>: {{ include.item.address }}</li>
       {% if include.item.website %}
-        <li><b>More Info</b>: {{ include.item.website }}</li>
+        <li><b>More Info</b>: <a target="_blank" href="{{ include.item.website }}">{{ include.item.website }}</a></li>
       {% endif %}
     </ul>
   </div>
