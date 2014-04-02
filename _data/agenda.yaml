@@ -14,9 +14,10 @@
   address: "Napoleontos Zerva 10, Thessaloniki 54640, Greece"
   locationUrl: "https://www.google.com/maps/place/40%C2%B037'16.3%22N+22%C2%B057'18.0%22E/@40.621193,22.954988,15z"
   website: "http://startuplive.in/thessaloniki/1/"
-- name: "Mini Seedcamp Seedcamp Office Hours Thessaloniki"
+- name: "Mini Seedcamp Office Hours Thessaloniki"
   date: "9/May/2014"
   location: "TBA (to be announced)"
+  address: "-"
   website: "http://www.seedcamp.com/events/office-hours-thessaloniki-9-may"
 
 # Add to Google Calendar link
