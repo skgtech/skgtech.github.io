@@ -2,6 +2,7 @@
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:title
 
+markdown: redcarpet
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "less",
   "Rakefile", "changelog.md", "*.less", "sandbox",
