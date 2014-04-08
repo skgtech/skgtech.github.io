@@ -2,8 +2,7 @@
   "name": "thessaloniki",
   "version": "0.0.0",
   "dependencies": {
-    "bootstrap": "2.3.2",
-    "calendarth": "~0.0.1"
+    "bootstrap": "2.3.2"
   },
   "devDependencies": {}
 }

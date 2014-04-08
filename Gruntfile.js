@@ -47,11 +47,29 @@ module.exports = function(grunt) {
         }
       }
     },
+    browserify: {
+      dist: {
+	files: {
+	  'temp/app.js': ['_frontapp/app.js'],
+	},
+      }
+    },
+    uglify: {
+      dist: {
+	files: {
+	  'assets/app.js': ['temp/app.js']
+	}
+      }
+    },
     watch: {
       styles: {
         files: ['assets/styles/*.less'],
         tasks: ['css'],
       },
+      app: {
+	files: ['_frontapp/**/*.js'],
+	tasks: ['build'],
+      }
     },
 
     open: {
@@ -94,6 +112,11 @@ module.exports = function(grunt) {
 
   grunt.registerTask('server', [
     'parallel:devel',
+  ]);
+
+  grunt.registerTask('build', 'browserify and uglify', [
+    'browserify:dist',
+    'uglify:dist',
   ]);
 
   grunt.registerTask('css', 'Compile and minify less styles', [

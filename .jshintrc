@@ -108,8 +108,6 @@
    *
    */
   "globals": {
-    "calendarth": false,
-
     /* MOCHA */
     "suite": false,
     "test": false,
