@@ -1,5 +1,9 @@
+# WARN WARN WARN
+#
 # This data file will now ONLY be used for events that we want pinned
 # They will appear right bellow the Google Calendar events.
+#
+# To update normal events edit the google calendar.
 
 - name: "Startup Live Thessaloniki"
   date: "02 - 04/May/2014"
