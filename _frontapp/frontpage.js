@@ -70,9 +70,86 @@ Front.prototype._handleCalResult = function(err, data) {
 Front.prototype._assignValues = function($item, item) {
   $item.removeClass('hide');
   $item.find('.panel-title').text(item.summary);
-  $item.find('.agenda-tpl-when').text(util.formatDate(item.start.dateTime, item.end.dateTime));
-  $item.find('.agenda-tpl-address').text(item.location);
-  $item.find('.agenda-tpl-description').html(util.nl2br(item.description));
+  var data = this._parseDesc(item.description);
+  $item.find('.agenda-tpl-when span').text(util.formatDate(item.start.dateTime, item.end.dateTime));
+
+  var location = '';
+  if (data.mapUrl) {
+    location = '<a href="' + data.mapUrl + '" target="_blank">';
+    location += item.location;
+    location += '</a>';
+  } else {
+    location = item.location;
+  }
+  $item.find('.agenda-tpl-address span').html(location);
+
+  if (data.venue) {
+    $item.find('.agenda-tpl-venue span').text(data.venue);
+  } else {
+    $item.find('.agenda-tpl-venue').addClass('hide');
+  }
+
+  if (data.infoUrl) {
+    var infoUrl = '';
+    if (data.infoUrl.length > 25) {
+      infoUrl = data.infoUrl.substr(0, 25) + '...';
+    } else {
+      infoUrl = data.infoUrl;
+    }
+    $item.find('.agenda-tpl-info a').attr('href', data.infoUrl).text(infoUrl);
+  } else {
+    $item.find('.agenda-tpl-info').addClass('hide');
+  }
 
   return $item.html();
+};
+
+/**
+ * Parse the description and generated info.
+ *
+ * @param {string} descr The description
+ * @return {Object} An object containing the following properties:
+ *   venue {?string} The venue where the event happens or null.
+ *   info {?string} The informational url or null.
+ *   map {?string} The map url or null.
+ * @private
+ */
+Front.prototype._parseDesc = function(descr) {
+  var out = {
+    venue: null,
+    infoUrl: null,
+    mapUrl: null,
+    rest: ''
+  };
+  var lines = descr.split('\n');
+  lines.forEach(function(line) {
+    if (!line.length) {
+      return;
+    }
+
+    var splitPos = line.indexOf(':');
+    if (splitPos === -1) {
+      return;
+    }
+
+    var key = line.substr(0, splitPos).toLowerCase().trim();
+    var value = line.substr(splitPos + 1).trim();
+
+    switch(key) {
+    case 'venue':
+      out.venue = value;
+      break;
+    case 'info':
+      out.infoUrl = value;
+      break;
+    case 'map':
+      out.mapUrl = value;
+      break;
+    default:
+      out.rest += line + '<br />';
+      break;
+    }
+  }, this);
+
+  return out;
 };
