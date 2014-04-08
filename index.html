@@ -45,8 +45,20 @@ layout: page
       <div class="row">
       	<div class="col-lg-10">
       	  <img src="/assets/img/loader-bar.gif" />
-      	</div>
+	</div>
       </div>
+    </div>
+    <div class="row">
+      {% for item in site.data.agenda %}
+	{% capture rowIterer %}{% cycle 1, 2 %}{% endcapture %}
+	<div class="col-lg-5">
+	  {% include widgets/agenda.html item=item %}
+	</div>
+	{% if '2' == rowIterer %}
+	</div>
+	<div class="row">
+	{% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
