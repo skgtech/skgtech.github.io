@@ -10,4 +10,7 @@
  * @fileOverview Frontend application bootstrap file
  */
 
-require('./frontpage');
+var Front = require('./frontpage');
+
+var front = new Front();
+front.init();

@@ -93,6 +93,9 @@ module.exports = function(grunt) {
           args: ['watch:styles']
         }, {
           grunt: true,
+          args: ['watch:app']
+        }, {
+          grunt: true,
           args: ['open:server']
 
         }]
