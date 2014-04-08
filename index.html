@@ -41,17 +41,7 @@ layout: page
         <h3>THESSALONIKI MEETUP AGENDA</h3>
       </div>
     </div>
-    <div class="row">
-      {% for item in site.data.agenda %}
-        {% capture rowIterer %}{% cycle 1, 2 %}{% endcapture %}
-        <div class="col-lg-5">
-          {% include widgets/agenda.html item=item %}
-        </div>
-        {% if '2' == rowIterer %}
-        </div>
-        <div class="row">
-        {% endif %}
-      {% endfor %}
+    <div class="row" id="agenda-items">
     </div>
     <div class="row">
       <div class="col-lg-5">
