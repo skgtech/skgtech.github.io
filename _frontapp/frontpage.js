@@ -22,13 +22,13 @@ Front.prototype.init = function() {
   this.$agendaItem = $('#agenda-tpl');
   this.$error = $('#agenda-error');
 
-  var cal = calendarth({
+  this.calendarth = calendarth({
     apiKey: 'AIzaSyC75rnKyEkGxmVyG7hlqFicwPBgDmQLN_w',
     calendarId: '2ul10sd9g30mnk1vpmcnnp5qv4@group.calendar.google.com',
     maxResults: 6
   });
 
-  cal.fetch(this._handleCalResult.bind(this));
+  this.calendarth.fetch(this._handleCalResult.bind(this));
 };
 
 /**
@@ -102,6 +102,10 @@ Front.prototype._assignValues = function($item, item) {
     $item.find('.agenda-tpl-info').addClass('hide');
   }
 
+  var eventUrl = this.calendarth.getEventUrl(item);
+  $item.find('.addcal').attr('href', eventUrl);
+  $item.find('.viewcal').attr('href', item.htmlLink);
+
   return $item.html();
 };
 
@@ -122,6 +126,9 @@ Front.prototype._parseDesc = function(descr) {
     mapUrl: null,
     rest: ''
   };
+  if (!descr) {
+    return out;
+  }
   var lines = descr.split('\n');
   lines.forEach(function(line) {
     if (!line.length) {

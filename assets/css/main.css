@@ -166,6 +166,10 @@ a:after {
   padding-bottom: 50px;
 }
 
+.calendar-link {
+  padding-bottom: 5px;
+}
+
 /* meetups */
 #meetups {
 	padding-top: 50px;
@@ -184,6 +188,14 @@ a:after {
   color: #000;
 }
 
+.cal-btns {
+  padding-left: 8px;
+}
+.cal-btns a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #FAC9C9;
+}
 
 #contact {
   background-color: #74cfae;
