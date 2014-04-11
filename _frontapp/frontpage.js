@@ -71,7 +71,8 @@ Front.prototype._assignValues = function($item, item) {
   $item.removeClass('hide');
   $item.find('.panel-title').text(item.summary);
   var data = this._parseDesc(item.description);
-  $item.find('.agenda-tpl-when span').text(util.formatDate(item.start.dateTime, item.end.dateTime));
+
+  $item.find('.agenda-tpl-when span').text(util.formatDate(item.start, item.end));
 
   var location = '';
   if (data.mapUrl) {
