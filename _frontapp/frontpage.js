@@ -25,7 +25,7 @@ Front.prototype.init = function() {
   this.calendarth = calendarth({
     apiKey: 'AIzaSyC75rnKyEkGxmVyG7hlqFicwPBgDmQLN_w',
     calendarId: '2ul10sd9g30mnk1vpmcnnp5qv4@group.calendar.google.com',
-    maxResults: 6
+    maxResults: 12
   });
 
   this.calendarth.fetch(this._handleCalResult.bind(this));
@@ -45,9 +45,17 @@ Front.prototype._handleCalResult = function(err, data) {
     return;
   }
 
+  var meetups = [];
+  var displayed = 0;
   var elements = '<div class="row">';
   data.items.forEach(function(item, index) {
-    if (index && index % 2 === 0) {
+    if (meetups.indexOf(item.summary) > -1) {
+      return;
+    } else {
+      meetups.push(item.summary);
+    }
+
+    if (displayed && displayed % 2 === 0) {
       // rows
       elements += '</div><div class="row">';
     }
@@ -57,6 +65,7 @@ Front.prototype._handleCalResult = function(err, data) {
   elements += '</div>';
 
   this.$agendaContainer.append(elements);
+  displayed++;
 };
 
 /**
