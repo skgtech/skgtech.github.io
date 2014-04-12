@@ -54,8 +54,8 @@ layout: page
       </div>
     </div>
     <div class="row">
-      {% unless site.data.agenda.empty? %}
-        {% for item in site.data.agenda %}
+      {% unless site.data.pinnedAgenda.empty? %}
+        {% for item in site.data.pinnedAgenda %}
           {% capture rowIterer %}{% cycle 1, 2 %}{% endcapture %}
           <div class="col-lg-5">
             {% include widgets/agenda.html item=item %}
@@ -99,15 +99,15 @@ layout: page
     </div>
   </div>
 </div>
-<div id="meetups">
+<div id="communities">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10">
-        <h3>MEETUPS IN THESSALONIKI</h3>
+        <h3>TECH COMMUNITIES IN THESSALONIKI</h3>
       </div>
     </div>
     <div class="row">
-      {% for meetup in site.data.meetups %}
+      {% for meetup in site.data.communities %}
         {% capture rowIter %}{% cycle 3, 4 %}{% endcapture %}
         <div class="col-lg-5">
           {% include widgets/meetup.html meetup=meetup %}
