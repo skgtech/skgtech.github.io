@@ -20,13 +20,13 @@ In the **Where** field you need to enter a Google Maps resolvable address, meani
 ##### A Good Address
 
 ```
-Stratigou Sfetsou 3, Thessaloniki, 54626, Greece
+Mitropoleos 110, Thessaloniki, 54621, Greece
 ```
 
 ##### A Bad Address
 
 ```
-Sfetsou 3, 2nd floor
+Mitropoleos 110, 2nd floor
 ```
 
 #### The Event Description
