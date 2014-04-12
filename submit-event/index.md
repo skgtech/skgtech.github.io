@@ -11,7 +11,7 @@ What you need to do is create a new Calendar event from your Gmail account and i
 
 #### Event Name, Location, Time
 
-Create a new event in your calendar, use a short and descriptive name, define the duration of the even.
+Create a new event in your calendar, use a short and descriptive name, define the duration of the event...
 
 ![The new Event form](http://than.pol.as/Uwu3/Screen%20Shot%202014-04-11%20at%2011.40.03%20AM.png)
 
