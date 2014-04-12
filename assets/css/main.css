@@ -33,14 +33,14 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
 }
 
-h3 {
+.frontpage h3 {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 42px;
 }
 
 /* Paragraph & Typographic */
-p {
+.frontpage p {
     line-height: 28px;
     margin-bottom: 25px;
 }
@@ -171,7 +171,7 @@ a:after {
 }
 
 /* meetups */
-#meetups {
+#communities {
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -257,3 +257,9 @@ a:after {
 .grid img:hover {
     opacity: 1;
 }
+
+/* Single Pages core style */
+.page p {
+  font-size: 18px;
+}
+
