@@ -138,29 +138,29 @@ a:after {
 
 
 /* hello */
-#hello {
+.rowbar-one {
 	width: 100%;
 	padding-top: 90px;
 	padding-bottom: 180px;
 }
 
-#hello h1 {
+.rowbar-one h1 {
 	font-size: 80px;
 	font-weight: 700;
 	letter-spacing: 3px;
 	color: #74cfae;
 }
 
-#hello h3 {
+.rowbar-one h3 {
 	color: #c0c0c0;
 }
 
-#hello p {
+.rowbar-one p {
   margin-top: 40px;
   font-size: 18px;
 }
 
-#agenda {
+.rowbar-two {
   background-color: #74cfae;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -168,12 +168,6 @@ a:after {
 
 .calendar-link {
   padding-bottom: 5px;
-}
-
-/* meetups */
-#communities {
-	padding-top: 50px;
-	padding-bottom: 50px;
 }
 
 .panel h3 {
@@ -197,17 +191,11 @@ a:after {
   color: #FAC9C9;
 }
 
-#contact {
-  background-color: #74cfae;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 250px;
-}
-#contact a {
+/*#contact a {
   color: #fff;
   font-size: 22px;
 }
-
+*/
 #contact i {
   font-size: 50px;
   color: white;
