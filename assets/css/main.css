@@ -251,3 +251,29 @@ a:after {
   font-size: 18px;
 }
 
+/* Together event */
+
+.rowbar-one p.gr {
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.tagline {
+  padding-bottom: 150px;
+}
+
+.venue h2 {
+  padding-bottom: 40px;
+}
+
+.venue .panel-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 26px;
+
+}
+
+.list-group-item-info {
+  color: #31708f;
+  background-color: #d9edf7;
+}
