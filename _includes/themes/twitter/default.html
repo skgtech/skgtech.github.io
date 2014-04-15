@@ -10,11 +10,12 @@
     <title>Thessaloniki Developer Meetups</title>
 
     {% if page.og %}
-      <meta property="og:title" content="Thessaloniki tech and developer Meetups">
-      <meta property="og:site_name" content="SKGTech">
+      <meta property="og:title" content="{{ site.og.title }}">
+      <meta property="og:site_name" content="{{ site.og.site_name }}">
       <meta property="og:url" content="{{ page.og-url }}">
+      <meta property="og:app_id" content="{{ site.og.app_id }}">
       <meta property="og:description" content="{{ page.og-description }}">
-      <meta property="og:image" content="https://pbs.twimg.com/profile_images/453243331691020288/pk_2bTE9.png">
+      <meta property="og:image" content="{{ site.og.image }}">
       <meta property="og:type" content="website">
     {% endif %}
 
