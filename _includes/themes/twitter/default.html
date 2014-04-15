@@ -11,7 +11,7 @@
 
     {% if page.og %}
       <meta property="fb:app_id" content="{{ site.og.app_id }}">
-      <meta property="og:title" content="{{ site.og.title }}">
+      <meta property="og:title" content="{% if page.og-title %}{{ page.og-title }}{% else %}{{ site.og.title }}{% endif %}">
       <meta property="og:site_name" content="{{ site.og.site_name }}">
       <meta property="og:url" content="{{ page.og-url }}">
       <meta property="og:description" content="{{ page.og-description }}">
