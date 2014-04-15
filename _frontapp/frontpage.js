@@ -111,6 +111,12 @@ Front.prototype._assignValues = function($item, item) {
     $item.find('.agenda-tpl-info').addClass('hide');
   }
 
+  if (data.about) {
+    $item.find('.agenda-tpl-about span').html(data.about);
+  } else {
+    $item.find('.agenda-tpl-about').addClass('hide');
+  }
+
   var eventUrl = this.calendarth.getEventUrl(item);
   $item.find('.addcal').attr('href', eventUrl);
   $item.find('.viewcal').attr('href', item.htmlLink);
@@ -133,6 +139,7 @@ Front.prototype._parseDesc = function(descr) {
     venue: null,
     infoUrl: null,
     mapUrl: null,
+    about: null,
     rest: ''
   };
   if (!descr) {
@@ -161,6 +168,9 @@ Front.prototype._parseDesc = function(descr) {
       break;
     case 'map':
       out.mapUrl = value;
+      break;
+    case 'about':
+      out.about = value;
       break;
     default:
       out.rest += line + '<br />';
