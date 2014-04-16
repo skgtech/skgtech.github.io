@@ -53,3 +53,11 @@
   maintainers:
     - name: "Patroklos Papapetrou"
       website: "http://www.meetup.com/Agile-Greece/members/40090912/"
+- name: "Arduino Meetup Group"
+  period: "TBA"
+  description: " Talks, presentations, panel discussions, hands-on workshops, open days, or show-and-tell events. Everybody is welcome."
+  website: "website: "http://www.meetup.com/Thessaloniki-Arduino"
+  maintainers:
+    - name: "Stavros Kalapothas (@Stavros_IT)"
+      website: "https://twitter.com/Stavros_IT"
+
