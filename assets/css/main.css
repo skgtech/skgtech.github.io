@@ -201,6 +201,10 @@ a:after {
   color: white;
 }
 
+#contact .btn span {
+  margin-right: 10px;
+}
+
 #contact .social a:hover {
   background-color: #f85c37;
 }
