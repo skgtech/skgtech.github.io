@@ -277,3 +277,14 @@ a:after {
   color: #31708f;
   background-color: #d9edf7;
 }
+
+.markdown {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.markdown img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
