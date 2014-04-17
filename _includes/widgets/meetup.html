@@ -11,15 +11,19 @@
       <li><b>Website</b>: <a href="{{ include.meetup.website }}">{{ include.meetup.website }}</a></li>
       <li><b>Description</b>: {{ include.meetup.description }}</li>
       <li><b>Maintainers</b>:
-        {% for maintainer in meetup.maintainers %}
-          {% if maintainer.email %}
-          <a href="mailto:{{ maintainer.email }}">{{ maintainer.name }}</a>
-          {% elsif maintainer.website %}
-          <a href="{{ maintainer.website }}">{{ maintainer.name }}</a>
-          {% else %}
-          {{ maintainer.name }}
-          {% endif %}
-        {% endfor %}
+        <ul class="maintainers">
+          {% for maintainer in meetup.maintainers %}
+            <li>
+              {% if maintainer.email %}
+              <a href="mailto:{{ maintainer.email }}">{{ maintainer.name }}</a>
+              {% elsif maintainer.website %}
+              <a href="{{ maintainer.website }}">{{ maintainer.name }}</a>
+              {% else %}
+              {{ maintainer.name }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
       </li>
     </ul>
   </div>
