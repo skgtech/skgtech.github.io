@@ -52,12 +52,36 @@ util.formatDate = function(start, end) {
   out += ' ' + startDate.getDate();
 
   if (isMultiDay) {
-    // multi-day event
-    out += ' - ' + days[endDate.getDay()] + ' ' + endDate.getDate();
+    // multi-day event, check if it's just a single all-day
+    if (startDate.getDate() === endDate.getDate() && startDate.getMonth() ===
+      endDate.getMonth()) {
+      // single all day event
+      out += ', All day event';
+    } else {
+      // multi day
+      out += ' - ' + days[endDate.getDay()] + ' ' + endDate.getDate();
+    }
   } else {
-    out += ' | ' + startDate.getHours() + ':' + startDate.getMinutes();
-    out += ' - ' + endDate.getHours() + ':' + endDate.getMinutes();
+    out += ' | ' + startDate.getHours() + ':' +
+      util.twoDigit(startDate.getMinutes());
+    out += ' - ' + endDate.getHours() + ':' +
+      util.twoDigit(endDate.getMinutes());
   }
 
   return out;
+};
+
+/**
+ * Forces return of two digits by prepending 0 if length is 1.
+ *
+ * @param {number} num The number
+ * @return {string} Two digit representation as string.
+ */
+util.twoDigit = function(num) {
+  var str = num + '';
+  if (str.length === 1) {
+    return '0' + str;
+  } else {
+    return str;
+  }
 };
