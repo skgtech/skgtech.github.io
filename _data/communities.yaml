@@ -56,4 +56,13 @@
   maintainers:
     - name: "Stavros Kalapothas (@Stavros_IT)"
       website: "https://twitter.com/Stavros_IT"
-
+- name: "iOS Devs GR"
+  period: "Monthly"
+  happensAt: "Every third Wednesday of each month"
+  description: "Comparing Apples with oranges"
+  website: "http://www.meetup.com/iOS-Devs-Gr/"
+  maintainers:
+    - name: "Fotis Dimanidis"
+      email: "fdimanidis@gmail.com"
+    - name: "Apostolos Kyriakopoulos"
+      email: "akyriak@gmail.com"
