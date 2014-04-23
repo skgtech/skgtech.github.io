@@ -160,6 +160,11 @@ a:after {
   font-size: 18px;
 }
 
+.rowbar-two p {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
 .rowbar-two {
   background-color: #74cfae;
   padding-top: 50px;
@@ -255,9 +260,20 @@ a:after {
   font-size: 18px;
 }
 
-/* Together event */
+
+
+/*
+ *
+ * Together event
+ *
+ */
 
 .rowbar-one p.gr {
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.rowbar-two p.gr {
   margin-top: 10px;
   font-weight: 100;
 }
@@ -272,7 +288,8 @@ a:after {
 
 .venue .panel-title {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0;
+  line-height: 45px;
   font-size: 26px;
 
 }
@@ -291,4 +308,74 @@ a:after {
   display: block;
   height: auto;
   max-width: 100%;
+}
+
+.table-header th {
+  background-color: #fff;
+}
+
+.table-stack {
+  vertical-align: middle !important;
+  color: #fff;
+}
+
+.table-stack-1 {
+  background-color: #17E498;
+}
+.table-stack-2 {
+  background-color: #5AE2B0;
+}
+.table-stack-3 {
+  background-color: #62CEA6;
+}
+.table-stack-4 {
+  background-color: #44B48B;
+}
+.table-stack-5 {
+  background-color: #2E9972;
+}
+.table-stack-6 {
+  background-color: #1A865F;
+}
+.table-stack-7 {
+  background-color: #036B45;
+}
+
+.awesomenesh {
+  position: relative;
+  left: 660px;
+  top: -160px;
+}
+
+.awesomenesh div.bubble {
+  background-color: #fff;
+  width: 200px;
+  padding: 10px;
+  margin-left: 50px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.awesomenesh span.glyphicon {
+  font-size: 70px;
+  -webkit-transform: matrix(-1.000,-0.0,0.0,-1.000,0,0);
+  -moz-transform: matrix(-1.000,-0.0,0.0,-1.000,0px,0px);
+  -ms-transform: matrix(-1.000,-0.0,0.0,-1.000,0,0);
+  -o-transform: matrix(-1.000,-0.0,0.0,-1.000,0,0);
+  transform: matrix(-1.000,-0.0,0.0,-1.000,0,0);
+}
+
+.hashtag {
+  font-family: monospace;
+  font-size: 32px !important;
+  font-weight: 600;
+}
+
+.together .rowbar-two {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.together .rowbar-one {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
