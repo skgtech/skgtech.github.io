@@ -347,9 +347,12 @@ a:after {
   top: -160px;
 }
 
+.awesomenesh {
+  width: 220px;
+}
 .awesomenesh div.bubble {
   background-color: #fff;
-  width: 200px;
+  width: 170px;
   padding: 10px;
   margin-left: 50px;
   font-size: 18px;
