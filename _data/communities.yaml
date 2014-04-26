@@ -3,6 +3,7 @@
   happensAt: "Every third Tuesday of each month"
   description: "Open Coffee aims to be the single point of reference for greek start-ups."
   website: "http://opencoffee.gr/"
+  facebook: "https://www.facebook.com/groups/4689962962/"
   maintainers:
     - name: "Georgios Gatos"
       email: "georgiosgatos@gmail.com"
@@ -21,6 +22,7 @@
   period: "Monthly"
   description: "We believe that following a Lean thinking and growing an Agile mindset could help us, as individuals, to get improved and trigger some positive changes in our organisations. "
   website: "http://www.meetup.com/Agile-Greece/"
+  twitter: "https://twitter.com/AgileGRmeetup"
   maintainers:
     - name: "Yiannis Mavraganis (ymavra at gmail dot com)"
     - name: "George Psistakis (g.psistakis at gmail dot com)"
@@ -30,6 +32,7 @@
   period: "Weekly"
   happensAt: "Every Thursday"
   website: "http://www.openthessaloniki.org/"
+  twitter: "https://twitter.com/OpenThessalonik"
   description: "OpenThessaloniki aspires to be a platform for collecting data related to the town of Thessaloniki and develop, in tandem, applications and services aiming at open government."
   maintainers:
     - name: "Apostolos Kritikos"
