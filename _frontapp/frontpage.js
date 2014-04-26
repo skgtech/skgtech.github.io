@@ -29,6 +29,25 @@ Front.prototype.init = function() {
   });
 
   this.calendarth.fetch(this._handleCalResult.bind(this));
+
+  this._fixPanels();
+};
+
+/**
+ * A temp fix for panels height.
+ *
+ * @private
+ */
+Front.prototype._fixPanels = function() {
+  var max = 0;
+  $('.panel-info').each(function() {
+    var currentHeight = $(this).height();
+    console.log('each:', currentHeight);
+    if (currentHeight > max) {
+      max = currentHeight;
+    }
+  });
+  $('.panel-info').height(max);
 };
 
 /**
@@ -48,7 +67,7 @@ Front.prototype._handleCalResult = function(err, data) {
   var meetups = [];
   var displayed = 0;
   var elements = '<div class="row">';
-  data.items.forEach(function(item, index) {
+  data.items.forEach(function(item) {
     if (meetups.indexOf(item.summary) > -1) {
       return;
     } else {
@@ -60,12 +79,11 @@ Front.prototype._handleCalResult = function(err, data) {
       elements += '</div><div class="row">';
     }
     elements += this._assignValues(this.$agendaItem.clone(), item);
+    displayed++;
   }, this);
 
   elements += '</div>';
-
   this.$agendaContainer.append(elements);
-  displayed++;
 };
 
 /**
