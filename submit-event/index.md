@@ -35,10 +35,10 @@ Mitropoleos 110, 2nd floor
 
 The event description has a special role for the SKGTech website. It is used as the data entry field; The SKGTech engine will parse the description and look for specific keywords that will then use to render the event. The fields have a unique name and are separated using a colon from their values, here are all the possible fields:
 
-* **venue:** This is a free text field, this is the place where you name a particular venue and any special instructions on where to find the meetup (i.e. 2nd floor, Office #3).
-* **info:** This field expects a url that points to the events homepage.
-* **map:** This field expects a Google Maps url that points directly to a Google Maps link with the exact location of the event.
-* **about:** A free text description of the event.
+* **Venue:** This is a free text field, this is the place where you name a particular venue and any special instructions on where to find the meetup (i.e. 2nd floor, Office #3).
+* **Info:** This field expects a url that points to the events homepage.
+* **Map:** This field expects a Google Maps url that points directly to a Google Maps link with the exact location of the event.
+* **About:** A free text description of the event.
 
 All of the above fields are optional, however at least one has to be defined. Here's an example *Description* event field from the OpenThessaloniki event:
 
@@ -46,6 +46,7 @@ All of the above fields are optional, however at least one has to be defined. He
 Venue: 2nd Floor, Office 3
 Info: http://www.openthessaloniki.org/
 Map: https://www.google.com/maps?q=Ethnikis+Antistaseos+17,+Kalamaria,+Thessaloniki,+Greece&hl=en&sll=40.621193,22.954988&sspn=0.024365,0.039783&hnear=Leoforos+Ethnikis+Antistaseos+17,+Kalamaria,+Thessaloniki,+Greece&t=m&z=16&iwloc=A
+About: A meetup about Open Data.
 ```
 
 #### Inviting SKGTech Calendar
