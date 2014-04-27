@@ -64,8 +64,6 @@
   happensAt: "Every third Wednesday of each month"
   description: "Comparing Apples with oranges"
   website: "http://www.meetup.com/iOS-Devs-Gr/"
-  facebook: "http://www.facebook.com/groups/iosdevsgr/"
-  google+: "http://gplus.to/iosdevsgr"
   maintainers:
     - name: "Fotis Dimanidis"
       email: "fdimanidis@gmail.com"
@@ -81,5 +79,15 @@
       website: "http://be.net/pvoulg"
     - name: "Giorgio Papadopoulos"
       website: "http://be.net/6x6"
-  
+- name: "#Steki (not just a Social Media community)"
+  period: "Depending on our communication needs, it varies from weekly to monthly"
+  description: "An informal, spontaneously organised, online social event. Anyone from anywhere in the world is welcome to join -please bring along your open mind. #Steki brings together people who are fascinated by the open and co-operative mentality that the social web has brought upon humans as well as businesses."
+  google: "http://bit.ly/1fG61aR"
+  maintainers:
+    - name: "Nikos Louvaris"
+      website: "http://viralpassion.gr/"
+    - name: "Tolee Fotitzidis"
+      website: "http://toleemedia.com/"
+    - name: "Kyros Vogiatzoglou"
+      website: "http://www.realmedia.gr/?page_id=115"
 
