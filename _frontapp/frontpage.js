@@ -135,6 +135,12 @@ Front.prototype._assignValues = function($item, item) {
     $item.find('.agenda-tpl-about').addClass('hide');
   }
 
+  if (data.language) {
+    $item.find('.agenda-tpl-language span').html(data.language);
+  } else {
+    $item.find('.agenda-tpl-language').addClass('hide');
+  }
+
   var eventUrl = this.calendarth.getEventUrl(item);
   $item.find('.addcal').attr('href', eventUrl);
   $item.find('.viewcal').attr('href', item.htmlLink);
@@ -150,6 +156,7 @@ Front.prototype._assignValues = function($item, item) {
  *   venue {?string} The venue where the event happens or null.
  *   info {?string} The informational url or null.
  *   map {?string} The map url or null.
+ *   language {?string} The event language.
  * @private
  */
 Front.prototype._parseDesc = function(descr) {
@@ -158,6 +165,7 @@ Front.prototype._parseDesc = function(descr) {
     infoUrl: null,
     mapUrl: null,
     about: null,
+    language: null,
     rest: ''
   };
   if (!descr) {
@@ -189,6 +197,9 @@ Front.prototype._parseDesc = function(descr) {
       break;
     case 'about':
       out.about = value;
+      break;
+    case 'language':
+      out.language = value;
       break;
     default:
       out.rest += line + '<br />';
