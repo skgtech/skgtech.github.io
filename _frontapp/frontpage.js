@@ -44,7 +44,6 @@ Front.prototype._fixPanels = function() {
   var max = 0;
   $('.panel-info').each(function() {
     var currentHeight = $(this).height();
-    console.log('each:', currentHeight);
     if (currentHeight > max) {
       max = currentHeight;
     }
