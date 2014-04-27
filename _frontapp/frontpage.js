@@ -12,6 +12,8 @@ var Front = module.exports = function() {
   this.$error = null;
 };
 
+/** @const {number} Maximum events to display, use an even number */
+Front.MAX_EVENTS_SHOW = 8;
 
 /**
  * Initialize the frontpage view.
@@ -68,6 +70,9 @@ Front.prototype._handleCalResult = function(err, data) {
   var displayed = 0;
   var elements = '<div class="row">';
   data.items.forEach(function(item) {
+    if (displayed >= Front.MAX_EVENTS_SHOW) {
+      return;
+    }
     if (meetups.indexOf(item.summary) > -1) {
       return;
     } else {
