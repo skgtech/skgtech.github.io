@@ -9,7 +9,7 @@
       email: "georgiosgatos@gmail.com"
     - name: "Apostolos Kritikos"
       email: "akritiko@gmail.com"
-- name: "Ruby Meetup"
+- name: "Thessaloniki Ruby Meetup (thessrb)"
   period: "Monthly"
   description: "thessaloniki.rb is a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
   website: "https://github.com/thessaloniki/rb"
