@@ -49,9 +49,12 @@
   period: "Monthly"
   description: "This is a group for anyone interested in java, j2ee, jvm languages, clean code practices, android development, etc. All skills levels are welcome. I started this group to meet and share ideas and knowledge with other java enthusiasts. Looking forward to exploring new java paths with everybody."
   website: "http://www.meetup.com/Thessaloniki-Java-Meetup-Group/"
+  twitter: "https://twitter.com/skgjava"
   maintainers:
     - name: "Patroklos Papapetrou"
-      website: "http://www.meetup.com/Agile-Greece/members/40090912/"
+      email: "ppapapetrou76@gmail.com"
+      twitter: "https://twitter.com/ppapapetrou76"
+      website: "http://onlysoftware.wordpress.com/"
 - name: "Arduino Meetup Group"
   period: "TBA"
   description: " Talks, presentations, panel discussions, hands-on workshops, open days, or show-and-tell events. Everybody is welcome."
