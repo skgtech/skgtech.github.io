@@ -9,13 +9,15 @@
       email: "georgiosgatos@gmail.com"
     - name: "Apostolos Kritikos"
       email: "akritiko@gmail.com"
-- name: "Ruby Meetup"
+- name: "Thessaloniki Ruby Meetup (thessrb)"
   period: "Monthly"
-  description: "thessaloniki.rb is a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
-  website: "https://github.com/thessaloniki/rb"
+  description: "thessrb is a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
+  website: "http://git.io/thessrb"
   maintainers:
     - name: "Petros Amiridis"
       email: "petros@amiridis.net"
+    - name: "Vassilis Rizopoulos"
+      email: "Vassilisrizopoulos@gmail.com"
     - name: "Stefanos Togoulidis"
       email: "stefanostogoulidis@gmail.com"
 - name: "Agile Greece"
@@ -93,4 +95,3 @@
       website: "http://toleemedia.com/"
     - name: "Kyros Vogiatzoglou"
       website: "http://www.realmedia.gr/?page_id=115"
-
