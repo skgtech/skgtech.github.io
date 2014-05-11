@@ -1,2 +1,26 @@
 // Navigation related styles
 
+.navbar {
+	font-weight: 900;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: @white;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	color: @white;
+	background-color: @color1;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: @white;
+    background-color: darken(@color1, 10%);
+}
+
+.navbar-brand {
+	font-size: 60px;
+	padding-top: 12px;
+	padding-bottom: 0px;
+}
