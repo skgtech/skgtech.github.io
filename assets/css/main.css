@@ -100,9 +100,15 @@ a:after {
 	background-color: #ffffff;
 }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > .active > a {
 	color: #ffffff;
 	background-color: #74cfae;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #ffffff;
+    background-color: #3fb78c;
 }
 
 .navbar-brand {
