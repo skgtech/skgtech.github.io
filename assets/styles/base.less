@@ -1,11 +1,11 @@
 // Site-wide styles
 
 body {
-  background-color: @almost-white;
+  background-color: #f2f2f2;
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
-  color: @light-gray;
+  color: #555;
 
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -13,103 +13,103 @@ body {
   margin-top: 70px;
 }
 
-/* Titles */
+// Typographic
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-weight: 300;
-  color: @dark-gray;
+  color: #333;
 }
 
-.frontpage h3 {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 42px;
-}
-
-
-
-
-/* Paragraph & Typographic */
-.frontpage p {
+.frontpage {
+  h3 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 42px;
+  }
+  
+  p {
     line-height: 28px;
     margin-bottom: 25px;
+  }
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
 }
 
 .mt {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
-/* Links */
+// Links
 a {
-    color: #f85c37;
-    word-wrap: break-word;
+  color: #f85c37;
+  word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
 
-a:hover,
-a:focus {
+  :hover,
+  :focus {
     color: #7b7b7b;
     text-decoration: none;
     outline: 0;
-}
-
-a:before,
-a:after {
+  }
+  
+  :before,
+  :after {
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
+  }
 }
 
-/* Bootstrap Modifications */
- hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
 
+// Bootstrap Modifications
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
 
 .btn-theme {
-	color: #ffffff;
-	background-color: #74cfae;
-	border-color: transparent;
+  color: #ffffff;
+  background-color: #74cfae;
+  border-color: transparent;
 }
 
 .btn {
-	padding: 10px 30px;
-	margin-bottom: 0;
-	font-size: 18px;
-	border: 5px solid transparent;
-	border-radius: 0px;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  font-size: 18px;
+  border: 5px solid transparent;
+  border-radius: 0px;
 }
 
 .lead {
-	letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 
 
-/* Image Opacity */
+// Image Opacity
 .grid img {
-    opacity: .7;
-}
-.grid img:hover {
+  opacity: .7;
+  
+  :hover {
     opacity: 1;
+  }
 }
 
-/* Single Pages core style */
+
+// Single Pages core style
 .page p {
   font-size: 18px;
 }
@@ -119,3 +119,8 @@ footer.footer-actual p {
 }
 
 
+// Wrap Sections
+.share ul li {
+  float: left;
+  padding-right: 10px;
+}
