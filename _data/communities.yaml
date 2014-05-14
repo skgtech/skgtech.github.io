@@ -95,3 +95,15 @@
       website: "http://toleemedia.com/"
     - name: "Kyros Vogiatzoglou"
       website: "http://www.realmedia.gr/?page_id=115"
+- name: "Thessaloniki Toastmasters"
+  period: "Twice a month"
+  description: "A open, learn-by-doing workshop in which participants hone their speaking and leadership skills in a no-pressure atmosphere."
+  website: "https://www.facebook.com/ThessalonikiToastmasters"
+  maintainers:
+    - name: "General Inquiries"
+      email: "thessaloniki@toastmasters.gr"
+    - name: "Konstantinos Rekalidis"
+      email: "krekalidis@gmail.com"
+    - name: "Dimitris Tsapakidis"
+      email: "dimitris@tsapakidis.com"
+
