@@ -7,12 +7,6 @@
 
 # When agenda is empty, use the following stub so jekyll can build
 
-- name: "Digitalk"
-  date: "29 - 30/May/2014"
-  location: "Sofia Event Center"
-  address: "bulevard 'Cherni vrah' 100, 1407 Sofia, Bulgaria"
-  locationUrl: "https://maps.google.com/maps?ll=42.633439,23.276412&z=12&t=m&hl=en&gl=US&mapclient=embed&cid=4427007974881854907"
-  website: "http://digitalk.bg/"
 
 # To update normal events edit the google calendar.
 # - name: "Startup Live Thessaloniki"
