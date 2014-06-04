@@ -106,3 +106,23 @@
       email: "krekalidis@gmail.com"
     - name: "Dimitris Tsapakidis"
       email: "dimitris@tsapakidis.com"
+- name: "Thessaloniki Node.js"
+  period: "TBA (to be announced)"
+  description: 'Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.'
+  website: "http://www.meetup.com/Thessaloniki-Node-js-Meetup/"
+  twitter: "https://twitter.com/skgnodejs/"
+  maintainers:
+    - name: "Konstantinos Margaritis"
+      email: "kotsos.marga@gmail.com"
+    - name: "Thanasis Polychronakis"
+      email: "thanpolas@gmail.com"
+- name: "Thessaloniki Verification and Testing"
+  period: "Biweekly (once every two weeks)"
+  description: 'The Verification and Testing Meetup aims to gather practitioners (software developers) and researchers who are interested in modelling and developing reliable systems. Discussion topics include, but are not limited to, formal specification, automated testing, test-generation, model-based testing, tools.'
+  website: "http://www.meetup.com/Thessaloniki-Verification-and-Testing-Meetup/"
+  twitter: "https://twitter.com/skgvt"
+  maintainers:
+    - name: "Dimitris Dranidis "
+      email: "dranidis@city.academic.gr"
+    - name: "Konstantinos Margaritis"
+      email: "kotsos.marga@gmail.com"  
