@@ -126,3 +126,11 @@
       email: "dranidis@city.academic.gr"
     - name: "Konstantinos Margaritis"
       email: "kotsos.marga@gmail.com"  
+- name: "PyThess"
+  period: "datetime.date.today() + datetime.timedelta(days=random.randrange(30))"
+  description: 'The PyThess meetup is the best meetup in existence, and also ever. Its goal is to get people who are interested in the Python programming language in the same room together, and then go for drinks. We aim to talk about Python, world domination and various other everyday topics.'
+  website: "http://www.meetup.com/PyThess/"
+  twitter: "https://twitter.com/stavros"
+  maintainers:
+    - name: "Stavros Korokithakis"
+      email: "hi@stavros.io"
