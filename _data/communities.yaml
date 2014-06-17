@@ -1,3 +1,10 @@
+- name: "Thessaloniki's Java User Group"
+  period: "Monthly"
+  description: "Thessaloniki's Java User Group was established in May 2007. The group's main focus is to provide a platform where anyone from Northern Greece and from Southeastern Europe (SEE) who has an interest in Java can get together and share their experience and expertise. It aims to organise many seminars and workshops but also a biannual conference that will be organised in Thessaloniki every second time and the next in other interested parties from the SEE area if possible. It aims also to strengthen the Java community in SEE by providing an environment where our members can share their knowledge and promote the use of Java in SEE. That is why the main language we use is English."
+  website: "http://www.thejug.org/"
+  maintainers:
+    - name: "George Eleftherakis"
+      website: "http://www.city.academic.gr/csd/eleftherakis/"
 - name: "Open Coffee"
   period: "Monthly"
   happensAt: "Every third Tuesday of each month"
