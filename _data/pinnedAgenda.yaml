@@ -13,6 +13,7 @@
   address: "Teşvikiye Mh., 34365 Şişli/İstanbul, Turkey"
   locationUrl: "http://goo.gl/maps/W9OR3"
   website: "http://jsist.org/"
+  about: "A World Class Javascript event is happening right around our corner! Don't miss this unique opportunity."
 
 # To update normal events edit the google calendar.
 # - name: "Startup Live Thessaloniki"

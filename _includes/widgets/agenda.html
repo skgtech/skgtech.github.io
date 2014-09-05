@@ -10,6 +10,9 @@
       {% if include.item.website %}
         <li><b>More Info</b>: <a target="_blank" href="{{ include.item.website }}">{{ include.item.website }}</a></li>
       {% endif %}
+      {% if include.item.about %}
+        <li><b>About</b>:<span>{{ include.item.about }}</span></li>
+      {% endif %}
     </ul>
   </div>
 </div>
