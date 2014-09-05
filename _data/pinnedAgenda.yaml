@@ -7,6 +7,12 @@
 
 # When agenda is empty, use the following stub so jekyll can build
 
+- name: "JSIST"
+  date: "27 - 28/Sep/2014"
+  location: "Koç University American Hospital"
+  address: "Teşvikiye Mh., 34365 Şişli/İstanbul, Turkey"
+  locationUrl: "http://goo.gl/maps/W9OR3"
+  website: "http://jsist.org/"
 
 # To update normal events edit the google calendar.
 # - name: "Startup Live Thessaloniki"
