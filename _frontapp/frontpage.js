@@ -33,9 +33,6 @@ Front.prototype.init = function() {
   this.calendarth.fetch(this._handleCalResult.bind(this));
 
   this._fixPanels();
-
-  // Fart every 800 pixels scrolled
-  fartscroll(800);
 };
 
 /**
