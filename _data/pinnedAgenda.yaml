@@ -7,13 +7,13 @@
 
 # When agenda is empty, use the following stub so jekyll can build
 
-- name: "JSIST"
-  date: "27 - 28/Sep/2014"
-  location: "Koç University American Hospital"
-  address: "Teşvikiye Mh., 34365 Şişli/İstanbul, Turkey"
-  locationUrl: "http://goo.gl/maps/W9OR3"
-  website: "http://jsist.org/"
-  about: "A World Class Javascript event is happening right around our corner! Don't miss this unique opportunity."
+- name: "4th Behance Thessaloniki Portfolio Review"
+  date: "05/Nov/2014"
+  location: "Thessaloniki City Hall"
+  address: "Leoforos Vasileos Georgiou 1, Thessaloniki, 54640, Greece"
+  locationUrl: "http://goo.gl/maps/WTS9e"
+  website: "https://www.facebook.com/events/1505062986406904/"
+  about: "Thessaloniki participates for the fourth time in the biggest worldwide creative event of Behance. Present your Portfolio and get feedback by established professionals and the rest of the creative community"
 
 # To update normal events edit the google calendar.
 # - name: "Startup Live Thessaloniki"
