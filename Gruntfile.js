@@ -43,7 +43,7 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'assets/themes/twitter/css/styles.css': ['temp/styles-expanded.css']
+          'assets/css/styles.css': ['temp/styles-expanded.css']
         }
       }
     },
