@@ -67,6 +67,10 @@ If you plan on donating in the future then make a pledge and help us out!
 
 [Make a pledge here](https://docs.google.com/forms/d/19Ul4T7x6P-QpREu9O8iaJPSjzDBmZfjyWEb1PYQnVKM/viewform)
 
+## The Donations
+
+[Checkout the live spreadsheet with the donations](https://docs.google.com/spreadsheets/d/1byCDo37nZNdmEXYtog8k24XcE3hO-Y9WWeOrrbmy3Go/edit#gid=0)
+
 ## An impromptu FAQ
 
 ### How will the hackerspace sustain itself?
