@@ -55,7 +55,7 @@ p {
 
 /* Links */
 a {
-    color: #f85c37;
+    color: blue;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -202,7 +202,7 @@ a:after {
 }
 
 #contact .social a:hover {
-  background-color: #f85c37;
+  background-color: blue;
 }
 
 #contact .social {
