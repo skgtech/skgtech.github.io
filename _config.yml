@@ -37,9 +37,9 @@ production_url : http://skgtech.io
 # Open Graph data
 og:
   app_id: "698696243515776"
-  title: "Thessaloniki tech and developer Meetups"
+  title: "Thessaloniki tech Community"
   site_name: "SKGTech"
-  image: "https://pbs.twimg.com/profile_images/453243331691020288/pk_2bTE9.png"
+  image: "http://skgtech.io/assets/img/skgtech-social-logo.png"
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
