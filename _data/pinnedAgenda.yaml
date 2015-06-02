@@ -7,14 +7,6 @@
 
 # When agenda is empty, use the following stub so jekyll can build
 
-- name: "4th Behance Thessaloniki Portfolio Review"
-  date: "05/Nov/2014"
-  location: "Thessaloniki City Hall"
-  address: "Leoforos Vasileos Georgiou 1, Thessaloniki, 54640, Greece"
-  locationUrl: "http://goo.gl/maps/WTS9e"
-  website: "https://www.facebook.com/events/1505062986406904/"
-  about: "Thessaloniki participates for the fourth time in the biggest worldwide creative event of Behance. Present your Portfolio and get feedback by established professionals and the rest of the creative community"
-
 # To update normal events edit the google calendar.
 # - name: "Startup Live Thessaloniki"
 #   date: "02 - 04/May/2014"
