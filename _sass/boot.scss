@@ -6,6 +6,10 @@ html {
   background-color: #F5FCFA;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 #wrap {
   box-sizing: border-box;
   padding: 0 $size;
@@ -61,12 +65,12 @@ nav {
   }
 
   $colors: (
-                   calendar: #1EBF92,
-                   communities: #25B5A5,
-                   people: #2DB1D5,
-                   projects: #32A0C8,
-                   about: #3797D8
-           );
+    calendar: #1EBF92,
+    communities: #25B5A5,
+    people: #2DB1D5,
+    projects: #32A0C8,
+    about: #3797D8
+  );
 
   @each $color, $value in $colors {
     @include navItemColor($color, $value);
