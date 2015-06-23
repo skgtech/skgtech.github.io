@@ -1,0 +1,78 @@
+#header {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+#brand {
+  flex: 1;
+  margin: $size;
+
+  img {
+    display: block;
+    height: auto;
+    width: 150px;
+  }
+}
+
+#header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .item {
+    display: block;
+    flex-grow: 1;
+    padding: 0 0 0 $size;
+
+    a {
+      font-size: 0.75 * $size;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+  @mixin navItemColor ($item, $color) {
+    .#{$item}.item {
+      a {
+        &,
+        &:visited {
+          color: $color;
+        }
+      }
+    }
+  }
+
+  $colors: (
+    calendar: #1EBF92,
+    communities: #25B5A5,
+    people: #2DB1D5,
+    projects: #32A0C8,
+    about: #3797D8
+  );
+
+  @each $color, $value in $colors {
+    @include navItemColor($color, $value);
+  }
+}
+
+#hero {
+  .tower {
+    height: 150px;
+    background-size: auto 150px;
+    background-image: url("http://i.imgur.com/qNrkekd.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+
+  .text {
+    padding: $size;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1.5 * $size;
+    text-align: center;
+    background-color: #3797D8;
+    background-image: linear-gradient(to left, #3797D8, #1EBF92);
+  }
+}
