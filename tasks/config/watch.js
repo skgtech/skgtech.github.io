@@ -6,6 +6,7 @@ module.exports = {
     tasks: ['css'],
     options: {
       spawn: false,
+      livereload: 35729
     },
   },
 };
