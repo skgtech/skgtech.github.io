@@ -1,0 +1,121 @@
+.calendar-section {
+  margin-top: 3rem;
+
+  header {
+    display: flex;
+    padding: 1rem 0;
+
+    div,
+    button {
+      line-height: 1;
+      font-size: 0.875em;
+    }
+
+    div {
+      flex: 1;
+      font-weight: bold;
+      color: #1ebf92;
+      text-transform: uppercase;
+    }
+
+    button {
+      color: #3797d8;
+      border: none;
+      background-image: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.calendar-entries {
+    display: flex;
+    flex: 1;
+}
+
+.calendar-entry {
+  @mixin colorNthItem ($property, $color) {
+    #{$property}: $color;
+  }
+
+  $colors: (
+    1: #1ebf92,
+    2: #2baab6,
+    3: #3797d8
+  );
+
+  @for $i from 1 to 4 {
+    &-#{$i} {
+      .scheduled {
+        $property: "background-color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+  }
+
+  padding: 2em;
+
+  .meta {
+    display: flex;
+  }
+
+  .title-n-place {
+    flex: 1;
+  }
+
+  .scheduled {
+    margin-right: 1em;
+    padding: 1em;
+    text-align: center;
+    color: #fff;
+  }
+
+  .date {
+    font-weight: bold;
+  }
+
+  .time {
+    margin-top: 1em;
+    font-size: 0.75em;
+  }
+
+  .date,
+  .time,
+  .title,
+  .location {
+    line-height: 1;
+  }
+
+  .title {
+    @for $i from 1 to 4 {
+      &-#{$i} {
+        $property: "color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+
+    margin-top: 0.75em;
+    font-weight: bold;
+    font-size: 1.125em;
+  }
+
+  .location {
+    margin-top: 0.5em;
+    color: #6c6c6c;
+    font-size: 0.875em;
+  }
+
+  .location-hosted {
+    font-weight: bold;
+  }
+
+  .location-name {
+    text-decoration: underline;
+  }
+
+  .details {
+    padding: 1em 0;
+    color: #6c6c6c;
+  }
+}
