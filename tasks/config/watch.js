@@ -2,7 +2,7 @@
 
 module.exports = {
   scripts: {
-    files: ['_sass/*.scss'],
+    files: ['_sass/**/*.scss'],
     tasks: ['css'],
     options: {
       spawn: false,
