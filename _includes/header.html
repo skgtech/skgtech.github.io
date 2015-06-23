@@ -7,7 +7,7 @@
       {% assign pages = site.pages | sort:"weight"  %}
       {% for page in pages %}
       {% if page.title %}
-      <div class="item calendar">
+      <div class="item {{ page.class }}">
         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       </div>
       {% endif %}
