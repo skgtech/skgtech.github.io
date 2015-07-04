@@ -1,0 +1,11 @@
+<section class="projects-section">
+  <header>
+    <div>Projects</div>
+  </header>
+  <div class="separator"></div>
+  <div class="projects-entries">
+    {% for entry in page.projects %}
+      {% include index/entry/projects.html %}
+    {% endfor %}
+  </div>
+</section>
