@@ -1,4 +1,4 @@
-{% capture currentmod %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+{% assign currentmod = forloop.index0 | modulo:3 %}
 
 <article class="calendar-entry calendar-entry-{{ currentmod }}">
   <div class="meta">
@@ -7,7 +7,7 @@
       <div class="time">{{ entry.time }}</div>
     </div>
     <div class="title-n-place">
-      <div class="title title-{{ forloop.index }}">
+      <div class="title title-{{ currentmod }}">
         {{ entry.title }}
       </div>
       <div class="location">
