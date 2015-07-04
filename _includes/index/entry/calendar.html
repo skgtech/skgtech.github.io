@@ -1,4 +1,6 @@
-<article class="calendar-entry calendar-entry-{{ forloop.index }}">
+{% capture currentmod %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+
+<article class="calendar-entry calendar-entry-{{ currentmod }}">
   <div class="meta">
     <div class="scheduled">
       <div class="date">{{ entry.date }}</div>

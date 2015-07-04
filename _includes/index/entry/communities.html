@@ -1,4 +1,6 @@
-<article class="communities-entry communities-entry-{{ forloop.index }}">
+{% capture currentmod %}{{ forloop.index0 | mod:3 }}{% endcapture %}
+
+<article class="communities-entry communities-entry-{{ currentmod }}">
   <img src="{{ entry.image }}" alt="{{ entry.title }}" />
   <div class="overlay">
     <div class="background"></div>
