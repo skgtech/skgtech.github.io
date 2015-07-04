@@ -115,7 +115,13 @@
   }
 
   .details {
-    padding: 1em 0;
+    overflow: hidden;
+    height: 4em;
+    margin: 1em 0;
     color: #6c6c6c;
+
+    p {
+      margin: 0;
+    }
   }
 }
