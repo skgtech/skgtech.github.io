@@ -99,10 +99,13 @@
     font-size: 1.25 * $size;
   }
 
+  .location {
+    margin-top: 0.5 * $size;
+  }
+
   .location,
   .more-info {
     display: inline-block;
-    margin-top: 0.5 * $size;
     color: #6c6c6c;
   }
 
@@ -117,7 +120,7 @@
   .details {
     overflow: hidden;
     height: 4 * $size;
-    margin: $size 0 0 0;
+    margin: $size 0;
     color: #6c6c6c;
 
     p {
