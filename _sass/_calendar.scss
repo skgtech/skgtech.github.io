@@ -8,7 +8,6 @@
     div,
     button {
       line-height: 1;
-      font-size: 0.875em;
     }
 
     div {
@@ -53,7 +52,7 @@
   }
 
   flex: 1;
-  padding: 2em;
+  padding: 2 * $size;
 
   .meta {
     display: flex;
@@ -64,19 +63,19 @@
   }
 
   .scheduled {
-    margin-right: 1em;
-    padding: 1em;
+    margin-right: $size;
+    padding: $size;
     text-align: center;
     color: #fff;
   }
 
   .date {
+    font-size: 1.25 * $size;
     font-weight: bold;
   }
 
   .time {
-    margin-top: 1em;
-    font-size: 0.75em;
+    margin-top: 0.5 * $size;
   }
 
   .date,
@@ -95,15 +94,16 @@
       }
     }
 
-    margin-top: 0.75em;
+    margin-top: 0.675 * $size;
     font-weight: bold;
-    font-size: 1.125em;
+    font-size: 1.25 * $size;
   }
 
-  .location {
-    margin-top: 0.5em;
+  .location,
+  .more-info {
+    display: inline-block;
+    margin-top: 0.5 * $size;
     color: #6c6c6c;
-    font-size: 0.875em;
   }
 
   .location-hosted {
@@ -116,8 +116,8 @@
 
   .details {
     overflow: hidden;
-    height: 4em;
-    margin: 1em 0;
+    height: 4 * $size;
+    margin: $size 0 0 0;
     color: #6c6c6c;
 
     p {
