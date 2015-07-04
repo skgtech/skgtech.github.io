@@ -1,0 +1,87 @@
+.projects-entries-line {
+    display: flex;
+}
+
+.projects-entry {
+  @mixin colorNthItem ($property, $color) {
+    #{$property}: $color;
+  }
+
+  $colors: (
+    0: #1ebf92,
+    1: #2baab6,
+    2: #3797d8
+  );
+
+  @for $i from 0 to 3 {
+    &-#{$i} {
+      .title,
+      .year {
+        $property: "color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+
+      .status.done {
+        $property: "background-color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+  }
+
+  flex: 1;
+  padding: 2 * $size;
+
+  .title {
+    display: block;
+    margin: 0.675 * $size 0;
+    font-weight: bold;
+    font-size: 1.25 * $size;
+    text-decoration: none;
+  }
+
+  .year,
+  .status {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.75 * $size;
+  }
+
+  .status,
+  .link {
+    display: inline-block;
+    padding: 0.25 * $size 0.5 * $size;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .status {
+    &.running {
+      background-color: #d8377c;
+    }
+  }
+
+  .status {
+    text-transform: uppercase;
+  }
+
+  .link {
+    font-size: 0.625 * $size;
+    &.running {
+      &,
+      &:visited {
+        color: #d8377c;
+      }
+    }
+  }
+
+  .year {
+    margin-left: 0.25 * $size;
+  }
+
+  .content {
+    margin-top: $size;
+    color: #6c6c6c;
+  }
+}
