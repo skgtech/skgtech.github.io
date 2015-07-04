@@ -4,8 +4,27 @@
   </header>
   <div class="separator"></div>
   <div class="projects-entries">
+    <div class="projects-entries-line">
     {% for entry in page.projects %}
+      {% assign currentmod = forloop.index0 | modulo:3 %}
+
+      {% if forloop.first == false %}
+        {% if currentmod == 0 %}
+          <div class="projects-entries-line">
+        {% endif %}
+      {% endif %}
+
       {% include index/entry/projects.html %}
+      {% if forloop.last %}
+        {% assign remaining = 3 | minus:currentmod | minus:1 %}
+        {% for i in (1..remaining) %}
+          <article class="projects-entry projects-entry-empty"></article>
+        {% endfor %}
+      {% endif %}
+
+      {% if currentmod == 2 %}
+        </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>
