@@ -28,8 +28,9 @@
 
     input {
       flex: 1;
-      margin-right: 2 * $size;
-      padding: 0.5 * $size;
+      margin-right: $size;
+      padding: 0.25 * $size;
+      font-size: 1.5 * $size;
 
       &:focus {
         outline: none;
@@ -41,6 +42,9 @@
       padding: 0.5 * $size $size;
       color: #fff;
       border-radius: 3px;
+      font-weight: bold;
+      font-size: 1.25 * $size;
+      text-transform: uppercase;
     }
   }
 
