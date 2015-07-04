@@ -1,0 +1,62 @@
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: #1ebf92;
+  background-image: linear-gradient(to left,#3797d8, #1ebf92);
+}
+
+.forms-section,
+.calendar-section,
+.communities-section,
+.projects-section {
+  margin-top: 3 * $strictSize;
+}
+
+.forms-section {
+  display: flex;
+
+  .form {
+    flex: 1;
+  }
+}
+
+.calendar-section,
+.communities-section,
+.projects-section {
+  header {
+    display: flex;
+    padding: $strictSize 0;
+
+    div,
+    button,
+    span {
+      line-height: 1;
+    }
+
+    div {
+      flex: 1;
+      font-weight: bold;
+      color: #1ebf92;
+      text-transform: uppercase;
+    }
+
+    button,
+    span {
+      color: #3797d8;
+      border: none;
+      background-image: none;
+      background-color: transparent;
+    }
+
+    span {
+      a {
+        font-weight: bold;
+
+        &,
+        &:visited {
+          color: #3798d8;
+        }
+      }
+    }
+  }
+}
