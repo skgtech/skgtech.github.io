@@ -8,12 +8,12 @@
   }
 
   $colors: (
-    1: #1ebf92,
-    2: #2baab6,
-    3: #3797d8
+    0: #1ebf92,
+    1: #2baab6,
+    2: #3797d8
   );
 
-  @for $i from 1 to 4 {
+  @for $i from 0 to 3 {
     &-#{$i} {
       .scheduled {
         $property: "background-color";
@@ -58,7 +58,7 @@
   }
 
   .title {
-    @for $i from 1 to 4 {
+    @for $i from 0 to 3 {
       &-#{$i} {
         $property: "color";
 
