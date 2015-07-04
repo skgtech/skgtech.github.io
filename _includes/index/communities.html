@@ -1,0 +1,15 @@
+<section class="communities-section">
+  <header>
+    <div>Communities</div>
+    <span>
+      Want to see your community here?
+      <a href="#">Tell us more.</a>
+    </span>
+  </header>
+  <div class="separator"></div>
+  <div class="communities-entries">
+    {% for entry in page.communities %}
+      {% include index/entry/communities.html %}
+    {% endfor %}
+  </div>
+</section>
