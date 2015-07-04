@@ -29,7 +29,6 @@
 
 .calendar-entries {
     display: flex;
-    flex: 1;
 }
 
 .calendar-entry {
@@ -53,6 +52,7 @@
     }
   }
 
+  flex: 1;
   padding: 2em;
 
   .meta {
