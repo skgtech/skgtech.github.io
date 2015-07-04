@@ -1,0 +1,14 @@
+<section class="calendar-section">
+  <header>
+    <div>Calendar</div>
+    <button>
+      + create new
+    </button>
+  </header>
+  <div class="separator"></div>
+  <div class="calendar-entries">
+    {% for entry in page.calendar %}
+      {% include index/entry/calendar.html %}
+    {% endfor %}
+  </div>
+</section>
