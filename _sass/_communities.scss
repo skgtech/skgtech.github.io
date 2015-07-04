@@ -1,0 +1,87 @@
+.communities-entries {
+    display: flex;
+}
+
+.communities-entry {
+  @mixin colorNthItem ($property, $color) {
+    #{$property}: $color;
+  }
+
+  $colors: (
+    1: #1ebf92,
+    2: #2baab6,
+    3: #3797d8
+  );
+
+  @for $i from 1 to 4 {
+    &-#{$i} {
+      .background {
+        $property: "background-color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+  }
+
+  flex: 1;
+  position: relative;
+  margin-top: 2 * $size;
+  margin-left: 2 * $size;
+  margin-bottom: 2 * $size;
+  margin-right: 0;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  .title,
+  .more-info {
+    z-index: 1;
+    position: relative;
+  }
+
+  .background,
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+
+    a {
+      &,
+      &:visited {
+        color: #fff;
+      }
+    }
+  }
+
+  .background {
+    opacity: 0.75;
+    z-index: 0;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.5 * $size;
+    text-align: center;
+  }
+
+  .more-info {
+    font-size: 0.875 * $size;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
