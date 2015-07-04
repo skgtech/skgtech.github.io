@@ -1,0 +1,28 @@
+{% assign currentmod = forloop.index0 | modulo:3 %}
+
+{% if entry.status == 'Completed' %}
+  {% assign status = 'done' %}
+{% else %}
+  {% assign status = 'running' %}
+{% endif %}
+
+<article class="projects-entry projects-entry-{{ currentmod }}">
+  <a href="{{ entry.link }}" class="title">
+    {{ entry.title }}
+  </a>
+  <div class="status {{ status }}">
+    {{ entry.status }}
+  </div>
+  {% if status == 'done' %}
+    <div class="year">
+      {{ entry.year }}
+    </div>
+  {% else %}
+    <a href="{{ entry.link }}" class="link {{ status }}">
+      Click here to help
+    </a>
+  {% endif %}
+  <div class="content">
+    {{ entry.content }}
+  </div>
+</article>
