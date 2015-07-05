@@ -7,9 +7,14 @@
 {% endif %}
 
 <article class="projects-entry projects-entry-{{ currentmod }}">
-  <a href="{{ entry.link }}" class="title">
+  <a href="{{ entry.link }}" target="_blank" title="{{ entry.title }}" class="title">
     {{ entry.title }}
   </a>
+  <p>
+    <a href="{{ entry.link }}" target="_blank" title="{{ entry.title }}" class="title">
+      <img src="{{ entry.img }}" alt="{{ entry.title }}" width="200px">
+    </a>
+  </p>
   <div class="status {{ status }}">
     {{ entry.status }}
   </div>
@@ -21,6 +26,17 @@
     <a href="{{ entry.link }}" class="link {{ status }}">
       Click here to help
     </a>
+  {% endif %}
+  {% if entry.media %}
+    <div class="projects-media">
+      <ul>
+        {% for media in entry.media %}
+          <li>
+            <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">{{ media.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   {% endif %}
   <div class="content">
     {{ entry.content }}

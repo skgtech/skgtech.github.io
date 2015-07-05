@@ -1,0 +1,100 @@
+#
+# Sequence from newer to older
+#
+
+- title: DEVit 2016
+  year: 2016 May
+  status: Running
+  link: http://devitconf.org/
+  img: /assets/img/projects/devit.png
+  content: The 2016 DEVit Conference planning is underway.
+- title: How To Remote
+  status: Completed
+  year: 2015 Jun
+  link: https://www.eventora.com/en/Events/how-remote-stamp/
+  img: /assets/img/projects/howtoremote.jpg
+  content: The first How To Remote event was testing the waters for the upcoming major event on how you can master the world's market place of jobs and become a remote worker. Our goal is to empower, educate and motivate the unemployed, the ones who are employed under harsh and difficult conditions to learn about the possibilities of remote working and build an international career from home.
+  media:
+    - title: 1st Presentation
+      link: http://www.slideshare.net/charis_r/life-of-a-remote-worker
+      by: Charis Rafailidis
+      byLink: https://twitter.com/hrafailidis
+    - title: 2nd Presentation
+      link: https://speakerdeck.com/thanpolas/getting-serious-with-remote
+      by: Thanasis Polychronakis
+      byLink: https://twitter.com/thanpolas
+    - title: 3rd Presentation
+      link: http://theodorosploumis.github.io/howtoremote/
+      by: Theodoros Ploumis
+      byLink: https://twitter.com/theoploumis
+- title: Point Zero
+  year: 2015
+  status: Running
+  link: http://pointzero.io/
+  img: /assets/img/projects/pointzero.png
+  content: Point Zero is our vision of a community built collaboration space where all the tech communities can call home. The project requires lots of funds to get started and operate for the years to come so we are in constant search for opportunities and collaborations.
+- title: DEVit 2015
+  status: Completed
+  link: http://devitconf.org/
+  img: /assets/img/projects/devit.png
+  year: 2015 May
+  content: DEVit is a 360˚ Web Development conference featuring 12 world class speakers from all around the world and a packed, full day with two concurrent tracks.
+  media:
+    - title: Photos by dD Photography
+      link: "https://www.flickr.com/photos/131931106@N08/sets/72157653228840910/"
+      by: Dimitris Doutsiopoulos
+      byLink: http://www.ddphotography.gr/
+    - title: Photos by Sirodoth
+      link: "https://www.flickr.com/photos/131801935@N03/sets/72157652524010698"
+      by: Thodoris Keloglou
+      byLink: https://twitter.com/sirodoht
+- title: Open Index
+  status: Completed
+  link: http://openindex.gr/
+  year: 2014
+  img: /assets/img/projects/openindex.png
+  content: In collaboration with the Open Thessaloniki Community we implemented a resource where all the open data for Greece are categorised and indexed.
+- title: FrontMASS 2014
+  status: Completed
+  link: http://frontmass.org/
+  year: 2014 Dec
+  img: /assets/img/projects/frontmass.png
+  content: The yearly major Front-End development conference held in our city right before Christmas.
+  media:
+    - title: Photos by Christos Bacharakis
+      link: "https://www.flickr.com/photos/christosbacharakis/sets/72157649825030806"
+      by: Christos Bacharakis
+      byLink: https://twitter.com/bacharakis
+- title: We Are Together II
+  status: Completed
+  link: /together-nov-2014/
+  img: /assets/img/projects/together-2.png
+  year: 2014 Nov
+  content: The second We Are Together with over 20 local communities took place in November of 2014.
+  media:
+    - title: Photos by Christos Bacharakis
+      link: "https://www.facebook.com/gameoflife/media_set?set=a.10204414066925972.1073741860.1059949216&type=3"
+      by: Christos Bacharakis
+      byLink: https://twitter.com/bacharakis
+- title: Municipality Wifi
+  status: Completed
+  link: https://www.indiegogo.com/projects/skg-municipality-wifi#/story
+  year: 2014 Nov
+  img: /assets/img/projects/wifi-fundraise.png
+  content: SKGTech did a fundraiser to install high-speed and high capacity WiFi infrastructure in the General Purpose venue of Thessaloniki's Municipality building.
+- title: We Are Together I
+  status: Completed
+  link: /together-apr-2014/
+  img: /assets/img/projects/together-1.jpg
+  year: 2014 Apr
+  content: For the first time ever all all the Tech Communities of Thessaloniki in one place at the same time! We Are Together was the landmark event that triggered an era of unity, extroversion and growth for all the local tech communities of Thessaloniki.
+  media:
+    - title: Photos by Christos Bacharakis
+      link: https://www.flickr.com/photos/christosbacharakis/sets/72157644553707154
+      by: Christos Bacharakis
+      byLink: https://twitter.com/bacharakis
+    - title: Youtube Video
+      link: https://www.youtube.com/watch?v=Qy_pV7tKVPs
+      by: SKGTech
+      byLink: http://skgtech.io
+
