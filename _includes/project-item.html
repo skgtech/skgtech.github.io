@@ -33,11 +33,6 @@
         {% for media in entry.media %}
           <li>
             <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">{{ media.title }}</a>
-            {% if media.by %}
-              <ul>
-                <li><small>Curtesy of: <a href="{{ media.byLink }}" title="Curtesy of {{ media.by }}">{{ media.by }}</a></small></li>
-              </ul>
-            {% endif %}
           </li>
         {% endfor %}
       </ul>
