@@ -1,18 +1,21 @@
 - title: Municipality Wifi
   status: Completed
-  link: #
-  year: 2012
-  content: SKGTech took the initiative to raise funds and install high-speed WiFi connection in the general purpose venue of Thessaloniki Municipality building.
-- title: FrontMASS
-  status: Completed
-  link: #
+  link: https://www.indiegogo.com/projects/skg-municipality-wifi#/story
   year: 2014
-  content: A FREE front-end development conference held in our city right before Christmas 2014. With 6 talks from well-respected speakers, balh blah we fucking rock.
-- title: DEVit
+  img: /assets/projects/wifi-fundraise.jpg
+  content: SKGTech did a fundraiser to install high-speed and high capacity WiFi infrastructure in the General Purpose venue of Thessaloniki's Municipality building.
+- title: FrontMASS 2014
   status: Completed
-  link: #
+  link: http://frontmass.org/
   year: 2014
-  content: A FREE front-end development conference held in our city right before Christmas 2014. With 6 talks from well-respected speakers, balh blah we fucking rock.
+  img: /assets/projects/frontmass.png
+  content: The yearly major Front-End development conference held in our city right before Christmas.
+- title: DEVit 2015
+  status: Completed
+  link: http://devitconf.org/
+  img: /assets/projects/devit.png
+  year: 2015
+  content: DEVit is a 360˚ Web Development conference featuring 12 world class speakers from all around the world and a packed, full day with two concurrent tracks.
 - title: DEVit 2016
   status: Running
   link: #
