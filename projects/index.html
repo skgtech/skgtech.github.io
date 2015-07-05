@@ -14,7 +14,6 @@ weight: 70
     <div class="projects-entries-line">
     {% for entry in site.data.projects %}
       {% assign currentmod = forloop.index0 | modulo:3 %}
-
       {% if forloop.first == false %}
         {% if currentmod == 0 %}
           <div class="projects-entries-line">
@@ -22,6 +21,7 @@ weight: 70
       {% endif %}
 
       {% include project-item.html %}
+
       {% if forloop.last %}
         {% assign remaining = 3 | minus:currentmod | minus:1 %}
         {% for i in (1..remaining) %}
