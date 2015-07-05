@@ -14,3 +14,7 @@ Thumbs.db
 .rvmrc
 
 node_modules
+
+wiki
+temp
+assets/components
