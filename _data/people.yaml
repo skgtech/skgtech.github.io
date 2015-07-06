@@ -14,49 +14,48 @@
 #
 #
 
-people:
-  - name: Tasso Efkarpidis
-    title: Designer
-    company: Nobraincellz
-    img: /assets/img/people/tassonbc.jpg
-    links:
-      - href: https://www.behance.net/nobraincellz
-        title: Nobraincellz on Behance
-        type: behance
-      - href: http://www.nobraincellz.gr/
-        title: Nobraincellz website
-        type: website
-      - href: https://twitter.com/tasosnbc
-        title: Tasso on Twitter
-        type: twitter
-  - name: Sakis Zafiropoulos
-    title: Designer
-    company: Nobraincellz
-    img: /assets/img/people/sakisnbc.jpg
-    links:
-      - href: https://www.behance.net/nobraincellz
-        title: Nobraincellz on Behance
-        type: behance
-      - href: https://www.behance.net/sakisnbc
-        title: Sakis on Behance
-        type: behance
-      - href: http://www.nobraincellz.gr/
-        title: Nobraincellz website
-        type: website
-      - href: https://twitter.com/sakisnbc
-        title: Sakis on Twitter
-        type: twitter
-  - name: Thanasis Polychronakis
-    title: Web Developer
-    company: Insight Replay, Inc.
-    img: /assets/img/people/thanpolas.jpg
-    links:
-      - href: https://github.com/thanpolas
-        title: Thanasis on Github
-        type: github
-      - href: https://twitter.com/thanpolas
-        title: Thanasis on Twitter
-        type: twitter
-      - href: https://thanpol.as
-        title: Thanasis Website
-        type: website
+- name: Tasso Efkarpidis
+  title: Designer
+  company: Nobraincellz
+  img: /assets/img/people/tassonbc.jpg
+  links:
+    - href: https://www.behance.net/nobraincellz
+      title: Nobraincellz on Behance
+      type: behance
+    - href: http://www.nobraincellz.gr/
+      title: Nobraincellz website
+      type: website
+    - href: https://twitter.com/tasosnbc
+      title: Tasso on Twitter
+      type: twitter
+- name: Sakis Zafiropoulos
+  title: Designer
+  company: Nobraincellz
+  img: /assets/img/people/sakisnbc.jpg
+  links:
+    - href: https://www.behance.net/nobraincellz
+      title: Nobraincellz on Behance
+      type: behance
+    - href: https://www.behance.net/sakisnbc
+      title: Sakis on Behance
+      type: behance
+    - href: http://www.nobraincellz.gr/
+      title: Nobraincellz website
+      type: website
+    - href: https://twitter.com/sakisnbc
+      title: Sakis on Twitter
+      type: twitter
+- name: Thanasis Polychronakis
+  title: Web Developer
+  company: Insight Replay, Inc.
+  img: /assets/img/people/thanpolas.jpg
+  links:
+    - href: https://github.com/thanpolas
+      title: Thanasis on Github
+      type: github
+    - href: https://twitter.com/thanpolas
+      title: Thanasis on Twitter
+      type: twitter
+    - href: https://thanpol.as
+      title: Thanasis Website
+      type: website
