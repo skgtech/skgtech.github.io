@@ -8,7 +8,7 @@
   // mailchimp code
   newsletter.mceInit = function() {
     var options = {
-      url: 'https://datablaster.us2.list-manage.com/subscribe/post?u=249dbe460c3c1857a489dde05&amp;id=b926e92856&c=?',
+      url: 'https://datablaster.us2.list-manage.com/subscribe/post-json?u=249dbe460c3c1857a489dde05&amp;id=b926e92856&c=?',
       type: 'GET',
       dataType: 'json',
       contentType: 'application/json; charset=utf-8'
