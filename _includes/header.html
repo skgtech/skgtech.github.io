@@ -1,16 +1,20 @@
 <div id="wrap">
   <header id="header">
     <div id="brand">
-      <a href="/"><img src="/assets/img/skgtech-logo.png"/></a>
+      <a href="/"><img src="/assets/img/skgtech-logo.png"/ alt="SKGTech Logo"></a>
     </div>
     <nav>
-      {% assign pages = site.pages | sort:"weight"  %}
-      {% for page in pages %}
-      {% if page.title %}
-      <div class="item {{ page.class }}">
-        <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+      <div class="item calendar">
+        <a href="/#calendar">Calendar</a>
       </div>
-      {% endif %}
-      {% endfor %}
+      <div class="item communities">
+        <a href="/#comunities">Communities</a>
+      </div>
+      <div class="item projects">
+        <a href="/projects">Projects</a>
+      </div>
+      <div class="item about">
+        <a href="/about">About</a>
+      </div>
     </nav>
   </header>
