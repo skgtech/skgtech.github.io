@@ -3,6 +3,10 @@
  */
 var util = module.exports = {};
 
+var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sub'];
+var months =['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+  'Oct', 'Nov', 'Dec'];
+
 /**
  * nl2br
  *
@@ -42,10 +46,6 @@ util.formatDate = function(start, end) {
     endDate = new Date(endDate);
   }
 
-  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sub'];
-  var months =['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-    'Oct', 'Nov', 'Dec'];
-
   // establish date
   var out = days[startDate.getDay()];
   out += ', ' + months[startDate.getMonth()];
@@ -69,6 +69,57 @@ util.formatDate = function(start, end) {
   }
 
   return out;
+};
+
+/**
+ * Get the date out of a date format: dd MMM
+ *
+ * @param {Object} start Start Object.
+ * @return {string} Human readable string.
+ */
+util.getDate = function(dt) {
+  // check if we have a dateTime defined
+  var startDate;
+  var isMultiDay = false;
+  if (dt.dateTime) {
+    startDate = new Date(dt.dateTime);
+  } else {
+    isMultiDay = true;
+    startDate = new Date(dt.date);
+  }
+
+  var out = '';
+  out += startDate.getDate();
+  out += ' ' + months[startDate.getMonth()];
+
+  return out;
+};
+
+/**
+ * Get the time out of a date format: HH:MM
+ *
+ * @param {Object} start Start Object.
+ * @return {string} Human readable string.
+ */
+util.getTime = function(dt) {
+  // check if we have a dateTime defined
+  var startDate;
+  var isMultiDay = false;
+  if (dt.dateTime) {
+    startDate = new Date(dt.dateTime);
+  } else {
+    isMultiDay = true;
+    startDate = new Date(dt.date);
+  }
+
+  var out = '';
+
+  if (isMultiDay) {
+    return 'All Day';
+  }
+
+  out += startDate.getHours();
+  out += ':' + util.twoDigit(startDate.getMinutes());
 };
 
 /**
