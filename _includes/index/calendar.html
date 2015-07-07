@@ -6,9 +6,8 @@
     </button>
   </header>
   <div class="separator"></div>
-  <div class="calendar-entries">
-    {% for entry in page.calendar %}
-      {% include index/entry/calendar.html %}
-    {% endfor %}
+
+  <div id="agenda-items" class="calendar-entries">
+    <img src="/assets/img/loader-bar.gif" style="margin-top:30px;"/>
   </div>
 </section>
