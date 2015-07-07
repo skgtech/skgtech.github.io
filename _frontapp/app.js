@@ -11,7 +11,14 @@
  */
 
 var Front = require('./frontpage');
+var SlackApp = require('./slack-invite');
 require('./newsletter');
 
 var front = new Front();
 front.init();
+
+var slackApp = new SlackApp();
+slackApp.init({
+  email_container: '.slack-subscribe-email',
+  cta: '.slack-subscribe-button'
+});
