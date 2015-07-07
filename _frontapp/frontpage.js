@@ -32,23 +32,6 @@ Front.prototype.init = function() {
 
   this.calendarth.fetch(this._handleCalResult.bind(this));
 
-  this._fixPanels();
-};
-
-/**
- * A temp fix for panels height.
- *
- * @private
- */
-Front.prototype._fixPanels = function() {
-  var max = 0;
-  $('.panel-info').each(function() {
-    var currentHeight = $(this).height();
-    if (currentHeight > max) {
-      max = currentHeight;
-    }
-  });
-  $('.panel-info').height(max);
 };
 
 /**
@@ -100,10 +83,12 @@ Front.prototype._handleCalResult = function(err, data) {
  */
 Front.prototype._assignValues = function($item, item) {
   $item.removeClass('hide');
-  $item.find('.panel-title').text(item.summary);
+
+  $item.find('.title').text(item.summary);
+
   var data = this._parseDesc(item.description);
 
-  $item.find('.agenda-tpl-when span').text(util.formatDate(item.start, item.end));
+  $item.find('.time').text(util.formatDate(item.start, item.end));
 
   var location = '';
   if (data.mapUrl) {
@@ -113,7 +98,7 @@ Front.prototype._assignValues = function($item, item) {
   } else {
     location = item.location;
   }
-  $item.find('.agenda-tpl-address span').html(location);
+  $item.find('.location-name').html(location);
 
   if (data.venue) {
     $item.find('.agenda-tpl-venue span').text(data.venue);
