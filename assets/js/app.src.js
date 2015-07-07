@@ -12,12 +12,19 @@
  */
 
 var Front = require('./frontpage');
+var SlackApp = require('./slack-invite');
 require('./newsletter');
 
 var front = new Front();
 front.init();
 
-},{"./frontpage":2,"./newsletter":3}],2:[function(require,module,exports){
+var slackApp = new SlackApp();
+slackApp.init({
+  email_container: '.slack-subscribe-email',
+  cta: '.slack-subscribe-button'
+});
+
+},{"./frontpage":2,"./newsletter":3,"./slack-invite":4}],2:[function(require,module,exports){
 /**
  * @fileOverview scripts about the frontpage.
  */
@@ -223,7 +230,7 @@ Front.prototype._parseDesc = function(descr) {
   return out;
 };
 
-},{"./util":4,"calendarth":6}],3:[function(require,module,exports){
+},{"./util":5,"calendarth":7}],3:[function(require,module,exports){
 /**
  * @fileOverview The newsletter js for MailChimp
  */
@@ -293,6 +300,93 @@ Front.prototype._parseDesc = function(descr) {
 })();
 
 },{}],4:[function(require,module,exports){
+/**
+ * @fileOverview scripts about the Slack Invitation form.
+ */
+
+var Slack = module.exports = function () {};
+
+/** @const {string} AUTH TOKEN */
+Slack.TOKEN = 'xoxp-3330967421-3332061266-7344001762-99c6a8';
+
+/** @const {string} API Endpoint to invite an email */
+Slack.SUBSCRIBE_URL = 'https://skgtech.slack.com/api/users.admin.invite';
+
+/**
+ * Initialize the frontpage view.
+ *
+ */
+Slack.prototype.init = function (options) {
+
+  if(!options.email_container){
+    throw 'Must set an input element selector';
+  }
+  if(!options.cta){
+    throw 'Must set a Call to Action element selector';
+  }
+
+  this.$emailEl = $(options.email_container);
+  this.$ctaEl = $(options.cta);
+
+  this.attachEvents();
+};
+
+Slack.prototype.attachEvents = function () {
+  var that = this;
+  this.$ctaEl.on('click', function(e){
+    e.preventDefault();
+    var email = that.$emailEl.val();
+    that.subscribe(email, function(err){
+
+      if(err){
+        if(err === 'empty-email'){}
+        else if(err === 'wrong-email'){}
+
+        that.$emailEl.addClass('error');
+
+      } else {
+
+      }
+
+    });
+  });
+};
+
+Slack.prototype.subscribe = function (email, cb) {
+
+  if(!email || !email.length){
+    cb('empty-email');
+    return false;
+  } else if(!(/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email))){
+    cb('wrong-email');
+    return false;
+  }
+
+  $.ajax({
+    method: 'POST',
+    url: Slack.SUBSCRIBE_URL,
+    data: {
+      email: email,
+      token: Slack.TOKEN,
+      set_active: true
+    }
+  })
+    .success(function (res) {
+      if(res.error){
+        if(res.error === 'already_in_team'){
+          cb('already_in_team');
+        }
+      } else {
+        cb(null);
+      }
+    })
+    .error(function (err) {
+      cb('err');
+    });
+
+};
+
+},{}],5:[function(require,module,exports){
 /**
  * @fileOverview Utilities.
  */
@@ -432,7 +526,7 @@ util.twoDigit = function(num) {
   }
 };
 
-},{}],5:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 /*
  * Calendarth
  * Fetch a Public Google Calendar with AJAX
@@ -507,7 +601,7 @@ Calendarth.prototype.getEventUrl = function(eventItem) {
   return out;
 };
 
-},{"./item":7}],6:[function(require,module,exports){
+},{"./item":8}],7:[function(require,module,exports){
 /**
  * @fileOverview Library Bootstrap.
  */
@@ -524,7 +618,7 @@ module.exports = function(options) {
   return new Calendarth(options);
 };
 
-},{"./calendarth":5}],7:[function(require,module,exports){
+},{"./calendarth":6}],8:[function(require,module,exports){
 /**
  * @fileOverview A wrapper that provides helpers on the calendar object.
  */
