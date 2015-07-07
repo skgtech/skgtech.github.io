@@ -52,23 +52,6 @@ Front.prototype.init = function() {
 
   this.calendarth.fetch(this._handleCalResult.bind(this));
 
-  this._fixPanels();
-};
-
-/**
- * A temp fix for panels height.
- *
- * @private
- */
-Front.prototype._fixPanels = function() {
-  var max = 0;
-  $('.panel-info').each(function() {
-    var currentHeight = $(this).height();
-    if (currentHeight > max) {
-      max = currentHeight;
-    }
-  });
-  $('.panel-info').height(max);
 };
 
 /**
@@ -87,11 +70,13 @@ Front.prototype._handleCalResult = function(err, data) {
 
   var meetups = [];
   var displayed = 0;
-  var elements = '<div class="row">';
+  var lineCounter = 0;
+  var htmlOutput = '';
   data.items.forEach(function(item) {
     if (displayed >= Front.MAX_EVENTS_SHOW) {
       return;
     }
+
     if (meetups.indexOf(item.summary) > -1) {
       return;
     } else {
@@ -100,74 +85,78 @@ Front.prototype._handleCalResult = function(err, data) {
 
     if (displayed && displayed % 2 === 0) {
       // rows
-      elements += '</div><div class="row">';
+      // htmlOutput += '</div><div class="row">';
     }
-    elements += this._assignValues(this.$agendaItem.clone(), item);
+    htmlOutput += this._assignValues(this.$agendaItem.clone(), item, lineCounter);
     displayed++;
+    lineCounter++;
+    if (lineCounter > 2) {
+      lineCounter = 0;
+    }
   }, this);
 
-  elements += '</div>';
-  this.$agendaContainer.append(elements);
+  htmlOutput += '';
+  this.$agendaContainer.append(htmlOutput);
 };
 
 /**
  * Assign the Calendar item values to the Calendar item element.
  *
  * @param {jQuery} $item A jquery item we will manipulate.
- * @param {Object} item  [description]
+ * @param {Object} item Google Calendar item.
+ * @param {number} lineCounter The current line counter.
  * @return {string} The html representation.
  * @private
  */
-Front.prototype._assignValues = function($item, item) {
+Front.prototype._assignValues = function($item, item, lineCounter) {
   $item.removeClass('hide');
-  $item.find('.panel-title').text(item.summary);
+
+  console.log('WTF:', $item.find('article.calendar-entry'));
+  $item.find('article.calendar-entry').addClass('calendar-entry-' + lineCounter);
+  $item.find('.title').addClass('title-' + lineCounter);
+
+  $item.find('.title').text(item.summary);
+
   var data = this._parseDesc(item.description);
 
-  $item.find('.agenda-tpl-when span').text(util.formatDate(item.start, item.end));
+  $item.find('.date').text(util.getDate(item.start));
+  $item.find('.time').text(util.getTime(item.start));
 
-  var location = '';
-  if (data.mapUrl) {
-    location = '<a href="' + data.mapUrl + '" target="_blank">';
-    location += item.location;
-    location += '</a>';
+  var location = null;
+  var locationOutput = '';
+  if (data.venue) {
+    location = data.venue;
   } else {
     location = item.location;
   }
-  $item.find('.agenda-tpl-address span').html(location);
 
-  if (data.venue) {
-    $item.find('.agenda-tpl-venue span').text(data.venue);
-  } else {
-    $item.find('.agenda-tpl-venue').addClass('hide');
+  // chop down length
+  if (location.length > 12) {
+    location = location.substr(0, 9) + '...';
   }
 
-  if (data.infoUrl) {
-    var infoUrl = '';
-    if (data.infoUrl.length > 25) {
-      infoUrl = data.infoUrl.substr(0, 25) + '...';
-    } else {
-      infoUrl = data.infoUrl;
-    }
-    $item.find('.agenda-tpl-info a').attr('href', data.infoUrl).text(infoUrl);
+  if (data.mapUrl) {
+    locationOutput = '<a href="' + data.mapUrl + '" target="_blank">';
+    locationOutput += location;
+    locationOutput += '</a>';
   } else {
-    $item.find('.agenda-tpl-info').addClass('hide');
+    locationOutput = location;
+  }
+
+
+  $item.find('.location-name').html(locationOutput);
+
+  if (data.infoUrl) {
+    $item.find('.more-info').attr('href', data.infoUrl);
+  } else {
+    $item.find('.more-info').addClass('hide');
   }
 
   if (data.about) {
-    $item.find('.agenda-tpl-about span').html(data.about);
+    $item.find('.details p').html(data.about);
   } else {
-    $item.find('.agenda-tpl-about').addClass('hide');
+    $item.find('.details').addClass('hide');
   }
-
-  if (data.language) {
-    $item.find('.agenda-tpl-language span').html(data.language);
-  } else {
-    $item.find('.agenda-tpl-language').addClass('hide');
-  }
-
-  var eventUrl = this.calendarth.getEventUrl(item);
-  $item.find('.addcal').attr('href', eventUrl);
-  $item.find('.viewcal').attr('href', item.htmlLink);
 
   return $item.html();
 };
@@ -309,6 +298,10 @@ Front.prototype._parseDesc = function(descr) {
  */
 var util = module.exports = {};
 
+var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sub'];
+var months =['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
+  'Oct', 'Nov', 'Dec'];
+
 /**
  * nl2br
  *
@@ -348,10 +341,6 @@ util.formatDate = function(start, end) {
     endDate = new Date(endDate);
   }
 
-  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sub'];
-  var months =['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep',
-    'Oct', 'Nov', 'Dec'];
-
   // establish date
   var out = days[startDate.getDay()];
   out += ', ' + months[startDate.getMonth()];
@@ -375,6 +364,57 @@ util.formatDate = function(start, end) {
   }
 
   return out;
+};
+
+/**
+ * Get the date out of a date format: dd MMM
+ *
+ * @param {Object} start Start Object.
+ * @return {string} Human readable string.
+ */
+util.getDate = function(dt) {
+  // check if we have a dateTime defined
+  var startDate;
+  var isMultiDay = false;
+  if (dt.dateTime) {
+    startDate = new Date(dt.dateTime);
+  } else {
+    isMultiDay = true;
+    startDate = new Date(dt.date);
+  }
+
+  var out = '';
+  out += startDate.getDate();
+  out += ' ' + months[startDate.getMonth()];
+
+  return out;
+};
+
+/**
+ * Get the time out of a date format: HH:MM
+ *
+ * @param {Object} start Start Object.
+ * @return {string} Human readable string.
+ */
+util.getTime = function(dt) {
+  // check if we have a dateTime defined
+  var startDate;
+  var isMultiDay = false;
+  if (dt.dateTime) {
+    startDate = new Date(dt.dateTime);
+  } else {
+    isMultiDay = true;
+    startDate = new Date(dt.date);
+  }
+
+  var out = '';
+
+  if (isMultiDay) {
+    return 'All Day';
+  }
+
+  out += startDate.getHours();
+  out += ':' + util.twoDigit(startDate.getMinutes());
 };
 
 /**
