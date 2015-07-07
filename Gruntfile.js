@@ -13,6 +13,15 @@ module.exports = function (grunt) {
   grunt.registerTask('jekyllServe', ['shell:jekyllServe']);
   grunt.registerTask('assetsWatch', ['watch']);
 
+  grunt.registerTask('js', 'Build JS files', [
+    'browserify:dist',
+    'uglify:dist',
+  ]);
+
   grunt.registerTask('default', ['css', 'parallel']);
-  grunt.registerTask('build', ['css', 'shell:jekyllBuild']);
-}
+  grunt.registerTask('build', [
+    'js',
+    'css',
+    'shell:jekyllBuild'
+  ]);
+};

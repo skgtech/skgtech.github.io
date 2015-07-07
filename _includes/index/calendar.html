@@ -6,9 +6,40 @@
     </button>
   </header>
   <div class="separator"></div>
-  <div class="calendar-entries">
-    {% for entry in page.calendar %}
-      {% include index/entry/calendar.html %}
-    {% endfor %}
+
+  <div id="agenda-items" class="calendar-entries">
+    <img src="/assets/img/loader-bar.gif" style="margin-top:30px;"/>
   </div>
 </section>
+
+<div id="agenda-tpl" class="hide">
+  <article class="calendar-entry">
+    <div class="meta">
+      <div class="scheduled">
+        <div class="date"></div>
+        <div class="time"></div>
+      </div>
+      <div class="title-n-place">
+        <div class="title">
+        </div>
+        <div class="location">
+          <span class="location-hosted">Hosted at:</span> <span class="location-name"></span>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <p></p>
+    </div>
+    <a href="#" class="more-info">
+        More info
+    </a>
+  </article>
+</div>
+
+<div class="hide" id="agenda-error">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="alert alert-danger">Oh Snap! Something went horribly wrong :( Please refresh!</div>
+    </div>
+  </div>
+</div>
