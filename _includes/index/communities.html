@@ -1,4 +1,4 @@
-<section class="communities-section">
+<section class="communities-section" id="communities">
   <header>
     <div>Communities</div>
     <span>
@@ -8,7 +8,7 @@
   </header>
   <div class="separator"></div>
   <div class="communities-entries">
-    {% for entry in page.communities %}
+    {% for community in site.data.communities %}
       {% include index/entry/communities.html %}
     {% endfor %}
   </div>
