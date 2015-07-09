@@ -1,18 +1,23 @@
 {% assign currentmod = forloop.index0 | modulo:3 %}
-
 {% assign index = forloop.index0 %}
-{% capture rowIter %}{% cycle 3, 4 %}{% endcapture %}
+{% capture rowIter %}{% cycle 3, 4, 5 %}{% endcapture %}
+{% if community.image == null %}
+{% capture image %}http://lorempixel.com/320/240/business/{{ index }}/{% endcapture %}
+{% else %}
+{% capture image %}{{ community.image }}{% endcapture %}
+{% endif %}
 
 {% if forloop.first %}
 <div>
 {% endif %}
+
 <article class="communities-entry communities-entry-{{ currentmod }}">
-  <img src="{{ community.image }}" alt="{{ community.title }}" />
+  <img src="{{ image }}" alt="{{ community.name }}" />
   <div class="overlay">
     <div class="background"></div>
     <div>
       <div class="title">
-        {{ community.name }} - {{ index }}
+        {{ community.name }} - {{ index }} - {{ rowIter }}
       </div>
       <a href="#" class="more-info">
           More info
@@ -21,7 +26,7 @@
   </div>
 </article>
 
-{% if '2' == rowIter %}
+{% if rowIter == '3' and forloop.first == false %}
 </div>
 <div>
 {% endif %}
