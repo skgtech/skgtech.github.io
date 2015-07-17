@@ -1,42 +1,4 @@
 @charset "utf-8";
-@import "_normalize";
 
-@mixin clearfix {
-  &:before,
-  &:after {
-    content: " ";
-    display: table;
-  }
-
-  &:after {
-    clear: both;
-  }
-}
-
-$size: 1em;
-$strictSize: 1rem;
-
-html {
-  background-color: #F5FCFA;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-#wrap {
-  box-sizing: border-box;
-  padding: 0 $size;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1440px;
-}
-
-@import "_header";
-@import "_sections";
-@import "_forms";
-@import "_calendar";
-@import "_communities";
-@import "_projects";
-@import "_helpers";
-
+@import "_overrides";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
