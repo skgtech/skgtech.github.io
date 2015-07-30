@@ -21,6 +21,7 @@ header {
     a {
       margin-left: 40px;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
     @mixin navItemColor ($item, $color) {
