@@ -4,6 +4,10 @@
   background-color: #fff;
 
   .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.5vw;
     color: #1ebe92;
 
     img {
@@ -20,9 +24,20 @@
     }
   }
 
+  .form-group.form-group-lg {
+    width: 100%;
+  }
+
+  #mc_embed_signup_scroll {
+    display: flex;
+  }
+
   .form-group input {
-    box-shadow: none;
+    flex: 1;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
     border: none;
+    box-shadow: none;
     border-radius: 0;
 
     &.type1 {
@@ -35,6 +50,7 @@
   }
 
   .btn {
+    margin-left: 2.5vw;
     color: #fff;
     background-color: #3797d8;
     border: none;
