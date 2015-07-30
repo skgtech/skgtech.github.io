@@ -12,9 +12,9 @@ If you want to contribute to the development of this site you first need to setu
 
 ### The Stack
 
- * [Node >= 0.10.x](http://nodejs.org/)
+ * [Node >= 0.12.x](http://nodejs.org/)
  * [Ruby](http://www.ruby-lang.org/en/downloads/) If you're on OS X or Linux you probably already have Ruby installed; test with `ruby -v` in your terminal.
- * [Grunt](http://gruntjs.com) `npm install -g grunt-cli`
+ * [Gulp](http://gulpjs.com) `npm install -g gulp`
  * [Jekyll](http://jekyllrb.com/) `gem install jekyll`
 
 This project was built using [Jekyll](http://jekyllrb.com/), you don't need to be familiar with these tools to do most of the tasks.
@@ -25,36 +25,36 @@ First [fork this repository](https://github.com/skgtech/skgtech.github.io/fork) 
 
 ```shell
 git clone git@github.com:YOUR_USERNAME/skgtech.github.io.git
-cd meetups
 ```
 
 After cloning is finished you need to install the development dependencies:
 
 ```shell
-npm install
+npm install && bower install
 ```
 
 ### Working with the project
 
 ```shell
-grunt
+gulp
 ```
 
-The default Grunt task will:
+The default gulp task will:
 
-* Watch `_sass` folder for changes
-* Launch a Jekyll watch and auto-build on every file change.
 * Launch default Jekyll dev server.
+* Watch `_sass`, `_frontapp`, `_includes` and `_layouts` folders for changes and re-build them.
 
-```shell
-grunt build
-```
+More specific tasks:
 
-Build without watching.
+* `gulp styles`: Builds sass files and produces `css/main.css`
+* `gulp scripts`: Browserifies whatever is in `_frontapp` and produces `assets/js/app.js`
+* `gulp jekyll`: Builds jekyll
+* `gulp clean`: Deletes jekyll's build files (`jekyll clean`)
+* `gulp serve`: Just serves, without watching
 
 ### Assets and pages locations
 
-* Edit styles inside `/_sass/` folder. `/css/` is auto generated.
+* Edit styles inside `./_sass/` folder. `/css/` is auto generated.
 * The project's homepage is the file `index.html` in the root folder.
 * All the site's data are in the `_data/` folder.
 
