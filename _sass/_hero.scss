@@ -11,6 +11,7 @@
 }
 
 .container .featured_event.jumptron {
+  position: relative;
   padding: 19px;
   text-align: center;
   background-color: #D0ECF0;
@@ -28,7 +29,9 @@
   }
 
   .label {
-    float: left;
+    position: absolute;
+    left: 19px;
+    top: 19px;
     color: #18a37c;
     margin: 0;
     padding: 0;
