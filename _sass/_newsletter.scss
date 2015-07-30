@@ -1,0 +1,42 @@
+.newsletter {
+  margin-top: 70px;
+  padding: 18px;
+  background-color: #fff;
+
+  .label {
+    color: #1ebe92;
+
+    img {
+      height: 25px;
+      display: inline-block;
+      line-height: 1;
+      margin-top: -5px;
+    }
+
+    label {
+      font-size: 14px;
+      margin: 0;
+      margin-left: 30px;
+    }
+  }
+
+  .form-group input {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+
+    &.type1 {
+      border-bottom: 1px solid #27b0ac;
+    }
+
+    &.type2 {
+      border-bottom: 1px solid #3797d8;
+    }
+  }
+
+  .btn {
+    color: #fff;
+    background-color: #3797d8;
+    border: none;
+  }
+}
