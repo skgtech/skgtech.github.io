@@ -1,0 +1,47 @@
+header {
+  margin-top: 64px;
+
+  .navbar-brand {
+    padding: 8px;
+
+    & > img {
+      height: 35px;
+    }
+  }
+}
+
+.navbar {
+  padding: 0;
+  line-height: 20px;
+  height: 50px;
+
+  .nav{
+    padding: 15px;
+
+    a {
+      margin-left: 40px;
+      font-weight: bold;
+    }
+
+    @mixin navItemColor ($item, $color) {
+      .#{$item} {
+        &,
+        &:visited {
+          color: $color;
+        }
+      }
+    }
+
+    $colors: (
+      item1: #1EBF92,
+      item2: #25B5A5,
+      item3: #2DB1D5,
+      item4: #32A0C8,
+      item5: #3797D8
+    );
+
+    @each $color, $value in $colors {
+      @include navItemColor($color, $value);
+    }
+  }
+}
