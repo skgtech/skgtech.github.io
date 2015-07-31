@@ -6079,11 +6079,13 @@ header {
       display: inline-block;
       margin-top: 5px; }
 
-.newsletter {
+.newsletter,
+.slack {
   margin-top: 70px;
   padding: 18px;
   background-color: #fff; }
-  .newsletter .label {
+  .newsletter .label,
+  .slack .label {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -6098,23 +6100,28 @@ header {
             justify-content: center;
     margin-right: 2.5vw;
     color: #1ebe92; }
-    .newsletter .label img {
+    .newsletter .label img,
+    .slack .label img {
       height: 25px;
       display: inline-block;
       line-height: 1;
       margin-top: -5px; }
-    .newsletter .label label {
+    .newsletter .label label,
+    .slack .label label {
       font-size: 14px;
       margin: 0;
       margin-left: 30px; }
-  .newsletter .form-group.form-group-lg {
+  .newsletter .form-group.form-group-lg,
+  .slack .form-group.form-group-lg {
     width: 100%; }
-  .newsletter #mc_embed_signup_scroll {
+  .newsletter #mc_embed_signup_scroll,
+  .slack #mc_embed_signup_scroll {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
-  .newsletter .form-group input {
+  .newsletter .form-group input,
+  .slack .form-group input {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
         -ms-flex: 1;
@@ -6124,15 +6131,21 @@ header {
     border: none;
     box-shadow: none;
     border-radius: 0; }
-    .newsletter .form-group input.type1 {
+    .newsletter .form-group input.type1,
+    .slack .form-group input.type1 {
       border-bottom: 1px solid #27b0ac; }
-    .newsletter .form-group input.type2 {
+    .newsletter .form-group input.type2,
+    .slack .form-group input.type2 {
       border-bottom: 1px solid #3797d8; }
-  .newsletter .btn {
+  .newsletter .btn,
+  .slack .btn {
     margin-left: 2.5vw;
     color: #fff;
     background-color: #3797d8;
     border: none; }
+
+.slack .form-group input {
+  margin-left: 15vw; }
 
 .calendar-section header {
   display: -webkit-box;
@@ -6304,3 +6317,24 @@ header {
   color: rgba(45, 167, 189, 0.45);
   font-size: 12px;
   font-weight: 200; }
+
+.footer {
+  margin-top: 70px;
+  font-size: 12px; }
+  .footer .social {
+    text-align: center; }
+    .footer .social a {
+      display: inline-block;
+      margin-right: 40px; }
+  .footer .notes {
+    margin-top: 50px; }
+  .footer .source {
+    text-align: right; }
+  .footer .legal,
+  .footer .source {
+    color: #6c6c6c; }
+    .footer .legal a,
+    .footer .legal a:visited,
+    .footer .source a,
+    .footer .source a:visited {
+      color: #6c6c6c; }
