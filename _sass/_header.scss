@@ -15,12 +15,13 @@ header {
   line-height: 20px;
   height: 50px;
 
-  .nav{
+  .nav {
     padding: 15px 0;
 
     a {
       margin-left: 40px;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
     @mixin navItemColor ($item, $color) {
