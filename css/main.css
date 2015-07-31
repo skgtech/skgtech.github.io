@@ -6153,7 +6153,8 @@ header {
   .footer .social {
     text-align: center; }
     .footer .social a {
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 40px; }
   .footer .notes {
     margin-top: 50px; }
   .footer .source {
