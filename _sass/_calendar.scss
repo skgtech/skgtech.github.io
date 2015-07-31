@@ -3,13 +3,20 @@
     display: flex;
     justify-content: space-between;
 
-    div {
+    .appellation {
       color: $greenblue;
       font-weight: bold;
       text-transform: uppercase;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
     }
 
-    button {
+    .appellation-text {
+      margin-left: 10px;
+    }
+
+    .create {
       align-self: flex-end;
       color: $dark-sky-blue;
       background: #F5FCFA;
@@ -20,6 +27,8 @@
         background: $dark-sky-blue;
         padding-left: 5px;
         padding-right: 5px;
+        margin-right: 7px;
+        height: 3px;
       }
     }
   }
@@ -31,9 +40,13 @@
   }
 }
 
-
 .calendar-entries {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
+}
+
+#agenda-items {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -138,8 +151,12 @@
     text-decoration: underline;
     color: $brownish-grey;
   }
+}
 
-  .powered {
-    align-self: center;
-  }
+.powered {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba($tealish, 0.45);
+  font-size: 12px;
+  font-weight: 200;
 }
