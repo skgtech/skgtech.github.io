@@ -1,4 +1,5 @@
-.newsletter {
+.newsletter,
+.slack {
   margin-top: 70px;
   padding: 18px;
   background-color: #fff;
@@ -54,5 +55,11 @@
     color: #fff;
     background-color: #3797d8;
     border: none;
+  }
+}
+
+.slack {
+  .form-group input {
+    margin-left: 15vw;
   }
 }
