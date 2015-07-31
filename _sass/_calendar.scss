@@ -1,3 +1,4 @@
+.communities-section,
 .calendar-section {
   header {
     display: flex;
@@ -8,8 +9,6 @@
       font-weight: bold;
       text-transform: uppercase;
       display: flex;
-      // align-items: center;
-      // justify-content: center;
     }
 
     .appellation-text {
@@ -19,16 +18,21 @@
     .create {
       align-self: flex-end;
       color: $dark-sky-blue;
-      background: #F5FCFA;
+      background: $pale-grey;
       border-style: none;
 
       span {
-        color: $white;
+        color: #fff;
         background: $dark-sky-blue;
         padding-left: 5px;
         padding-right: 5px;
         margin-right: 7px;
         height: 3px;
+      }
+
+      a {
+        font-weight: bold;
+        text-decoration: underline;
       }
     }
   }
@@ -44,6 +48,7 @@
   display: flex;
   flex-direction: column;
   background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
+  box-shadow: 0 2px 4px 0 rgba($black-47, 0.1);
 }
 
 #agenda-items {
@@ -58,17 +63,17 @@
   }
 
   $colors: (
-    0: #1ebf92,
-    1: #2baab6,
-    2: #3797d8
+    0: $greenblue,
+    1: $tealish,
+    2: $dark-sky-blue
   );
 
-  @for $i from 0 to 3 {
+  @for $i from 0 to 6 {
     &-#{$i} {
       .scheduled {
         $property: "background-color";
 
-        @include colorNthItem($property, map-get($colors, $i));
+        @include colorNthItem($property, map-get($colors, $i % 3));
       }
     }
   }
@@ -111,11 +116,11 @@
   }
 
   .title {
-    @for $i from 0 to 3 {
+    @for $i from 0 to 6 {
       &-#{$i} {
         $property: "color";
 
-        @include colorNthItem($property, map-get($colors, $i));
+        @include colorNthItem($property, map-get($colors, $i % 3));
       }
     }
 
@@ -150,6 +155,7 @@
   .more-info {
     text-decoration: underline;
     color: $brownish-grey;
+    width: 64px;
   }
 }
 
@@ -159,4 +165,8 @@
   color: rgba($tealish, 0.45);
   font-size: 12px;
   font-weight: 200;
+
+  a {
+    color: rgba($tealish, 0.45);
+  }
 }
