@@ -6133,3 +6133,152 @@ header {
     color: #fff;
     background-color: #3797d8;
     border: none; }
+
+.calendar-section header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .calendar-section header div {
+    color: #1ebf93;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .calendar-section header button {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    color: #3798d8;
+    background: #F5FCFA;
+    border-style: none; }
+    .calendar-section header button span {
+      color: #fff;
+      background: #3798d8;
+      padding-left: 5px;
+      padding-right: 5px; }
+
+.calendar-section .separator {
+  background-image: -webkit-linear-gradient(left, #1ebf93, #3798d8);
+  background-image: linear-gradient(to right, #1ebf93, #3798d8);
+  height: 1px;
+  margin-top: 10px; }
+
+.calendar-entries {
+  background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1));
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1));
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.calendar-entry {
+  padding: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .calendar-entry-0 .scheduled {
+    background-color: #1ebf92; }
+  .calendar-entry-1 .scheduled {
+    background-color: #2baab6; }
+  .calendar-entry-2 .scheduled {
+    background-color: #3797d8; }
+  .calendar-entry .meta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .calendar-entry .scheduled {
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 64px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .calendar-entry .date {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; }
+  .calendar-entry .time {
+    font-size: 12px; }
+  .calendar-entry .title-n-place {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 20px; }
+  .calendar-entry .title {
+    font-weight: bold;
+    font-size: 18px; }
+    .calendar-entry .title-0 {
+      color: #1ebf92; }
+    .calendar-entry .title-1 {
+      color: #2baab6; }
+    .calendar-entry .title-2 {
+      color: #3797d8; }
+  .calendar-entry .location {
+    color: #6c6c6c; }
+  .calendar-entry .location-hosted {
+    font-weight: bold; }
+  .calendar-entry .location-name {
+    text-decoration: underline; }
+    .calendar-entry .location-name a {
+      color: #6c6c6c; }
+  .calendar-entry .details {
+    overflow: hidden;
+    color: #6c6c6c;
+    margin: 15px 0;
+    height: 57px;
+    width: 315px; }
+  .calendar-entry .more-info {
+    text-decoration: underline;
+    color: #6c6c6c; }
+  .calendar-entry .powered {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center; }
