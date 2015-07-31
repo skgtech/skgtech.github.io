@@ -1,0 +1,122 @@
+// .no-gutter [class*='col-'] {
+//   padding-right: 0;
+//   padding-left: 0;
+// }
+//
+// .col-md-4:first-child {
+//   padding-left: 0;
+// }
+//
+// .col-md-4:last-child {
+//   padding-right: 0;
+// }
+
+.community-entry {
+  @mixin colorNthItem ($property, $color) {
+    #{$property}: $color;
+  }
+
+  $colors: (
+    0: rgba($greenblue, 0.7),
+    1: rgba($tealish, 0.7),
+    2: rgba($dark-sky-blue, 0.7)
+  );
+
+  @for $i from 0 to 7 {
+    &-#{$i} {
+      header .community-img-overlay {
+        $property: "background";
+
+        @include colorNthItem($property, map-get($colors, $i % 3));
+      }
+    }
+  }
+
+  // .col-md-4:first-child &:first-child {
+  //   margin-left: 0;
+  // }
+  //
+  // .col-md-4:last-child &:last-child {
+  //   margin-right: 0;
+  // }
+
+  margin-top: 20px;
+  // margin-left: 15px;
+  // margin-right: 15px;
+  background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
+  box-shadow: 0 2px 4px 0 rgba($black-47, 0.1);
+
+  header {
+    margin-top: 0;
+    position: relative;
+    // height: 100px;
+    // width: 359px;
+  }
+
+  img {
+    height: 100px;
+    width: 359px;
+  }
+
+  header .community-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background: rgba($greenblue, 0.7);
+  }
+
+  .community-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .community-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .community-site {
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 200;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .community-text {
+    color: $brownish-grey;
+    font-size: 14px;
+    font-weight: 200;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 19px;
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .community-text-detail {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+
+    span {
+      font-weight: bold;
+    }
+
+    a {
+      color: $brownish-grey;
+      text-decoration: underline;
+    }
+  }
+}
