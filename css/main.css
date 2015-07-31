@@ -6141,12 +6141,16 @@ header {
   .slack .btn {
     margin-left: 2.5vw;
     color: #fff;
+    text-transform: uppercase;
     background-color: #3797d8;
-    border: none; }
+    border: none;
+    padding-left: 18px;
+    padding-right: 18px; }
 
 .slack .form-group input {
   margin-left: 15vw; }
 
+.communities-section header,
 .calendar-section header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -6156,34 +6160,43 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .communities-section header .appellation,
   .calendar-section header .appellation {
-    color: #1ebf93;
+    color: #1ebf92;
     font-weight: bold;
     text-transform: uppercase;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .communities-section header .appellation-text,
   .calendar-section header .appellation-text {
     margin-left: 10px; }
+  .communities-section header .create,
   .calendar-section header .create {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
-    color: #3798d8;
-    background: #F5FCFA;
+    color: #3797d8;
+    background: #f4fcfa;
     border-style: none; }
+    .communities-section header .create span,
     .calendar-section header .create span {
       color: #fff;
-      background: #3798d8;
+      background: #3797d8;
       padding-left: 5px;
       padding-right: 5px;
       margin-right: 7px;
       height: 3px; }
+    .communities-section header .create a,
+    .calendar-section header .create a {
+      font-weight: bold;
+      text-decoration: underline; }
 
+.communities-section .separator,
 .calendar-section .separator {
-  background-image: -webkit-linear-gradient(left, #1ebf93, #3798d8);
-  background-image: linear-gradient(to right, #1ebf93, #3798d8);
+  background-image: -webkit-linear-gradient(left, #1ebf92, #3797d8);
+  background-image: linear-gradient(to right, #1ebf92, #3797d8);
   height: 1px;
   margin-top: 10px; }
 
@@ -6197,8 +6210,9 @@ header {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1));
-  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1)); }
+  background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
 #agenda-items {
   display: -webkit-box;
@@ -6230,6 +6244,12 @@ header {
   .calendar-entry-1 .scheduled {
     background-color: #2baab6; }
   .calendar-entry-2 .scheduled {
+    background-color: #3797d8; }
+  .calendar-entry-3 .scheduled {
+    background-color: #1ebf92; }
+  .calendar-entry-4 .scheduled {
+    background-color: #2baab6; }
+  .calendar-entry-5 .scheduled {
     background-color: #3797d8; }
   .calendar-entry .meta {
     display: -webkit-box;
@@ -6293,6 +6313,12 @@ header {
       color: #2baab6; }
     .calendar-entry .title-2 {
       color: #3797d8; }
+    .calendar-entry .title-3 {
+      color: #1ebf92; }
+    .calendar-entry .title-4 {
+      color: #2baab6; }
+    .calendar-entry .title-5 {
+      color: #3797d8; }
   .calendar-entry .location {
     color: #6c6c6c; }
   .calendar-entry .location-hosted {
@@ -6309,14 +6335,97 @@ header {
     width: 315px; }
   .calendar-entry .more-info {
     text-decoration: underline;
-    color: #6c6c6c; }
+    color: #6c6c6c;
+    width: 64px; }
 
 .powered {
   text-align: center;
   margin-bottom: 20px;
-  color: rgba(45, 167, 189, 0.45);
+  color: rgba(43, 170, 182, 0.45);
   font-size: 12px;
   font-weight: 200; }
+  .powered a {
+    color: rgba(43, 170, 182, 0.45); }
+
+.community-entry {
+  margin-top: 20px;
+  background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  .community-entry-0 header .community-img-overlay {
+    background: rgba(30, 191, 146, 0.7); }
+  .community-entry-1 header .community-img-overlay {
+    background: rgba(43, 170, 182, 0.7); }
+  .community-entry-2 header .community-img-overlay {
+    background: rgba(55, 151, 216, 0.7); }
+  .community-entry-3 header .community-img-overlay {
+    background: rgba(30, 191, 146, 0.7); }
+  .community-entry-4 header .community-img-overlay {
+    background: rgba(43, 170, 182, 0.7); }
+  .community-entry-5 header .community-img-overlay {
+    background: rgba(55, 151, 216, 0.7); }
+  .community-entry-6 header .community-img-overlay {
+    background: rgba(30, 191, 146, 0.7); }
+  .community-entry header {
+    margin-top: 0;
+    position: relative; }
+  .community-entry img {
+    height: 100px;
+    width: 359px; }
+  .community-entry header .community-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  .community-entry .community-img-overlay {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .community-entry .community-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold; }
+  .community-entry .community-site {
+    font-size: 12px;
+    font-family: "Lato";
+    font-weight: 200; }
+    .community-entry .community-site a {
+      color: #fff;
+      text-decoration: underline; }
+  .community-entry .community-text {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 200;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 19px; }
+    .community-entry .community-text p {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+  .community-entry .community-text-detail {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px; }
+    .community-entry .community-text-detail span {
+      font-weight: bold; }
+    .community-entry .community-text-detail a {
+      color: #6c6c6c;
+      text-decoration: underline; }
 
 .footer {
   margin-top: 70px;
