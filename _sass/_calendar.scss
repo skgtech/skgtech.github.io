@@ -1,0 +1,162 @@
+.calendar-section {
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    .appellation {
+      color: $greenblue;
+      font-weight: bold;
+      text-transform: uppercase;
+      display: flex;
+      // align-items: center;
+      // justify-content: center;
+    }
+
+    .appellation-text {
+      margin-left: 10px;
+    }
+
+    .create {
+      align-self: flex-end;
+      color: $dark-sky-blue;
+      background: #F5FCFA;
+      border-style: none;
+
+      span {
+        color: $white;
+        background: $dark-sky-blue;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 7px;
+        height: 3px;
+      }
+    }
+  }
+
+  .separator {
+    background-image: linear-gradient(to right, $greenblue, $dark-sky-blue);
+    height: 1px;
+    margin-top: 10px;
+  }
+}
+
+.calendar-entries {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
+}
+
+#agenda-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.calendar-entry {
+  @mixin colorNthItem ($property, $color) {
+    #{$property}: $color;
+  }
+
+  $colors: (
+    0: #1ebf92,
+    1: #2baab6,
+    2: #3797d8
+  );
+
+  @for $i from 0 to 3 {
+    &-#{$i} {
+      .scheduled {
+        $property: "background-color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+  }
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .meta {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .scheduled {
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .date {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+
+  .title-n-place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+  }
+
+  .title {
+    @for $i from 0 to 3 {
+      &-#{$i} {
+        $property: "color";
+
+        @include colorNthItem($property, map-get($colors, $i));
+      }
+    }
+
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .location {
+    color: $brownish-grey;
+  }
+
+  .location-hosted {
+    font-weight: bold;
+  }
+
+  .location-name {
+    text-decoration: underline;
+
+    a {
+      color: $brownish-grey;
+    }
+  }
+
+  .details {
+    overflow: hidden;
+    color: $brownish-grey;
+    margin: 15px 0;
+    height: 57px;
+    width: 315px;
+  }
+
+  .more-info {
+    text-decoration: underline;
+    color: $brownish-grey;
+  }
+}
+
+.powered {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba($tealish, 0.45);
+  font-size: 12px;
+  font-weight: 200;
+}
