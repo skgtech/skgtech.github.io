@@ -6143,22 +6143,30 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .calendar-section header div {
+  .calendar-section header .appellation {
     color: #1ebf93;
     font-weight: bold;
-    text-transform: uppercase; }
-  .calendar-section header button {
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .calendar-section header .appellation-text {
+    margin-left: 10px; }
+  .calendar-section header .create {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
             align-self: flex-end;
     color: #3798d8;
     background: #F5FCFA;
     border-style: none; }
-    .calendar-section header button span {
+    .calendar-section header .create span {
       color: #fff;
       background: #3798d8;
       padding-left: 5px;
-      padding-right: 5px; }
+      padding-right: 5px;
+      margin-right: 7px;
+      height: 3px; }
 
 .calendar-section .separator {
   background-image: -webkit-linear-gradient(left, #1ebf93, #3798d8);
@@ -6167,8 +6175,19 @@ header {
   margin-top: 10px; }
 
 .calendar-entries {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1));
-  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1));
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 152, 216, 0.1)); }
+
+#agenda-items {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -6278,7 +6297,10 @@ header {
   .calendar-entry .more-info {
     text-decoration: underline;
     color: #6c6c6c; }
-  .calendar-entry .powered {
-    -webkit-align-self: center;
-        -ms-flex-item-align: center;
-            align-self: center; }
+
+.powered {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgba(45, 167, 189, 0.45);
+  font-size: 12px;
+  font-weight: 200; }
