@@ -6146,3 +6146,23 @@ header {
 
 .slack .form-group input {
   margin-left: 15vw; }
+
+.footer {
+  margin-top: 70px;
+  font-size: 12px; }
+  .footer .social {
+    text-align: center; }
+    .footer .social a {
+      display: inline-block; }
+  .footer .notes {
+    margin-top: 50px; }
+  .footer .source {
+    text-align: right; }
+  .footer .legal,
+  .footer .source {
+    color: #6c6c6c; }
+    .footer .legal a,
+    .footer .legal a:visited,
+    .footer .source a,
+    .footer .source a:visited {
+      color: #6c6c6c; }

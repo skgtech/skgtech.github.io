@@ -1,0 +1,30 @@
+.footer {
+  margin-top: 70px;
+  font-size: 12px;
+
+  .social {
+    text-align: center;
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  .notes {
+    margin-top: 50px;
+  }
+
+  .source {
+    text-align: right;
+  }
+
+  .legal,
+  .source {
+    color: #6c6c6c;
+
+    a,
+    a:visited{
+      color: #6c6c6c;
+    }
+  }
+}
