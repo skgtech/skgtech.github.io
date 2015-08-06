@@ -25,6 +25,8 @@
         newsletter.mceSuccess(resp, email);
       };
 
+      $(this).find('button').button('loading');
+
       $.ajax(options);
 
       return false;
@@ -33,9 +35,7 @@
 
   newsletter.mceSuccess = function(resp) {
     if (resp.result === 'success'){
-      // Show thank
-      $('#mc-embedded-subscribe-form').hide();
-      $('.thankyou').removeClass('hide');
+      $('.newsletter').find('button').button('complete');
       return;
     }
 
@@ -59,6 +59,9 @@
       index = -1;
       msg = resp.msg;
     }
+    $('.newsletter .field').addClass('has-error');
+    $('.newsletter').find('button').button('reset');
+
     $('.js-error').show();
     $('.js-error').html(msg);
   };
