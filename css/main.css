@@ -6143,6 +6143,15 @@ header {
     color: #fff;
     background-color: #3797d8;
     border: none; }
+  .newsletter .slack-form.success,
+  .slack .slack-form.success {
+    padding: 5px;
+    background: #1ebe92;
+    color: white;
+    text-align: center; }
+  .newsletter .has-error input.type2,
+  .slack .has-error input.type2 {
+    border: 1px solid red; }
 
 .slack .form-group input {
   margin-left: 15vw; }
