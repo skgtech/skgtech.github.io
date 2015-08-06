@@ -34,16 +34,20 @@ Slack.prototype.attachEvents = function () {
   this.$ctaEl.on('click', function(e){
     e.preventDefault();
     var email = that.$emailEl.val();
+    that.$ctaEl.button('loading');
     that.subscribe(email, function(err){
 
       if(err){
-        if(err === 'empty-email'){}
-        else if(err === 'wrong-email'){}
+        if(err === 'empty-email'){
+          $('.slack-form .field').addClass('has-error');
+        }
+        else if(err === 'wrong-email'){
+          $('.slack-form .field').addClass('has-error');
+        }
 
-        that.$emailEl.addClass('error');
-
+        that.$ctaEl.button('reset');
       } else {
-
+        that.$ctaEl.button('complete');
       }
 
     });
