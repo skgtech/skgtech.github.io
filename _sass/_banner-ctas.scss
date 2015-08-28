@@ -59,6 +59,17 @@
     padding-left: 18px;
     padding-right: 18px;
   }
+
+  .slack-form.success {
+    padding: 5px;
+    background: #1ebe92;
+    color: white;
+    text-align: center;
+  }
+
+  .has-error input.type2 {
+    border: 1px solid red;
+  }
 }
 
 .slack {
