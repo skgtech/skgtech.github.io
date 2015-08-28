@@ -26,7 +26,8 @@
   website: "http://www.meetup.com/Agile-Greece/"
   twitter: "https://twitter.com/AgileGRmeetup"
   maintainers:
-    - name: "Yiannis Mavraganis (ymavra at gmail dot com)"
+    - name: "Yiannis Mavraganis"
+      email: "ymavra@gmail.com"
     - name: "George Psistakis (g.psistakis at gmail dot com)"
     - name: "Nikos Batsios (nbatsios at gmail dot com)"
     - name: "Patroklos Papapetrou (ppapapetrou76 at gmail dot com)"
@@ -54,8 +55,7 @@
   description: " Talks, presentations, panel discussions, hands-on workshops, open days, or show-and-tell events. Everybody is welcome."
   website: "http://www.meetup.com/Thessaloniki-Arduino"
   maintainers:
-    - name: "Stavros Kalapothas (@Stavros_IT)"
-      website: "https://twitter.com/Stavros_IT"
+    - name: "Stavros Kalapothas"
 - name: "iOS Devs GR"
   period: "Monthly"
   happensAt: "Every third Wednesday of each month"

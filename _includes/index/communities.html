@@ -16,119 +16,45 @@
 
     <div class="community-entries">
 
+      {% for c in site.data.communities %}
+
       <div class="col-md-4">
         <div class="community-entry community-entry-0">
           <header>
-            <img src="http://photos3.meetupstatic.com/photos/event/1/6/e/6/highres_432125862.jpeg" alt="Community Image">
+            {% if c.image %}
+            <img src="{{ c.image }}" alt="{{ c.name }}">
+            {% else %}
+            <img src="/assets/img/community_placeholder.jpeg" alt="{{ c.name }}">
+            {% endif %}
             <div class="community-img-overlay">
               <div class="community-title">
-                Node.js
+                {{ c.name }}
               </div>
+              {% if c.website %}
               <div class="community-site">
-                <a href="#">view website</a>
+                <a href="{{ c.website }}">view website</a>
               </div>
+              {% endif %}
             </div>
           </header>
           <div class="community-text">
             <p>
-              Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.
+              {{ c.description }}
             </p>
             <div class="community-text-detail">
-              <span>Meets:</span> Every 2 weeks
+              <span>Meets:</span> {{ c.period }}
             </div>
             <div class="community-text-detail">
               <span>Maintainers:</span>
-              <a href="#">Thanasis Polychronakis</a>
+              <a href="mailto:{{ c.maintainers[0].email }}">
+                {{ c.maintainers[0].name }}
+              </a>
             </div>
           </div>
         </div>
       </div>
 
-
-      <div class="col-md-4">
-        <div class="community-entry community-entry-1">
-          <header>
-            <img src="http://photos3.meetupstatic.com/photos/event/1/6/e/6/highres_432125862.jpeg" alt="Community Image">
-            <div class="community-img-overlay">
-              <div class="community-title">
-                Node.js
-              </div>
-              <div class="community-site">
-                <a href="#">view website</a>
-              </div>
-            </div>
-          </header>
-          <div class="community-text">
-            <p>
-              Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.
-            </p>
-            <div class="community-text-detail">
-              <span>Meets:</span> Every 2 weeks
-            </div>
-            <div class="community-text-detail">
-              <span>Maintainers:</span>
-              <a href="#">Thanasis Polychronakis</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-4">
-        <div class="community-entry community-entry-2">
-          <header>
-            <img src="http://photos3.meetupstatic.com/photos/event/1/6/e/6/highres_432125862.jpeg" alt="Community Image">
-            <div class="community-img-overlay">
-              <div class="community-title">
-                Node.js
-              </div>
-              <div class="community-site">
-                <a href="#">view website</a>
-              </div>
-            </div>
-          </header>
-          <div class="community-text">
-            <p>
-              Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.
-            </p>
-            <div class="community-text-detail">
-              <span>Meets:</span> Every 2 weeks
-            </div>
-            <div class="community-text-detail">
-              <span>Maintainers:</span>
-              <a href="#">Thanasis Polychronakis</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="community-entry community-entry-3">
-          <header>
-            <img src="http://photos3.meetupstatic.com/photos/event/1/6/e/6/highres_432125862.jpeg" alt="Community Image">
-            <div class="community-img-overlay">
-              <div class="community-title">
-                Node.js
-              </div>
-              <div class="community-site">
-                <a href="#">view website</a>
-              </div>
-            </div>
-          </header>
-          <div class="community-text">
-            <p>
-              Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.
-            </p>
-            <div class="community-text-detail">
-              <span>Meets:</span> Every 2 weeks
-            </div>
-            <div class="community-text-detail">
-              <span>Maintainers:</span>
-              <a href="#">Thanasis Polychronakis</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      {% endfor %}
 
     </div>
   </div>
