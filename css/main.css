@@ -6169,6 +6169,9 @@ header {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .communities-section header img,
+  .calendar-section header img {
+    width: 100%; }
   .communities-section header .appellation,
   .calendar-section header .appellation {
     color: #1ebf92;
@@ -6202,12 +6205,60 @@ header {
       font-weight: bold;
       text-decoration: underline; }
 
+.communities-section .loading,
+.calendar-section .loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -60px 0 0 -60px;
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 10px solid #3797D8; }
+
+.communities-section .loading:after,
+.calendar-section .loading:after {
+  content: '';
+  background: trasparent;
+  width: 140%;
+  height: 140%;
+  position: absolute;
+  border-radius: 100%;
+  top: -20%;
+  left: -20%;
+  opacity: 0.7;
+  box-shadow: rgba(30, 191, 146, 0.6) -4px -5px 3px -3px;
+  -webkit-animation: rotate 2s infinite linear;
+          animation: rotate 2s infinite linear; }
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg); }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg); } }
+
 .communities-section .separator,
 .calendar-section .separator {
   background-image: -webkit-linear-gradient(left, #1ebf92, #3797d8);
   background-image: linear-gradient(to right, #1ebf92, #3797d8);
   height: 1px;
   margin-top: 10px; }
+
+.communities-section #agenda-items,
+.calendar-section #agenda-items {
+  position: relative;
+  min-height: 200px; }
 
 .calendar-entries {
   display: -webkit-box;

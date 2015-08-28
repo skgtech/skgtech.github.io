@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    img {
+      width: 100%;
+    }
+
     .appellation {
       color: $greenblue;
       font-weight: bold;
@@ -37,10 +41,49 @@
     }
   }
 
+  .loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -60px 0 0 -60px;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 10px solid #3797D8;
+  }
+  .loading:after {
+    content: '';
+    background: trasparent;
+    width: 140%;
+    height: 140%;
+    position: absolute;
+    border-radius: 100%;
+    top: -20%;
+    left: -20%;
+    opacity: 0.7;
+    box-shadow: rgba(30, 191, 146, 0.6) -4px -5px 3px -3px;
+    animation: rotate 2s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
   .separator {
     background-image: linear-gradient(to right, $greenblue, $dark-sky-blue);
     height: 1px;
     margin-top: 10px;
+  }
+
+  #agenda-items {
+    position: relative;
+    min-height: 200px;
   }
 }
 
