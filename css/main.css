@@ -6476,7 +6476,8 @@ header {
   .community-entry .community-title {
     color: #fff;
     font-size: 22px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .community-entry .community-site {
     font-size: 12px;
     font-family: "Lato";
