@@ -153,6 +153,7 @@
 
   .title-n-place {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
@@ -191,8 +192,8 @@
     overflow: hidden;
     color: $brownish-grey;
     margin: 15px 0;
-    height: 57px;
-    width: 315px;
+    // height: 57px;
+    // width: 315px;
   }
 
   .more-info {

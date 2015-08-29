@@ -6354,6 +6354,10 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -6390,9 +6394,7 @@ header {
   .calendar-entry .details {
     overflow: hidden;
     color: #6c6c6c;
-    margin: 15px 0;
-    height: 57px;
-    width: 315px; }
+    margin: 15px 0; }
   .calendar-entry .more-info {
     text-decoration: underline;
     color: #6c6c6c;
