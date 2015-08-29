@@ -6354,6 +6354,10 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -6390,9 +6394,7 @@ header {
   .calendar-entry .details {
     overflow: hidden;
     color: #6c6c6c;
-    margin: 15px 0;
-    height: 57px;
-    width: 315px; }
+    margin: 15px 0; }
   .calendar-entry .more-info {
     text-decoration: underline;
     color: #6c6c6c;
@@ -6406,6 +6408,21 @@ header {
   font-weight: 200; }
   .powered a {
     color: rgba(43, 170, 182, 0.45); }
+
+.community-entries {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  .community-entries .col-md-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    float: none; }
 
 .community-entry {
   margin-top: 20px;
@@ -6459,7 +6476,8 @@ header {
   .community-entry .community-title {
     color: #fff;
     font-size: 22px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   .community-entry .community-site {
     font-size: 12px;
     font-family: "Lato";

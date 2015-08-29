@@ -11,6 +11,16 @@
 //   padding-right: 0;
 // }
 
+.community-entries {
+  display: flex;
+  flex-flow: row wrap;
+
+  .col-md-4 {
+    display: flex;
+    float: none;
+  }
+}
+
 .community-entry {
   @mixin colorNthItem ($property, $color) {
     #{$property}: $color;
@@ -78,6 +88,7 @@
     color: #fff;
     font-size: 22px;
     font-weight: bold;
+    text-align: center;
   }
 
   .community-site {
