@@ -135,7 +135,7 @@
     - name: "Stavros Korokithakis"
       email: "hi@stavros.io"
 - name: "Drupal meetup - Thessaloniki and North Greece"
-  period: "Monthly or evry 2 months"
+  period: "Monthly or every 2 months"
   description: 'We talk about Drupal and every other technology/method/case study etc related to Drupal.'
   website: "http://mydrupal.gr"
   maintainers:
