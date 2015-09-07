@@ -134,3 +134,14 @@
   maintainers:
     - name: "Stavros Korokithakis"
       email: "hi@stavros.io"
+- name: "Drupal meetup - Thessaloniki and North Greece"
+  period: "datetime.date.today() + datetime.timedelta(days=random.randrange(30))"
+  description: 'We talk about Drupal and every other technology/method/case study etc related to Drupal.'
+  website: "http://mydrupal.gr"
+  website: "https://groups.drupal.org/greece"
+  maintainers:
+    -maintainers:
+    - name: "KostasK"
+      twitter: "https://twitter.com/kostask_"
+    - name: "TheodorosPloumis"
+      website: "https://twitter.com/theoploumis"
