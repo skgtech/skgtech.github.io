@@ -4,115 +4,188 @@ title: About
 class: about
 weight: 80
 ---
-
-<h1>About SKGTech</h1>
-<p>SKGTech is a Non Profit Organization comprised of all kinds of technology friends and professionals. Our mission is to help local and global communities in leveraging technologies to improve their quality of living.</p>
-
-<p>We are all volunteers, each one of us doing what we know best to produce well crafted and impactful events, projects, campaigns and fundraisers. For a list of our work you can checkout the <a href="/projects" title="SKGTech's Projects">Projects page</a></p>
-
-<h2>The People</h2>
-
 <div class="row">
-  <div class="col-md-12">
-    {% for person in site.data.people %}
-    <div class="thumbnail pull-left">
-      <img src="{{ person.img }}" alt="{{ person.name }}" width="180px">
-      <div class="caption">
-        <h3>{{ person.name }}</h3>
-        <p><strong>{{ person.title }}</strong> {{ person.company }}</p>
-        <ul>
+  <div class="hero jumbotron">
+    <div class="text">We are SKGTech and this is all about us</div>
+  </div>
+</div>
+  <section class="section people-section">
+    <header>
+      <div class="appellation">
+        {% include index/icons/calendar.html %}
+        <div class="appellation-text">
+          WHOWEARE
+        </div>
+      </div>
+    </header>
+    <div class="separator"></div>
+
+    <div class="row people-entries gradient-background">
+      {% for person in site.data.people %}
+      <article class="col-md-4 people-entry">
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="{{ person.img }}" alt="{{ person.name }}" width="100%">
+          </div>
+          <div class="col-xs-8">
+            <div class="title">
+              {{ person.name }}
+            </div>
+            <p><strong>{{ person.title }}</strong> {{ person.company }}</p>
+          </div>
+        </div>
+        <div class="">
+          <p>{{ people.description }}</p>
+        </div>
+        <ul class="list-inline">
           {% for link in person.links %}
-          <li><a href="{{ link.href }}" title="{{ link.title }}">{{ link.title }}</a></li>
+          <li>
+            <a href="{{ link.href }}" title="{{ link.title }}">
+              <i class="fa fa-{{ link.type }}"></i>
+            </a>
+          </li>
           {% endfor %}
         </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+<div class="section">
+  <header>
+    <div class="appellation">
+      {% include index/icons/calendar.html %}
+      <div class="appellation-text">
+        Credits/Acknowledgments
       </div>
     </div>
-    {% endfor %}
+  </header>
+  <div class="separator"></div>
+
+  <div class="gradient-background credits">
+    <div>
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+          <a href="#2015" aria-controls="home" role="tab" data-toggle="tab">2015</a>
+        </li>
+        <li role="presentation">
+          <a href="#2014" aria-controls="profile" role="tab" data-toggle="tab">2014</a>
+        </li>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="2015">
+          <ul>
+            <li><a href="https://twitter.com/AntiFou" title="Andy Founda">Andy Founda</a>, <a
+              href="https://twitter.com/sortingbubbles" title="Annie Chatsa">Annie Chatsa</a>, <a
+              href="https://twitter.com/Alkistics" title="Amalia Vradi">Amalia Vradi</a> and Martha Katsiki, the amazing
+              <a href="http://shesharp.org/" title="SheSharp website">SHESHARP team</a> For being an awesome volunteer at
+              the DEVit 2015 conference and maintaining the SKGTech Calendar
+            </li>
+            <li><a href="https://twitter.com/dDoutsiopoulos" title="Dimitris Doutsiopoulos">Dimitris Doutsiopoulos</a> of
+              <a href="http://www.ddphotography.gr/" title="dD Photography">dD Photography</a> for taking awesome
+              photographs at the DEVit 2015 conference.
+            </li>
+          </ul>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="2014">
+          <ul>
+            <li><a href="https://twitter.com/pvoulg" title="Panos Voulgaris">Panos Voulgaris</a> of <a
+              href="http://www.mal-vi.com/" title="MALVI">MALVI</a> and
+              <a href="https://twitter.com/PinkMoustache"
+                 title="Eleni Gizi">Eleni Gizi</a> for designing
+              the ID and Branding of DEVit and generally for being awesome and supportive.
+            </li>
+            <li><a href="https://twitter.com/bacharakis" title="Christos Bacharakis">Christos Bacharakis</a> for being our
+              awesome photographer at the We Are Together I and II events and the FRONTMASS event.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <h2>Credits / Acknowledgments</h2>
-    <ul>
-      <li>
-        <h3>2015</h3>
-        <ul>
-          <li><a href="https://twitter.com/AntiFou" title="Andy Founda">Andy Founda</a>, <a href="https://twitter.com/sortingbubbles" title="Annie Chatsa">Annie Chatsa</a>, <a href="https://twitter.com/Alkistics" title="Amalia Vradi">Amalia Vradi</a> and Martha Katsiki, the amazing <a href="http://shesharp.org/" title="SheSharp website">SHESHARP team</a> For being an awesome volunteer at the DEVit 2015 conference and maintaining the SKGTech Calendar</li>
-          <li><a href="https://twitter.com/dDoutsiopoulos" title="Dimitris Doutsiopoulos">Dimitris Doutsiopoulos</a> of <a href="http://www.ddphotography.gr/" title="dD Photography">dD Photography</a> for taking awesome photographs at the DEVit 2015 conference.</li>
-        </ul>
-      </li>
-      <li>
-        <h3>2014</h3>
-        <ul>
-          <li><a href="https://twitter.com/pvoulg" title="Panos Voulgaris">Panos Voulgaris</a> of <a href="http://www.mal-vi.com/" title="MALVI">MALVI</a> and <a href="https://twitter.com/PinkMoustache" title="Eleni Gizi">Eleni Gizi</a> for designing the ID and Branding of DEVit and generally for being awesome and supportive.</li>
-          <li><a href="https://twitter.com/bacharakis" title="Christos Bacharakis">Christos Bacharakis</a> for being our awesome photographer at the We Are Together I and II events and the FRONTMASS event.</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
+<div class="section">
+  <header>
+    <div class="appellation">
+      {% include index/icons/calendar.html %}
+      <div class="appellation-text">
+        CompanyInfo
+      </div>
+    </div>
+  </header>
+  <div class="separator"></div>
 
-<div class="row">
-  <div class="col-md-12">
-    <h2>SKGTech's Company Info</h2>
-
-    <div class="row">
-      <div class="col-sm-12 col-md-6">
-        <h3>Στα Ελληνικά</h3>
-        <p>SKGTECH<br />
-          <i>Αστική Μη Κερδοσκοπική Εταιρία</i><br />
-          Αναβάθμιση της ποιότητας ζωής των πολιτών μέσω της χρησης τεχνολογικών μέσων και του διαδικτύου.
+    <div class="row info">
+      <div class="col-md-3">
+        <h4>SKGTech</h4>
+        <p>
+          <i>Αστική Μη Κερδοσκοπική Εταιρία</i><br/>
         </p>
-        <p>ΑΦΜ: 997312737<br />
+
+        <p>ΑΦΜ: 997312737<br/>
           ΔΟΥ: ΑΜΠΕΛΟΚΗΠΩΝ
         </p>
-        <p>25ης Μαρτίου 48<br />
-         Εύοσμος, 56224<br />
-         Θεσσαλονίκη
+
+        <p>25ης Μαρτίου 48<br/>
+          Εύοσμος, 56224<br/>
+          Θεσσαλονίκη
         </p>
-        <p>email: <a href="mailto:hello@skgtech.io">hello@skgtech.io</a><br />
+
+        <p>email: <a href="mailto:hello@skgtech.io">hello@skgtech.io</a><br/>
           web: <a href="http://skgtech.io">http://skgtech.io</a>
         </p>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <h3>In English</h3>
-        <p>SKGTECH<br />
+      <div class="col-md-3">
+        <h5>&nbsp;</h5>
+        <p>
           <i>Non Profit Organization</i>
         </p>
+
         <p>VAT: EL997312737
         </p>
-        <p>25is Martiou 48<br />
-         Evosmos, 56224<br />
-         Thessaloniki, Greece
+
+        <p>25is Martiou 48<br/>
+          Evosmos, 56224<br/>
+          Thessaloniki, Greece
         </p>
-        <p>email: <a href="mailto:hello@skgtech.io">hello@skgtech.io</a><br />
+
+        <p>email: <a href="mailto:hello@skgtech.io">hello@skgtech.io</a><br/>
           web: <a href="http://skgtech.io">http://skgtech.io</a>
         </p>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-12">
+          <h4>SKGTech's Banks</h4>
+          <strong>Piraeus Bank</strong>
+
+          <p>IBAN: <span>GR57 0171 8640 0068 6413 6129771</span></p>
+
+          <p>BIC: <span>PIRBGRAA</span></p>
+
+          <p>Beneficiary: <span>SKGTECH</span></p>
+
+          <strong>Paypal</strong>
+
+          <p>SKGTech's Paypal email is: <span>paypal@skgtech.io</span></p>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-form">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="4HTP8S9Q8NCKA">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
+                   alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
-        <a href="/assets/files/SKGTech-Bylaws.pdf" target="_blank" title="The SKGTech's Bylaws / Το Καταστατικό της SKGTech">The SKGTech's Bylaws / Το Καταστατικό της SKGTech</a>
+        <a href="/assets/files/SKGTech-Bylaws.pdf" target="_blank"
+           title="The SKGTech's Bylaws / Το Καταστατικό της SKGTech">The SKGTech's Bylaws / Το Καταστατικό της
+          SKGTech</a>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-12">
-    <h2>SKGTech's Banks</h2>
-    <h3>Piraeus Bank</h3>
-    <p>IBAN: <span>GR57 0171 8640 0068 6413 6129771</span></p>
-    <p>BIC: <span>PIRBGRAA</span></p>
-    <p>Beneficiary: <span>SKGTECH</span></p>
-    <h3>Paypal</h3>
-    <p>SKGTech's Paypal email is: <span>paypal@skgtech.io</span></p>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal-form">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="4HTP8S9Q8NCKA">
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
-  </div>
 </div>

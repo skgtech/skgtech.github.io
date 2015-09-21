@@ -63,7 +63,18 @@ gulp.task('serve', ['styles', 'jekyll'], function () {
 
 // Watch everything
 gulp.task('watch', function () {
-  gulp.watch(['./_includes/**/*.html', './_layouts/**/*.html', './*.md', './*.html', './*.xml', './*.txt'], ['jekyll-rebuild']);
+  gulp.watch([
+    './_includes/**/*.html',
+    './_layouts/**/*.html',
+    './about/**/*.html',
+    './*.md',
+    './*.html',
+    './*.xml',
+    './*.txt'
+  ],
+  [
+    'jekyll-rebuild'
+  ]);
   gulp.watch(['./_frontapp/**/*.js'], ['scripts', 'jekyll-rebuild']);
   // gulp.watch(['./css/**/*.css'], ['jekyll-rebuild']);
   gulp.watch(['./_sass/**/*.scss'], ['styles']);

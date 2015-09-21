@@ -1,16 +1,15 @@
 @charset "utf-8";
 
+@import "_colors";
+
 @import "_overrides";
 @import "../assets/components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../assets/components/font-awesome/scss/font-awesome";
 
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-@import "_colors";
 @import "_header";
 @import "_hero";
 @import "_banner-ctas";
 @import "_calendar";
 @import "_communities";
 @import "_footer";
+@import "_about";

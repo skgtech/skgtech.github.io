@@ -1,0 +1,28 @@
+.gradient-background {
+  background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
+  box-shadow: 0 2px 4px 0 rgba($black-47, 0.1);
+}
+
+.people-entry {
+  padding: 30px;
+}
+
+.credits {
+  padding: 30px;
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background: $greenblue;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+  }
+
+  ul > li {
+    padding-top: 20px;
+  }
+}
+
+.info {
+  h4 {
+    color: $greenblue;
+  }
+}
