@@ -8538,18 +8538,17 @@ header {
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
-.people-entry {
+.about-section {
   padding: 30px; }
 
-.credits {
-  padding: 30px; }
-  .credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
-    background: #1ebf92;
-    color: white;
-    border: 0;
-    border-radius: 4px; }
-  .credits ul > li {
-    padding-top: 20px; }
+.credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
+  background: #1ebf92;
+  color: white;
+  border: 0;
+  border-radius: 4px; }
+
+.credits ul > li {
+  padding-top: 20px; }
 
 .info h4 {
   color: #1ebf92; }
