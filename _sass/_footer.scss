@@ -1,31 +1,20 @@
-.footer {
-  margin-top: 70px;
+.site-footer {
+  margin-top: 90px;
   font-size: 12px;
+}
 
-  .social {
-    text-align: center;
+.site-footer .social-links ul{
+  // width: 50%;
+  margin: auto;
+}
 
-    a {
-      display: inline-block;
-      margin-right: 40px;
-    }
-  }
+.site-footer .social-links li {
+  list-style: none;
+  float: left;
+  margin-right: 30px;
+}
 
-  .notes {
-    margin-top: 50px;
-  }
-
-  .source {
-    text-align: right;
-  }
-
-  .legal,
-  .source {
-    color: #6c6c6c;
-
-    a,
-    a:visited{
-      color: #6c6c6c;
-    }
-  }
+.site-footer .disclamer {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }

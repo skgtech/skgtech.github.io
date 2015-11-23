@@ -1,0 +1,36 @@
+.people-entry {
+  margin-bottom: 20px;
+}
+
+.people-entry img {
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: #1ebf93;
+  border-style: solid;
+}
+
+.person-name {
+  font-size: 18px;
+  color: #1ebf93;
+  font-weight: 900;
+}
+.person-title {
+  font-size: 12px;
+  color: #6c6c6c;
+  font-weight: 900;
+}
+
+.person-company {
+  font-size: 12px;
+  color: #6c6c6c;
+}
+
+
+.list-inline {
+  margin-left: 10px;
+}
+
+.list-inline i.fa {
+  color: rgba(138,178,255, 0.5);
+  font-size: 16px;
+}

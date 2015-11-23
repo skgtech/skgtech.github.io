@@ -6018,8 +6018,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url("/assets/components/font-awesome/fonts/fontawesome-webfont.eot?v=4.4.0");
-  src: url("/assets/components/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/assets/components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/assets/components/font-awesome/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/assets/components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/assets/components/font-awesome/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
+  src: url("/assets/fonts/fontawesome-webfont.eot?v=4.4.0");
+  src: url("/assets/fonts/fontawesome-webfont.eot?#iefix&v=4.4.0") format("embedded-opentype"), url("/assets/fonts/fontawesome-webfont.woff2?v=4.4.0") format("woff2"), url("/assets/fonts/fontawesome-webfont.woff?v=4.4.0") format("woff"), url("/assets/fonts/fontawesome-webfont.ttf?v=4.4.0") format("truetype"), url("/assets/fonts/fontawesome-webfont.svg?v=4.4.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8097,6 +8097,36 @@ header {
       display: inline-block;
       margin-top: 5px; }
 
+.people-entry {
+  margin-bottom: 20px; }
+
+.people-entry img {
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: #1ebf93;
+  border-style: solid; }
+
+.person-name {
+  font-size: 18px;
+  color: #1ebf93;
+  font-weight: 900; }
+
+.person-title {
+  font-size: 12px;
+  color: #6c6c6c;
+  font-weight: 900; }
+
+.person-company {
+  font-size: 12px;
+  color: #6c6c6c; }
+
+.list-inline {
+  margin-left: 10px; }
+
+.list-inline i.fa {
+  color: rgba(138, 178, 255, 0.5);
+  font-size: 16px; }
+
 .newsletter,
 .slack {
   margin-top: 70px;
@@ -8512,44 +8542,38 @@ header {
       color: #6c6c6c;
       text-decoration: underline; }
 
-.footer {
-  margin-top: 70px;
+.site-footer {
+  margin-top: 90px;
   font-size: 12px; }
-  .footer .social {
-    text-align: center; }
-    .footer .social a {
-      display: inline-block;
-      margin-right: 40px; }
-  .footer .notes {
-    margin-top: 50px; }
-  .footer .source {
-    text-align: right; }
-  .footer .legal,
-  .footer .source {
-    color: #6c6c6c; }
-    .footer .legal a,
-    .footer .legal a:visited,
-    .footer .source a,
-    .footer .source a:visited {
-      color: #6c6c6c; }
+
+.site-footer .social-links ul {
+  margin: auto; }
+
+.site-footer .social-links li {
+  list-style: none;
+  float: left;
+  margin-right: 30px; }
+
+.site-footer .disclamer {
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .gradient-background {
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
-.people-entry {
-  padding: 30px; }
+.credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
+  background: #1ebf92;
+  color: white;
+  border: 0;
+  border-radius: 4px; }
 
-.credits {
-  padding: 30px; }
-  .credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
-    background: #1ebf92;
-    color: white;
-    border: 0;
-    border-radius: 4px; }
-  .credits ul > li {
-    padding-top: 20px; }
+.credits ul > li {
+  padding-top: 20px; }
 
 .info h4 {
   color: #1ebf92; }
+
+.section-padding {
+  padding: 30px; }

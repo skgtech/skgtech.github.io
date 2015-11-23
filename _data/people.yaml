@@ -17,6 +17,7 @@
 - name: Kostas Bariotis
   title: Web Developer
   company: Goodvidio
+  companyUrl: https://goodvid.io/
   img: /assets/img/people/kbariotis.jpg
   links:
     - href: https://github.com/kbariotis
@@ -31,6 +32,7 @@
 - name: Tasso Efkarpidis
   title: Designer
   company: Nobraincellz
+  companyUrl: http://www.nobraincellz.gr/
   img: /assets/img/people/tassonbc.jpg
   links:
     - href: https://twitter.com/tasosnbc
@@ -42,6 +44,7 @@
 - name: Sakis Zafiropoulos
   title: Designer
   company: Nobraincellz
+  companyUrl: http://www.nobraincellz.gr/
   img: /assets/img/people/sakisnbc.jpg
   links:
     - href: https://www.behance.net/sakisnbc
@@ -53,6 +56,7 @@
 - name: Thanasis Polychronakis
   title: Web Developer
   company: Insight Replay, Inc.
+  companyUrl: http://insightreplay.com/
   img: /assets/img/people/thanpolas.jpg
   links:
     - href: https://github.com/thanpolas
@@ -67,7 +71,6 @@
 
 - name: Charis Rafailidis
   title: All-Around Player (Web Developer)
-  company: Charis Rafailidis
   img: /assets/img/people/charisra.jpg
   links:
     - href: https://github.com/charisra

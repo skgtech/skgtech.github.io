@@ -4,35 +4,45 @@ title: Projects
 class: projects
 weight: 70
 ---
-
-<section class="projects-section">
+<div class="row">
+  <div class="hero jumbotron">
+    <div class="text">This is our work</div>
+  </div>
+</div>
+<section class="section projects-section">
   <header>
-    <div>Projects</div>
+    <div class="appellation">
+      {% include index/icons/calendar.html %}
+      <div class="appellation-text">
+        PROJECTS
+      </div>
+    </div>
   </header>
   <div class="separator"></div>
-  <div class="projects-entries">
-    <div class="projects-entries-line">
-    {% for entry in site.data.projects %}
-      {% assign currentmod = forloop.index0 | modulo:3 %}
-      {% if forloop.first == false %}
-        {% if currentmod == 0 %}
-          <div class="projects-entries-line">
+
+  <div class="gradient-background section-padding">
+    <div class="row">
+      {% for entry in site.data.projects %}
+        {% assign currentmod = forloop.index0 | modulo:3 %}
+        {% if forloop.first == false %}
+          {% if currentmod == 0 %}
+            <div class="projects-entries-line">
+          {% endif %}
         {% endif %}
-      {% endif %}
 
-      {% include project-item.html %}
+        {% include project-item.html %}
 
-      {% if forloop.last %}
-        {% assign remaining = 3 | minus:currentmod | minus:1 %}
-        {% for i in (1..remaining) %}
-          <article class="projects-entry projects-entry-empty"></article>
-        {% endfor %}
-      {% endif %}
+        {% if forloop.last %}
+          {% assign remaining = 3 | minus:currentmod | minus:1 %}
+          {% for i in (1..remaining) %}
+            <article class="projects-entry projects-entry-empty"></article>
+          {% endfor %}
+        {% endif %}
 
-      {% if currentmod == 2 %}
-        </div>
-      {% endif %}
-    {% endfor %}
+        {% if currentmod == 2 %}
+          </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>

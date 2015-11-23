@@ -1,0 +1,55 @@
+---
+layout: default
+title: People
+class: people
+weight: 80
+---
+<div class="row">
+  <div class="hero jumbotron">
+    <div class="text">We are SKGTech and this is who we are</div>
+  </div>
+</div>
+<section class="section people-section">
+  <header>
+    <div class="appellation">
+      {% include index/icons/calendar.html %}
+      <div class="appellation-text">
+        WHOWEARE
+      </div>
+    </div>
+  </header>
+  <div class="separator"></div>
+
+  <div class="gradient-background section-padding">
+    <div class="row">
+      {% for person in site.data.people %}
+      <article class="col-md-4 people-entry">
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="{{ person.img }}" alt="{{ person.name }}" width="100%" />
+          </div>
+          <div class="col-xs-8">
+            <div class="person-name">
+              {{ person.name }}
+            </div>
+            <p class="person-title">{{ person.title }}</p>
+            {% if person.company %}
+              <a href="{{ person.companyUrl }}" target="_blank" class="person-company" title="Visit {{ person.company }}">{{ person.company }}</a>
+            {% endif %}
+          </div>
+        </div>
+        <ul class="list-inline">
+          {% for link in person.links %}
+          <li>
+            <a href="{{ link.href }}" title="{{ link.title }}">
+              <i class="fa fa-{{ link.type }}"></i>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+

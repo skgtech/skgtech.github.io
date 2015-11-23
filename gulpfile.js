@@ -67,6 +67,8 @@ gulp.task('watch', function () {
     './_includes/**/*.html',
     './_layouts/**/*.html',
     './about/**/*.html',
+    './people/**/*.html',
+    './projects/**/*.html',
     './*.md',
     './*.html',
     './*.xml',
