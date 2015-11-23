@@ -20,34 +20,36 @@ weight: 80
   </header>
   <div class="separator"></div>
 
-  <div class="row people-entries gradient-background">
-    {% for person in site.data.people %}
-    <article class="col-md-4 people-entry">
-      <div class="row">
-        <div class="col-xs-4">
-          <img src="{{ person.img }}" alt="{{ person.name }}" width="100%">
-        </div>
-        <div class="col-xs-8">
-          <div class="title">
-            {{ person.name }}
+  <div class="gradient-background section-padding">
+    <div class="row">
+      {% for person in site.data.people %}
+      <article class="col-md-4 people-entry">
+        <div class="row">
+          <div class="col-xs-3">
+            <img src="{{ person.img }}" alt="{{ person.name }}" width="100%" />
           </div>
-          <p><strong>{{ person.title }}</strong> {{ person.company }}</p>
+          <div class="col-xs-8">
+            <div class="person-name">
+              {{ person.name }}
+            </div>
+            <p><strong>{{ person.title }}</strong> {{ person.company }}</p>
+          </div>
         </div>
-      </div>
-      <div class="">
-        <p>{{ people.description }}</p>
-      </div>
-      <ul class="list-inline">
-        {% for link in person.links %}
-        <li>
-          <a href="{{ link.href }}" title="{{ link.title }}">
-            <i class="fa fa-{{ link.type }}"></i>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </article>
-    {% endfor %}
+        <div class="">
+          <p>{{ people.description }}</p>
+        </div>
+        <ul class="list-inline">
+          {% for link in person.links %}
+          <li>
+            <a href="{{ link.href }}" title="{{ link.title }}">
+              <i class="fa fa-{{ link.type }}"></i>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+      {% endfor %}
+    </div>
   </div>
 </section>
 

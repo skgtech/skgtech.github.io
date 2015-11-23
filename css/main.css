@@ -8097,6 +8097,16 @@ header {
       display: inline-block;
       margin-top: 5px; }
 
+.people-entry img {
+  border-radius: 50%;
+  border-width: 3px;
+  border-color: #1ebf93;
+  border-style: solid; }
+
+.person-name {
+  font-size: 18px;
+  color: #1ebf93; }
+
 .newsletter,
 .slack {
   margin-top: 70px;
@@ -8538,9 +8548,6 @@ header {
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
 
-.about-section {
-  padding: 30px; }
-
 .credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
   background: #1ebf92;
   color: white;
@@ -8552,3 +8559,6 @@ header {
 
 .info h4 {
   color: #1ebf92; }
+
+.section-padding {
+  padding: 30px; }
