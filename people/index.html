@@ -33,7 +33,9 @@ weight: 80
               {{ person.name }}
             </div>
             <p class="person-title">{{ person.title }}</p>
-            <p class="person-company">{{ person.company }}</p>
+            {% if person.company %}
+              <a href="{{ person.companyUrl }}" target="_blank" class="person-company" title="Visit {{ person.company }}">{{ person.company }}</a>
+            {% endif %}
           </div>
         </div>
         <ul class="list-inline">
