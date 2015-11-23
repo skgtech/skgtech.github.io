@@ -8076,6 +8076,7 @@ header {
   border-radius: 0; }
 
 .container .featured_event.jumptron {
+  margin-top: 70px;
   position: relative;
   padding: 19px;
   text-align: center;
