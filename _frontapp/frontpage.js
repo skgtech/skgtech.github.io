@@ -91,7 +91,6 @@ Front.prototype._handleCalResult = function(err, data) {
 Front.prototype._assignValues = function($item, item, lineCounter) {
   $item.removeClass('hide');
 
-  console.log('WTF:', $item.find('article.calendar-entry'));
   $item.find('article.calendar-entry').addClass('calendar-entry-' + lineCounter);
   $item.find('.title').addClass('title-' + lineCounter);
 
