@@ -4,7 +4,7 @@ Thessaloniki's tech and developer Events, Meetups & News.
 
 ## Meetup Organizers
 
-SKGTech is using a [Public Google Calendar](https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens) for storing and reading the events and meetups. We also retain very few *Pinned* events that are edited only within this repository and [reside in the _data/agenda.yaml file](https://github.com/skgtech/skgtech.github.io/blob/master/_data/agenda.yaml). The *Pinned* events will appear after all the Calendar events.
+SKGTech is using a [Public Google Calendar](https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens) for storing and reading the events and meetups. We also retain very few *Pinned* events that are edited only within this repository and [reside in the _data/featuredevent.yaml file](https://github.com/skgtech/skgtech.github.io/blob/master/_data/featuredevent.yaml). The *Pinned* events will appear after all the Calendar events.
 
 ## Web Developers
 
