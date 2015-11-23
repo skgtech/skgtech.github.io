@@ -8542,26 +8542,21 @@ header {
       color: #6c6c6c;
       text-decoration: underline; }
 
-.footer {
-  margin-top: 70px;
+.site-footer {
+  margin-top: 90px;
   font-size: 12px; }
-  .footer .social {
-    text-align: center; }
-    .footer .social a {
-      display: inline-block;
-      margin-right: 40px; }
-  .footer .notes {
-    margin-top: 50px; }
-  .footer .source {
-    text-align: right; }
-  .footer .legal,
-  .footer .source {
-    color: #6c6c6c; }
-    .footer .legal a,
-    .footer .legal a:visited,
-    .footer .source a,
-    .footer .source a:visited {
-      color: #6c6c6c; }
+
+.site-footer .social-links ul {
+  margin: auto; }
+
+.site-footer .social-links li {
+  list-style: none;
+  float: left;
+  margin-right: 30px; }
+
+.site-footer .disclamer {
+  margin-top: 50px;
+  margin-bottom: 30px; }
 
 .gradient-background {
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
