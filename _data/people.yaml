@@ -81,6 +81,21 @@
     - href: https://thanpol.as
       title: Thanasis Website
       type: website
+- name: Adonis Kakoulidis
+  title: Web Developer
+  company: Goodvidio
+  companyUrl: https://goodvid.io/
+  img: /assets/img/people/adonisk.jpg
+  links:
+    - href: https://github.com/varemenos
+      title: Adonis K. on Github
+      type: github
+    - href: https://twitter.com/_adonisk
+      title: Adonis K. on Twitter
+      type: twitter
+    - href: https://adonisk.com
+      title: Adonis K. Website
+      type: website
 
 - name: Charis Rafailidis
   title: All-Around Player (Web Developer)
