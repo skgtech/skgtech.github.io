@@ -107,7 +107,7 @@
       email: "hi@stavros.io"
 - name: "Drupal meetup Thessaloniki"
   period: "Monthly"
-  description: 'We talk about all things drupal. We care about front-end, back-end, PHP, js, devops, code and translation. Open to all levels of expertise.'
+  description: 'We talk about all things drupal. We care about front-end, back-end, PHP, js, devops, code and translation. Open to all levels of expertise."
   website: "http://mydrupal.gr/"
     maintainers:
     - name: "Kostas Kourakis"
