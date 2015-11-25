@@ -8301,6 +8301,27 @@ header {
 .social-links li {
   margin-left: 30px;
   margin-right: 30px; }
+  .social-links li i.fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 5px; }
+  .social-links li i.fa-facebook {
+    color: #1ebf92;
+    border: #1ebf92 3px solid;
+    border-radius: 50%; }
+  .social-links li i.fa-github {
+    color: #2baab6;
+    border: #2baab6 3px solid;
+    border-radius: 50%; }
+  .social-links li i.fa-twitter {
+    color: #32a0c8;
+    border: #32a0c8 3px solid;
+    border-radius: 50%; }
+  .social-links li i.fa-youtube-play {
+    color: #3797d8;
+    border: #3797d8 3px solid;
+    border-radius: 50%; }
 
 .site-footer .disclamer {
   margin-top: 50px;

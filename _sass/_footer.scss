@@ -6,6 +6,37 @@
 .social-links li {
   margin-left: 30px;
   margin-right: 30px;
+
+  i.fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+
+  i.fa-facebook {
+    color: $greenblue;
+    border: $greenblue 3px solid;
+    border-radius: 50%;
+  }
+
+  i.fa-github {
+    color: $tealish;
+    border: $tealish 3px solid;
+    border-radius: 50%;
+  }
+
+  i.fa-twitter {
+    color: $windows-blue;
+    border: $windows-blue 3px solid;
+    border-radius: 50%;
+  }
+
+  i.fa-youtube-play {
+    color: $dark-sky-blue;
+    border: $dark-sky-blue 3px solid;
+    border-radius: 50%;
+  }
 }
 
 .site-footer .disclamer {
