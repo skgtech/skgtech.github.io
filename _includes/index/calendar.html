@@ -1,58 +1,56 @@
-<div class="row">
-  <section class="calendar-section section" id="calendar">
-    <header>
-      <div class="appellation">
-        {% include index/icons/calendar.html %}
-        <div class="appellation-text">
-          Calendar
-        </div>
-      </div>
-      <button class="create">
-        <a href="/submit-event" title="Create New Event"><span>+</span> create new</a>
-      </button>
-    </header>
-    <div class="separator"></div>
-
-    <div class="calendar-entries">
-      <div id="agenda-items">
-        <div class="loading"></div>
-      </div>
-      <div class="powered">
-        <a href="https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens">powered by Google Calendar</a>
+<section class="calendar-section section" id="calendar">
+  <header>
+    <div class="appellation">
+      {% include index/icons/calendar.html %}
+      <div class="appellation-text">
+        Calendar
       </div>
     </div>
-  </section>
+    <button class="create">
+      <a href="/submit-event" title="Create New Event"><span>+</span> create new</a>
+    </button>
+  </header>
+  <div class="separator"></div>
 
-  <div id="agenda-tpl" class="hide">
-    <article class="calendar-entry col-md-4">
-      <div class="meta">
-        <div class="scheduled">
-          <div class="date"></div>
-          <div class="time"></div>
-        </div>
-        <div class="title-n-place">
-          <div class="title">
-          </div>
-          <div class="location">
-            <span class="location-hosted">Hosted at:</span>
-            <span class="location-name"></span>
-          </div>
-        </div>
-      </div>
-      <div class="details">
-        <p></p>
-      </div>
-      <a href="#" class="more-info">
-        More info
-      </a>
-    </article>
+  <div class="calendar-entries">
+    <div id="agenda-items">
+      <div class="loading"></div>
+    </div>
+    <div class="powered">
+      <a href="https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens">powered by Google Calendar</a>
+    </div>
   </div>
+</section>
 
-  <div class="hide" id="agenda-error">
-    <div class="row">
-      <div class="col-lg-6">
-        <div class="alert alert-danger">Oh Snap! Something went horribly wrong :( Please refresh!</div>
+<div id="agenda-tpl" class="hide">
+  <article class="calendar-entry col-md-4">
+    <div class="meta">
+      <div class="scheduled">
+        <div class="date"></div>
+        <div class="time"></div>
       </div>
+      <div class="title-n-place">
+        <div class="title">
+        </div>
+        <div class="location">
+          <span class="location-hosted">Hosted at:</span>
+          <span class="location-name"></span>
+        </div>
+      </div>
+    </div>
+    <div class="details">
+      <p></p>
+    </div>
+    <a href="#" class="more-info">
+      More info
+    </a>
+  </article>
+</div>
+
+<div class="hide" id="agenda-error">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="alert alert-danger">Oh Snap! Something went horribly wrong :( Please refresh!</div>
     </div>
   </div>
 </div>

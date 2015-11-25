@@ -1,38 +1,36 @@
-<div class="row">
-  <div class="hero jumbotron">
-    <div class="text">Thessaloniki Tech Community</div>
-  </div>
-
-  {% for motd in site.data.motd %}
-    <div class="featured_event jumptron">
-      <div class="label">
-        {% include index/icons/newsletter.html %}
-        <div class="label-text">
-          Announcement
-        </div>
-      </div>
-      <div class="text">
-        <a href="{{ motd.href }}" target="_blank" title="{{ motd.title }}">
-          {{ motd.title }}
-        </a>
-      </div>
-    </div>
-  {% endfor %}
-
-
-  {% for featured in site.data.featuredevent %}
-    <div class="featured_event jumptron">
-      <div class="label">
-        {% include index/icons/featured_event.html %}
-        <div class="label-text">
-          FEATURED EVENT
-        </div>
-      </div>
-      <div class="text">
-        <a href="{{ featured.href }}" target="_blank" title="{{ featured.title }}">
-          {{ featured.title }}
-        </a>
-      </div>
-    </div>
-  {% endfor %}
+<div class="hero jumbotron">
+  <div class="text">Thessaloniki Tech Community</div>
 </div>
+
+{% for motd in site.data.motd %}
+  <div class="featured_event jumptron">
+    <div class="label">
+      {% include index/icons/newsletter.html %}
+      <div class="label-text">
+        Announcement
+      </div>
+    </div>
+    <div class="text">
+      <a href="{{ motd.href }}" target="_blank" title="{{ motd.title }}">
+        {{ motd.title }}
+      </a>
+    </div>
+  </div>
+{% endfor %}
+
+
+{% for featured in site.data.featuredevent %}
+  <div class="featured_event jumptron">
+    <div class="label">
+      {% include index/icons/featured_event.html %}
+      <div class="label-text">
+        FEATURED EVENT
+      </div>
+    </div>
+    <div class="text">
+      <a href="{{ featured.href }}" target="_blank" title="{{ featured.title }}">
+        {{ featured.title }}
+      </a>
+    </div>
+  </div>
+{% endfor %}
