@@ -114,4 +114,13 @@
       email: "kostas@pointblank.gr"
     - name: "Theodoros Ploumis"
       email: "me@theodorosploumis.com"
+- name: "Thessaloniki .NET Meetup"
+  period: "Monthly"
+  description: "Thessaloniki.Net MeetUp is a group for anyone interested in .NET programming and programming in general"
+  website: "http://www.meetup.com/Thessaloniki-NET-Meetup/"
+  maintainers:
+    - name: "Kourtzanidis Stratos"
+      email: "s.kourtzanidis@outlook.com"
+    - name: "Konstantinos Ziazios"
+      email: "ziaziosk@gmail.com"      
 
