@@ -21,3 +21,66 @@
     color: $greenblue;
   }
 }
+
+.project-name {
+
+  a {
+    font-weight: bold;
+  }
+
+  .project-0 & a {
+    color: $greenblue;
+  }
+
+  .project-1 & a {
+    color: $tealish;
+  }
+
+  .project-2 & a {
+    color: $dark-sky-blue;
+  }
+
+}
+
+.year {
+
+  .project-0 & {
+    color: $greenblue;
+  }
+
+  .project-1 & {
+    color: $tealish;
+  }
+
+  .project-2 & {
+    color: $dark-sky-blue;
+  }
+
+}
+
+.project-entry {
+
+  .link-to-help {
+
+  }
+
+  .status {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+
+  .status.running {
+    background-color: $darkish-pink;
+  }
+
+  .status.done {
+    background-color: $greenblue;
+  }
+
+  .project-info {
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+}
