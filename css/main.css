@@ -7978,6 +7978,8 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .section header .appellation .fa {
+      line-height: 20px; }
   .section header .appellation-text {
     margin-left: 10px; }
   .section header .create {
