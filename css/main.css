@@ -7978,6 +7978,8 @@ header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+    .section header .appellation .fa {
+      line-height: 20px; }
   .section header .appellation-text {
     margin-left: 10px; }
   .section header .create {
@@ -8269,7 +8271,6 @@ header {
     text-align: center; }
   .community-entry .community-site {
     font-size: 12px;
-    font-family: "Lato";
     font-weight: 200; }
     .community-entry .community-site a {
       color: #fff;
@@ -8343,6 +8344,53 @@ header {
 
 .info h4 {
   color: #1ebf92; }
+
+.project-name a {
+  font-weight: bold; }
+
+.project-0 .project-name a {
+  color: #1ebf92; }
+
+.project-1 .project-name a {
+  color: #2baab6; }
+
+.project-2 .project-name a {
+  color: #3797d8; }
+
+.project-0 .year {
+  color: #1ebf92; }
+
+.project-1 .year {
+  color: #2baab6; }
+
+.project-2 .year {
+  color: #3797d8; }
+
+.project-entry .status {
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 10px; }
+
+.project-entry .status.running {
+  background-color: #d8377c; }
+
+.project-entry .status.done {
+  background-color: #1ebf92; }
+
+.project-entry .project-info {
+  margin-bottom: 20px;
+  line-height: 30px; }
+
+.project-entry .content {
+  margin-bottom: 20px; }
+
+.project-entry .projects-media ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px; }
+  .project-entry .projects-media ul li {
+    margin-bottom: 5px; }
 
 .section-padding {
   padding: 30px; }

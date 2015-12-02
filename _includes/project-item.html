@@ -1,49 +1,57 @@
 {% assign currentmod = forloop.index0 | modulo:3 %}
 
 {% if entry.status == 'Completed' %}
-  {% assign status = 'done' %}
+{% assign status = 'done' %}
 {% else %}
-  {% assign status = 'running' %}
+{% assign status = 'running' %}
 {% endif %}
 
-<article class="projects-entry projects-entry-{{ currentmod }} col-md-4">
-  <div class="row">
-    <div class="col-xs-3">
-      <img src="{{ entry.img }}" alt="{{ entry.title }}" width="100%" />
-    </div>
-    <div class="col-xs-8">
-      <div class="project-name">
+<div class="col-md-4 col-sm-6">
+  <article class="project-entry project-{{ currentmod }}">
+    <div class="project-name">
+      <h3>
         <a href="{{ entry.link }}" target="_blank" title="{{ entry.title }}" class="title">
           {{ entry.title }}
         </a>
+      </h3>
+    </div>
+    <div class="row project-info">
+      <div class="col-md-6">
+        <span class="status {{ status }}">
+          {{ entry.status }}
+        </span>
       </div>
-      <div class="status {{ status }}">
-        {{ entry.status }}
+      <div class="col-md-6">
+        {% if status == 'done' %}
+        <span class="year">
+          {{ entry.year }}
+        </span>
+        {% else %}
+        <a href="{{ entry.link }}" class="link-to-help">
+          Click here to help
+        </a>
+        {% endif %}
       </div>
     </div>
-  </div>
 
-  {% if status == 'done' %}
-    <div class="year">
-      {{ entry.year }}
+    <div class="content">
+      {{ entry.content }}
     </div>
-  {% else %}
-    <a href="{{ entry.link }}" class="link {{ status }}">
-      Click here to help
-    </a>
-  {% endif %}
-  {% if entry.media %}
+
+    {% if entry.media %}
     <div class="projects-media">
-      <ul>
+      <ul class="unlisted">
         {% for media in entry.media %}
-          <li>
-            <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">{{ media.title }}</a>
-          </li>
+        <li>
+          <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">
+            <i class="fa fa-star"></i>
+            {{ media.title }}
+          </a>
+        </li>
         {% endfor %}
       </ul>
     </div>
-  {% endif %}
-  <div class="content">
-    {{ entry.content }}
-  </div>
-</article>
+    {% endif %}
+
+  </article>
+</div>
