@@ -34,20 +34,24 @@
       </div>
     </div>
 
+    <div class="content">
+      {{ entry.content }}
+    </div>
 
     {% if entry.media %}
     <div class="projects-media">
-      <ul>
+      <ul class="unlisted">
         {% for media in entry.media %}
         <li>
-          <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">{{ media.title }}</a>
+          <a href="{{ media.link }}" title="{{ media.title }}" target="_blank">
+            <i class="fa fa-star"></i>
+            {{ media.title }}
+          </a>
         </li>
         {% endfor %}
       </ul>
     </div>
     {% endif %}
-    <div class="content">
-      {{ entry.content }}
-    </div>
+
   </article>
 </div>

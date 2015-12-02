@@ -8382,5 +8382,15 @@ header {
   margin-bottom: 20px;
   line-height: 30px; }
 
+.project-entry .content {
+  margin-bottom: 20px; }
+
+.project-entry .projects-media ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px; }
+  .project-entry .projects-media ul li {
+    margin-bottom: 5px; }
+
 .section-padding {
   padding: 30px; }
