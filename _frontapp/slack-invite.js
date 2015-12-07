@@ -78,6 +78,10 @@ Slack.prototype.subscribe = function (email, cb) {
         if(res.error === 'already_in_team'){
           cb('already_in_team');
         }
+
+        if(res.error === 'already_invited'){
+          cb('already_invited');
+        }
       } else {
         cb(null);
       }
