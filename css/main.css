@@ -5041,13 +5041,11 @@ button.close {
   outline: 0; }
   .modal.fade .modal-dialog {
     -webkit-transform: translate(0, -25%);
-    -ms-transform: translate(0, -25%);
     transform: translate(0, -25%);
     -webkit-transition: -webkit-transform 0.3s ease-out;
     transition: transform 0.3s ease-out; }
   .modal.in .modal-dialog {
     -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
     transform: translate(0, 0); }
 
 .modal-open .modal {
@@ -5883,31 +5881,26 @@ button.close {
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
   transform: rotate(270deg); }
 
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
   transform: scale(-1, 1); }
 
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
   transform: scale(1, -1); }
 
 :root .fa-rotate-90,
@@ -7828,11 +7821,11 @@ header {
   border-radius: 0; }
 
 .container .featured_event.jumptron {
-  margin-top: 70px;
   position: relative;
   padding: 19px;
   text-align: center;
-  background-color: #D0ECF0;
+  background-image: -webkit-linear-gradient(left, #CDF1E7 0%, #D1EAF3 100%);
+  background-image: linear-gradient(to right, #CDF1E7 0%, #D1EAF3 100%);
   border-radius: 0; }
   .container .featured_event.jumptron a, .container .featured_event.jumptron a:visited {
     color: #228D96; }
@@ -7866,7 +7859,8 @@ header {
 .person-title {
   font-size: 12px;
   color: #6c6c6c;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-bottom: 0; }
 
 .person-company {
   font-size: 12px;
@@ -7883,7 +7877,10 @@ header {
 .slack {
   margin-top: 70px;
   padding: 18px;
-  background-color: #fff; }
+  background-color: #fff;
+  border-style: solid;
+  border-color: #EBF1F4;
+  border-width: 1px; }
   .newsletter .label,
   .slack .label {
     display: -webkit-box;
@@ -7981,7 +7978,8 @@ header {
     .section header .appellation .fa {
       line-height: 20px; }
   .section header .appellation-text {
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-top: 3px; }
   .section header .create {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
@@ -8062,8 +8060,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
 
 #agenda-items {
   display: -webkit-box;
@@ -8218,8 +8215,7 @@ header {
 .community-entry {
   margin-top: 20px;
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
   .community-entry-0 header .community-img-overlay {
     background: rgba(30, 191, 146, 0.7); }
   .community-entry-1 header .community-img-overlay {
@@ -8278,7 +8274,8 @@ header {
   .community-entry .community-text {
     color: #6c6c6c;
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 400;
+    line-height: 1.6;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 19px; }
