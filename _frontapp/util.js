@@ -120,6 +120,7 @@ util.getTime = function(dt) {
 
   out += startDate.getHours();
   out += ':' + util.twoDigit(startDate.getMinutes());
+  return out;
 };
 
 /**
