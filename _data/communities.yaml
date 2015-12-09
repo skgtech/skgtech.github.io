@@ -123,4 +123,14 @@
       email: "s.kourtzanidis@outlook.com"
     - name: "Konstantinos Ziazios"
       email: "ziaziosk@gmail.com"      
-
+- name: "Agile Greece Meetup"
+  period: "Monthly"
+  description: "Agile Greece MeetUp is a group for anyone interested in learning, discussing sharing experiences on lean and agile practices, making the software development process more effective and more fun. "
+  website: "http://www.meetup.com/Agile-Greece/"
+  maintainers:
+    - name: "Mavraganis Yiannis"
+      email: "ymavra@gmail.com"
+    - name: "Batsios Nikos"
+      email: "nbatsios@mac.com"
+    - name: "Papapetrou Patroklos"
+      email: "ppapapetrou76@gmail.com"
