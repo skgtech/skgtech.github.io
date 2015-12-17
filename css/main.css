@@ -8136,7 +8136,9 @@ header {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    float: left;
+    margin-right: 20px; }
   .calendar-entry .date {
     text-align: center;
     font-weight: bold;
@@ -8160,8 +8162,7 @@ header {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: 20px; }
+            justify-content: center; }
   .calendar-entry .title {
     font-weight: bold;
     font-size: 18px; }
