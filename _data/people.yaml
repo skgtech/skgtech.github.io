@@ -120,3 +120,18 @@
     - href: https://twitter.com/hrafailidis
       title: Charis on Twitter
       type: twitter
+- name: Kostas Margaritis
+  title: Software Engineer
+  company: Goodvidio
+  companyUrl: https://goodvid.io/
+  img: /assets/img/people/margaritis.jpg
+  links:
+    - href: https://github.com/margaritis
+      title: Margaritis on Github
+      type: github
+    - href: https://twitter.com/_margaritis
+      title: Margaritis on Twitter
+      type: twitter
+    - href: http://typeofundefined.io
+      title: Margaritis Website
+      type: website
