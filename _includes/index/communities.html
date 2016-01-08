@@ -17,9 +17,10 @@
     <div class="row community-entries">
 
       {% for c in site.data.communities %}
+      {% assign currentmod = forloop.index0 | modulo:3 %}
 
       <div class="col-md-4">
-        <div class="community-entry community-entry-0">
+        <div class="community-entry community-entry-{{ currentmod }}">
           <header>
             {% if c.image %}
             <img src="{{ c.image }}" alt="{{ c.name }}">
