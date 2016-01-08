@@ -57,6 +57,16 @@
 
 }
 
+.unlisted {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
 .project-entry {
 
   .link-to-help {
@@ -85,15 +95,5 @@
 
   .content {
     margin-bottom: 20px;
-  }
-
-  .projects-media ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-
-    li {
-      margin-bottom: 5px;
-    }
   }
 }
