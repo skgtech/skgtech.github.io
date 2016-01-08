@@ -7983,7 +7983,8 @@ header {
       line-height: 20px; }
   .section header .appellation-text {
     margin-left: 10px;
-    margin-top: 3px; }
+    margin-top: 3px;
+    white-space: nowrap; }
   .section header .create {
     -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
