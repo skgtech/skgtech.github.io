@@ -18,13 +18,12 @@
       height: 25px;
       display: inline-block;
       line-height: 1;
-      margin-top: -5px;
     }
 
     label {
       font-size: 14px;
       margin: 0;
-      margin-left: 30px;
+      margin-left: 14px;
     }
   }
 
@@ -78,5 +77,11 @@
 .slack {
   .form-group input {
     margin-left: 15vw;
+  }
+}
+
+.newsletter {
+  & + sub {
+    margin-top: 5px;
   }
 }
