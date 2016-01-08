@@ -47,16 +47,17 @@
             </div>
             <div class="community-text-detail">
               <span>Maintainers:</span>
-              <ul>
+              <ul class="unlisted">
                 {% for maintainer in c.maintainers %}
                 <li>
                   {% if maintainer.email %}
-                  <a href="mailto:{{ maintainer.email }}">{{ maintainer.name }}</a>
+                  <a href="mailto:{{ maintainer.email }}">
                   {% elsif maintainer.website %}
-                  <a href="{{ maintainer.website }}">{{ maintainer.name }}</a>
-                  {% else %}
-                  {{ maintainer.name }}
+                  <a href="{{ maintainer.website }}">
                   {% endif %}
+                    <i class="fa fa-angle-right"></i>
+                    {{ maintainer.name }}
+                  </a>
                 </li>
                 {% endfor %}
               </ul>
