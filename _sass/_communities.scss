@@ -27,9 +27,9 @@
   }
 
   $colors: (
-    0: rgba($greenblue, 0.7),
-    1: rgba($tealish, 0.7),
-    2: rgba($dark-sky-blue, 0.7)
+    0: rgba($greenblue, 0.8),
+    1: rgba($tealish, 0.8),
+    2: rgba($dark-sky-blue, 0.8)
   );
 
   @for $i from 0 to 7 {
