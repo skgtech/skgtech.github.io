@@ -75,15 +75,14 @@
     font-size: 22px;
     font-weight: bold;
     text-align: center;
-  }
-
-  .community-site {
-    font-size: 12px;
-    font-weight: 200;
 
     a {
       color: #fff;
-      text-decoration: underline;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 

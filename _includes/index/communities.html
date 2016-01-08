@@ -1,5 +1,5 @@
 <div class="" id="communities">
-	<div class="communities-section section">
+  <div class="communities-section section">
     <header>
       <div class="appellation">
         {% include index/icons/communities.html %}
@@ -28,13 +28,14 @@
             {% endif %}
             <div class="community-img-overlay">
               <div class="community-title">
+                {% if c.website %}
+                <a href="{{ c.website }}">
+                  {{ c.name }}
+                </a>
+                {% else %}
                 {{ c.name }}
+                {% endif %}
               </div>
-              {% if c.website %}
-              <div class="community-site">
-                <a href="{{ c.website }}">view website</a>
-              </div>
-              {% endif %}
             </div>
           </header>
           <div class="community-text">
