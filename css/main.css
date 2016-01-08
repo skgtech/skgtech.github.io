@@ -7830,7 +7830,8 @@ header {
   .container .featured_event.jumptron a, .container .featured_event.jumptron a:visited {
     color: #228D96; }
   .container .featured_event.jumptron .text {
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 18px; }
   .container .featured_event.jumptron .label {
     position: absolute;
     left: 19px;
@@ -7840,7 +7841,8 @@ header {
     padding: 0; }
     .container .featured_event.jumptron .label .label-text {
       display: inline-block;
-      margin-top: 5px; }
+      margin-top: 5px;
+      margin-left: 5px; }
 
 .people-entry {
   margin-bottom: 20px; }
@@ -7859,7 +7861,8 @@ header {
 .person-title {
   font-size: 12px;
   color: #6c6c6c;
-  font-weight: 900; }
+  font-weight: 900;
+  margin-bottom: 0; }
 
 .person-company {
   font-size: 12px;
@@ -7900,13 +7903,12 @@ header {
     .slack .label img {
       height: 25px;
       display: inline-block;
-      line-height: 1;
-      margin-top: -5px; }
+      line-height: 1; }
     .newsletter .label label,
     .slack .label label {
       font-size: 14px;
       margin: 0;
-      margin-left: 30px; }
+      margin-left: 14px; }
   .newsletter .form-group.form-group-lg,
   .slack .form-group.form-group-lg {
     width: 100%; }
@@ -7954,6 +7956,9 @@ header {
 
 .slack .form-group input {
   margin-left: 15vw; }
+
+.newsletter + sub {
+  margin-top: 5px; }
 
 .section header {
   display: -webkit-box;
@@ -8049,15 +8054,6 @@ header {
   min-height: 200px; }
 
 .calendar-entries {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
 
@@ -8076,16 +8072,7 @@ header {
           flex-wrap: wrap; }
 
 .calendar-entry {
-  padding: 30px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  padding: 30px; }
   .calendar-entry-0 .scheduled {
     background-color: #1ebf92; }
   .calendar-entry-1 .scheduled {
@@ -8098,16 +8085,6 @@ header {
     background-color: #2baab6; }
   .calendar-entry-5 .scheduled {
     background-color: #3797d8; }
-  .calendar-entry .meta {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row; }
   .calendar-entry .scheduled {
     color: #fff;
     text-align: center;
@@ -8138,24 +8115,6 @@ header {
     font-size: 16px; }
   .calendar-entry .time {
     font-size: 12px; }
-  .calendar-entry .title-n-place {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .calendar-entry .title {
     font-weight: bold;
     font-size: 18px; }
@@ -8192,6 +8151,7 @@ header {
 .powered {
   text-align: center;
   margin-bottom: 20px;
+  padding-bottom: 5px;
   color: rgba(43, 170, 182, 0.45);
   font-size: 12px;
   font-weight: 200; }
@@ -8218,19 +8178,19 @@ header {
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
   .community-entry-0 header .community-img-overlay {
-    background: rgba(30, 191, 146, 0.7); }
+    background: rgba(30, 191, 146, 0.8); }
   .community-entry-1 header .community-img-overlay {
-    background: rgba(43, 170, 182, 0.7); }
+    background: rgba(43, 170, 182, 0.8); }
   .community-entry-2 header .community-img-overlay {
-    background: rgba(55, 151, 216, 0.7); }
+    background: rgba(55, 151, 216, 0.8); }
   .community-entry-3 header .community-img-overlay {
-    background: rgba(30, 191, 146, 0.7); }
+    background: rgba(30, 191, 146, 0.8); }
   .community-entry-4 header .community-img-overlay {
-    background: rgba(43, 170, 182, 0.7); }
+    background: rgba(43, 170, 182, 0.8); }
   .community-entry-5 header .community-img-overlay {
-    background: rgba(55, 151, 216, 0.7); }
+    background: rgba(55, 151, 216, 0.8); }
   .community-entry-6 header .community-img-overlay {
-    background: rgba(30, 191, 146, 0.7); }
+    background: rgba(30, 191, 146, 0.8); }
   .community-entry header {
     margin-top: 0;
     position: relative; }
@@ -8266,12 +8226,11 @@ header {
     font-size: 22px;
     font-weight: bold;
     text-align: center; }
-  .community-entry .community-site {
-    font-size: 12px;
-    font-weight: 200; }
-    .community-entry .community-site a {
+    .community-entry .community-title a {
       color: #fff;
-      text-decoration: underline; }
+      text-decoration: none; }
+      .community-entry .community-title a:hover {
+        text-decoration: underline; }
   .community-entry .community-text {
     color: #6c6c6c;
     font-size: 14px;
