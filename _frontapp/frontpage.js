@@ -110,8 +110,8 @@ Front.prototype._assignValues = function($item, item, lineCounter) {
   }
 
   // chop down length
-  if (location.length > 12) {
-    location = location.substr(0, 9) + '...';
+  if (location.length > 20) {
+    location = location.substr(0, 15) + '...';
   }
 
   if (data.mapUrl) {
