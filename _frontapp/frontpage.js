@@ -63,14 +63,14 @@ Front.prototype._handleCalResult = function(err, data) {
       meetups.push(item.summary);
     }
 
-    if (displayed && displayed % 2 === 0) {
+    if (displayed && displayed % 1 === 0) {
       // rows
       // htmlOutput += '</div><div class="row">';
     }
     htmlOutput += this._assignValues(this.$agendaItem.clone(), item, lineCounter);
     displayed++;
     lineCounter++;
-    if (lineCounter > 2) {
+    if (lineCounter > 1) {
       lineCounter = 0;
     }
   }, this);
