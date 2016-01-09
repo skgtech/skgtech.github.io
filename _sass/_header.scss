@@ -1,5 +1,5 @@
 header {
-  margin-top: 64px;
+  margin-top: 40px;
 
   .navbar-brand {
     padding: 8px;
@@ -8,18 +8,37 @@ header {
       height: 35px;
     }
   }
+
+  .responsive-button{
+    background-color: #3798D7;
+
+    .icon-bar{
+      background-color: #FFF;
+    }
+  }
+
+  .main-menu{
+    float: none!important;
+    text-align: center;
+
+    a{
+      display: block;
+      padding: 10px 0;
+    }
+  }
 }
+
 
 .navbar {
   padding: 0;
   line-height: 20px;
-  height: 50px;
+  height: auto;
 
   .nav {
     padding: 15px 0;
 
     a {
-      margin-left: 40px;
+      //margin-left: 40px;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -45,4 +64,32 @@ header {
       @include navItemColor($color, $value);
     }
   }
+}
+
+
+@media (min-width: 768px){
+  header {
+    margin-top: 64px;
+
+    .main-menu{
+      float: right!important;
+      text-align: left;
+      a{
+        display: inline-block;
+        padding: 0;
+      }
+    }
+  }
+
+  .navbar {
+    height: 50px;
+
+    .nav {
+
+      a {
+        margin-left: 40px;
+      }
+    }
+  }
+
 }

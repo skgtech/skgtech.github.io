@@ -7781,20 +7781,29 @@ button.close {
   content: ""; }
 
 header {
-  margin-top: 64px; }
+  margin-top: 40px; }
   header .navbar-brand {
     padding: 8px; }
     header .navbar-brand > img {
       height: 35px; }
+  header .responsive-button {
+    background-color: #3798D7; }
+    header .responsive-button .icon-bar {
+      background-color: #FFF; }
+  header .main-menu {
+    float: none !important;
+    text-align: center; }
+    header .main-menu a {
+      display: block;
+      padding: 10px 0; }
 
 .navbar {
   padding: 0;
   line-height: 20px;
-  height: 50px; }
+  height: auto; }
   .navbar .nav {
     padding: 15px 0; }
     .navbar .nav a {
-      margin-left: 40px;
       font-weight: bold;
       text-transform: uppercase; }
     .navbar .nav .item1, .navbar .nav .item1:visited {
@@ -7807,6 +7816,20 @@ header {
       color: #32A0C8; }
     .navbar .nav .item5, .navbar .nav .item5:visited {
       color: #3797D8; }
+
+@media (min-width: 768px) {
+  header {
+    margin-top: 64px; }
+    header .main-menu {
+      float: right !important;
+      text-align: left; }
+      header .main-menu a {
+        display: inline-block;
+        padding: 0; }
+  .navbar {
+    height: 50px; }
+    .navbar .nav a {
+      margin-left: 40px; } }
 
 .container .hero.jumbotron {
   margin-top: 50px;
