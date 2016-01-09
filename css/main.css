@@ -7844,6 +7844,15 @@ header {
       margin-top: 5px;
       margin-left: 5px; }
 
+.people-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
 .people-entry {
   margin-bottom: 20px; }
 
@@ -7869,7 +7878,7 @@ header {
   color: #6c6c6c; }
 
 .list-inline {
-  margin-left: 10px; }
+  margin-top: 10px; }
 
 .list-inline i.fa {
   color: rgba(138, 178, 255, 0.5);
@@ -8136,10 +8145,8 @@ header {
     margin-top: 15px; }
   .calendar-entry .location-hosted {
     font-weight: bold; }
-  .calendar-entry .location-name {
-    text-decoration: underline; }
-    .calendar-entry .location-name a {
-      color: #6c6c6c; }
+  .calendar-entry .location-name a {
+    color: #6c6c6c; }
   .calendar-entry .details {
     overflow: hidden;
     color: #6c6c6c;
@@ -8159,14 +8166,16 @@ header {
   .powered a {
     color: rgba(43, 170, 182, 0.45); }
 
+.project-entries,
 .community-entries {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .project-entries .col-md-4,
   .community-entries .col-md-4 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -8175,6 +8184,7 @@ header {
     float: none; }
 
 .community-entry {
+  width: 100%;
   margin-top: 20px;
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
   background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
@@ -8288,8 +8298,7 @@ header {
 
 .gradient-background {
   background: -webkit-linear-gradient(left, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1));
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); }
+  background: linear-gradient(to right, rgba(244, 252, 250, 0.1), rgba(55, 151, 216, 0.1)); }
 
 .credits .nav-tabs > li.active > a, .credits .nav-tabs > li.active > a:hover, .credits .nav-tabs > li.active > a:focus {
   background: #1ebf92;
@@ -8324,6 +8333,16 @@ header {
 .project-2 .year {
   color: #3797d8; }
 
+.unlisted {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px; }
+  .unlisted li {
+    margin-bottom: 5px; }
+
+.project-entry .link-to-help {
+  text-decoration: underline; }
+
 .project-entry .status {
   text-transform: uppercase;
   color: #fff;
@@ -8342,13 +8361,6 @@ header {
 
 .project-entry .content {
   margin-bottom: 20px; }
-
-.project-entry .projects-media ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 20px; }
-  .project-entry .projects-media ul li {
-    margin-bottom: 5px; }
 
 .section-padding {
   padding: 30px; }
