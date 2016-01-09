@@ -1,6 +1,6 @@
 .container .hero.jumbotron {
   margin-top: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   padding: 19px;
   text-align: center;
   font-weight: bold;
@@ -39,8 +39,9 @@
 
     .label-text {
       display: inline-block;
-      margin-top: 5px;
-      margin-left: 5px;
+      margin-left: 10px;
+      text-transform: uppercase;
+      vertical-align: middle;
     }
   }
 }
