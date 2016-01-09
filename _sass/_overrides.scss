@@ -1,6 +1,5 @@
-$body-bg: #F5FCFA;
-$text-color: $brownish-grey;
-$font-family-sans-serif: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
-$fa-font-path: "/assets/fonts" !default;
-
+body {
+  background: #F5FCFA;
+  color: $brownish-grey;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
