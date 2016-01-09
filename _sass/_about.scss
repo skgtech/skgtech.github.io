@@ -1,6 +1,5 @@
 .gradient-background {
   background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
-  box-shadow: 0 2px 4px 0 rgba($black-47, 0.1);
 }
 
 .credits {
@@ -58,10 +57,20 @@
 
 }
 
+.unlisted {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+
+  li {
+    margin-bottom: 5px;
+  }
+}
+
 .project-entry {
 
   .link-to-help {
-
+    text-decoration: underline;
   }
 
   .status {
@@ -86,15 +95,5 @@
 
   .content {
     margin-bottom: 20px;
-  }
-
-  .projects-media ul {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 20px;
-
-    li {
-      margin-bottom: 5px;
-    }
   }
 }

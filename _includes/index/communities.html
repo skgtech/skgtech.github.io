@@ -17,9 +17,10 @@
     <div class="row community-entries">
 
       {% for c in site.data.communities %}
+      {% assign currentmod = forloop.index0 | modulo:3 %}
 
-      <div class="col-md-4">
-        <div class="community-entry community-entry-0">
+      <div class="col-md-4 col-sm-12">
+        <div class="community-entry community-entry-{{ currentmod }}">
           <header>
             {% if c.image %}
             <img src="{{ c.image }}" alt="{{ c.name }}">
@@ -47,16 +48,17 @@
             </div>
             <div class="community-text-detail">
               <span>Maintainers:</span>
-              <ul>
+              <ul class="unlisted">
                 {% for maintainer in c.maintainers %}
                 <li>
                   {% if maintainer.email %}
-                  <a href="mailto:{{ maintainer.email }}">{{ maintainer.name }}</a>
+                  <a href="mailto:{{ maintainer.email }}">
                   {% elsif maintainer.website %}
-                  <a href="{{ maintainer.website }}">{{ maintainer.name }}</a>
-                  {% else %}
-                  {{ maintainer.name }}
+                  <a href="{{ maintainer.website }}">
                   {% endif %}
+                    <i class="fa fa-angle-right"></i>
+                    {{ maintainer.name }}
+                  </a>
                 </li>
                 {% endfor %}
               </ul>

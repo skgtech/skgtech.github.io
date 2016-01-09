@@ -4,7 +4,7 @@
 #   behance
 #   twitter
 #   github
-#   website
+#   link
 #   facebook
 #
 
@@ -28,7 +28,7 @@
       type: twitter
     - href: http://kostasbariotis.com
       title: Kostas Website
-      type:
+      type: link
 - name: Tasso Efkarpidis
   title: Designer
   company: Nobraincellz
@@ -40,7 +40,7 @@
       type: twitter
     - href: http://www.nobraincellz.gr/
       title: Nobraincellz website
-      type: website
+      type: link
 - name: Sakis Zafiropoulos
   title: Designer
   company: Nobraincellz
@@ -79,7 +79,7 @@
       type: twitter
     - href: https://adonisk.com
       title: Adonis K. Website
-      type: website
+      type: link
 - name: Theodore Keloglou
   title: Software Developer
   img: /assets/img/people/sirodoht.jpg
@@ -92,7 +92,7 @@
       type: twitter
     - href: http://sirodoht.xyz
       title: Theodore Website
-      type: website
+      type: link
 - name: Thanasis Polychronakis
   title: Web Developer
   company: Insight Replay, Inc.
@@ -107,7 +107,7 @@
       type: twitter
     - href: https://thanpol.as
       title: Thanasis Website
-      type: website
+      type: link
 - name: Charis Rafailidis
   title: All-Around Player (Web Developer)
   company:

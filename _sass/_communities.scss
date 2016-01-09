@@ -11,9 +11,10 @@
 //   padding-right: 0;
 // }
 
+.project-entries,
 .community-entries {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 
   .col-md-4 {
     display: flex;
@@ -42,6 +43,7 @@
     }
   }
 
+  width: 100%;
   margin-top: 20px;
   background: linear-gradient(to right, rgba($pale-grey, 0.1), rgba($dark-sky-blue, 0.1));
 
