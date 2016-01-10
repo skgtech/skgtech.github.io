@@ -37,21 +37,21 @@ gulp.task('scripts', function () {
 });
 
 // Styling task
-gulp.task('styles', function () {
-  return gulp.src('./_sass/boot.scss')
-    .pipe($.sass())
-    .pipe($.autoprefixer('last 1 version', { cascade: true }))
-    .pipe($.rename('main.css'))
-    .pipe(gulp.dest('css'))
-    .pipe(gulp.dest('_site/css'))
-    // Injects the CSS changes to your browser since Jekyll doesn't rebuild the CSS
-    .pipe(reload({stream: true}));
-});
+// gulp.task('styles', function () {
+//   return gulp.src('./_sass/boot.scss')
+//     .pipe($.sass())
+//     .pipe($.autoprefixer('last 1 version', { cascade: true }))
+//     .pipe($.rename('main.css'))
+//     .pipe(gulp.dest('css'))
+//     .pipe(gulp.dest('_site/css'))
+//     // Injects the CSS changes to your browser since Jekyll doesn't rebuild the CSS
+//     .pipe(reload({stream: true}));
+// });
 
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task('serve', ['styles', 'jekyll'], function () {
+gulp.task('serve', ['jekyll'], function () {
   bs = browserSync({
     notify: true,
     // tunnel: '',
@@ -72,14 +72,17 @@ gulp.task('watch', function () {
     './*.md',
     './*.html',
     './*.xml',
-    './*.txt'
+    './*.txt',
+    './css/**/*.scss',
+    './_sass/**/*.scss',
+    './_frontapp/**/*.js'
   ],
   [
     'jekyll-rebuild'
   ]);
   gulp.watch(['./_frontapp/**/*.js'], ['scripts', 'jekyll-rebuild']);
   // gulp.watch(['./css/**/*.css'], ['jekyll-rebuild']);
-  gulp.watch(['./_sass/**/*.scss'], ['styles']);
+  // gulp.watch(['./_sass/**/*.scss'], ['styles']);
 });
 
 gulp.task('default', ['serve', 'watch']);
