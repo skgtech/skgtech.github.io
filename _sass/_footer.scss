@@ -8,34 +8,31 @@
   margin-right: 30px;
 
   i.fa {
-    font-size: 30px;
+    font-size: 27px;
     width: 50px;
     height: 50px;
-    padding: 5px;
+    padding-top: 8px;
+    border-radius: 50%;
   }
 
   i.fa-facebook {
     color: $greenblue;
     border: $greenblue 3px solid;
-    border-radius: 50%;
   }
 
   i.fa-github {
     color: $tealish;
     border: $tealish 3px solid;
-    border-radius: 50%;
   }
 
   i.fa-twitter {
     color: $windows-blue;
     border: $windows-blue 3px solid;
-    border-radius: 50%;
   }
 
   i.fa-youtube-play {
     color: $dark-sky-blue;
     border: $dark-sky-blue 3px solid;
-    border-radius: 50%;
   }
 }
 

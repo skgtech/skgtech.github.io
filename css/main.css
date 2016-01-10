@@ -7833,7 +7833,7 @@ header {
 
 .container .hero.jumbotron {
   margin-top: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 0;
   padding: 19px;
   text-align: center;
   font-weight: bold;
@@ -7864,8 +7864,9 @@ header {
     padding: 0; }
     .container .featured_event.jumptron .label .label-text {
       display: inline-block;
-      margin-top: 5px;
-      margin-left: 5px; }
+      margin-left: 10px;
+      text-transform: uppercase;
+      vertical-align: middle; }
 
 .people-container {
   display: -webkit-box;
@@ -7930,6 +7931,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     margin-right: 2.5vw;
+    padding-left: 0;
     color: #1ebe92; }
     .newsletter .label img,
     .slack .label img {
@@ -8010,7 +8012,8 @@ header {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 24px; }
     .section header .appellation .fa {
       line-height: 20px; }
   .section header .appellation-text {
@@ -8294,26 +8297,23 @@ header {
   margin-left: 30px;
   margin-right: 30px; }
   .social-links li i.fa {
-    font-size: 30px;
+    font-size: 27px;
     width: 50px;
     height: 50px;
-    padding: 5px; }
+    padding-top: 8px;
+    border-radius: 50%; }
   .social-links li i.fa-facebook {
     color: #1ebf92;
-    border: #1ebf92 3px solid;
-    border-radius: 50%; }
+    border: #1ebf92 3px solid; }
   .social-links li i.fa-github {
     color: #2baab6;
-    border: #2baab6 3px solid;
-    border-radius: 50%; }
+    border: #2baab6 3px solid; }
   .social-links li i.fa-twitter {
     color: #32a0c8;
-    border: #32a0c8 3px solid;
-    border-radius: 50%; }
+    border: #32a0c8 3px solid; }
   .social-links li i.fa-youtube-play {
     color: #3797d8;
-    border: #3797d8 3px solid;
-    border-radius: 50%; }
+    border: #3797d8 3px solid; }
 
 .site-footer .disclamer {
   margin-top: 50px;
