@@ -41,30 +41,6 @@
     - href: http://www.nobraincellz.gr/
       title: Nobraincellz website
       type: link
-- name: Sakis Zafiropoulos
-  title: Designer
-  company: Nobraincellz
-  companyUrl: http://www.nobraincellz.gr/
-  img: /assets/img/people/sakisnbc.jpg
-  links:
-    - href: https://www.behance.net/sakisnbc
-      title: Sakis on Behance
-      type: behance
-    - href: https://twitter.com/sakisnbc
-      title: Sakis on Twitter
-      type: twitter
-- name: Thanos Theodoridis
-  title: iOS Developer
-  company: Contractor
-  companyUrl: http://www.attheo.do
-  img: /assets/img/people/attheodo.jpg
-  links:
-      - href: https://github.com/attheodo
-        title: attheodo on GitHub
-        type: github
-      - href: https://twitter.com/attheodo
-        title: attheodo on Twitter
-        type: twitter
 - name: Adonis Kakoulidis
   title: Web Developer
   company: Goodvidio
@@ -93,6 +69,21 @@
     - href: http://sirodoht.xyz
       title: Theodore Website
       type: link
+- name: Kostas Margaritis
+  title: Software Engineer
+  company: Goodvidio
+  companyUrl: https://goodvid.io/
+  img: /assets/img/people/margaritis.jpg
+  links:
+    - href: https://github.com/margaritis
+      title: Margaritis on Github
+      type: github
+    - href: https://twitter.com/_margaritis
+      title: Margaritis on Twitter
+      type: twitter
+    - href: http://typeofundefined.io
+      title: Margaritis Website
+      type: website
 - name: Thanasis Polychronakis
   title: Web Developer
   company: Insight Replay, Inc.
@@ -120,18 +111,27 @@
     - href: https://twitter.com/hrafailidis
       title: Charis on Twitter
       type: twitter
-- name: Kostas Margaritis
-  title: Software Engineer
-  company: Goodvidio
-  companyUrl: https://goodvid.io/
-  img: /assets/img/people/margaritis.jpg
+- name: Thanos Theodoridis
+  title: iOS Developer
+  company: Contractor
+  companyUrl: http://www.attheo.do
+  img: /assets/img/people/attheodo.jpg
   links:
-    - href: https://github.com/margaritis
-      title: Margaritis on Github
-      type: github
-    - href: https://twitter.com/_margaritis
-      title: Margaritis on Twitter
+      - href: https://github.com/attheodo
+        title: attheodo on GitHub
+        type: github
+      - href: https://twitter.com/attheodo
+        title: attheodo on Twitter
+        type: twitter
+- name: Sakis Zafiropoulos
+  title: Designer
+  company: Nobraincellz
+  companyUrl: http://www.nobraincellz.gr/
+  img: /assets/img/people/sakisnbc.jpg
+  links:
+    - href: https://www.behance.net/sakisnbc
+      title: Sakis on Behance
+      type: behance
+    - href: https://twitter.com/sakisnbc
+      title: Sakis on Twitter
       type: twitter
-    - href: http://typeofundefined.io
-      title: Margaritis Website
-      type: website
