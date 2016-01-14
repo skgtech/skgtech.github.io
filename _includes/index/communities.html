@@ -15,8 +15,8 @@
     <div class="separator"></div>
 
     <div class="row community-entries">
-
-      {% for c in site.data.communities %}
+      {% assign communities = site.data.communities | sort: "name" %}
+      {% for c in communities %}
       {% assign currentmod = forloop.index0 | modulo:3 %}
 
       <div class="col-md-4 col-sm-12">
