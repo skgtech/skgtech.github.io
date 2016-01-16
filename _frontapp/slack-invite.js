@@ -4,11 +4,11 @@
 
 var Slack = module.exports = function () {};
 
-/** @const {string} AUTH TOKEN */
-Slack.TOKEN = 'xoxp-3330967421-3332061266-7344001762-99c6a8';
+/** @const {string} X API KEY for AWS resource */
+Slack.X_API_KEY = 'DdBItuHAoE1HE36jjEdmh4Pbx8QpCgDh6Te60gnz';
 
 /** @const {string} API Endpoint to invite an email */
-Slack.SUBSCRIBE_URL = 'https://skgtech.slack.com/api/users.admin.invite';
+Slack.SUBSCRIBE_URL = 'https://pv201ybrq8.execute-api.eu-west-1.amazonaws.com/prod/slack';
 
 /**
  * Initialize the frontpage view.
@@ -65,12 +65,13 @@ Slack.prototype.subscribe = function (email, cb) {
   }
 
   $.ajax({
-    method: 'POST',
+    method: 'GET',
     url: Slack.SUBSCRIBE_URL,
+    headers:{
+      "x-api-key":Slack.X_API_KEY
+    },
     data: {
-      email: email,
-      token: Slack.TOKEN,
-      set_active: true
+      email: email
     }
   })
     .success(function (res) {
