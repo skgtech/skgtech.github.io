@@ -20,5 +20,6 @@ front.init();
 var slackApp = new SlackApp();
 slackApp.init({
   email_container: '.slack-subscribe-email',
-  cta: '.slack-subscribe-button'
+  cta: '.slack-subscribe-button',
+  form: '.slack-form'
 });
