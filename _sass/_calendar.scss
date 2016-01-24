@@ -31,6 +31,8 @@
       color: $dark-sky-blue;
       background: $pale-grey;
       border-style: none;
+      font-weight: bold;
+      text-decoration: underline;
 
       span {
         color: #fff;
@@ -41,10 +43,6 @@
         height: 3px;
       }
 
-      a {
-        font-weight: bold;
-        text-decoration: underline;
-      }
     }
   }
 
