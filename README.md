@@ -30,7 +30,7 @@ git clone git@github.com:YOUR_USERNAME/skgtech.github.io.git
 After cloning is finished you need to install the development dependencies:
 
 ```shell
-npm install && bower install
+npm install
 ```
 
 ### Working with the project
@@ -46,7 +46,6 @@ The default gulp task will:
 
 More specific tasks:
 
-* `gulp styles`: Builds sass files and produces `css/main.css`
 * `gulp scripts`: Browserifies whatever is in `_frontapp` and produces `assets/js/app.js`
 * `gulp jekyll`: Builds jekyll
 * `gulp clean`: Deletes jekyll's build files (`jekyll clean`)
@@ -54,8 +53,9 @@ More specific tasks:
 
 ### Assets and pages locations
 
-* Edit styles inside `./_sass/` folder. `/css/` is auto generated.
+* Edit styles inside `_sass/` folder. `/css/main.css` is auto generated and injected by BrowserSync.
 * The project's homepage is the file `index.html` in the root folder.
+* Every section is in its own file in `_includes`.
 * All the site's data are in the `_data/` folder.
 
 ## Notes

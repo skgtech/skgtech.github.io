@@ -25,34 +25,47 @@ Slack.prototype.init = function (options) {
 
   this.$emailEl = $(options.email_container);
   this.$ctaEl = $(options.cta);
+  this.$formEl = $(options.form);
 
   this.attachEvents();
 };
 
 Slack.prototype.attachEvents = function () {
-  var that = this;
-  this.$ctaEl.on('click', function(e){
-    e.preventDefault();
-    var email = that.$emailEl.val();
-    that.$ctaEl.button('loading');
-    that.subscribe(email, function(err){
 
-      if(err){
-        if(err === 'empty-email'){
-          $('.slack-form .field').addClass('has-error');
-        }
-        else if(err === 'wrong-email'){
-          $('.slack-form .field').addClass('has-error');
-        }
-
-        that.$ctaEl.button('reset');
-      } else {
-        that.$ctaEl.button('complete');
-      }
-
-    });
-  });
+  this.$ctaEl.on('click', this.handleFormSubmit.bind(this));
+  this.$formEl.on('submit', this.handleFormSubmit.bind(this));
 };
+
+Slack.prototype.handleFormSubmit = function (e) {
+
+  var that = this;
+
+  e.preventDefault();
+  var email = that.$emailEl.val();
+  that.$ctaEl.button('loading');
+
+  that.subscribe(email, function(err){
+    $('.slack-alert').addClass('hidden');
+    if(err){
+      if(err === 'empty-email'){
+        $('.slack-form .field').addClass('has-error');
+        $('.slack-alert.slack-wrong-email').removeClass('hidden');
+      }
+      else if(err === 'wrong-email'){
+        $('.slack-form .field').addClass('has-error');
+        $('.slack-alert.slack-wrong-email').removeClass('hidden');
+      }
+      else if(err === 'already_in_team'){
+        $('.slack-form .field').addClass('has-error');
+        $('.slack-alert.slack-already-subscribed').removeClass('hidden');
+      }
+      that.$ctaEl.button('reset');
+    } else {
+      $('.slack-alert.slack-welcome').removeClass('hidden');
+      that.$ctaEl.button('complete');
+    }
+  });
+}
 
 Slack.prototype.subscribe = function (email, cb) {
 

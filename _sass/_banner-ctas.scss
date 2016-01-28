@@ -34,6 +34,11 @@
 
   .subscribe-form {
     display: flex;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+
   }
 
   .form-group input {
@@ -94,8 +99,6 @@
   }
 }
 
-@media (max-width: 768px){
-  .subscribe-form {
-    flex-direction: column;
-  }
+.slack-alert {
+  border-radius: 0;
 }
