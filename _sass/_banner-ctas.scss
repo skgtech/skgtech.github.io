@@ -32,8 +32,13 @@
     width: 100%;
   }
 
-  #mc_embed_signup_scroll {
+  .subscribe-form {
     display: flex;
+
+    @media (max-width: 768px){
+      flex-direction: column;
+    }
+
   }
 
   .form-group input {
@@ -53,6 +58,11 @@
     &.type2 {
       border-bottom: 1px solid #3797d8;
     }
+
+    @media (max-width: 768px){
+      margin: 0;
+      margin-top: 10px;
+    }
   }
 
   .btn {
@@ -63,6 +73,12 @@
     border: none;
     padding-left: 18px;
     padding-right: 18px;
+
+    @media (max-width: 768px){
+      margin: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
   }
 
   .slack-form.success {
