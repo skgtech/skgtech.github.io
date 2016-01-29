@@ -50,5 +50,10 @@
       text-transform: uppercase;
       vertical-align: middle;
     }
+    
+    /* IE mobile fix: needs width set*/
+    img{
+      width:26px;
+    }
   }
 }

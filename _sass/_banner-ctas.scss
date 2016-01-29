@@ -17,6 +17,8 @@
 
     img {
       height: 25px;
+      /* IE fix : Needs to have explicit width set*/
+      width:26px;
       display: inline-block;
       line-height: 1;
     }
@@ -42,7 +44,8 @@
   }
 
   .form-group input {
-    flex: 1;
+    /* IE fix: in some versions of IE (<=10), flex values must be complete and not abbreviations to work */
+    flex: 1 1 0;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     padding-left: 0;
