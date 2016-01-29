@@ -6,6 +6,10 @@
 .social-links li {
   margin-left: 30px;
   margin-right: 30px;
+  @media (max-width: 768px){
+    margin-left:9px;
+    margin-right:9px;
+  }
 
   i.fa {
     font-size: 27px;
