@@ -134,3 +134,10 @@
       email: "nbatsios@mac.com"
     - name: "Papapetrou Patroklos"
       email: "ppapapetrou76@gmail.com"
+- name: "SheSharp"
+  period: "Sporadic"
+  description: "A greek community of people dedicated to promote women's engagement with technology & science. Its main activities consist of free workshops, meetups open to anyone interested, as well as partnerships with other tech communities and local chapters of Thessaloniki."
+  website: "http://www.shesharp.org/"
+  maintainers:
+    - name: "SheSharp Team"
+      email: "shesharpgr@gmail.com"
