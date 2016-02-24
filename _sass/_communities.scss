@@ -19,6 +19,11 @@
   .col-md-4 {
     display: flex;
     float: none;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      display: block;
+    }
   }
 }
 
