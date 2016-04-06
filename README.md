@@ -23,19 +23,19 @@ Here is an example of steps of using this Docker image.
 git pull skgtech/website
 ```
 
-// Fork repository https://github.com/skgtech/skgtech.github.io.
-// If you are using https://hub.github.com/ you can do this easily like this:
+Fork repository https://github.com/skgtech/skgtech.github.io.
+If you are using https://hub.github.com/ you can do this easily like this:
 ```
 git fork https://github.com/skgtech/skgtech.github.io
 ```
 
-// Get into the folder
+Get into the folder.
 ```
 cd /path/to/skgtech.github.io
 ```
 
-// Create a new container (you may need sudo to run docker)
-// The files under /path/to/skgtech.github.io are mounted with the docker container files at /app/skgtech.io
+Create a new container (you may need sudo to run docker).
+The files under /path/to/skgtech.github.io are mounted with the docker container files at `/app/skgtech.io`
 ```
 docker run -t -d \
             --name skgtech_container \
@@ -50,23 +50,26 @@ docker run -t -d \
 
 ```
 
-// SSH into the container
+SSH into the container.
 ```
 docker exec -i -t skgtech_container /bin/bash
 ```
 
-// Inside the docker container run gulp or other gulp specific commands (see [#working-with-the-project](#working-with-the-project) below)
+Inside the docker container run gulp or other gulp specific
+commands (see [#working-with-the-project](#working-with-the-project) below).
 ```
-root@<docker-hash>: gulp
+root@64099e7b10bd: gulp
 ```
 
-// Open http://172.17.0.2:3000 on your browser
-
-// Make git commits locally under repo at /path/to/skgtech.github.io/
-
-// Create a pull request
-
+Open http://172.17.0.2:3000 on your browser.
 ```
+google-chrome http://172.17.0.2:3000
+```
+
+Make git commits locally under repo at `/path/to/skgtech.github.io/`.
+
+Create a pull request.
+
 
 ### The Stack
 
