@@ -20,7 +20,7 @@ Here is an example of steps of using this Docker image.
 
 Pull the latest docker image
 ```
-git pull skgtech/website
+docker pull skgtech/website
 ```
 
 Fork repository https://github.com/skgtech/skgtech.github.io.
