@@ -18,7 +18,7 @@ See more at [github.com/skgtech/skgtech.io-docker](https://github.com/skgtech/sk
 
 Here is an example of steps of using this Docker image.
 
-// Pull latest docker image
+Pull the latest docker image
 ```
 git pull skgtech/website
 ```
