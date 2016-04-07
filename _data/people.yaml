@@ -135,3 +135,18 @@
     - href: https://twitter.com/sakisnbc
       title: Sakis on Twitter
       type: twitter
+- name: Theodoros Ploumis
+  title: Drupal Developer
+  company: Freelancer
+  companyUrl: http://www.theodorosploumis.com
+  img: /assets/img/people/tplcom.jpg
+  links:
+      - href: https://github.com/theodorosploumis
+        title: Theodoros Ploumis on GitHub
+        type: github
+      - href: https://twitter.com/theoploumis
+        title: Theodoros Ploumis on Twitter
+        type: twitter
+      - href: http://www.theodorosploumis.com
+        title: Theodoros Ploumis website
+        type: link

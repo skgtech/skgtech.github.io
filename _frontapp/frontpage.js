@@ -126,9 +126,19 @@ Front.prototype._assignValues = function($item, item, lineCounter) {
   $item.find('.location-name').html(locationOutput);
 
   if (data.infoUrl) {
-    $item.find('.more-info').attr('href', data.infoUrl);
+    var $eventURL = data.infoUrl,
+        $eventId = $eventURL.lastIndexOf('/'),
+        $moreInfo = $item.find('.more-info');
+
+    $moreInfo.attr('href', $eventURL);
+
+    // If it is a meetup.com meetup add a RSVP button
+    if ($eventURL.indexOf("meetup.com") > -1) {
+      var $RSVP = "<div class='meetup-rsvp'><a href='"+$eventURL+"' data-event='"+$eventId+"' class='mu-rsvp-btn'>RSVP</a></div>";
+      $moreInfo.after($RSVP);
+    }
   } else {
-    $item.find('.more-info').addClass('hide');
+    $moreInfo.addClass('hide');
   }
 
   if (data.about) {
