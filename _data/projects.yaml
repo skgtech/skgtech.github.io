@@ -7,7 +7,7 @@
   status: Running
   link: http://devitconf.org/
   img: /assets/img/projects/devit.png
-  content: The 2016 DEVit Conference planning is underway.
+  content: The 2016 DEVit Conference brings 15 international speakers and 3 masterfull workshops in Thessaloniki! Taking place on 20th of May at the Ioannis Vellidis venue with a capacity of over 1,000 seated attendees, grab your tickets today!
 - title: How To Remote
   status: Completed
   year: 2015 Jun
@@ -29,7 +29,7 @@
       byLink: https://twitter.com/theoploumis
 - title: Point Zero
   year: 2015
-  status: Running
+  status: Halted
   link: http://pointzero.io/
   img: /assets/img/projects/pointzero.png
   content: Point Zero is our vision of a community built collaboration space where all the tech communities can call home. The project requires lots of funds to get started and operate for the years to come so we are in constant search for opportunities and collaborations.

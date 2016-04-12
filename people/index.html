@@ -20,7 +20,8 @@ weight: 80
 
   <div class="gradient-background section-padding">
     <div class="row">
-      {% for person in site.data.people %}
+      {% assign people = site.data.people | sort: "name" %}
+      {% for person in people %}
       <article class="col-md-4 people-entry">
         <div class="row">
           <div class="col-xs-3">

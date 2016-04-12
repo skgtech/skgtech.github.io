@@ -29,6 +29,16 @@
     - href: http://kostasbariotis.com
       title: Kostas Website
       type: link
+- name: Vaios Karampinis
+  title: Web Developer
+  img: /assets/img/people/oden.png
+  links:
+    - href: http://oden.gr
+      title: Vaios' Website
+      type: link
+    - href: https://github.com/vkarampinis
+      title: Vaios on GitHub
+      type: github
 - name: Tasso Efkarpidis
   title: Designer
   company: Nobraincellz
