@@ -84,7 +84,7 @@
     background-color: $darkish-pink;
   }
 
-  .status.done {
+  .status.done, .status.halted {
     background-color: $greenblue;
   }
 

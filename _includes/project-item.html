@@ -3,7 +3,11 @@
 {% if entry.status == 'Completed' %}
 {% assign status = 'done' %}
 {% else %}
+{% if entry.status == 'Halted' %}
+{% assign status = 'halted' %}
+{% else %}
 {% assign status = 'running' %}
+{% endif %}
 {% endif %}
 
 <div class="col-md-4 col-sm-6">
