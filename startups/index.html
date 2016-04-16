@@ -45,7 +45,7 @@ weight: 80
               {{ s.highLevelPitch }}
             </p>
             <div class="community-text-detail">
-              <span>Founded:</span> {{ s.yearFounded }}
+              <span>Founded:</span> {{ s.yearFounded | date: "%b %Y" }}
             </div>
             <div class="community-text-detail">
               <span>Business Type:</span>
