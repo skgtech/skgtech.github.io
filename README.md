@@ -36,26 +36,28 @@ cd /path/to/skgtech.github.io
 
 Create a new container (you may need sudo to run docker).
 The files under /path/to/skgtech.github.io are mounted with the docker container files at `/app/skgtech.io`
+The command bellow will start stat gulp tasks by default
+
 ```
-docker run -t -d \
-            --name skgtech_container \
-            -p 3000:3000 -p 3001:3001 \
-            -v `pwd`/_sass:/app/skgtech.io/_sass \
-            -v `pwd`/_frontapp:/app/skgtech.io/_frontapp \
-            -v `pwd`/_includes:/app/skgtech.io/_includes \
-            -v `pwd`/_layouts:/app/skgtech.io/_layouts \
-            -v `pwd`/_data:/app/skgtech.io/_data \
-            -v `pwd`/assets:/app/skgtech.io/assets \
-            skgtech/website
+docker run -t -i \
+           --name skgtech_container \
+           -p 3000:3000 -p 3001:3001 \
+           -v `pwd`/_sass:/app/skgtech.io/_sass \
+           -v `pwd`/_frontapp:/app/skgtech.io/_frontapp \
+           -v `pwd`/_includes:/app/skgtech.io/_includes \
+           -v `pwd`/_layouts:/app/skgtech.io/_layouts \
+           -v `pwd`/_data:/app/skgtech.io/_data \
+           -v `pwd`/assets:/app/skgtech.io/assets \
+           skgtech/website
 
 ```
 
-SSH into the container.
+If you want to SSH into the running container
 ```
 docker exec -i -t skgtech_container /bin/bash
 ```
 
-Inside the docker container run gulp or other gulp specific
+Inside the docker container you can run gulp or other gulp specific
 commands (see [#working-with-the-project](#working-with-the-project) below).
 ```
 root@64099e7b10bd: gulp
@@ -69,7 +71,6 @@ google-chrome http://172.17.0.2:3000
 Make git commits locally under repo at `/path/to/skgtech.github.io/`.
 
 Create a pull request.
-
 
 ### The Stack
 
