@@ -1,17 +1,3 @@
-- companyName: "Playr"
-  brandName: "Playr"
-  stage: "Prototype ready"
-  companyUrl: "http://www.playrapp.com"
-  companyType: "Mobile Application"
-  customCompanyType: 0
-  industry: "Online Bookings, Social Networking"
-  yearFounded: "1/1/2014"
-  stateOfFunding: "Bootstraped"
-  highLevelPitch: "Enables booking of sports fields"
-  customFundingStatus: 0
-  ceo: "Ilias Pantelakis"
-  cto: "Ilias Pantelakis"
-  contactPerson: "Ilias Pantelakis"
 - companyName: "Goodvid.io P.C."
   brandName: "GoodVidio"
   stage: "Private Beta"
