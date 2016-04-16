@@ -1,0 +1,109 @@
+---
+layout: default
+title: Thessaloniki Startups
+class: startups
+weight: 80
+---
+<div class="hero jumbotron">
+  <div class="text">Startups in Thessaloniki</div>
+</div>
+<section class="section people-section">
+  <div class="startups-section section">
+    <header>
+      <div class="appellation">
+        {% include index/icons/communities.html %}
+        <div class="appellation-text">
+          Startups
+        </div>
+      </div>
+      <div class="create">
+        Want to see your startup here?
+        <a href="https://github.com/skgtech/skgtech.github.io/blob/master/_data/startups.yaml" target="_blank" title="The Communities data file">Submit a Pull Request</a> or <a href="mailto:info@skgtech.io" title="Email skgtech">shoot us an email</a>.
+      </div>
+    </header>
+    <div class="separator"></div>
+
+    <div class="row community-entries">
+      {% assign startups = site.data.startups | sort: "brandName" %}
+      {% for s in startups %}
+      {% assign currentmod = forloop.index0 | modulo:3 %}
+
+      <div class="col-md-4 col-sm-12">
+        <div class="community-entry community-entry-{{ currentmod }}">
+          <header>
+            <div class="community-item-header"></div>
+            <div class="community-img-overlay">
+              <div class="community-title">
+                <a href="{{ s.companyUrl }}">
+                  {{ s.brandName }}
+                </a>
+              </div>
+            </div>
+          </header>
+          <div class="community-text">
+            <p>
+              {{ s.highLevelPitch }}
+            </p>
+            <div class="community-text-detail">
+              <span>Founded:</span> {{ s.yearFounded }}
+            </div>
+            <div class="community-text-detail">
+              <span>Business Type:</span>
+              {% if s.companyType == "Other - Please select bellow" %}
+              {{ s.customCompanyType }}
+              {% else %}
+              {{ s.companyType }}
+              {% endif %}
+            </div>
+            <div class="community-text-detail">
+              <span>Industry:</span> {{ s.industry }}
+            </div>
+            <div class="community-text-detail">
+              <span>Funding State:</span> {{ s.stateOfFunding }}
+            </div>
+            <div class="community-text-detail">
+              <span>Stage:</span> {{ s.stage }}
+            </div>
+            <div class="community-text-detail">
+              <span>Team size:</span> {{ s.teamMembers }}
+            </div>
+            <div class="community-text-detail">
+              <span>People:</span>
+              <ul class="unlisted">
+                <li>
+                  <i class="fa fa-angle-right"></i>&nbsp;<strong>CEO</strong>&nbsp;
+                  {%if s.ceoEmail %}
+                  <a href="mailto:{{ s.ceoEmail }}">{{ s.ceo }}</a>
+                  {% elsif s.ceoContactUrl %}
+                  <a href="{{s.ceoContactUrl}}" target="_blank">{{ s.ceo }}</a>
+                  {% else %}
+                  {{ s.ceo }}
+                  {% endif %}
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>&nbsp;<strong>CTO</strong>&nbsp;
+                  {%if s.ctoEmail %}
+                  <a href="mailto:{{ s.ctoEmail }}">{{ s.cto }}</a>
+                  {% else %}
+                  {{ s.cto }}
+                  {% endif %}
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>&nbsp;<strong>Contact</strong>&nbsp;
+                  {%if s.contactPersonEmail %}
+                  <a href="mailto:{{ s.contactPersonEmail }}">{{ s.contactPerson }}</a>
+                  {% elsif s.contactPersonContactUrl %}
+                  <a href="{{s.contactPersonContactUrl}}" target="_blank">{{ s.contactPerson }}</a>
+                  {% else %}
+                  {{ s.contactPerson }}
+                  {% endif %}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
