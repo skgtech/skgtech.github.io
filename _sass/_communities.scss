@@ -62,6 +62,13 @@
     width: 359px;
   }
 
+  .community-item-header {
+    height: 100px;
+    width: 359px;
+    background-color: rgba(55, 151, 216, 0.1);
+  }
+
+
   header .community-img-overlay {
     position: absolute;
     top: 0;
@@ -126,3 +133,5 @@
     }
   }
 }
+
+
