@@ -102,3 +102,15 @@
   cto: "Konstantinos Gounitsiotis"
   ctoEmail: "konstantinos@booknbloom.com"
   teamMembers: 13
+- companyName: "Fieldscale"
+  brandName: "Fieldscale"
+  stage: "Launched"
+  companyUrl: "http://www.fieldscale.com"
+  industry: "Enterprise Software"
+  yearFounded: "1/1/2015"
+  stateOfFunding: "Seed (up to $1m)"
+  highLevelPitch: "New generation simulation software"
+  ceo: "Yiorgos Bontzios"
+  contactPerson: "Vasso Kalaitzidou"
+  cto: "George Bouzianas"
+  teamMembers: 13
