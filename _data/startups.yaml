@@ -1,12 +1,12 @@
 - companyName: "Goodvid.io P.C."
   brandName: "GoodVidio"
-  stage: "Private Beta"
+  stage: "Launched"
   companyUrl: "http://goodvid.io"
   companyType: "SaaS Based B2B"
   customCompanyType: 0
   industry: "Ecommerce technology and services"
   yearFounded: "2/18/2014"
-  stateOfFunding: "Bootstraped"
+  stateOfFunding: "Seed (up to $1m)"
   highLevelPitch: "Ecommerce video discovery as a service"
   customFundingStatus: 0
   ceo: "Dimitrios Kourtesis"
@@ -52,7 +52,7 @@
   teamMembers: 20
 - companyName: "Curly Loop Inc."
   brandName: "netscan.co"
-  stage: "Private Beta"
+  stage: "Launched"
   companyUrl: "http://netscan.co"
   companyType: "SaaS Based B2B"
   customCompanyType: 0
@@ -91,7 +91,7 @@
   companyType: "SaaS Based B2B"
   industry: "SMBs"
   yearFounded: "11/1/2012"
-  stateOfFunding: "Seed (up to $1m)"
+  stateOfFunding: "Series A"
   highLevelPitch: "Book'n'Bloom is an intuitive and secure online appointment system, which is fully integrated into Facebook and allows small and medium-sized businesses to retain current customers and attract new ones."
   customFundingStatus: "Private investor"
   ceo: "Claus Rosenberg Gotthard"
