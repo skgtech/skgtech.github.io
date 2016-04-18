@@ -114,3 +114,15 @@
   contactPerson: "Vasso Kalaitzidou"
   cto: "George Bouzianas"
   teamMembers: 13
+- companyName: "Photoshooter"
+  brandName: "Photoshooter.gr"
+  stage: "Launched"
+  companyUrl: "http://www.photoshooter.gr"
+  industry: "Marketplace"
+  yearFounded: "1/10/2014"
+  stateOfFunding: "Bootstrapped (self funded)"
+  highLevelPitch: "Marketplace for photoshooters"
+  ceo: "Michalis Tzikas"
+  contactPerson: "Michalis Tzikas"
+  cto: "Michalis Tzikas"
+  teamMembers: 3
