@@ -116,3 +116,10 @@
   maintainers:
     - name: "SheSharp Team"
       email: "shesharpgr@gmail.com"
+- name: "AgriEntrepreneurship"
+  period: "At least once a month"
+  description: "We are a group active in agricultural entrepreneurship. We meet to discuss a relevant topic with an invited speaker in agro-food (production, processing, packaging, branding, promotion etc.), agri-tourism and agro-technology."
+  website: "https://www.facebook.com/groups/AgriEntrepreneurship/"
+  maintainers:
+    - name: "Mara Tsoumari"
+      website: "https://twitter.com/maratsoumari"
