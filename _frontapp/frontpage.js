@@ -94,7 +94,8 @@ Front.prototype._assignValues = function($item, item, lineCounter) {
   $item.find('article.calendar-entry').addClass('calendar-entry-' + lineCounter);
   $item.find('.title').addClass('title-' + lineCounter);
 
-  $item.find('.title').text(item.summary);
+  var $title = $item.find('.title');
+  $title.text(item.summary);
 
   var data = this._parseDesc(item.description);
 
@@ -124,18 +125,19 @@ Front.prototype._assignValues = function($item, item, lineCounter) {
 
 
   $item.find('.location-name').html(locationOutput);
+  var $moreInfo = $item.find('.more-info');
 
   if (data.infoUrl) {
-    var $eventURL = data.infoUrl,
-        $eventId = $eventURL.lastIndexOf('/'),
-        $moreInfo = $item.find('.more-info');
+    var eventURL = data.infoUrl,
+        eventId = eventURL.lastIndexOf('/');
 
-    $moreInfo.attr('href', $eventURL);
+    $moreInfo.attr('href', eventURL);
+    $title.parent().attr('href', eventURL);
 
     // If it is a meetup.com meetup add a RSVP button
-    if ($eventURL.indexOf("meetup.com") > -1) {
-      var $RSVP = "<div class='meetup-rsvp'><a href='"+$eventURL+"' data-event='"+$eventId+"' class='mu-rsvp-btn'>RSVP</a></div>";
-      $moreInfo.after($RSVP);
+    if (eventURL.indexOf("meetup.com") > -1) {
+      var RSVP = "<div class='meetup-rsvp'><a href='"+eventURL+"' data-event='"+eventId+"' class='mu-rsvp-btn'>RSVP</a></div>";
+      $moreInfo.after(RSVP);
     }
   } else {
     $moreInfo.addClass('hide');

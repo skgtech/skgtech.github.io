@@ -1,16 +1,3 @@
-// .no-gutter [class*='col-'] {
-//   padding-right: 0;
-//   padding-left: 0;
-// }
-//
-// .col-md-4:first-child {
-//   padding-left: 0;
-// }
-//
-// .col-md-4:last-child {
-//   padding-right: 0;
-// }
-
 .project-entries,
 .community-entries {
   display: flex;
@@ -93,12 +80,16 @@
     /* IE fix : Needs to have width set or it overflows*/
     width:100%;
 
-    a {
-      color: #fff;
-      text-decoration: none;
+    h2 {
+      font-size: 22px;
 
-      &:hover {
-        text-decoration: underline;
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -133,5 +124,3 @@
     }
   }
 }
-
-
