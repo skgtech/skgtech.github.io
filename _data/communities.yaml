@@ -123,3 +123,12 @@
   maintainers:
     - name: "Mara Tsoumari"
       website: "https://twitter.com/maratsoumari"
+- name: "Bitcoin and Blockchain Tech Meetup"
+  period: "Monthly"
+  description: 'This meetup is all about learning more about cryptocurrencies. We make regular introductions to Bitcoin and the blockchain as well as more advanced talks on the ins and outs of this new and exciting technology. Join us if you want to be part of the community and be updated on all related events in Thessaloniki (and elsewhere).'
+  website: "http://www.meetup.com/BlockchainGreece-1"
+  twitter: "https://twitter.com/kkarasavvas"
+  maintainers:
+    - name: "Kostas Karasavvas"
+      email: "kkarasavvas@gmail.com"
+
