@@ -1,6 +1,7 @@
 /**
  * @fileOverview scripts about the Slack Invitation form.
  */
+var $ = require('jquery');
 
 var Slack = module.exports = function () {};
 
@@ -15,8 +16,8 @@ Slack.SUBSCRIBE_URL = 'https://pv201ybrq8.execute-api.eu-west-1.amazonaws.com/pr
  *
  */
 Slack.prototype.init = function (options) {
-
-  if(!options.email_container){
+  /*jshint camelcase:false */
+  if(!options.email_container) {
     throw 'Must set an input element selector';
   }
   if(!options.cta){
@@ -39,10 +40,9 @@ Slack.prototype.attachEvents = function () {
 Slack.prototype.handleFormSubmit = function (e) {
 
   var that = this;
-
   e.preventDefault();
   var email = that.$emailEl.val();
-  that.$ctaEl.button('loading');
+  that.$ctaEl.text('loading');
 
   that.subscribe(email, function(err){
     $('.slack-alert').addClass('hidden');
@@ -59,13 +59,13 @@ Slack.prototype.handleFormSubmit = function (e) {
         $('.slack-form .field').addClass('has-error');
         $('.slack-alert.slack-already-subscribed').removeClass('hidden');
       }
-      that.$ctaEl.button('reset');
+      that.$ctaEl.text('reset');
     } else {
       $('.slack-alert.slack-welcome').removeClass('hidden');
-      that.$ctaEl.button('complete');
+      that.$ctaEl.text('complete');
     }
   });
-}
+};
 
 Slack.prototype.subscribe = function (email, cb) {
 
@@ -81,7 +81,7 @@ Slack.prototype.subscribe = function (email, cb) {
     method: 'GET',
     url: Slack.SUBSCRIBE_URL,
     headers:{
-      "x-api-key":Slack.X_API_KEY
+      'x-api-key':Slack.X_API_KEY
     },
     data: {
       email: email
@@ -100,7 +100,7 @@ Slack.prototype.subscribe = function (email, cb) {
         cb(null);
       }
     })
-    .error(function (err) {
+    .error(function () {
       cb('err');
     });
 
