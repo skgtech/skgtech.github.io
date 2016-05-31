@@ -39,6 +39,19 @@
     - href: https://github.com/vkarampinis
       title: Vaios on GitHub
       type: github
+- name: Dimitri Ntempos
+  title: Product Manager
+  img: /assets/img/people/ntemposd.png
+  links:
+    - href: http://ntemposd.me
+      title: Dimitri's Website
+      type: link
+    - href: https://twitter.com/ntemposd
+      title: Dimitri on Twitter
+      type: twitter
+    - href: https://github.com/ntemposd
+      title: Dimitri on GitHub
+      type: github
 - name: Tasso Efkarpidis
   title: Designer
   company: Nobraincellz
