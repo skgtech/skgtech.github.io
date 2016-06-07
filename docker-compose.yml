@@ -1,7 +1,9 @@
+# docker compose up -d
+# open http://172.19.0.2:3000/
 version: '2'
 services:
   web:
-    image: skgtech/website
+    image: skg
     container_name: skgtech_website
     volumes:
       - ./_sass:/app/skgtech.io/_sass
@@ -14,5 +16,6 @@ services:
     ports:
       - "3000:3000"
       - "3001:3001"
-    command:
-      - bash -c "node_modules/.bin/gulp && ${1}"
+    # Uncomment the lines below to test
+    #command:
+      #- test
