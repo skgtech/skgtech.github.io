@@ -1,7 +1,7 @@
 {
   "private": true,
-  "name": "thessaloniki",
-  "version": "0.0.1",
+  "name": "SKGTech.io",
+  "version": "0.0.2",
   "description": "Thessaloniki tech community",
   "dependencies": {},
   "devDependencies": {
@@ -21,7 +21,9 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "scripts": {},
+  "scripts": {
+    "test": "mocha ./tests/test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/skgtech/skgtech.github.io.git"
@@ -31,15 +33,16 @@
   },
   "keywords": [
     "thessaloniki",
-    "skg"
+    "skg",
+    "skgtech"
   ],
   "author": {
-    "name": "Thessaloniki",
-    "url": "http://github.com/thessaloniki"
+    "name": "SKGTech.io",
+    "url": "https://github.com/skgtech/"
   },
   "contributors": [
     {
-      "name": "Mod Kaffes <modkaffes@gmail.com>"
+      "name": "SKGTech.io <hello@skgtech.io>"
     }
   ],
   "license": "MIT"

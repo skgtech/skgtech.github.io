@@ -1,0 +1,10 @@
+# Git
+.git/
+
+# npm
+/node_modules
+
+# ruby bundle
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/

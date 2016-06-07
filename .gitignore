@@ -8,6 +8,8 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+.bundle
+vendor/bundle
 
 node_modules
 assets/components
