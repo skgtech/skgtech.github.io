@@ -3,7 +3,7 @@
 version: '2'
 services:
   web:
-    image: skg
+    image: skgtech/website
     container_name: skgtech_website
     volumes:
       - ./_sass:/app/skgtech.io/_sass
