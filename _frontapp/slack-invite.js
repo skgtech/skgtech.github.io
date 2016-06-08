@@ -1,7 +1,6 @@
 /**
  * @fileOverview scripts about the Slack Invitation form.
  */
-var $ = require('jquery');
 
 var Slack = module.exports = function () {};
 
