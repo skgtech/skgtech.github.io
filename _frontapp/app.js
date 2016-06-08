@@ -10,6 +10,8 @@
  * @fileOverview Frontend application bootstrap file
  */
 
+global.$ = require('jquery');
+
 var Front = require('./frontpage');
 var SlackApp = require('./slack-invite');
 require('./newsletter');
