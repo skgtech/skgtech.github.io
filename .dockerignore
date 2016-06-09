@@ -8,3 +8,6 @@
 /.bundle/
 /vendor/bundle
 /lib/bundler/man/
+
+.sass-cache/
+*/.sass-cache/

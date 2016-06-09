@@ -1,5 +1,5 @@
 # docker compose up -d
-# open http://172.19.0.2:3000/
+# open http://172.18.0.2:3000/
 version: '2'
 services:
   web:
