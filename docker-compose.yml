@@ -6,13 +6,7 @@ services:
     image: skgtech/website
     container_name: skgtech_website
     volumes:
-      - ./_sass:/app/skgtech.io/_sass
-      - ./_frontapp:/app/skgtech.io/_frontapp
-      - ./_includes:/app/skgtech.io/_includes
-      - ./_layouts:/app/skgtech.io/_layouts
-      - ./_data:/app/skgtech.io/_data
-      - ./assets:/app/skgtech.io/assets
-      - ./tests:/app/skgtech.io/tests
+      - ./:/app/skgtech.io/
     ports:
       - "3000:3000"
       - "3001:3001"

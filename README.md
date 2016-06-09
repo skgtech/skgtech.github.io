@@ -35,10 +35,10 @@ Run docker-compose
 docker compose-up -d
 ```
 
-Open http://172.17.0.2:3000 on your browser.
+Open http://172.18.0.2:3000/ on your browser.
 
 ```
-google-chrome http://172.17.0.2:3000
+google-chrome http://172.18.0.2:3000/
 ```
 
 Make git commits locally under repo at `/path/to/skgtech.github.io/`.
