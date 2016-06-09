@@ -33,7 +33,6 @@ Run docker-compose
 
 ```
 docker compose-up -d
-
 ```
 
 Open http://172.17.0.2:3000 on your browser.
