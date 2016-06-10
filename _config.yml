@@ -27,6 +27,9 @@ githubrepo: "https://github.com/skgtech/skgtech.github.io"
 
 production_url : http://skgtech.io
 
+sass:
+    sass_dir: ./_scss
+
 # Open Graph data
 og:
   app_id: "698696243515776"
