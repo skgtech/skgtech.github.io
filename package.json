@@ -1,0 +1,21 @@
+{
+  "name": "skgtech",
+  "version": "3.0.0",
+  "description": "SKGTech Official Website",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skgtech/skgtech.github.io.git"
+  },
+  "keywords": [
+    "skgtech",
+    "thessaloniki",
+    "community"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skgtech/skgtech.github.io/issues"
+  },
+  "homepage": "https://github.com/skgtech/skgtech.github.io#readme"
+}
