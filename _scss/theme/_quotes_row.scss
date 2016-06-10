@@ -17,8 +17,12 @@
         }
         .quotation_block{
             h6{
-                color: darken(saturate(adjust-hue($green, 0.1386), 7.9630), 18.8235);
+                color: darken(saturate(adjust-hue($green, 0.1386), 7.9630), 1.8235);
             }
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
     }
 }

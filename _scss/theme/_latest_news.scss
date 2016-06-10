@@ -6,18 +6,19 @@
     }
     .post-title{
         a{
-            color: $dark;
+            color: #fff;
             &:hover,&:focus{
-                color: $green;
+                color: $dark;
             }
         }
     }
     .post-meta{
-        color: $lightGreen;
+        text-transform: none;
+        color: #fff;
         a{
-            color: $lightGreen;
+            color: $dark;
             &:hover,&:focus{
-                color: $dark;
+                text-decoration: underline;
             }
         }
     }

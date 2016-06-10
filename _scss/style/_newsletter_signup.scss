@@ -1,10 +1,10 @@
 .newsletter_signup{
-    
+
     padding: 38px 0;
     h4{
         margin: 0 0 3px;
         font-family: $montserrat;
-        
+
         font-weight: bold;
         line-height: 1;
     }
@@ -15,16 +15,16 @@
 			margin-bottom: 10px;
 		}
     }
-    
+
     &.style2{
-        
+
         overflow: hidden;
         &:before{
             font-family: "FontAwesome";
             content: "\f003";
             font-size: 172px;
             display: block;
-            
+
             opacity: 0.2;
             position: absolute;
             right: -35px;
@@ -35,10 +35,29 @@
             -ms-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
         }
         h4,p{
-            
+
         }
     }
-    
+
+    &.slack {
+        overflow: hidden;
+        &:before{
+            font-family: "FontAwesome";
+            content: "\f198";
+            font-size: 172px;
+            display: block;
+
+            opacity: 0.2;
+            position: absolute;
+            right: -35px;
+            top: -3px;
+            line-height: 1;
+        }
+        h4,p{
+
+        }
+    }
+
     &.style3{
         overflow: hidden;
         .container{
@@ -64,8 +83,8 @@
 
 .newsletter_signup_form{
     .form-control{
-        border-radius: 2px;        
-        width: 260px;        
+        border-radius: 2px;
+        width: 260px;
         font: 16px/24px $karla;
         padding: 9px 15px;
         height: 42px;
@@ -77,38 +96,38 @@
 			width: 256px;
 			margin-bottom: 10px;
 		}
-        &::-moz-placeholder {            
+        &::-moz-placeholder {
             opacity: 1;
         }
         &:-ms-input-placeholder {
-            
+
         }
         &::-webkit-input-placeholder {
-            
+
         }
         &:focus{
             box-shadow: none;
         }
     }
     .btn-primary{
-        line-height: 40px;        
+        line-height: 40px;
         &:hover,&:focus{
         }
     }
-    
+
     &.style2{
-        .form-control{            
+        .form-control{
             &::-moz-placeholder {
-                
+
             }
             &:-ms-input-placeholder {
-                
+
             }
             &::-webkit-input-placeholder {
-                
+
             }
         }
-        .btn-primary{            
+        .btn-primary{
         }
     }
 }

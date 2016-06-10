@@ -8,7 +8,17 @@
     }
 
     &.style2{
-        background: #a4b3c5;
+        background: $lightGreen;
+        &:before{
+            color: $dark;
+        }
+        h4,p{
+            color: $dark;
+        }
+    }
+
+    &.slack{
+        background: $lightGreen;
         &:before{
             color: $dark;
         }
