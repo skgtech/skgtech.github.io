@@ -42,7 +42,8 @@ gulp.task('sass', function () {
     return gulp.src('_scss/style.scss')
         .pipe(sass({
             includePaths: ['scss'],
-            onError: browserSync.notify
+            onError: browserSync.notify,
+            sourceComments: true
         }))
         .pipe(gulp.dest('_site/css'))
         .pipe(browserSync.reload({stream:true}))
