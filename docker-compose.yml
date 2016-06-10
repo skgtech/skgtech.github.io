@@ -1,0 +1,15 @@
+# docker compose up -d
+# open http://172.18.0.2:3000/
+version: '2'
+services:
+  web:
+    image: skgtech/website
+    container_name: skgtech_website
+    volumes:
+      - ./:/app/skgtech.io/
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    # Uncomment the lines below to test
+    #command:
+      #- test
