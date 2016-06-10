@@ -1,4 +1,4 @@
-.quotes_row{
+.communities_row{
     background: $dark;
     &:before{
     }
@@ -24,24 +24,5 @@
             list-style-type: none;
             padding: 0;
         }
-    }
-}
-
-.quotation_block{
-    .quote_block{
-        background: #fff;
-        color: $ashLight;
-        &:after{
-            border-top-color: #fff;
-        }
-        .quote_sign{
-            color: $green;
-        }
-    }
-    h5{
-        color: #fff;
-    }
-    h6{
-        color: $lightGreen;
     }
 }

@@ -1,41 +1,16 @@
-.footer{
-    background: #fff;
-}
-
 .footer_sidebar{
     h5.widget-title{
-        color: #fff;
+        font-weight: 700;
+        color: $dark;
     }
 
     .widget{
         p{
-            color: $ashLight;
+            color: $lightGray;
         }
     }
-
-    .recent-posts{
-        li{
-            a{
-                color: $dark;
-				&:hover,&:focus{
-					color: $green;
-				}
-            }
-            & + li{
-                border-top-color: #e8ecf2;
-            }
-        }
-    }
-
-    .tweet{
-        p{
-            a{
-                color: $green;
-            }
-        }
-        .time_past{
-            color: $lightGreen;
-        }
+    img {
+        margin-bottom: 20px;
     }
 
     address{
@@ -44,47 +19,20 @@
             color: $lightGreen;
         }
 		a{
-			color: $ashLight;
+			color: $green;
 			&:hover,&:focus{
-				color: $green;
+				text-decoration: underline;
 			}
 		}
-    }
-}
-
-.copyright_area{
-    color: $ashLight;
-    .copy_inner{
-		&:before{
-			background: #e8ecf2;
-		}
-    }
-    .copyright_text{
-        a{
-            color: $ashLight;
-			&:hover,&:focus{
-				color: $green;
-			}
-        }
-    }
-    .nav{
-        li{
-            a{
-                color: $ashLight;
-                &:hover,&:focus{
-                    color: $green;
-                }
-            }
-        }
     }
 }
 
 .footer2{
-    background: $dark;
+    background: #fff;
     .footer_sidebar{
         .widget{
             p{
-                color: #92a2b4;
+                color: $lightGray;
             }
         }
 
@@ -102,39 +50,30 @@
             }
         }
 
-        .tweet{
-            p{
-                a{
-                    color: #fff;
-                }
-            }
-            .time_past{
-                color: #6a7d92;
-            }
-        }
-
-
         address{
-            color: #92a2b4;
+            color: $lightGray;
             span{
-                color: #fff;
+                color: $dark;
             }
         }
     }
     .copyright_area{
-        color: #92a2b4;
-        background: #3b4756;
+        color: $lightGray;
+        background: $dark;
         .copyright_text{
             a{
-                color: #92a2b4;
+                color: #fff;
+                &:hover {
+                    color: $green;
+                }
             }
         }
         .nav{
             li{
                 a{
-                    color: #92a2b4;
+                    color: $lightGray;
                     &:hover,&:focus{
-                        color: #fff;
+                        color: $green;
                     }
                 }
             }

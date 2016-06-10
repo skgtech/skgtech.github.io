@@ -20,7 +20,7 @@
         margin-bottom: 35px;
         font-family: $montserrat;
         line-height: 30px;
-        
+
         margin-top: 0;
         text-transform: uppercase;
     }
@@ -34,7 +34,7 @@
 .featureswithImage{
     margin: 50px 0;
     .list-heading{
-        font: 16px/27px $montserrat;        
+        font: 16px/27px $montserrat;
         margin: 0 0 20px;
 		@media (max-width: 767px){
 			margin: 20px 0;
@@ -54,7 +54,7 @@
             &:before{
                 width: 11px;
                 height: 11px;
-                
+
                 content: '';
                 float: left;
                 margin-top: 3.5px;
@@ -66,7 +66,7 @@
 }
 
 .text-block{
-    padding: 40px 56px;    
+    padding: 40px 56px;
     margin: 15px 0;
     font: italic 21px/30px $karla;
 	@media (max-width: 479px){
@@ -78,7 +78,7 @@
 
 .shareOnRow{
     ul{
-        float: right;
+        float: left;
         margin: 11px 0;
 		@media (max-width: 767px){
 			float: left;
@@ -86,12 +86,12 @@
 			margin-top: 20px;
 		}
         li{
-            font: bold 14px/23px $montserrat;            
+            font: bold 14px/23px $montserrat;
             float: left;
             & + li{
                 margin-left: 18px;
                 font-size: 18px;
-                a{                    
+                a{
                     &:hover,&:focus{
                     }
                 }

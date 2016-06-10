@@ -56,28 +56,3 @@
         }
     }
 }
-
-.countdown_block{
-    background: $dark;
-    .timer{
-		@media (max-width: 767px){
-			border-bottom-color: #536072;
-		}
-    }
-    .block{
-        color: #FFF;
-        & + .block{
-            border-left-color: #536072;
-        }
-        .string{
-            color: $lightGreen;
-        }
-    }
-    .btn-primary{
-        &:hover,&:focus{
-            background: $green;
-            border-color: $green;
-            color: #FFF;
-        }
-    }
-}

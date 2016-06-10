@@ -15,7 +15,7 @@
 		@media (max-width: 767px){
 			padding: 25px;
 			max-width: 400px;
-			margin: 0 auto 40px;			
+			margin: 0 auto 40px;
 		}
     }
     .upcoming_events{
@@ -45,7 +45,7 @@
 .event-listing-row{
 	@media (max-width: 767px){
 		max-width: 390px;
-		margin: 0 auto;		
+		margin: 0 auto;
 	}
 }
 
@@ -76,8 +76,8 @@
             &.active{
             }
         }
-    } 
-    .images_row{        
+    }
+    .images_row{
         text-align: center;
         overflow: hidden;
         position: relative;
@@ -92,31 +92,31 @@
         padding: 30px;
     }
     .event_title{
-        margin: 0 0 8px;        
+        margin: 0 0 8px;
         a{
             font: 700 16px/1.25 $montserrat;
             text-transform: uppercase;
             &:hover,&:focus{
-                
+
             }
         }
     }
     .event-place{
         font: 700 13px/18px $montserrat;
-        
+
         margin-top: 0;
         margin-bottom: 20px;
         text-transform: uppercase;
     }
     p{
-        font: 16px/24px $karla;        
+        font: 16px/24px $karla;
         margin-bottom: 28px;
     }
     .event-date{
         padding: 15px 30px;
         line-height: 23px;
-        font: 700 13px/18px $montserrat;        
-        text-transform: uppercase;        
+        font: 700 13px/18px $montserrat;
+        text-transform: uppercase;
         i{
             margin-right: 6px;
         }
@@ -136,7 +136,7 @@
     }
     .event-target{
         font-size: 21px;
-        line-height: 30px;        
+        line-height: 30px;
     }
     p{
         font-size: 16px;
@@ -190,49 +190,6 @@
         }
         .btn-primary{
             padding: 0 23px;
-        }
-    }
-}
-
-.countdown_block{
-    border-radius: 3px;
-    
-    .timer{
-        width: 566px;
-		@media (max-width: 1199px){
-			width: 430px;
-		}
-		@media (max-width: 767px){
-			border-bottom: 1px solid;
-			width: 100%;
-		}
-        .block{
-            width: 25%;
-        }
-    }
-    .block{
-        float: left;
-        text-align: center;
-        padding: 20px;
-        height: 84px;
-        font: 24px/30px $montserrat;
-		@media (max-width: 767px){
-			width: 100%;
-			padding: 20px 5px;
-		}
-        & + .block{
-            border-left: 1px solid;
-        }
-        .string{
-            display: block;
-            font-size: 12px;
-            line-height: 1;            
-            margin-bottom: 2px;
-            text-transform: uppercase;
-        }        
-    }
-    .btn-primary{
-        &:hover,&:focus{
         }
     }
 }
