@@ -33,6 +33,7 @@
 
 .how_help2.row{
     background: $dark;
+    opacity: 0.9;
 }
 
 .help-process2{
@@ -40,7 +41,7 @@
 		border-top-color: #505d6f;
 	}
     &  + .help-process2{
-        border-left-color: #fff;
+        border-left-color: rgba(255, 255, 255, 0.1);
     }
     h5{
         color: #fff;
