@@ -3,6 +3,9 @@
         .upcoming_label{
             color: $dark;
 			background: #fff;
+            i {
+                margin-right: 15px;
+            }
         }
         .event_time_loc{
             font-weight: normal;
