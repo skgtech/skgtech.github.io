@@ -5,16 +5,16 @@
             color: $ashLight;
         }
     }
-    
+
     .owl-nav{
-        border-color: $ashDark;
+        border-color: $lightGreen;
         .owl-prev,
         .owl-next{
-            color: $ashDark;
+            color: $lightGreen;
         }
         .owl-prev{}
         .owl-next{
-            border-left-color: $ashDark;
+            border-left-color: $lightGreen;
         }
     }
 }
