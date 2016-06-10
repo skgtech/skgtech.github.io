@@ -10,14 +10,14 @@
 	}
 	img{
 		@media (max-width: 767px){
-			display: inline-block;			
+			display: inline-block;
 		}
-	}	
+	}
     .memberIntro{
         position: absolute;
         bottom: 0;
         left: 0;
-        right: 0;        
+        right: 0;
         padding: 20px;
         text-transform: uppercase;
     }
@@ -44,11 +44,11 @@
 }
 .team_page_para{
     font: 21px/30px $karla;
-    color: $ashDark;
+    color: $lightGreen;
     letter-spacing: -0.1px;
     min-height: 100px;
     margin-bottom: 0;
-    &.about_var{        
+    &.about_var{
         min-height: auto;
     }
 }
@@ -82,7 +82,7 @@
 			margin-bottom: 10px;
 		}
     }
-    h6{        
+    h6{
         font: 11px/1 $montserrat;
         font-weight: 700;
         margin: 0;

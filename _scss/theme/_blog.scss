@@ -13,12 +13,12 @@
             color: $dark;
         }
     }
-    
+
     .post-meta{
         li{
-            color: $ashDark;
+            color: $lightGreen;
             a{
-                color: $ashDark;
+                color: $lightGreen;
                 &:hover,&:focus{
                     color: $dark;
                 }
@@ -35,7 +35,7 @@
             color: $ashLight;
         }
     }
-    
+
     blockquote{
         border-left-color: $green;
         p{
@@ -50,7 +50,7 @@
             }
         }
     }
-    
+
     &.post-type-link{
         .post-title{
             a{
@@ -60,7 +60,7 @@
             }
         }
     }
-    
+
     .post-tags{
         color: $ashLight;
         a{
@@ -146,7 +146,7 @@
 }
 
 .comment{
-    border-bottom-color: #d8dee6;    
+    border-bottom-color: #d8dee6;
     h4{
         color: $ashLight;
         a{

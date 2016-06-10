@@ -5,12 +5,22 @@
 			background: #fff;
         }
         .event_time_loc{
-            background: $ashDark;
+            font-weight: normal;
+            text-transform: none;
+            background: rgba(0,0,0,0.5);
             color: #fff;
+            a{
+                font-weight: normal;
+                text-transform: none;
+                color: $green;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
     .event_title{
-        a{            
+        a{
             color: $dark;
             &:hover,&:focus{
                 color: $green;
@@ -20,11 +30,5 @@
     .event_summery{
         color: $ashLight;
     }
-    &:hover,&:focus{        
-        .event_cover_photo{
-            .event_time_loc{
-                background: $green;
-            }
-        }
-    }
+
 }

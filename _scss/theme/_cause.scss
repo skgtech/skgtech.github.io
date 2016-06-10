@@ -6,13 +6,13 @@
                 background: #fff;
             }
         }
-    } 
+    }
     .images_row{
         background: $dark;
     }
 
     .cause_excepts{
-        background: #f1f4f8;        
+        background: #f1f4f8;
     }
     .cuase_title{
         a{
@@ -22,12 +22,12 @@
     p{
         color: $ashLight;
     }
-    
+
     &.list-item{
         .fund_raise_info{
 			background: #f8fafc;
             .days-left{
-                color: $ashDark;
+                color: $lightGreen;
             }
         }
     }

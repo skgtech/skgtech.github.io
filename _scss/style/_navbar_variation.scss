@@ -1,7 +1,7 @@
 /*Navbar 2*/
 .navbar2{
     padding: 0;
-    
+
     #mainNav{
 		@media (max-width: 767px){
 			padding: 15px;
@@ -10,12 +10,12 @@
             margin: 0;
             li{
                 a{
-                    line-height: 50px;                    
+                    line-height: 50px;
                     text-shadow: none;
                     padding: 0 20px;
                     &:hover,&:focus{
-                        
-                        
+
+
                     }
                 }
                 &.active{
@@ -27,15 +27,15 @@
                         float: none;
                         display: block;
                         a{
-                            
+
                             &:hover,&:focus{
-                                
+
                             }
                         }
                     }
                 }
             }
-        }        
+        }
     }
     .navbar-right{
         li{
@@ -43,7 +43,7 @@
 			@media (max-width: 991px){
 				display: none;
 			}
-			&.dropdown{				
+			&.dropdown{
 				@media (max-width: 991px){
 					display: block;
 				}
@@ -55,7 +55,7 @@
                 padding: 20px;
                 margin: 0;
                 border-radius: 0;
-                width: 300px;                
+                width: 300px;
                 border: none;
 				@media (max-width: 767px){
 					width: 100%;
@@ -69,7 +69,7 @@
             }
         }
     }
-    
+
     .search_form{
         .form-control{
             border-radius: 0;
@@ -79,25 +79,25 @@
             &::-moz-placeholder {
                 opacity: 1;
             }
-            &:-ms-input-placeholder {                
+            &:-ms-input-placeholder {
             }
-            &::-webkit-input-placeholder {                
+            &::-webkit-input-placeholder {
             }
             &:focus{
                 box-shadow: none;
             }
         }
     }
-    
-    
+
+
     &.affix{
         padding: 0;
         & + header,& + section{
             margin-top: 50px;
         }
     }
-    
-    &.navbar2-bottom{        
+
+    &.navbar2-bottom{
         #mainNav{
             .nav{
                 li{
@@ -105,12 +105,12 @@
                     }
                     &.active{
                         &>a{
-                            
-                            
+
+
                         }
                     }
                 }
-            }        
+            }
         }
     }
 }
@@ -120,14 +120,14 @@
     background: none;
     position: absolute;
     width: 100%;
-    #mainNav{		
+    #mainNav{
 		@media (max-width: 767px){
-			background: $ashDark;
+			background: $lightGreen;
 		}
         .navbar-nav{
             li{
-                a{                    
-                    &:hover,&:focus{                        
+                a{
+                    &:hover,&:focus{
                     }
                 }
                 &.active{
@@ -139,15 +139,15 @@
                         float: none;
                         display: block;
                         a{
-                            &:hover,&:focus{                                
+                            &:hover,&:focus{
                             }
                         }
                     }
                 }
             }
-        }        
-    }   
-    
+        }
+    }
+
     &.affix{
         & + header,& + section{
             margin-top: 0;
