@@ -1,6 +1,6 @@
 .our_casuses{
     background: #e8ecf2;
-    
+
     &.style2{
         background: $dark;
         .sectionTitle{
@@ -24,7 +24,7 @@
         .images_row{
             background: $dark;
         }
-        
+
         .cause_excepts{
             background: #fff;
         }
@@ -36,11 +36,11 @@
         p{
             color: $ashLight;
         }
-        
+
     }
     .owl-dots{
         .owl-dot{
-            background: $ashDark;
+            background: $lightGreen;
             &.active{
                 background: $dark;
             }
@@ -65,10 +65,10 @@
 }
 
 .cause_imgs{
-    
+
     .owl-dots{
-        .owl-dot{            
-            background: $ashDark;
+        .owl-dot{
+            background: $lightGreen;
             &.active{
                 background: #fff;
             }

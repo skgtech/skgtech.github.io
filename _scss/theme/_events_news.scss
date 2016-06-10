@@ -12,13 +12,13 @@
                 background: #fff;
             }
         }
-    } 
+    }
     .images_row{
         background: $dark;
     }
 
     .event_excepts{
-        background: #f1f4f8;        
+        background: #f1f4f8;
     }
     .event_title{
         a{
@@ -29,13 +29,13 @@
         }
     }
     .event-place{
-        color: $ashDark;
+        color: $lightGreen;
     }
     p{
         color: $ashLight;
     }
     .event-date{
-        color: $ashDark;
+        color: $lightGreen;
         background: #f8fafc;
     }
 }
@@ -58,7 +58,7 @@
 }
 
 .countdown_block{
-    background: $dark;    
+    background: $dark;
     .timer{
 		@media (max-width: 767px){
 			border-bottom-color: #536072;
@@ -70,8 +70,8 @@
             border-left-color: #536072;
         }
         .string{
-            color: $ashDark;
-        }        
+            color: $lightGreen;
+        }
     }
     .btn-primary{
         &:hover,&:focus{

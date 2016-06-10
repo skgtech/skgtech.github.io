@@ -4,7 +4,7 @@
         color: $dark;
         background: #fff;
     }
-    
+
     .event-title{
         a{
             color: $dark;
@@ -12,10 +12,10 @@
     }
     .event-meta{
         a{
-            color: $ashDark;
+            color: $lightGreen;
         }
     }
-    
+
     .flip-clock-wrapper{
         ul{
             li{
@@ -44,10 +44,10 @@
     }
     .flip-clock-divider{
         .flip-clock-label{
-            color: $ashDark;
+            color: $lightGreen;
         }
     }
     .flip-clock-dot{
-        background: $ashDark;
+        background: $lightGreen;
     }
 }

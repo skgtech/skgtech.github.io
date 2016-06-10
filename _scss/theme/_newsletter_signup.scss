@@ -4,9 +4,9 @@
         color: #fff;
     }
     p{
-        color: $ashDark;
+        color: $lightGreen;
     }
-    
+
     &.style2{
         background: #a4b3c5;
         &:before{
@@ -16,7 +16,7 @@
             color: $dark;
         }
     }
-    
+
     &.style3{
         .container{
             &:before{
@@ -28,7 +28,7 @@
 
 .newsletter_signup_form{
     .form-control{
-        background-color: $ashDark;
+        background-color: $lightGreen;
         color: #fff;
         &::-moz-placeholder {
             color: #fff;
@@ -46,7 +46,7 @@
             border-color: $green;
         }
     }
-    
+
     &.style2{
         .form-control{
             background: #fff;

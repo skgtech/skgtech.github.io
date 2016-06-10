@@ -24,7 +24,7 @@
         .price_ratings{
             border-top-color: #dee0e9;
             .stars{
-                color: $ashDark;
+                color: $lightGreen;
                 .starred{
                     color: $green;
                 }
@@ -35,12 +35,12 @@
 
 .product-filtering{
     h5{
-        color: $ashDark;
+        color: $lightGreen;
     }
     .bootstrap-select{
         .btn{
             border-color: $dark;
-            color: $ashDark;
+            color: $lightGreen;
         }
         .dropdown-menu{
             li {
@@ -48,7 +48,7 @@
                     border-top-color: #f1f4f8;
                 }
                 a{
-                    color: $ashDark;
+                    color: $lightGreen;
                     &:hover,&:focus{
                         color: $green;
                     }
@@ -68,13 +68,13 @@
         background-color: #f1f4f8;
         color: $dark;
         &::-moz-placeholder {
-            color: $ashDark;
+            color: $lightGreen;
         }
         &:-ms-input-placeholder {
-            color: $ashDark;
+            color: $lightGreen;
         }
         &::-webkit-input-placeholder {
-            color: $ashDark;
+            color: $lightGreen;
         }
     }
     .input-group-addon{
@@ -83,15 +83,15 @@
 }
 
 .price-range{
-    .slider-range{  
-        background: $ashDark;
+    .slider-range{
+        background: $lightGreen;
     }
     .ui-slider-range{
         background: $green;
     }
     .ui-slider-handle{
         background: #fff;
-        border-color: $ashDark;
+        border-color: $lightGreen;
     }
     .range-amount{
         color: $dark;
@@ -105,34 +105,34 @@
             color: $dark;
         }
     }
-    
+
     .pricing-rating{
         .price{
             border-right-color: #dee0e9;
         }
         h6{
-            color: $ashDark;
+            color: $lightGreen;
         }
         h2{
             color: $dark;
         }
         .stars{
-            color: $ashDark;
+            color: $lightGreen;
             .starred{
                 color: $green;
             }
         }
     }
-    
+
     .speciface{
         .this-title{
-            color: $ashDark;
+            color: $lightGreen;
         }
         & + .speciface{
             border-top-color: #dee0e9;
         }
     }
-    
+
     [name="color"]{
         &#color1 + label{
             background: #8bd6ea;
@@ -144,8 +144,8 @@
             background: #eaca8b;
         }
     }
-    
+
     [type="number"]{
-        border-color: $ashDark;
-    }    
+        border-color: $lightGreen;
+    }
 }

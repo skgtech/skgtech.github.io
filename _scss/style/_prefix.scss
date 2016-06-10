@@ -7,10 +7,10 @@ body{
         line-height: 24px;
         font-family: $karla;
     }
-    
+
     /*Section Fix*/
     section, header, footer{
-        &.row{            
+        &.row{
             margin: 0;
             position: relative;
         }
@@ -50,7 +50,7 @@ a,.btn,button{
     text-align: center;
     @include transition;
     &.btn-outline{
-        background: none;        
+        background: none;
     }
     &.white{
         &.btn-outline{
@@ -146,7 +146,7 @@ a,.btn,button{
 				padding-left: 15px;
 				padding-right: 15px;
 			}
-            &+.amount_box{                
+            &+.amount_box{
                 padding-left: 35px;
                 padding-right: 35px;
 				@media (max-width: 1199px){
@@ -179,7 +179,7 @@ a,.btn,button{
     box-shadow: none;
     margin: 0;
     overflow: visible;
-    
+
     .progress-bar{
         position: relative;
         transition-duration: 1000ms;
@@ -219,7 +219,7 @@ a,.btn,button{
         margin-top: 22px;
         line-height: 36px;
         font-family: $montserrat;
-        font-weight: bold;        
+        font-weight: bold;
         margin-bottom: 0;
 		@media (max-width: 767px){
 			font-size: 20px;

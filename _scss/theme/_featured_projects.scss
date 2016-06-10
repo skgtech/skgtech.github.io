@@ -7,19 +7,19 @@
 }
 
 .featured_porduct_box{
-       
+
     .label{
-        background: $ashDark;
+        background: $lightGreen;
     }
     .rating{
         i{
-            color: $ashDark;
+            color: $lightGreen;
             &.starred{
                 color: $green;
             }
         }
     }
-    
+
     .btn-group{
         .btn{
             border-color: $green;

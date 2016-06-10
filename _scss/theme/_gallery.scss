@@ -1,6 +1,6 @@
 .gallery-filter{
     li{
-        color: $ashDark;
+        color: $lightGreen;
     }
     .active{
         background: $green;
@@ -22,17 +22,17 @@
             color: $dark;
         }
     }
-    
+
     .media{
         background: #f1f4f8;
     }
     h4{
-        a{                
+        a{
             color: $dark;
         }
     }
     p{
-        color: $ashDark;
+        color: $lightGreen;
     }
 }
 
@@ -40,7 +40,7 @@
 .featured-content{
     .owl-dots{
         .owl-dot{
-            background: $ashDark;
+            background: $lightGreen;
             &.active{
                 background: #fff;
             }
@@ -52,7 +52,7 @@
     li{
         a{
             color: $dark;
-            border-color: $ashDark;
+            border-color: $lightGreen;
             &:hover,&:focus{
                 background: #f1f4f8;
             }
@@ -64,13 +64,13 @@
 }
 
 .view-filter{
-    border-color: $ashDark;
+    border-color: $lightGreen;
     li{
         & + li{
-            border-left-color: $ashDark;
+            border-left-color: $lightGreen;
         }
         a{
-            color: $ashDark;
+            color: $lightGreen;
             &:hover,&:focus{
                 color: $green;
             }

@@ -20,11 +20,11 @@
                     border-top-color: #e1e5eb;
                 }
                 a{
-                    color: $ashDark;
+                    color: $lightGreen;
                 }
                 &.active{
                     a{
-                        color: $green;                    
+                        color: $green;
                     }
                 }
             }
@@ -41,17 +41,17 @@
             }
             .date{
                 a{
-                    color: $ashDark;
+                    color: $lightGreen;
                 }
             }
             .price{
                 color: $dark;
                 del{
-                    color: $ashDark;
+                    color: $lightGreen;
                 }
             }
             .proRating{
-                color: $ashDark;
+                color: $lightGreen;
                 .starred{
                     color: $green;
                 }

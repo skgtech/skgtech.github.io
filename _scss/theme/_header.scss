@@ -40,10 +40,10 @@
 .language_picker{
     .btn-group{
         .btn{
-            color: $ashDark;
-            border-color: $ashDark;
+            color: $lightGreen;
+            border-color: $lightGreen;
             .caret{
-                border-top-color: $ashDark;
+                border-top-color: $lightGreen;
             }
         }
     }
@@ -58,10 +58,10 @@
             border-left-color: #dee0e9;
         }
         span{
-            color: $ashDark;
+            color: $lightGreen;
         }
         h6{
-            color: $ashDark;
+            color: $lightGreen;
         }
         h5{
             color: $dark;
@@ -82,7 +82,7 @@
     .nav{
         li{
             a{
-                color: $ashDark;
+                color: $lightGreen;
                 &:hover,&:focus{
                     background: #3b4858;
                 }
@@ -95,13 +95,13 @@
                             border-color: $green;
                             color: #fff;
                             &::-moz-placeholder {
-                                color: $ashDark;
+                                color: $lightGreen;
                             }
                             &:-ms-input-placeholder {
-                                color: $ashDark;
+                                color: $lightGreen;
                             }
                             &::-webkit-input-placeholder {
-                                color: $ashDark;
+                                color: $lightGreen;
                             }
                         }
                     }

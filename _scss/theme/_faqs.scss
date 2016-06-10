@@ -3,18 +3,18 @@
     h4{
         color: $dark;
     }
-    
+
     ul{
         li{
             & + li{
                 border-top-color: #e1e5eb;
             }
             a{
-                color: $ashDark;
+                color: $lightGreen;
             }
             &.active{
                 a{
-                    color: $green;                    
+                    color: $green;
                 }
             }
         }
