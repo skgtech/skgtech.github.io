@@ -1,0 +1,94 @@
+.our_casuses{
+    background: #e8ecf2;
+    
+    &.style2{
+        background: $dark;
+        .sectionTitle{
+            h3{
+                color: #fff;
+            }
+        }
+    }
+}
+
+.causes_carousel{
+    .item{
+        .carousel-indicators{
+            li{
+                background: #91a1b4;
+                &.active{
+                    background: #fff;
+                }
+            }
+        }
+        .images_row{
+            background: $dark;
+        }
+        
+        .cause_excepts{
+            background: #fff;
+        }
+        .cuase_title{
+            a{
+                color: $dark;
+            }
+        }
+        p{
+            color: $ashLight;
+        }
+        
+    }
+    .owl-dots{
+        .owl-dot{
+            background: $ashDark;
+            &.active{
+                background: $dark;
+            }
+        }
+    }
+    &.style2{
+        .owl-dots{
+            .owl-dot{
+                &.active{
+                    background: #fff;
+                }
+            }
+        }
+    }
+    &.style3{
+        .item{
+            .cause_excepts{
+                background: #e8ecf2;
+            }
+        }
+    }
+}
+
+.cause_imgs{
+    
+    .owl-dots{
+        .owl-dot{            
+            background: $ashDark;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}
+
+.recent_cause{
+    .cause_desc{
+        background: #eef2f6;
+    }
+    h5{
+        color: $dark;
+    }
+    p{
+        color: $ashLight;
+    }
+    .inner{
+        background: #eef2f6;
+        &:hover{
+        }
+    }
+}

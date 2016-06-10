@@ -1,0 +1,30 @@
+.upcoming_events{
+    .event_cover_photo{
+        .upcoming_label{
+            color: $dark;
+			background: #fff;
+        }
+        .event_time_loc{
+            background: $ashDark;
+            color: #fff;
+        }
+    }
+    .event_title{
+        a{            
+            color: $dark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+    }
+    .event_summery{
+        color: $ashLight;
+    }
+    &:hover,&:focus{        
+        .event_cover_photo{
+            .event_time_loc{
+                background: $green;
+            }
+        }
+    }
+}

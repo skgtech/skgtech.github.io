@@ -1,0 +1,82 @@
+.gallery-filter{
+    li{
+        color: $ashDark;
+    }
+    .active{
+        background: $green;
+        color: #fff;
+    }
+}
+
+.gallery-item{
+    .popup{
+        background: $green;
+        i{
+            color: #fff;
+            border-color: #f8fbfa;
+        }
+    }
+    .inner{
+        background: #f1f4f8;
+        h5{
+            color: $dark;
+        }
+    }
+    
+    .media{
+        background: #f1f4f8;
+    }
+    h4{
+        a{                
+            color: $dark;
+        }
+    }
+    p{
+        color: $ashDark;
+    }
+}
+
+
+.featured-content{
+    .owl-dots{
+        .owl-dot{
+            background: $ashDark;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}
+
+.gallery-pagination{
+    li{
+        a{
+            color: $dark;
+            border-color: $ashDark;
+            &:hover,&:focus{
+                background: #f1f4f8;
+            }
+        }
+        &.active a{
+            color: $green;
+        }
+    }
+}
+
+.view-filter{
+    border-color: $ashDark;
+    li{
+        & + li{
+            border-left-color: $ashDark;
+        }
+        a{
+            color: $ashDark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+        &.active a{
+            color: $green;
+        }
+    }
+}

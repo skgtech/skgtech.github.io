@@ -1,0 +1,118 @@
+.featured_events{
+    .caption{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		.caption_row{
+			flex: 1;
+			align-self: center;
+		}
+		@media (max-width: 991px){
+			position: relative;
+			top: 0;
+			transform: none;
+		}
+    }
+    .event_box{
+        max-width: 380px;
+		@media (max-width: 991px){
+			max-width: 100%;
+		}
+    }
+    
+    .owl-dots{
+        display: table;
+        position: absolute;
+        left: 50%;
+        bottom: 38px;
+        transform: translateX(-50%);
+		@media (max-width: 991px){
+			bottom: 0;
+		}
+        .owl-dot{
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            float: left;
+            &.active{
+            }
+            & + .owl-dot{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.featured_event_box{
+    padding: 40px 37px 38px;
+	@media (max-width: 1199px){
+		padding: 25px;
+	}
+	@media (max-width: 991px){
+		padding: 25px 0;
+	}
+    .label{
+        padding: 0 15px;
+    }
+    .days_left{
+        font: 700 13px/28px $montserrat;
+    }
+    .event_meta{
+        margin-bottom: 15px;		
+		@media (max-width: 1199px){
+			margin-bottom: 10px;
+		}
+    }
+    .event_link{
+        margin-top: 0;
+        margin-bottom: 20px;
+		@media (max-width: 1199px){
+			margin-bottom: 15px;
+		}
+        a{
+            line-height: 30px;
+            font-weight: 700;
+            font-family: $montserrat;
+			@media (max-width: 1199px){
+				line-height: 24px;
+			}
+        }
+    }
+    p{
+        font: 16px/24px $karla;
+        margin-bottom: 30px;
+		@media (max-width: 1199px){
+			margin-bottom: 20px;
+		}
+    }
+    .fund_raises{
+        border-top: 0.5px solid;
+        margin-bottom: 20px;
+		@media (max-width: 1199px){
+			margin-bottom: 15px;
+		}
+        .amount_box{
+            width: 50%;
+            padding-top: 20px;
+			@media (max-width: 1199px){
+				padding-top: 15px;
+			}
+        }
+        .raised{
+            h2{
+            }
+        }
+		h2{			
+			@media (max-width: 767px){
+				font-size: 24px;
+			}
+		}
+    }
+}

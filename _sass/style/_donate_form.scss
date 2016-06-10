@@ -1,0 +1,112 @@
+.donate_form{
+    border-radius: 3px;    
+    padding: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+	@media (max-width: 767px){
+		padding: 30px;
+	}
+    button.mfp-close{
+        position: absolute;
+        border-radius: 100%;
+        top: 25px;
+        right: 25px;
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+        line-height: 20px;
+        font-size: 22px;
+    }
+    h3,h5,h4{
+        font-family: $montserrat;
+        font-weight: 700;
+        margin: 0 0 10px;
+        span{
+        }
+    }
+    h3{        
+        margin: 0 0 45px;
+    }
+    h4{
+        line-height: 1;
+    }
+    h5{
+        margin-bottom: 20px;
+    }
+    
+    input[type="radio"]{
+        display: none;
+        & + label{
+            font-weight: normal;
+            padding-left: 30px;
+            margin-bottom: 45px;
+            position: relative;
+            &:before{
+                content: '';
+                float: left;
+                width: 18px;
+                height: 18px;
+                border: 1px solid;
+                border-radius: 100%;
+                margin-left: -30px;
+            }
+            &:after{
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: transparent;
+                border-radius: 100%;
+                left: 4px;
+                position: absolute;
+                top: 4px;
+                @include transition;
+            }
+            p{
+                margin-bottom: 0;
+                font: 15px/24px $karla;
+            }
+        }
+        &:checked + label{
+            &:after{
+            }
+        }
+    }
+    
+    .input-group{
+        .left{
+            width: 52px;
+        }
+        .form-control{
+            height: 45px;
+            box-shadow: none;
+            
+            
+            &:not(:first-child):not(:last-child){
+                border-bottom-right-radius: 3px;
+                border-top-right-radius: 3px;
+				@media (max-width: 479px){
+					border-bottom-right-radius: 0;
+				}
+            }
+        }
+        .right{
+            background: none;
+            border: none;
+            padding: 0;
+            padding-left: 8px;
+			@media (max-width: 479px){
+				float: left;
+				padding-left: 0;
+				display: block;
+				width: 100%;
+				button{
+					display: block;
+					width: 100%;
+					border-radius: 0 0 3px 0;
+				}
+			}
+        }
+    }
+}

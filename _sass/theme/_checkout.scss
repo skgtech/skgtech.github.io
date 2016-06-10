@@ -1,0 +1,77 @@
+.checkout-form{
+    color: $dark;
+    
+    label{
+        span{
+            color: #dc3131;
+        }
+        & + .sub-label{
+            color: $ashLight;
+        }
+    }
+    
+    .form-control{
+        border-color: #cbd0db;
+        background-color: #f1f4f8;
+        color: $ashLight;        
+    }
+    
+    #hide-name{
+        & + label{
+            color: $ashLight;
+            &:before{
+                border-color: #9299aa;
+            }
+        }
+    }
+    
+    .total-pay-amount{
+        color: $dark;
+        span{
+            color: $green;
+        }
+    }
+}
+
+.checkout-table{
+    table{
+        thead{
+            background: $dark;
+            color: #FFF;            
+            tr{
+                th{
+                    & + th{
+                        border-color: #cbd0db;
+                    } 
+                }
+            }
+        }
+        tbody{
+            border-left-color: #cbd0db;
+            border-right-color: #cbd0db;
+            tr{
+                td{
+                    border-color: #cbd0db;
+                    & + td{
+                        border-left-color: #cbd0db;
+                    }
+                    .close{
+                        color: #da1d1d;
+                    }
+                }
+            }
+        }
+        tfoot{
+            border-left-color: #cbd0db;
+            border-right-color: #cbd0db;
+            border-bottom-color: #cbd0db;
+            tr{
+                td{
+                    span{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

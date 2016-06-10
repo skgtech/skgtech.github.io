@@ -1,0 +1,160 @@
+.help-process_row{
+    margin-bottom: 70px;
+}
+.help-process{
+    text-align: center;
+    .icon_box{
+        line-height: 70px;
+    }
+    h5{
+        margin: 25px 0;
+        line-height: 1;
+        
+        font-family: $montserrat;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p{
+        font: 16px/24px $karla;
+        
+        margin: 0;
+    }
+}
+.help-process{
+    text-align: center;
+    .icon_box{
+        line-height: 70px;
+    }
+    h5{
+        margin: 25px 0;
+        line-height: 1;
+        
+        font-family: $montserrat;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    p{
+        font: 16px/24px $karla;
+        
+        margin: 0;
+    }
+}
+
+.how_help{
+    .sectionTitle{
+        margin-bottom: 55px;
+    }
+    .buttons{
+        display: table;
+        margin: 0 auto;
+		text-align: center;
+		@media (max-width: 479px){
+			max-width: 250px;			
+		}
+        a{
+            float: left;
+			margin-bottom: 0;
+			@media (max-width: 479px){
+				float: none;
+				display: inline-block;				
+			}
+            & + a{
+            	margin-left: 20px;
+				@media (max-width: 479px){
+					margin-left: 0;
+					margin-top: 10px;
+				}
+                &:hover,&:focus{
+                }
+            }
+        }
+    }
+}
+
+.how_help2.row{
+    margin-top: -122px;
+    z-index: 2;
+	@media (max-width: 991px){
+		margin-top: 0;
+	}
+}
+
+.help-process2{
+    padding: 0 60px;
+	@media (max-width: 991px){
+		border-top: 1px solid;
+	}
+	@media (max-width: 767px){
+		padding: 0 25px;
+	}
+    &  + .help-process2{
+        border-left: 1px solid;
+		@media (max-width: 991px){
+			border-left: none;
+		}
+    }
+    .media{}
+    .media-left{
+        vertical-align: middle;
+        padding-right: 25px;
+    }
+    .media-body{}
+    h5{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: $montserrat;
+        
+        text-transform: uppercase;
+    }
+    p{
+        margin-bottom: 25px;        
+        line-height: 21px;
+    }
+}
+
+/*How Help*/
+.how_help3{
+    padding: 85px 0;    
+}
+
+.how_help_post{
+	@media (max-width: 767px){
+		margin-bottom: 60px;
+	}
+    .label{        
+    }
+    .this_title{
+        margin: 30px 0 20px;
+        font-family: $montserrat;
+        font-weight: 700;
+        line-height: 36px;
+        a{            
+        }
+    }
+    p{
+        font: 16px/24px $karla;
+        margin-bottom: 40px;
+    }
+}
+
+.help-process3{
+    margin-top: 20px;
+    .media-left{
+        padding-right: 20px;
+        span{
+            display: block;
+            width: 70px;
+            text-align: center;
+        }
+    }
+    h5{
+        font-family: $montserrat;
+        text-transform: uppercase;        
+        font-weight: 700;
+        margin: 0 0 15px;
+    }
+    p{
+        font: 16px/24px $karla;        
+        margin-bottom: 20px;
+    }
+}

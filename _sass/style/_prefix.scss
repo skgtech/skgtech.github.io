@@ -1,0 +1,233 @@
+/*Prefix Styles*/
+.m0{margin: 0;}
+.p0{padding: 0;}
+
+body{
+    p{
+        line-height: 24px;
+        font-family: $karla;
+    }
+    
+    /*Section Fix*/
+    section, header, footer{
+        &.row{            
+            margin: 0;
+            position: relative;
+        }
+    }
+}
+
+/*Ancore*/
+a,.btn,button{
+    outline: none;
+    @include transition;
+    &:before,&:after{
+        @include transition;
+    }
+    &:focus,&:hover{
+        outline: none;
+        text-decoration: none;
+        @include transition;
+    }
+}
+
+/*Section Gap*/
+.sectionGap{
+    padding: 85px 0 110px;
+}
+
+/*Button*/
+.btn-primary{
+    padding: 0 28px;
+    border:1px solid;
+    border-radius: 3px;
+    font: 700 13px/43px $montserrat;
+    text-transform: uppercase;
+    box-shadow: none;
+    display: inline-block;
+    white-space: nowrap;
+    text-shadow: none;
+    text-align: center;
+    @include transition;
+    &.btn-outline{
+        background: none;        
+    }
+    &.white{
+        &.btn-outline{
+            background: transparent;
+        }
+        &:hover,&:focus{
+        }
+    }
+    &.dark{
+        &.btn-outline{
+            background: transparent;
+        }
+        &:hover,&:focus{
+        }
+    }
+    &.btn-sm{
+        padding: 0 17px;
+        height: 26px;
+        line-height: 24px;
+        font-size: 11px;
+    }
+    &.btn-md{
+        padding: 0 19px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 13px;
+    }
+    &.hmfw{
+        min-width: 192px;
+    }
+    &.facebook-page{
+        &:hover,&:focus{
+        }
+    }
+    &:hover,&:focus{
+    }
+}
+
+/*Label*/
+.label,.label.widget-title{
+    font: 12px/28px $montserrat;
+    color: #fff;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 0.1px;
+    margin: 0 auto;
+    &.white{
+    }
+}
+
+/*Fund Rises*/
+.fund_raises{
+    .amount_box{
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-right: 30px;
+        text-transform: uppercase;
+        &+.amount_box{
+            padding-left: 30px;
+            padding-right: 0;
+            border-left: 1px solid;
+        }
+    }
+    h6{
+        font-family: $montserrat;
+        margin: 0;
+        line-height: 1;
+        margin-bottom: 5px;
+    }
+    h2,h3{
+        font-family: $montserrat;
+        margin: 0;
+        line-height: 1;
+    }
+    &.style2{
+        .amount_box{
+            padding: 15px 0 0;
+            &+.amount_box{
+                padding: 15px 0 0;
+                border: none;
+            }
+        }
+    }
+    &.style3{
+        .amount_box{
+            padding-top: 25px;
+            padding-bottom: 30px;
+            padding-right: 35px;
+            padding-left: 35px;
+			@media (max-width: 1199px){
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+            &+.amount_box{                
+                padding-left: 35px;
+                padding-right: 35px;
+				@media (max-width: 1199px){
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+				@media (max-width: 767px){
+					border: none;
+					padding-top: 0;
+				}
+            }
+        }
+        h2{
+            margin-bottom: 8px;
+            & + h6{
+                margin-top: 12px;
+            }
+        }
+    }
+}
+
+/*Fund ProgressBar*/
+.fund_progress{
+}
+
+
+.progress{
+    height: 5px;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    overflow: visible;
+    
+    .progress-bar{
+        position: relative;
+        transition-duration: 1000ms;
+    }
+    .percentage{
+        position: absolute;
+        right: 0;
+        transform: translateX(50%);
+        padding: 0 14px;
+        border-radius: 3px;
+        top: -31px;
+        line-height: 24px;
+        font-size: 12px;
+        font-family: $montserrat;
+        &:after{
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 4px solid;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .counter{}
+    }
+}
+
+/*Section Title */
+.sectionTitle{
+    max-width: 825px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    h3{
+        margin-top: 22px;
+        line-height: 36px;
+        font-family: $montserrat;
+        font-weight: bold;        
+        margin-bottom: 0;
+		@media (max-width: 767px){
+			font-size: 20px;
+			line-height: 26px;
+		}
+    }
+}
+
+.page-content{
+    padding: 73px 0;
+}

@@ -1,0 +1,43 @@
+.featured_events{
+    .event_box{
+        background: #fff;
+    }
+    
+    .owl-dots{
+        .owl-dot{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+				@media (max-width: 991px){
+					background: $dark;
+				}
+            }
+        }
+    }
+}
+
+.featured_event_box{
+    background: #eef2f6;
+    .label{
+        background: $dark;
+    }
+    .days_left{
+        color: $ashDark;
+    }
+    .event_link{
+        a{
+            color: $dark;
+        }
+    }
+    p{
+        color: $ashLight;
+    }
+    .fund_raises{
+        border-top-color: #dee0e9;
+        .raised{
+            h2{
+                color: $green;
+            }
+        }
+    }
+}

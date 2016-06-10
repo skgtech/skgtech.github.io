@@ -1,0 +1,53 @@
+/*Upcoming Event*/
+.upcoming_event{
+    .upcoming_label{
+        color: $dark;
+        background: #fff;
+    }
+    
+    .event-title{
+        a{
+            color: $dark;
+        }
+    }
+    .event-meta{
+        a{
+            color: $ashDark;
+        }
+    }
+    
+    .flip-clock-wrapper{
+        ul{
+            li{
+                a{
+                    color: $dark;
+                    div{
+                        div{
+                            &.inn{
+                                color: $dark;
+                                background: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &.play{
+                li.flip-clock-before,li.flip-clock-active{
+                    .up,.down{
+                        .shadow{
+                            background: none #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .flip-clock-divider{
+        .flip-clock-label{
+            color: $ashDark;
+        }
+    }
+    .flip-clock-dot{
+        background: $ashDark;
+    }
+}

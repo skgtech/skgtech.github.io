@@ -1,0 +1,236 @@
+.our_causes{
+    padding: 90px 0;
+    .sectionTitle{
+        margin-bottom: 35px;
+    }
+}
+
+.our_recent_cause{
+    padding: 15px;
+}
+
+.our_casuses{
+    padding: 70px 0 80px;
+    
+    .sectionTitle{
+        margin-bottom: 30px;
+    }
+    
+    &.style2{
+        
+        .sectionTitle{
+            h3{                
+            }
+        }
+    }
+    &.style3{
+        background: none;
+    }
+}
+
+.causes_carousel{
+	@media (max-width: 699px){
+		max-width: 400px;
+		margin: 0 auto;
+	}
+    .item{
+        padding: 15px;
+		@media (max-width: 479px){
+			padding: 5px;
+		}
+        .item{
+            padding: 0;
+        }
+        .carousel-indicators{
+            bottom: 20px;
+            margin-bottom: 0;
+            display: table; 
+            width: auto;
+            margin-left: auto;
+            transform: translateX(-50%);
+            li{
+                width: 12px;
+                height: 12px;
+                border: none;
+                margin: 0;
+                float: left;
+                & + li{
+                    margin-left: 8px;
+                }
+                &.active{
+                    
+                }
+            }
+        }
+        .images_row{
+            
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            img{
+                @include transition;
+            }
+            a.btn-primary{
+                position: absolute;
+                bottom: -50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(50%);
+                z-index: 10;
+                @include transition;
+            }
+        }
+        
+        .cause_excepts{
+            padding: 30px;
+            
+        }
+        .fund_raises{
+            .amount_box{
+                width: 50%;
+            }
+        }
+        .cuase_title{
+            margin: 0 0 20px;
+            a{
+                font: 700 16px/1.25 $montserrat;
+                
+            }
+        }
+        p{
+            font: 16px/24px $karla;
+            
+            margin-bottom: 50px;
+        }
+        
+        &:hover,&:focus{
+            .images_row{
+                img{
+                    opacity: 0.3;
+                }
+                a.btn-primary{
+                    bottom: 50%;
+                }
+            }
+        }
+    }
+    .owl-dots{
+        display: table;
+        position: relative;
+        margin: 13px auto 0;
+        .owl-dot{            
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            float: left;
+            
+            & + .owl-dot{
+                margin-left: 8px;
+            }
+            &.active{
+                
+            }
+        }
+    }
+    &.style2{
+        .owl-dots{
+            .owl-dot{
+                &.active{
+                    
+                }
+            }
+        }
+    }
+    &.style3{
+        .item{
+            .cause_excepts{
+                
+            }
+        }
+    }
+}
+
+.cause_imgs{
+    
+    .owl-dots{
+        display: table;
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        .owl-dot{            
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            float: left;
+            
+            & + .owl-dot{
+                margin-left: 8px;
+            }
+            &.active{
+                
+            }
+        }
+    }
+}
+
+.featured_recent_cause{
+    padding: 15px;
+	@media (max-width: 767px){
+		max-width: 360px;
+		margin: 0 auto;
+	}
+	.event_box{
+		@media (max-width: 991px){
+			padding: 25px;
+		}
+	}
+}
+
+.recent_cause{
+    padding: 15px;
+    text-align: center;    
+	@media (max-width: 767px){
+		max-width: 360px;
+		margin: 0 auto;
+	}
+    img{
+        margin-bottom: 40px;
+    }
+    .cause_desc{
+        position: absolute;
+        padding: 0 35px;
+        top: 223px;
+        left: 0;
+        width: 100%; 
+		@media (max-width: 767px){
+			padding: 0 10px;
+		}
+        
+        @include transition;
+    }
+    h5{
+        font-family: $montserrat;
+        line-height: 40px;
+        text-transform: uppercase;
+        
+        margin: 0 0 10px;
+    }
+    p{
+        font: 16px/24px $karla;
+        
+        margin-bottom: 25px;
+    }
+    .inner{
+        
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            .cause_desc{
+                top: 0;
+                padding-top: 25px;
+                padding-bottom: 45px;
+            }
+        }
+    }
+}

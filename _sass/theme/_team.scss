@@ -1,0 +1,22 @@
+.board_head{
+    .memberIntro{
+        background: $green;
+        color: #fff;
+    }
+}
+
+.team_page_para{
+    color: $ashDark;
+    &.about_var{
+        color: $green;
+    }
+}
+
+.team_member{
+    h4{
+        color: $dark;
+    }
+    h6{
+        color: $ashDark;
+    }
+}

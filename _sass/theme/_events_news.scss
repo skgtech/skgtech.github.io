@@ -1,0 +1,83 @@
+.our_events_as_sidebar{
+    .inner{
+        background: #f0f3f8;
+    }
+}
+
+.event-listing{
+    .carousel-indicators{
+        li{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+            }
+        }
+    } 
+    .images_row{
+        background: $dark;
+    }
+
+    .event_excepts{
+        background: #f1f4f8;        
+    }
+    .event_title{
+        a{
+            color: $dark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+    }
+    .event-place{
+        color: $ashDark;
+    }
+    p{
+        color: $ashLight;
+    }
+    .event-date{
+        color: $ashDark;
+        background: #f8fafc;
+    }
+}
+
+
+.single-event{
+    .event-target{
+        color: $green;
+    }
+}
+
+.event-header{
+    background: $green;
+    .info-row{
+        color: #fff;
+        & + .info-row{
+            border-top-color: lighten(desaturate(adjust-hue($green, 0.2436), 4.8942), 4.3137);
+        }
+    }
+}
+
+.countdown_block{
+    background: $dark;    
+    .timer{
+		@media (max-width: 767px){
+			border-bottom-color: #536072;
+		}
+    }
+    .block{
+        color: #FFF;
+        & + .block{
+            border-left-color: #536072;
+        }
+        .string{
+            color: $ashDark;
+        }        
+    }
+    .btn-primary{
+        &:hover,&:focus{
+            background: $green;
+            border-color: $green;
+            color: #FFF;
+        }
+    }
+}

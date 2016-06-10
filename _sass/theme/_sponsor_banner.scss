@@ -1,0 +1,22 @@
+.sponsor_banner{
+    background: $green;
+	
+	.label{
+		background-color: $dark;
+	}
+    
+    .sectionTitle{
+        h3{
+            color: #fff;
+        }
+    }
+    p{        
+        color: #fff;
+    }
+    &.style2{
+        background: $dark;
+        p{
+            color: #aebcce;
+        }
+    }
+}

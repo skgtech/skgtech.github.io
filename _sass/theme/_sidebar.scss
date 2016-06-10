@@ -1,0 +1,74 @@
+.sidebar{
+    .widget{
+        background: #f1f5fa;
+
+        &.widget-search{
+            .form-control{
+                border-color: #cfd4db;
+            }
+            .input-group-addon{
+                color: #fff;
+                button{
+                    background: $green;
+                }
+            }
+        }
+
+        .nav{
+            li{
+                & + li{
+                    border-top-color: #e1e5eb;
+                }
+                a{
+                    color: $ashDark;
+                }
+                &.active{
+                    a{
+                        color: $green;                    
+                    }
+                }
+            }
+        }
+
+        .recent-post{
+            & + .recent-post{
+                border-top-color: #e1e5eb;
+            }
+            .title{
+                a{
+                    color: $dark;
+                }
+            }
+            .date{
+                a{
+                    color: $ashDark;
+                }
+            }
+            .price{
+                color: $dark;
+                del{
+                    color: $ashDark;
+                }
+            }
+            .proRating{
+                color: $ashDark;
+                .starred{
+                    color: $green;
+                }
+            }
+        }
+
+        .tag{
+            color: $dark;
+            border-color: $dark;
+            &:hover,&:focus{
+                background: $green;
+                border-color: $green;
+                color: #fff;
+            }
+        }
+    }
+    .widget-title{
+        color: $dark;
+    }
+}

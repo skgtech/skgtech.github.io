@@ -1,0 +1,43 @@
+.quotes_row{
+    background: $dark;
+    &:before{
+    }
+    .sectionTitle{
+        h3{
+            color: #fff;
+        }
+    }
+    
+    &.style2{
+        background: $green;
+        .sectionTitle{
+            .label{
+                background: $dark;
+            }
+        }
+        .quotation_block{
+            h6{
+                color: darken(saturate(adjust-hue($green, 0.1386), 7.9630), 18.8235);
+            }
+        }
+    }
+}
+
+.quotation_block{
+    .quote_block{
+        background: #fff;
+        color: $ashLight;
+        &:after{
+            border-top-color: #fff;
+        }
+        .quote_sign{
+            color: $green;
+        }
+    }
+    h5{
+        color: #fff;
+    }
+    h6{
+        color: $ashDark;
+    }
+}

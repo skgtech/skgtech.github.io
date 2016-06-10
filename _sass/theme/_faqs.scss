@@ -1,0 +1,42 @@
+.sideNav{
+    background: #f1f5fa;
+    h4{
+        color: $dark;
+    }
+    
+    ul{
+        li{
+            & + li{
+                border-top-color: #e1e5eb;
+            }
+            a{
+                color: $ashDark;
+            }
+            &.active{
+                a{
+                    color: $green;                    
+                }
+            }
+        }
+    }
+}
+
+.questions{
+    .question_type{
+        color: $green;
+        border-bottom-color: #f1f4f8;
+    }
+}
+
+.question_accordion{
+    .panel-title{
+        a{
+            color: $dark;
+        }
+    }
+    .panel-body{
+        p{
+            color: $ashLight;
+        }
+    }
+}

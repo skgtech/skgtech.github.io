@@ -1,0 +1,33 @@
+.latest-post{
+    .featured_cont{
+        i{
+            color: #fff;
+        }
+    }
+    .post-title{
+        a{
+            color: $dark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+    }
+    .post-meta{
+        color: $ashDark;
+        a{
+            color: $ashDark;
+            &:hover,&:focus{
+                color: $dark;
+            }
+        }
+    }
+    .post-excerpts{
+        color: $ashLight;
+    }
+    
+    &.media{
+        & + .media{
+            border-top-color: #e8ecf2;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+.footer{
+    background: #fff;
+}
+
+.footer_sidebar{
+    h5.widget-title{
+        color: #fff;
+    }
+    
+    .widget{
+        p{
+            color: $ashLight;
+        }
+    }
+    
+    .recent-posts{
+        li{
+            a{
+                color: $dark;
+				&:hover,&:focus{
+					color: $green;
+				}
+            }
+            & + li{
+                border-top-color: #e8ecf2;
+            }
+        }
+    }
+    
+    .tweet{
+        p{
+            a{
+                color: $green;
+            }
+        }
+        .time_past{
+            color: $ashDark;
+        }
+    }
+    
+    address{
+        color: $ashLight;
+        span{
+            color: $ashDark;
+        }
+		a{
+			color: $ashLight;
+			&:hover,&:focus{
+				color: $green;
+			}
+		}
+    }
+}
+
+.copyright_area{
+    color: $ashLight;
+    .copy_inner{
+		&:before{
+			background: #e8ecf2;
+		}
+    }
+    .copyright_text{
+        a{
+            color: $ashLight;
+			&:hover,&:focus{
+				color: $green;
+			}
+        }
+    }
+    .nav{
+        li{
+            a{
+                color: $ashLight;
+                &:hover,&:focus{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+.footer2{
+    background: $dark;
+    .footer_sidebar{
+        .widget{
+            p{
+                color: #92a2b4;
+            }
+        }
+        
+        .recent-posts{
+            li{
+                a{
+                    color: #92a2b4;
+					&:hover,&:focus{
+						color: $green;
+					}
+                }
+                & + li{
+                    border-top-color: #525f71;
+                }
+            }
+        }
+    
+        .tweet{
+            p{
+                a{
+                    color: #fff;
+                }
+            }
+            .time_past{
+                color: #6a7d92;
+            }
+        }
+        
+    
+        address{
+            color: #92a2b4;
+            span{
+                color: #fff;
+            }
+        }
+    }
+    .copyright_area{
+        color: #92a2b4;
+        background: #3b4756;
+        .copyright_text{
+            a{
+                color: #92a2b4;
+            }
+        }
+        .nav{
+            li{
+                a{
+                    color: #92a2b4;
+                    &:hover,&:focus{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.newsletter_signup{
+    
+    padding: 38px 0;
+    h4{
+        margin: 0 0 3px;
+        font-family: $montserrat;
+        
+        font-weight: bold;
+        line-height: 1;
+    }
+    p{
+        margin: 0;
+        font: 15px/24px $karla;
+        @media (max-width: 767px){
+			margin-bottom: 10px;
+		}
+    }
+    
+    &.style2{
+        
+        overflow: hidden;
+        &:before{
+            font-family: "FontAwesome";
+            content: "\f003";
+            font-size: 172px;
+            display: block;
+            
+            opacity: 0.2;
+            position: absolute;
+            right: -35px;
+            top: -3px;
+            line-height: 1;
+            -moz-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+            -webkit-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+            -ms-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+        }
+        h4,p{
+            
+        }
+    }
+    
+    &.style3{
+        overflow: hidden;
+        .container{
+            position: relative;
+            &:before{
+                font-family: "FontAwesome";
+                content: "\f003";
+                font-size: 172px;
+                display: block;
+                color: #262d36;
+                opacity: 0.2;
+                position: absolute;
+                right: -210px;
+                top: -41px;
+                line-height: 1;
+                -moz-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+                -webkit-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+                -ms-transform: matrix( 0.95510393673997,0.29627094022839,-0.29627094022839,0.95510393673996,0,0);
+            }
+        }
+    }
+}
+
+.newsletter_signup_form{
+    .form-control{
+        border-radius: 2px;        
+        width: 260px;        
+        font: 16px/24px $karla;
+        padding: 9px 15px;
+        height: 42px;
+        border: none;
+        float: left;
+        box-shadow: none;
+        margin-right: 11px;
+		@media (max-width: 1199px){
+			width: 256px;
+			margin-bottom: 10px;
+		}
+        &::-moz-placeholder {            
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            
+        }
+        &::-webkit-input-placeholder {
+            
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .btn-primary{
+        line-height: 40px;        
+        &:hover,&:focus{
+        }
+    }
+    
+    &.style2{
+        .form-control{            
+            &::-moz-placeholder {
+                
+            }
+            &:-ms-input-placeholder {
+                
+            }
+            &::-webkit-input-placeholder {
+                
+            }
+        }
+        .btn-primary{            
+        }
+    }
+}

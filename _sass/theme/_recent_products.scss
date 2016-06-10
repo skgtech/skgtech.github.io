@@ -1,0 +1,10 @@
+.recent_product_carosel{
+    .owl-dots{
+        .owl-dot{
+            background: $ashDark;
+            &.active{
+                background: $dark;
+            }
+        }
+    }
+}

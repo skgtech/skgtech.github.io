@@ -1,0 +1,23 @@
+.page-header{
+    background: url(http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/page-header.jpg) no-repeat scroll center top;
+    text-transform: uppercase;
+    background-size: cover;
+	padding-bottom: 0;
+    h4{
+        float: left;
+        padding: 0 23px;
+        line-height: 50px;
+        font-family: $montserrat;
+        font-weight: bold;
+        margin: 142px 0;
+		@media (max-width: 1199px){
+			margin: 100px 0;
+		}
+		@media (max-width: 991px){
+			margin: 60px 0;
+		}
+		@media (max-width: 767px){
+			margin: 40px 0;
+		}
+    }
+}

@@ -1,0 +1,93 @@
+.content_404{
+    padding: 145px 0 135px;
+	@media (max-width: 767px){
+		padding: 45px 0;
+	}
+}
+
+.error_message{
+    text-align: center;
+    text-transform: uppercase;
+    .error_no{
+        font-size: 212px;
+        font-family: $montserrat;
+        line-height: 212px;
+        font-weight: 700;
+        margin: 0;
+		@media (max-width: 767px){
+			font-size: 150px;
+			line-height: 150px;
+		}
+    }
+    .error_details{
+        margin: 0 0 70px;
+        font-size: 32px;
+        font-family: $montserrat;
+        font-weight: 700;
+        line-height: 1;
+		@media (max-width: 767px){
+			margin-bottom: 30px;
+		}
+    }
+    .buttons{
+        margin-bottom: 135px;
+		@media (max-width: 767px){
+			margin-bottom: 0;
+		}
+        .btn-primary{
+            & + .btn-primary{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.address_box{
+    text-transform: uppercase;
+    .inner{
+        margin: 0;
+        padding: 42px;
+		@media (max-width: 991px){
+			padding: 25px;
+		}
+    }
+    h3{
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: $montserrat;
+        font-weight: 700;
+    }
+    address{        
+        font-family: $montserrat;
+        font-weight: 700;
+        line-height: 30px;
+		margin-bottom: 0;
+        a{
+            text-decoration: underline;
+            display: block;
+            margin-top: 10px;
+        }
+    }
+    .fa-question{
+        width: 123px;
+        height: 123px;
+        line-height: 123px;
+        border-radius: 100%;
+        font-size: 72px;
+        margin-top: 12px;
+        margin-bottom: 35px;
+    }
+    p{
+        font: 17px/30px $karla;
+        letter-spacing: -0.1px;
+        color: #6e7c8d;
+        text-transform: none;
+        margin-bottom: 25px;
+    }
+    
+    &.row{
+        & + .address_box{
+            margin-top: 25px;
+        }
+    }
+}

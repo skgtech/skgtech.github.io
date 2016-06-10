@@ -1,0 +1,151 @@
+.product{
+    .carousel-indicators{
+        li{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+    .images_row{
+        background: $dark;
+    }
+
+    .product_excerpts{
+        background: #f1f4f8;
+        .pro_title{
+            a{
+                color: $dark;
+                &:hover,&:focus{
+                    color: $green;
+                }
+            }
+        }
+        .price_ratings{
+            border-top-color: #dee0e9;
+            .stars{
+                color: $ashDark;
+                .starred{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+.product-filtering{
+    h5{
+        color: $ashDark;
+    }
+    .bootstrap-select{
+        .btn{
+            border-color: $dark;
+            color: $ashDark;
+        }
+        .dropdown-menu{
+            li {
+                & + li{
+                    border-top-color: #f1f4f8;
+                }
+                a{
+                    color: $ashDark;
+                    &:hover,&:focus{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.price-filter-inner{
+    border-top-color: #e1e5eb;
+    border-bottom-color: #e1e5eb;
+}
+
+.shop-search{
+    .form-control{
+        background-color: #f1f4f8;
+        color: $dark;
+        &::-moz-placeholder {
+            color: $ashDark;
+        }
+        &:-ms-input-placeholder {
+            color: $ashDark;
+        }
+        &::-webkit-input-placeholder {
+            color: $ashDark;
+        }
+    }
+    .input-group-addon{
+        background: #f1f4f8;
+    }
+}
+
+.price-range{
+    .slider-range{  
+        background: $ashDark;
+    }
+    .ui-slider-range{
+        background: $green;
+    }
+    .ui-slider-handle{
+        background: #fff;
+        border-color: $ashDark;
+    }
+    .range-amount{
+        color: $dark;
+    }
+}
+
+.product-specification{
+    .media-left{
+        .sale-tag{
+            background: #fff;
+            color: $dark;
+        }
+    }
+    
+    .pricing-rating{
+        .price{
+            border-right-color: #dee0e9;
+        }
+        h6{
+            color: $ashDark;
+        }
+        h2{
+            color: $dark;
+        }
+        .stars{
+            color: $ashDark;
+            .starred{
+                color: $green;
+            }
+        }
+    }
+    
+    .speciface{
+        .this-title{
+            color: $ashDark;
+        }
+        & + .speciface{
+            border-top-color: #dee0e9;
+        }
+    }
+    
+    [name="color"]{
+        &#color1 + label{
+            background: #8bd6ea;
+        }
+        &#color2 + label{
+            background: #c38bea;
+        }
+        &#color3 + label{
+            background: #eaca8b;
+        }
+    }
+    
+    [type="number"]{
+        border-color: $ashDark;
+    }    
+}

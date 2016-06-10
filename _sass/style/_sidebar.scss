@@ -1,0 +1,212 @@
+.sidebar{
+    .widget{
+        padding: 36px 36px 38px 30px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+		@media (max-width: 767px){
+			padding: 25px;
+		}
+        &.widget-similar{
+            background: none;
+            padding: 0;
+        }
+
+        &.widget-search{
+            .form-control{
+                border-radius: 0;
+                height: 54px;
+                line-height: 54px;
+                padding: 0 22px;
+                box-shadow: none;
+            }
+            .input-group-addon{
+                padding: 0;
+                background: none;
+                border: none;
+                button{
+                    width: 60px;
+                    line-height: 54px;
+                    padding: 0;
+                    text-align: center;
+                    border: none;                    
+                    font-size: 18px;
+                }
+                i{}
+            }
+        }
+
+        .nav{
+            li{
+                & + li{
+                    border-top: 1px solid;
+                }
+                a{
+                    font: 700 13px/40px $montserrat;
+                    padding: 0;
+                    &:hover,&:focus{
+                        background: none;
+                    }
+                }
+                &.active{
+                    a{
+                        
+                    }
+                }
+            }
+        }
+
+        .recent-post{
+            text-transform: uppercase;
+            padding-bottom: 30px;
+            margin: 0;
+            & + .recent-post{
+                padding-top: 30px;
+                border-top: 1px solid;
+            }
+            .media-left{
+                padding-right: 20px;
+                a{
+                    display: block;
+                }
+            }
+            .title{
+                margin: 0 0 20px;
+                a{
+                    font: bold 14px/21px $montserrat;                    
+                }
+            }
+            .date{
+                font-size: 13px;
+                margin: 0;
+                float: left;
+                i{
+                    margin-right: 10px;
+                    float: left;
+                }
+                a{
+                    font-weight: bold;
+                    line-height: 1;
+                    
+                    float: left;
+                }
+            }
+            .price{
+                margin: -10px 0 10px;
+                font: 700 14px/1 $montserrat;                
+                del{
+                    
+                    font-size: 12px;
+                    margin-right: 4px;
+                }
+            }
+            .proRating{
+                font-size: 16px;                
+                .starred{                    
+                }
+            }
+        }
+
+        &.widget-tags{
+            background: none;
+            padding: 0;
+        }
+
+        .tag{
+            font: 700 13px/32px $montserrat;            
+            padding: 0 15px;
+            border-radius: 3px;
+            border: 1px solid;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            &:hover,&:focus{
+            }
+        }
+
+        &.affix{
+            position: fixed;
+            top: 70px;
+            z-index: 1000;
+        }
+        &.affix-bottom{
+            position: absolute;
+        }
+    }
+    .widget-title{
+        font: 700 16px/1 $montserrat;        
+        margin-bottom: 30px;
+        margin-top: 0;     
+		@media (max-width: 767px){
+			margin-bottom: 15px;
+		}   
+    }
+	
+	.similar-project{
+		.cause-item{
+			@media (max-width: 991px){
+				max-width: 360px;
+			}
+		}
+	}
+	
+	.widget-similar{
+		.gallery-item{
+			@media (max-width: 767px){
+				width: 390px;
+				max-width: 100%;
+				float: none;
+			}
+		}
+	}
+}
+
+.checkout-sidebar{
+	@media (max-width: 991px){
+		margin-top: 50px;
+	}
+}
+
+.contact-sidebar{
+	.address_box{
+		.inner{
+			@media (max-width: 1199px){
+				padding: 25px;
+			}
+		}
+	}
+}
+
+.sidebar_404{
+	.address_box{
+		@media (max-width: 991px){
+			padding: 15px;
+		}
+		.inner{
+		}
+	}
+}
+
+.single-project-sidebar{
+	@media (max-width: 767px){
+		max-width: 360px;
+		margin: 60px auto 0;
+	}
+}
+
+.post-sidebar{
+	@media(max-width: 991px){
+		margin-top: 60px;
+	}
+}
+
+.event-sidebar{
+	.widget-similar{
+		.event-listing{
+			@media (max-width: 767px){
+				max-width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+}

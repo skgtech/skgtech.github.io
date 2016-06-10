@@ -1,0 +1,39 @@
+.history_carousel{
+    background: #f1f5fa;
+    .item{
+        p{
+            color: $ashLight;
+        }
+    }
+    
+    .owl-nav{
+        border-color: $ashDark;
+        .owl-prev,
+        .owl-next{
+            color: $ashDark;
+        }
+        .owl-prev{}
+        .owl-next{
+            border-left-color: $ashDark;
+        }
+    }
+}
+
+.mission_vision{
+    i{
+        color: $green;
+    }
+    h5{
+        color: $dark;
+    }
+    p{
+        color: $ashLight;
+    }
+}
+
+.how-fund-help-children{
+    background: #f1f5fa;
+    h3{
+        color: $dark;
+    }
+}

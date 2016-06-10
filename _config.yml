@@ -1,0 +1,42 @@
+
+permalink: /:categories/:title
+markdown: kramdown
+
+exclude: [
+    ".rvmrc",
+    ".rbenv-version",
+    "README.md",
+    "Rakefile",
+    "changelog.md",
+    "node_modules",
+    "gulpfile.js",
+    ".editorconfig",
+    "assets/components/*"
+]
+
+title : "SKGTech"
+email: hello@skgtech.io
+description: "The community of developers, designers and techies who live in Thessaloniki"
+author :
+  name : "SKGTech Contributors"
+  email : "skg-developers@googlegroups.com"
+  github : "skgtech"
+  twitter : SKG_Tech
+  # feedburner : feedname
+githubrepo: "https://github.com/skgtech/skgtech.github.io"
+
+production_url : http://skgtech.io
+
+# Open Graph data
+og:
+  app_id: "698696243515776"
+  title: "Thessaloniki tech Community"
+  site_name: "SKGTech"
+  image: "http://skgtech.io/assets/img/skgtech-social-logo.png"
+
+# Google Analytics
+analytics :
+  provider : google
+  google :
+    tracking_id : 'UA-41787746-3'
+    domain: 'skgtech.io'

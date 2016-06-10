@@ -1,0 +1,171 @@
+.post{
+    border-bottom-color: #d8dee6;
+    .featured-contents{
+        .owl-prev,.owl-next{
+            background: $dark;
+            &:hover,&:focus{
+                background: $green;
+            }
+        }
+    }
+    .post-title{
+        a{
+            color: $dark;
+        }
+    }
+    
+    .post-meta{
+        li{
+            color: $ashDark;
+            a{
+                color: $ashDark;
+                &:hover,&:focus{
+                    color: $dark;
+                }
+            }
+        }
+        .posted-by{
+            a{
+                color: $green;
+            }
+        }
+    }
+    .post-excerpt{
+        p{
+            color: $ashLight;
+        }
+    }
+    
+    blockquote{
+        border-left-color: $green;
+        p{
+            color: $dark;
+        }
+        footer{
+            color: $dark;
+        }
+        &.style2{
+            p{
+                color: $ashLight;
+            }
+        }
+    }
+    
+    &.post-type-link{
+        .post-title{
+            a{
+                &:after{
+                    color: $green;
+                }
+            }
+        }
+    }
+    
+    .post-tags{
+        color: $ashLight;
+        a{
+            color: $ashLight;
+        }
+    }
+}
+.post-content{
+    p{
+        color: $ashLight;
+    }
+}
+
+.pagination{
+    li{
+        a{
+            color: $dark;
+            border-color: $dark;
+            &:hover,&:focus{
+                background: $green;
+                color:#fff;
+                border-color: $green;
+            }
+        }
+        &.active{
+            a{
+                background: $green;
+                color:#fff;
+                border-color: $green;
+            }
+        }
+    }
+}
+
+.related-posts{
+    border-bottom-color: #d8dee6;
+    .this-title{
+        color: $ashLight;
+    }
+}
+
+.related-post{
+    .post-title{
+        a{
+            color: $dark;
+        }
+    }
+    .post-cat{
+        color: $ashLight;
+        a{
+            color: $green;
+        }
+    }
+}
+
+.pager{
+    border-bottom-color: #d8dee6;
+    li{
+        a{
+            .post-sequence{
+                color: $ashLight;
+            }
+            .post-title{
+                color: $dark;
+            }
+        }
+    }
+}
+
+.author-about{
+    background: #f1f4f8;
+    .author-title{
+        a{
+            color: $green;
+        }
+    }
+}
+
+.comments{
+    .this-title{
+        color: $ashLight;
+    }
+}
+
+.comment{
+    border-bottom-color: #d8dee6;    
+    h4{
+        color: $ashLight;
+        a{
+            color: $green;
+        }
+    }
+    h6{
+        a{
+            color: $dark;
+        }
+    }
+    &.reply{
+        background: #f4f6f9;
+    }
+}
+
+.comment-form{
+    background: #f1f4f8;
+    h4{
+        color: $ashLight;
+    }
+}

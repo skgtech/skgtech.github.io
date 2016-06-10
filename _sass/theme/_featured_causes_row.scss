@@ -1,0 +1,21 @@
+.featured_causes_row{
+    background: $dark;
+    .sectionTitle{
+        h3{
+            color: #fff;
+        }
+    }
+	
+	.featured_causes{
+		.event_box{
+			@media (max-width: 991px){
+				padding: 25px;
+			}
+		}
+	}
+    
+    .owl-prev,.owl-next{
+        color: #fff;
+        background: $ashDark;
+    }
+}

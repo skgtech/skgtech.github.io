@@ -1,0 +1,238 @@
+.events_news{
+    padding: 5px 0 115px;
+}
+
+.our_events_as_sidebar{
+    .inner{
+        padding: 45px 50px;
+		@media (max-width: 1199px){
+			padding: 25px;
+		}
+		@media (max-width: 991px){
+			padding: 10px;
+			margin-bottom: 40px;
+		}
+		@media (max-width: 767px){
+			padding: 25px;
+			max-width: 400px;
+			margin: 0 auto 40px;			
+		}
+    }
+    .upcoming_events{
+        padding: 0;
+		@media (max-width: 991px){
+			width: 50%;
+			padding: 15px;
+			float: left;
+		}
+		@media (max-width: 767px){
+			width: 100%;
+			padding: 0;
+			float: none;
+		}
+        & + .upcoming_events{
+            margin-top: 50px;
+			@media (max-width: 991px){
+				margin-top: 0;
+			}
+			@media (max-width: 767px){
+				margin-top: 30px;
+			}
+        }
+    }
+}
+
+.event-listing-row{
+	@media (max-width: 767px){
+		max-width: 390px;
+		margin: 0 auto;		
+	}
+}
+
+.event-listing{
+    padding: 15px;
+	@media (max-width: 767px){
+		max-width: 360px;
+	}
+    .item{
+        padding: 0;
+    }
+    .carousel-indicators{
+        bottom: 20px;
+        margin-bottom: 0;
+        display: table;
+        width: auto;
+        margin-left: auto;
+        transform: translateX(-50%);
+        li{
+            width: 12px;
+            height: 12px;
+            border: none;
+            margin: 0;
+            float: left;
+            & + li{
+                margin-left: 8px;
+            }
+            &.active{
+            }
+        }
+    } 
+    .images_row{        
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        img{
+            @include transition;
+			max-width: 100%;
+        }
+    }
+
+    .event_excepts{
+        padding: 30px;
+    }
+    .event_title{
+        margin: 0 0 8px;        
+        a{
+            font: 700 16px/1.25 $montserrat;
+            text-transform: uppercase;
+            &:hover,&:focus{
+                
+            }
+        }
+    }
+    .event-place{
+        font: 700 13px/18px $montserrat;
+        
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+    p{
+        font: 16px/24px $karla;        
+        margin-bottom: 28px;
+    }
+    .event-date{
+        padding: 15px 30px;
+        line-height: 23px;
+        font: 700 13px/18px $montserrat;        
+        text-transform: uppercase;        
+        i{
+            margin-right: 6px;
+        }
+    }
+}
+
+
+.single-event{
+	@media (max-width: 991px){
+		margin-bottom: 60px;
+	}
+    .event_title{
+        margin-bottom: 25px;
+        .hhh{
+            margin-bottom: 0;
+        }
+    }
+    .event-target{
+        font-size: 21px;
+        line-height: 30px;        
+    }
+    p{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    #mapBox{
+        margin: 32px 0;
+    }
+}
+
+.event-header{
+    margin-bottom: 35px;
+    .media-left{
+        padding-right: 0;
+		@media (max-width: 767px){
+			display: block;
+		}
+        span{
+            display: block;
+            width: 551px;
+			@media (max-width: 1199px){
+				width: 369px;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+			}
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .info-row{
+        padding: 35px 24px;
+        font: 700 13px/20px $montserrat;
+        text-transform: uppercase;
+		@media (max-width: 1199px){
+			padding: 20px;
+		}
+        & + .info-row{
+            border-top: 1px solid;
+        }
+        span{
+            float: left;
+            width: calc(100% - 24px);
+        }
+        i{
+            float: left;
+            width: 24px;
+            line-height: 20px;
+            font-size: 13px;
+        }
+        .btn-primary{
+            padding: 0 23px;
+        }
+    }
+}
+
+.countdown_block{
+    border-radius: 3px;
+    
+    .timer{
+        width: 566px;
+		@media (max-width: 1199px){
+			width: 430px;
+		}
+		@media (max-width: 767px){
+			border-bottom: 1px solid;
+			width: 100%;
+		}
+        .block{
+            width: 25%;
+        }
+    }
+    .block{
+        float: left;
+        text-align: center;
+        padding: 20px;
+        height: 84px;
+        font: 24px/30px $montserrat;
+		@media (max-width: 767px){
+			width: 100%;
+			padding: 20px 5px;
+		}
+        & + .block{
+            border-left: 1px solid;
+        }
+        .string{
+            display: block;
+            font-size: 12px;
+            line-height: 1;            
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }        
+    }
+    .btn-primary{
+        &:hover,&:focus{
+        }
+    }
+}

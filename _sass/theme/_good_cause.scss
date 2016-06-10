@@ -1,0 +1,16 @@
+#good_cause{
+    .cause-title{
+        a{
+            color: #fff;
+        }
+    }
+    
+    .carousel-indicators{
+        li{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}

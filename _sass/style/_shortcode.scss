@@ -1,0 +1,327 @@
+/*Heading*/
+.hhh{
+    font-family: $montserrat;
+    font-weight: 700;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    &.h1{
+        font-size: 24px;
+    }
+    &.h2{
+        font-size: 18px;
+    }
+    &.h3{
+        font-size: 14px;
+    }
+    &.h4{
+        font-size: 12px;
+    }
+    &.h5{
+        font-size: 10px;
+    }
+}
+
+
+/*Tabs*/
+.hhh-tab{
+    border: none;
+    text-transform: uppercase;
+    li{
+        a{
+            
+            margin: 0 5px 0 0;
+            border-radius: 0;
+            padding: 0 25px;
+            border: none;
+            font: 700 14px/48px $montserrat;
+            
+            &:hover,&:focus{
+                
+                border: none;
+                
+            }
+        }        
+        &.active{
+            a{
+                
+                border: none;
+                
+                &:hover,&:focus{
+                    
+                    border: none;
+                    
+                }
+            }
+        }
+    }
+    &.shop-tab{
+        li>a{
+            margin: 0;
+        }
+        .active a{            
+        }
+    }
+}
+
+.hhh-tab-content{
+    .tab-pane{
+        padding: 45px 37px;
+        
+        .description-summary{
+            font: 700 16px/27px $montserrat;
+            margin-bottom: 25px;
+            margin-top: 0;            
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 16px;
+            & + p{
+                margin-top: 25px;
+            }
+        }
+        .tab-heading{
+            margin-bottom: 25px;
+        }
+    }
+    &.shop-tab-content{
+        margin-bottom: 60px;
+        .tab-pane{
+            p{
+                line-height: 27px;
+            }
+        }
+    }
+}
+
+.shortcodeName{
+    margin-bottom: 35px;
+}
+
+.shortcodeName2{
+    margin-bottom: 55px;
+}
+
+.shortcodeBlock + .shortcodeBlock{
+    margin-top: 80px;
+}
+
+.column-block + .column-block{
+    margin-top: 60px;    
+}
+
+.column-block{
+    .label{
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 16px;        
+    }
+}
+
+/*Accordion*/
+.hhh_accordion{
+    .panel-default{
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        & + .panel-default{
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+    .panel-heading{
+        padding: 0;
+        background: none;
+        border-radius: 0;
+        & + .panel-collapse{
+        
+            &>.panel-body{
+                border-top: none;
+            }
+        }
+    }
+    .panel-title{
+        display: table;
+        a{
+            font: 700 16px/20px $montserrat;
+            
+            text-transform: uppercase;
+            span{
+                display: table-cell;
+                width: 100000px;                
+                padding: 15px 20px;
+                
+            }
+            &:after{
+                display: table-cell;
+                font-family: "FontAwesome";                
+                vertical-align: middle;
+                height: 100%;
+                
+                
+                padding: 0 19px;
+                font-size: 26px;
+            }
+        }
+        [aria-expanded="false"]{
+            &:after{
+                content: "\f106";
+            }
+        }
+        [aria-expanded="true"]{
+            &:after{
+                content: "\f107";
+            }            
+        }
+    }
+    .panel-collapse{
+    }
+    .panel-body{
+        padding-left: 20px;
+        padding-right: 20px;
+        p{
+            margin-bottom: 0;
+            font-size: 16px;
+            
+            & + p{
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+/*Blockquotes*/
+blockquote{
+    border-width: 7px;
+    margin-bottom: 45px;
+    padding: 25px 20px;
+    p{
+        font-size: 16px;
+    }
+    footer{
+        font: 700 16px/1 $montserrat;        
+        text-transform: uppercase;
+    }
+    &.style1{
+        p{
+        }
+    }
+    &.style2{        
+    }
+}
+.blockquote-reverse{
+    border-width: 7px;
+    padding: 25px 20px;
+    &.style1{
+    }
+    &.style2{
+        border-left: 0;
+        border-right: 0;
+        border-top: 7px solid;
+        border-bottom: 7px solid;
+        background: none;
+        p{
+            font-size: 21px;
+            line-height: 36px;
+        }
+    }
+}
+
+/*Buttons*/
+.buttons{
+    .button-cols{
+        max-width: 600px;
+    }
+    .btn-primary{
+        margin-bottom: 25px;
+    }
+    .button-groups{
+        width: 225px;
+        margin-bottom: 25px;
+    }
+}
+
+/*Testimonials*/
+.testimonial{    
+    padding: 34px;
+    .media-left{
+        padding-right: 60px;
+		@media (max-width: 1199px){
+			padding-right: 30px;
+		}
+		@media (max-width: 479px){
+			display: block;
+			padding-right: 0;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+        a{
+            width: 120px;
+            height: 120px;
+            display: block;
+            border-radius: 100%;
+            border: 1px solid;
+			@media (max-width: 479px){
+				display: inline-block;
+			}
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    .media-body{
+        vertical-align: middle;
+        padding-right: 50px;
+		@media (max-width: 1199px){
+			padding-right: 0;
+		}
+    }
+    p{
+        font-size: 21px;
+        line-height: 27px;
+        font-style: italic;
+        margin-bottom: 15px;
+    }
+    footer{
+        font: 700 16px/1 $montserrat;
+        
+    }
+}
+
+.testimonial2{
+    padding: 15px;
+    text-align: center;
+    .image_block{
+        margin: 0;
+        a{
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            border: 1px solid;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+    p{
+        margin: 28px 0 38px;
+        font-size: 21px;
+        line-height: 27px;
+        font-style: italic;
+    }
+    footer{
+        font: 700 16px/1 $montserrat;
+        
+    }
+}
+
+.gap55{
+    height: 55px;
+}
+
+.headings{
+    p{
+        margin-bottom: 45px;
+    }
+}

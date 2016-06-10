@@ -1,0 +1,132 @@
+.upcoming_recent_events{
+    padding-top: 90px;
+	@media (max-width: 767px){
+		.container{
+//			max-width: 640px;
+		}
+	}
+    .sectionTitle{
+        margin-bottom: 45px;
+    }
+    &.style2{
+        padding-bottom: 90px;
+    }
+}
+
+.upcoming_events{
+    padding: 15px;
+    text-transform: uppercase;
+	@media (max-width: 767px){
+		max-width: 400px;
+		margin: 0 auto;
+	}
+    .event_cover_photo{
+        position: relative;
+        margin: 0;
+        img{
+            width: 100%;
+        }
+        .upcoming_label{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .event_time_loc{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            line-height: 30px;
+            margin: 0;
+            text-align: center;
+            font-family: $montserrat;
+            font-weight: 700;
+            @include transition;
+			@media (max-width: 599px){
+				line-height: 20px;
+				padding: 5px 15px;
+			}
+            .by{
+                margin-right: 15px;
+				@media (max-width: 767px){
+					margin-right: 0;
+					&:after{
+						content: ',';
+						display: inline-block;
+					}
+				}
+            }
+            .date_time{
+				@media (max-width: 767px){
+					&:after{
+						content: ',';
+						display: inline-block;
+					}
+				}
+			}
+            .loc{
+                margin-left: 15px;
+				@media (max-width: 767px){
+					margin-left: 0;
+				}
+            }
+        }
+    }
+    .event_title{
+        font-weight: bold;
+        font-family: $montserrat;
+        line-height: 21px;
+        margin-top: 20px;
+        margin-bottom: 0;
+        a{
+            &:hover,&:focus{
+            }
+        }
+    }
+    .event_summery{
+        font: 16px/24px $karla;
+        text-transform: none;
+        margin-bottom: 0;
+    }
+
+    &.style2{
+        .event_summery{
+            margin: 20px 0 25px;
+        }
+    }
+    &:hover,&:focus{
+        .event_cover_photo{
+            img{}
+            .upcoming_label{
+            }
+            .event_time_loc{
+            }
+        }
+    }
+    &.col-md-6{
+        .event_cover_photo{
+            img{}
+            .upcoming_label{
+            }
+            .event_time_loc{
+                line-height: 39px;
+				@media (max-width: 767px){
+					line-height: 20px;
+					padding: 5px 20px;
+				}
+                .by{}
+                .date_time{}
+                .loc{}
+            }
+        }
+        .event_title{
+            margin: 35px 0 20px;
+            font-size: 16px;
+            line-height: 1.25;
+			@media (max-width: 599px){
+				margin-top: 15px;
+			}
+        }
+        .event_summery{}
+    }
+}

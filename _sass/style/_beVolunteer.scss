@@ -1,0 +1,77 @@
+.beVolunteer{
+    padding: 169px 0;
+    background: url(http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/beVolunteer.jpg) no-repeat fixed center 0;
+    background-size: cover;
+    
+    &.sponsor_variation{
+        background-image: url(http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/sponsors2.jpg);
+    }
+}
+.beVolunteerBox{
+    max-width: 458px;
+    padding: 39px 45px 45px;
+	@media (max-width: 479px){
+		max-width: 340px;
+		padding: 30px;
+	}
+    .sectionTitle{
+        h3{
+            margin-top: 15px;
+        }
+    }
+    p{
+        font: 16px/24px $karla;
+        margin: 20px 0 25px;
+    }
+}
+
+.beVolunteer2{
+    overflow: hidden;
+    .container{
+        padding: 35px 15px;
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 17px;
+            left: -159px;
+            background: url(../images/smile.png) no-repeat scroll 0 0;
+            width: 138px;
+            height: 138px;
+			@media (max-width: 1199px){
+				left: -80px;
+			}
+			@media (max-width: 767px){
+				left: 50%;
+				transform: translateX(-50%);
+			}
+        }
+    }
+    h3{
+        margin: 0;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: $montserrat;
+        letter-spacing: -0.2px;
+        line-height: 48px;
+		@media (max-width: 1199px){
+			line-height: 30px;
+		}
+    }
+    p{
+        padding: 0 20px;
+        margin: 0;
+        font-size: 16px;
+		@media (max-width: 1199px){
+			padding: 0;
+		}
+    }
+	.text-right{		
+		@media (max-width: 767px){
+			text-align: left;
+			padding-top: 20px;
+		}
+	}
+}

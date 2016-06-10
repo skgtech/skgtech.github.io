@@ -1,0 +1,32 @@
+.featured_projects{
+    .owl-dots{
+        .owl-dot{
+            background: $dark;
+        }
+    }
+}
+
+.featured_porduct_box{
+       
+    .label{
+        background: $ashDark;
+    }
+    .rating{
+        i{
+            color: $ashDark;
+            &.starred{
+                color: $green;
+            }
+        }
+    }
+    
+    .btn-group{
+        .btn{
+            border-color: $green;
+            color: $dark;
+        }
+        .btn-primary{
+            color: #fff;
+        }
+    }
+}

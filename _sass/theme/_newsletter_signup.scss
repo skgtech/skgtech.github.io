@@ -1,0 +1,70 @@
+.newsletter_signup{
+    background: $dark;
+    h4{
+        color: #fff;
+    }
+    p{
+        color: $ashDark;
+    }
+    
+    &.style2{
+        background: #a4b3c5;
+        &:before{
+            color: $dark;
+        }
+        h4,p{
+            color: $dark;
+        }
+    }
+    
+    &.style3{
+        .container{
+            &:before{
+                color: #262d36;
+            }
+        }
+    }
+}
+
+.newsletter_signup_form{
+    .form-control{
+        background-color: $ashDark;
+        color: #fff;
+        &::-moz-placeholder {
+            color: #fff;
+        }
+        &:-ms-input-placeholder {
+            color: #fff;
+        }
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+    }
+    .btn-primary{
+        &:hover,&:focus{
+            background: $green;
+            border-color: $green;
+        }
+    }
+    
+    &.style2{
+        .form-control{
+            background: #fff;
+            color: $dark;
+            &::-moz-placeholder {
+                color: $dark;
+            }
+            &:-ms-input-placeholder {
+                color: $dark;
+            }
+            &::-webkit-input-placeholder {
+                color: $dark;
+            }
+        }
+        .btn-primary{
+            background: $dark;
+            border-color: $dark;
+            color: #fff;
+        }
+    }
+}

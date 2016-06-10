@@ -1,0 +1,156 @@
+/*Navbar 2*/
+.navbar2{
+    padding: 0;
+    
+    #mainNav{
+		@media (max-width: 767px){
+			padding: 15px;
+		}
+        .nav{
+            margin: 0;
+            li{
+                a{
+                    line-height: 50px;                    
+                    text-shadow: none;
+                    padding: 0 20px;
+                    &:hover,&:focus{
+                        
+                        
+                    }
+                }
+                &.active{
+                    &>a{
+                    }
+                }
+                .dropdown-menu{
+                    li{
+                        float: none;
+                        display: block;
+                        a{
+                            
+                            &:hover,&:focus{
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+    .navbar-right{
+        li{
+			float: left;
+			@media (max-width: 991px){
+				display: none;
+			}
+			&.dropdown{				
+				@media (max-width: 991px){
+					display: block;
+				}
+			}
+            a{
+                font-size: 16px;
+            }
+            .dropdown-menu{
+                padding: 20px;
+                margin: 0;
+                border-radius: 0;
+                width: 300px;                
+                border: none;
+				@media (max-width: 767px){
+					width: 100%;
+					box-shadow: none;
+				}
+            }
+            &:last-child{
+                a{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    
+    .search_form{
+        .form-control{
+            border-radius: 0;
+            height: 40px;
+            border: none;
+            box-shadow: none;
+            &::-moz-placeholder {
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {                
+            }
+            &::-webkit-input-placeholder {                
+            }
+            &:focus{
+                box-shadow: none;
+            }
+        }
+    }
+    
+    
+    &.affix{
+        padding: 0;
+        & + header,& + section{
+            margin-top: 50px;
+        }
+    }
+    
+    &.navbar2-bottom{        
+        #mainNav{
+            .nav{
+                li{
+                    a{
+                    }
+                    &.active{
+                        &>a{
+                            
+                            
+                        }
+                    }
+                }
+            }        
+        }
+    }
+}
+
+/*Navbar 3*/
+.navbar3{
+    background: none;
+    position: absolute;
+    width: 100%;
+    #mainNav{		
+		@media (max-width: 767px){
+			background: $ashDark;
+		}
+        .navbar-nav{
+            li{
+                a{                    
+                    &:hover,&:focus{                        
+                    }
+                }
+                &.active{
+                    &>a{
+                    }
+                }
+                .dropdown-menu{
+                    li{
+                        float: none;
+                        display: block;
+                        a{
+                            &:hover,&:focus{                                
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }   
+    
+    &.affix{
+        & + header,& + section{
+            margin-top: 0;
+        }
+    }
+}

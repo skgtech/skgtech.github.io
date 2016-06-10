@@ -1,0 +1,95 @@
+.quotes_row{
+    padding: 90px 0 100px;    
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../images/world-map.png) repeat fixed center center;
+        opacity: .12;
+        z-index: 0;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    .sectionTitle{
+        margin-bottom: 55px;
+        h3{
+            
+        }
+    }
+    
+    &.style2{
+        background: $green;
+        .sectionTitle{
+            .label{
+                
+            }
+        }
+        .quotation_block{
+            h6{
+            }
+        }
+    }
+}
+
+.quotation_block{
+    padding: 15px;
+    .quote_block{
+        padding: 35px 35px 55px;
+        margin: 0 0 40px;        
+        letter-spacing: -0.1px;
+        position: relative;
+		@media (max-width: 1199px){
+			padding: 20px 20px 40px;
+		}
+        &:after{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+            width: 0;
+            height: 0;
+            border-top: 10px solid;
+            border-left: 9px solid transparent;
+            border-right: 9px solid transparent;
+        }
+        .quote_sign{
+            font-family: $lora;
+            font-size: 72px;
+            letter-spacing: 0.25px;
+            line-height: 40px;
+            height: 40px;
+            display: block;
+            padding-top: 18px;
+        }
+        p{
+            margin-bottom: 0;
+			font: italic 18px/27px $karla;
+			@media (max-width: 1199px){
+				font-size: 16px;
+				line-height: 24px;
+			}
+        }
+    }
+    h5{
+        font-family: $montserrat;
+        font-weight: bold;
+        text-transform: uppercase;        
+        margin: 0;
+        line-height: 24px;
+    }
+    h6{
+        font-family: $montserrat;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 24px;
+    }
+}

@@ -1,0 +1,25 @@
+.featured_news{
+	.caption{		
+		@media (max-width: 767px){			
+			background: $dark;
+			padding: 40px 0;
+		}
+	}
+    .news-title{
+        a{
+            color: #fff;
+        }
+    }
+    p{
+        color: #fff;
+    }
+    
+    .owl-dots{
+        .owl-dot{
+            background: $ashDark;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}

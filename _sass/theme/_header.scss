@@ -1,0 +1,151 @@
+.navbar{
+    background: #fff;
+}
+
+#mainNav{
+    .navbar-nav{
+        li{
+            a{
+                color: $lightDark;
+                & + ul{
+                    li{
+                        a{
+                            color: $lightDark;
+                            &:hover,&:focus{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover,&:focus,&.open{
+                &>a{
+                    border-color: $green;
+                }
+            }
+            &.active{
+                a{
+                    color: $dark;
+                }
+            }
+        }
+    }
+}
+
+
+.header1{
+    background: #fff;
+}
+
+.language_picker{
+    .btn-group{
+        .btn{
+            color: $ashDark;
+            border-color: $ashDark;
+            .caret{
+                border-top-color: $ashDark;
+            }
+        }
+    }
+}
+
+.emergency-contact{
+	@media (max-width: 767px){
+		display: none;
+	}
+    .pull-left{
+        & + .pull-left{
+            border-left-color: #dee0e9;
+        }
+        span{
+            color: $ashDark;
+        }
+        h6{
+            color: $ashDark;
+        }
+        h5{
+            color: $dark;
+        }
+        h4{
+            color: $dark;
+        }
+    }
+}
+
+/*TopBar*/
+.topbar{
+    background: $dark;
+    color: #8e9cae;
+    a{
+        color: #8e9cae;
+    }
+    .nav{
+        li{
+            a{
+                color: $ashDark;
+                &:hover,&:focus{
+                    background: #3b4858;
+                }
+            }
+            &.search-form{
+                form{
+                    background: #3b4858;
+                    .form-control{
+                        &:focus{
+                            border-color: $green;
+                            color: #fff;
+                            &::-moz-placeholder {
+                                color: $ashDark;
+                            }
+                            &:-ms-input-placeholder {
+                                color: $ashDark;
+                            }
+                            &::-webkit-input-placeholder {
+                                color: $ashDark;
+                            }
+                        }
+                    }
+                    .input-group-addon{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-form{
+    .form-control{
+        background: darken(desaturate(adjust-hue($green, -0.2328), 0.4607), 2.5490);
+        &::-moz-placeholder {
+            color: lighten(desaturate(adjust-hue($green, 44.5672), 31.4248), 48.0392);
+        }
+        &:-ms-input-placeholder {
+            color: lighten(desaturate(adjust-hue($green, 44.5672), 31.4248), 48.0392);
+        }
+        &::-webkit-input-placeholder {
+            color: lighten(desaturate(adjust-hue($green, 44.5672), 31.4248), 48.0392);
+        }
+        &:focus{
+            border-color: $green;
+            color: #fff;
+            &::-moz-placeholder {
+                color: $dark;
+            }
+            &:-ms-input-placeholder {
+                color: $dark;
+            }
+            &::-webkit-input-placeholder {
+                color: $dark;
+            }
+        }
+    }
+    button{
+        color: #fff;
+        background: darken(desaturate(adjust-hue($green, -0.2328), 0.4607), 2.5490);
+        &:hover,&:focus{
+            background: $dark;
+            color: #fff;
+        }
+    }
+}

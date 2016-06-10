@@ -1,0 +1,200 @@
+.donation_donors{
+    padding: 70px 0 90px;
+    
+    
+    .sectionTitle{
+        margin-bottom: 70px;
+    }
+}
+
+.progressBarRow{
+    padding: 0 15px;
+    margin-bottom: 65px;
+	@media (max-width: 767px){
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+.progress_barBox{
+    padding: 17px;
+    border-radius: 2px;
+    background: url(../images/scale.png) no-repeat scroll center bottom;
+    width: 970px;
+    max-width: 100%;
+	@media (max-width: 1199px){
+		width: 770px;
+	}
+	@media (max-width: 991px){
+		width: 550px;
+	}
+	@media (max-width: 767px){
+		width: 370px;
+	}
+    .progress{
+        height: 10px;
+    }
+}
+
+.donate-buttons{
+	@media (max-width: 767px){
+		float: left !important;
+		padding-top: 20px;
+	}
+}
+
+.valuable_donorsTitle{
+    font-family: $montserrat;
+    line-height: 1.2;
+    margin-top: 65px;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    &.style2{
+        text-align: left;
+        margin-bottom: 15px;
+		@media (max-width: 767px){
+			text-align: center;
+		}
+    }
+}
+
+.donors_list{
+	@media (max-width: 767px){
+		max-width: 400px;
+		margin: 0 auto;
+	}
+}
+
+.donor{
+    padding: 15px 5px;
+    img{
+        width: 100%;
+    }
+    .inner{
+        margin: 0;
+        padding: 15px;
+        text-align: center;
+        text-transform: capitalize;
+        .name{
+            font-family: $montserrat;
+            font-weight: 700;
+            margin: 0 0 5px;
+        }
+        .amount{
+            margin: 0;
+            font-family: $karla;
+        }
+    }
+    
+    &.style2{
+        .inner{
+        }
+    }
+}
+
+.progressBarRow2{
+    
+    .texts2desc{
+        width: 442px;
+        padding-left: 35px;
+        padding-right: 50px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+		@media (max-width: 1199px){
+			width: 370px;
+		}
+		@media (max-width: 991px){
+			width: 100%;
+		}
+        h4{
+            margin: 0 0 18px;
+            font-family: $montserrat;
+            font-weight: 700;
+            text-transform: uppercase; 
+			@media (max-width: 1199px){
+				margin-bottom: 15px;
+				font-size: 15px;
+			}           
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 0;
+			@media (max-width: 1199px){
+				font-size: 14px;
+				line-height: 22px;
+			}
+        }
+    }
+    
+    .fund_raises{
+        width: 442px;
+		@media (max-width: 1199px){
+			width: 370px;
+		}
+		@media (max-width: 991px){
+			width: 100%;
+			text-align: center;
+		}
+    }
+}
+    
+.progress_col{
+    width: 256px;
+    height: 155px;
+    position: relative;
+	@media (max-width: 1199px){
+		width: 200px;
+		height: 121px;
+	}
+	@media (max-width: 991px){
+		width: 100%;
+		height: 200px;
+	}
+    .circle4progress{
+        width: 255px;
+        height: 255px;
+        display: block;
+        position: absolute;        
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 100%;
+        padding: 23px;
+		@media (max-width: 1199px){
+			top: 64%;
+			width: 200px;
+			height: 200px;
+			padding: 15px;
+		}
+		@media (max-width: 991px){
+			top: 0%;
+			transform: translate(-50%,0);
+		}
+    }
+}
+
+.progress_circular{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 16px solid;    
+    position: relative;
+    overflow: hidden;
+    .progress-bar{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition-duration: 1000ms;
+    }
+    .percentage{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font: 30px/1.2 $montserrat;
+    }
+}

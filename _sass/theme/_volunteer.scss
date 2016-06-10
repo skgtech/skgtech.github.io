@@ -1,0 +1,33 @@
+.volunter-about{
+    .this-para{
+        color: $green;
+    }
+}
+
+.whyNeed{
+    .media-left{
+        i{
+            color: $green;
+            background: #f1f5fa;
+        }
+    }
+}
+
+.emmergencyContact{
+    .contact_Col{
+        background: #f1f5fa;
+        color: $dark;
+        &:last-child{
+            background: #e7edf5;
+        }
+    }
+}
+
+.become_volunteer{
+    background: #f1f5fa;
+    .form-control{
+        &+ label{
+            color: #adb5c0;
+        }
+    }
+}

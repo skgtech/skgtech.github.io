@@ -1,0 +1,76 @@
+#good_cause{
+    .carousel-caption{
+        bottom: 150px;
+        padding: 0;
+		@media (max-width: 1199px){
+			bottom: 90px;
+		}
+		@media (max-width: 991px){
+			bottom: 50px;
+		}
+		@media (max-width: 767px){
+			bottom: 0;
+			position: relative;
+			left: auto;
+			right: auto;
+			background: $dark;
+			padding: 40px 20px 80px;
+		}
+    }
+    .cause-title{
+        max-width: 615px;
+        margin: 20px auto 30px;
+        font-weight: 700;
+        font-family: $montserrat;
+        line-height: 36px;
+		text-transform: uppercase;
+		@media (max-width: 991px){
+			font-size: 22px;
+			line-height: 28px;
+			margin: 15px auto;
+		}
+        a{
+        }
+    }
+    
+    .carousel-indicators{
+        display: table;
+        margin: 0;
+        left: 50%;
+        width: auto;
+        transform: translateX(-50%);
+		@media (max-width: 767px){
+			bottom: 50px;
+		}
+        li{            
+            width: 12px;
+            height: 12px;            
+            border-radius: 100%;
+            float: left;
+            margin: 0;
+            border: none;
+            & + li,& + li.active{
+                margin-left: 5px;
+            }
+            &.active{
+                margin: 0;
+            }
+        }
+    }
+    
+    
+    .owl-dots{
+        display: table;
+        position: absolute;
+        left: 50%;
+        bottom: 145px;
+        transform: translateX(-50%);
+        .owl-dot{
+            &.active{
+            }
+            & + .owl-dot{
+                margin-left: 5px;
+            }
+        }
+    }
+}

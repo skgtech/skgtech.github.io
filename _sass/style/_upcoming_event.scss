@@ -1,0 +1,162 @@
+/*Upcoming Event*/
+.upcoming_event{
+    padding: 32px 0 48px;
+    .upcoming_label{
+        font-family: $montserrat;
+        line-height: 38px;        
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 0 29px;
+        margin: -70px 0 0;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;        
+        float: left;
+    }
+    
+    .event-title{
+        font-family: $montserrat;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+        line-height: 1.2;
+        a{            
+        }
+    }
+    .event-meta{
+        font-family: $montserrat;
+        font-weight: 700;
+        margin: 0;
+		@media (max-width: 1199px){
+			margin-bottom: 15px;
+		}
+        a{
+            display: inline-block;			
+			@media (max-width: 767px){
+				display: block;
+				margin-bottom: 10px;
+			}
+            i{
+                margin-right: 10px;
+            }
+            & + a{
+                margin-left: 18px;
+				@media (max-width: 767px){
+					margin-left: 0;
+				}
+            }
+        }
+    }
+    
+    .flip-clock-wrapper{
+        margin: 0;
+		float: right;
+		width: auto;
+		@media (max-width: 1199px){
+			float: left;
+			margin-left: -20px;
+		}
+		@media (max-width: 767px){
+			margin-left: -10px;
+		}
+        ul{
+            margin: 0 1px;
+            box-shadow: none;
+            width: 53px;
+            height: 53px;
+            border-radius: 3px;
+            font-size: 30px;
+            line-height: 53px;
+            background: none;
+			@media (max-width: 767px){
+				height: 30px;
+				width: 33px;
+				padding: 0;
+			}
+            li{
+                line-height: 53px;
+                border-radius: 3px;
+				@media (max-width: 767px){
+					line-height: 30px;
+				}
+                a{
+                    box-shadow: 0px 1px 3px 0px rgba(67, 80, 97, 0.5);
+                    border-radius: 3px;                    
+                    div{
+                        div{
+                            &.inn{
+                                font-size: 30px;                                
+                                font-family: $montserrat;
+                                text-shadow: none;   
+								@media (max-width: 767px){
+									font-size: 18px;
+								}                             
+                            }
+                        }
+                    }
+                }
+            }
+            &.play{
+                li.flip-clock-before,li.flip-clock-active{
+                    .up,.down{
+                        .shadow{
+                            background: none #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .flip-clock-divider{
+        height: 53px;
+		@media (max-width: 767px){
+			height: 30px;
+			width: 10px;
+		}
+        &:first-child{
+            width: 20px;
+			@media (max-width: 767px){
+				width: 10px;
+			}
+        }
+        .flip-clock-label{
+            left: 20px;
+            right: auto;
+            width: 107px;
+            top: 65px;
+            font-family: $montserrat;
+            font-size: 12px;
+            line-height: 1;            
+            text-shadow: none;
+            letter-spacing: 0;
+            text-transform: uppercase;
+			@media (max-width: 767px){
+				width: 66px;
+				left: 12px;
+				top: 36px;
+			}
+        }
+    }
+    .flip-clock-dot{
+        width: 4px;
+        height: 4px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: none;
+		@media (max-width: 767px){
+			width: 3px;
+			height: 3px;
+		}
+        &.top{
+            top: 20px;
+			@media (max-width: 767px){
+				top: 16px;
+			}
+        }
+        &.bottom{
+            bottom: 20px;
+			@media (max-width: 767px){
+				bottom: 16px;
+			}
+        }
+    }
+}
