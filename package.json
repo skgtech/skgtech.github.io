@@ -17,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/skgtech/skgtech.github.io/issues"
   },
-  "homepage": "https://github.com/skgtech/skgtech.github.io#readme"
+  "homepage": "https://github.com/skgtech/skgtech.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
 }
