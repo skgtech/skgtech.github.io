@@ -25,7 +25,7 @@
         newsletter.mceSuccess(resp, email);
       };
 
-      $(this).find('button').button('loading');
+      $(this).find('button').text('loading');
 
       $.ajax(options);
 
@@ -35,7 +35,7 @@
 
   newsletter.mceSuccess = function(resp) {
     if (resp.result === 'success'){
-      $('.newsletter').find('button').button('complete');
+      $('.newsletter').find('button').text('complete');
       return;
     }
 
