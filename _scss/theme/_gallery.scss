@@ -32,7 +32,15 @@
         }
     }
     p{
-        color: $lightGreen;
+        color: $darkGray;
+    }
+
+    .btn-primary {
+        &:hover {
+            color: white;
+            background: $green;
+            border-color: $green;
+        }
     }
 }
 
