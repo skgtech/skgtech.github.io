@@ -71,7 +71,17 @@ body{
         background: #fff;
         color: $dark;
     }
+    &.halted {
+        background: #FF2E63;
+        color: white;
+    }
+    &.running {
+        background: #FFB82E;
+        color: white;
+    }
 }
+
+
 
 /*Fund Rises*/
 .fund_raises{
