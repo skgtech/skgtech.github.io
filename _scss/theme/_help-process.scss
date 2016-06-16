@@ -1,42 +1,9 @@
-.help-process{
-    h5{
-        color: $dark;
-    }
-    p{
-        color: $ashLight;
-    }
-}
-.help-process{
-    h5{
-        color: $dark;
-    }
-    p{
-        color: $ashLight;
-    }
-}
-
-.how_help{
-    .buttons{
-        a{
-            & + a{
-                border-color: $dark;
-                color: $dark;
-                &:hover,&:focus{
-                    background: $green;
-                    color: #fff;
-                    border-color: $green;
-                }
-            }
-        }
-    }
-}
-
-.how_help2.row{
+.how-to-help.row{
     background: $dark;
     opacity: 0.9;
 }
 
-.help-process2{
+.help-process {
 	@media (max-width: 991px){
 		border-top-color: #505d6f;
 	}
@@ -51,33 +18,5 @@
     }
     a{
         color: $green;
-    }
-}
-
-/*How Help*/
-.how_help3{
-    background: $green;
-}
-
-.how_help_post{
-    .label{
-        background: $dark;
-    }
-    .this_title{
-        a{
-            color: #fff;
-        }
-    }
-    p{
-        color: lighten(saturate(adjust-hue($green, -0.2749), 18.2447), 43.7255);
-    }
-}
-
-.help-process3{
-    h5{
-        color: #fff;
-    }
-    p{
-        color: lighten(saturate(adjust-hue($green, -0.2749), 18.2447), 43.7255);
     }
 }
