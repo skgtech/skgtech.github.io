@@ -56,7 +56,7 @@
 .team_member{
     height: 273px;
     padding: 15px;
-    text-transform: uppercase;
+    margin-bottom: 20px;
 	@media (max-width: 1199px){
 		height: auto;
 	}
@@ -75,7 +75,7 @@
 	}
     h4{
         font: 16px/1 $montserrat;
-        margin: 20px 0 15px;
+        margin: 20px 0 5px;
         font-weight: 700;
 		@media (max-width: 767px){
 			font-size: 14px;
@@ -86,6 +86,19 @@
         font: 11px/1 $montserrat;
         font-weight: 700;
         margin: 0;
+    }
+
+    .social-links li {
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 5px;
+        a {
+            color: $lightGreen;
+            &:hover {
+                color: $green;
+            }
+        }
+
     }
 }
 
