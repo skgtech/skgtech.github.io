@@ -106,23 +106,24 @@ a,.btn,button{
 /*Fund Rises*/
 .fund_raises{
     .amount_box{
-        padding-top: 15px;
-        padding-bottom: 5px;
-        padding-right: 30px;
+        padding-top: 0;
+        padding-bottom: 15px;
+        padding-right: 5px;
         text-transform: uppercase;
         &+.amount_box{
-            padding-left: 30px;
+            padding-left: 0;
             padding-right: 0;
-            border-left: 1px solid;
         }
     }
     h6{
+        font-size: 11px;
         font-family: $montserrat;
         margin: 0;
         line-height: 1;
         margin-bottom: 5px;
     }
     h2,h3{
+        font-size: 15px;
         font-family: $montserrat;
         margin: 0;
         line-height: 1;
@@ -136,36 +137,7 @@ a,.btn,button{
             }
         }
     }
-    &.style3{
-        .amount_box{
-            padding-top: 25px;
-            padding-bottom: 30px;
-            padding-right: 35px;
-            padding-left: 35px;
-			@media (max-width: 1199px){
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-            &+.amount_box{
-                padding-left: 35px;
-                padding-right: 35px;
-				@media (max-width: 1199px){
-					padding-left: 15px;
-					padding-right: 15px;
-				}
-				@media (max-width: 767px){
-					border: none;
-					padding-top: 0;
-				}
-            }
-        }
-        h2{
-            margin-bottom: 8px;
-            & + h6{
-                margin-top: 12px;
-            }
-        }
-    }
+
 }
 
 /*Fund ProgressBar*/
