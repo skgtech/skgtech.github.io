@@ -13,6 +13,13 @@
 
     .cause_excepts{
         background: #f1f4f8;
+        a {
+            color: $green;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
     }
     .cuase_title{
         a{
