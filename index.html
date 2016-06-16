@@ -122,63 +122,43 @@ layout: default
             <h3>AWESOME COMMUNITIES TO JOIN</h3>
         </div>
         <div class="row">
+            {% assign communities = site.data.communities | sort: "name" %}
+            {% for c in communities %}
+            <!-- Item -->
             <div class="col-sm-6 col-md-4 community-listing">
                 <div class="images_row row m0">
-                    <a href="single-event.html"><img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/events/2.jpg" alt=""></a>
+                    <a href="{{ c.website }}">
+                        {% if c.image %}
+                            <img src="{{ c.image }}" alt="{{ c.name }}">
+                        {% else %}
+                            <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/events/2.jpg" alt="{{ c.name }}">
+                        {% endif %}
+                    </a>
                 </div>
                 <div class="community_excepts row m0">
-                    <h4 class="community_title"><a href="single-event.html">Thessaloniki Node.js</a></h4>
+                    <h4 class="community_title"><a href="{{ c.website }}">{{ c.name }}</a></h4>
                     <h5 class="community-maintainers">
                         <ul>
-                            <li><a href="#">Thanasis Polychronakis</a></li>
-                            <li><a href="#">Kostas Margaritis</a></li>
+                            {% for m in c.maintainers %}
+                                <li>
+                                    {% if m.email %}
+                                        <a href="mailto:{{ m.email }}">
+                                    {% elsif m.website %}
+                                        <a href="{{ m.website }}">
+                                    {% endif %}
+                                    {{ m.name }}</a>
+                                </li>
+                            {% endfor %}
                         </ul>
                     </h5>
-                    <p>Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.</p>
-                    <a href="single-event.html" class="btn-primary btn-outline">more info</a>
+                    <p>{{ c.description }}</p>
+                    <!-- <a href="{{ c.website }}" class="btn-primary btn-outline">more info</a> -->
                 </div>
                 <div class="community-date row m0">
-                    <h5><i class="fa fa-calendar"></i>Monthly Meetings</h5>
+                    <h5><i class="fa fa-calendar"></i>{{ c.period }} Meetings</h5>
                 </div>
             </div>
-            <div class="col-sm-6 col-md-4 community-listing">
-                <div class="images_row row m0">
-                    <a href="single-event.html"><img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/events/2.jpg" alt=""></a>
-                </div>
-                <div class="community_excepts row m0">
-                    <h4 class="community_title"><a href="single-event.html">CocoaHeads SKG</a></h4>
-                    <h5 class="community-maintainers">
-                        <ul>
-                            <li><a href="#">Thanasis Polychronakis</a></li>
-                            <li><a href="#">Kostas Margaritis</a></li>
-                        </ul>
-                    </h5>
-                    <p>We meet every last Tuesday of the month and bring together developers for drinks and talks about anything Apple related.</p>
-                    <a href="single-event.html" class="btn-primary btn-outline">read more</a>
-                </div>
-                <div class="community-date row m0">
-                    <h5><i class="fa fa-calendar"></i>Monthly Meetings</h5>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4 community-listing">
-                <div class="images_row row m0">
-                    <a href="single-event.html"><img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/events/2.jpg" alt=""></a>
-                </div>
-                <div class="community_excepts row m0">
-                    <h4 class="community_title"><a href="single-event.html">Java Meetup</a></h4>
-                    <h5 class="community-maintainers">
-                        <ul>
-                            <li><a href="#">Thanasis Polychronakis</a></li>
-                            <li><a href="#">Kostas Margaritis</a></li>
-                        </ul>
-                    </h5>
-                    <p>This is a group for anyone interested in java, j2ee, jvm languages, clean code practices, android development, etc. All skills levels are welcome. I started this group to meet and share ideas and knowledge with other java enthusiasts. Looking forward to exploring new java paths with everybody.</p>
-                    <a href="single-event.html" class="btn-primary btn-outline">read more</a>
-                </div>
-                <div class="community-date row m0">
-                    <h5><i class="fa fa-calendar"></i>Monthly Meetings</h5>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
     </div>
