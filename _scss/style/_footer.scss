@@ -1,8 +1,8 @@
-.footer{
+.footer {
     overflow: hidden;
 }
 
-.footer_sidebar{
+.footer-sidebar {
     padding: 73px 0 83px;
     .widget-title{
         margin-bottom: 30px;
@@ -12,7 +12,7 @@
         font-family: $montserrat;
         margin-top: 0;
     }
-    
+
     .widget{
 		@media (max-width: 991px){
 			margin-bottom: 20px;
@@ -26,40 +26,8 @@
             min-width: 193px;
         }
     }
-    
-    .recent-posts{
-        li{
-            padding: 10px 0;
-            a{
-                padding: 0;
-                font: 13px/21px $montserrat;
-                text-transform: uppercase;
-				&:hover,&:focus{
-					background: none;
-				}
-            }
-            & + li{
-                border-top: 1px solid;
-            }
-            &:first-child{
-                padding-top: 0;
-            }
-            &:last-child{
-                padding-bottom: 0;
-            }
-        }
-    }
-    
-    .tweet{
-        p{
-            margin-bottom: 0;
-            a{
-            }
-        }
-        .time_past{
-        }
-    }
-    
+
+
     address{
         font: 16px/24px $karla;
         span{
@@ -67,9 +35,9 @@
     }
 }
 
-.copyright_area{
+.copyright-area {
     font: 16px/24px $karla;
-    .copy_inner{
+    .copy-inner{
         padding: 23px 0;
 		position: relative;
 		&:before{
@@ -82,7 +50,7 @@
 			top: 0;
 		}
     }
-    .copyright_text{
+    .copyright-text {
         a{
         }
     }
@@ -126,22 +94,22 @@
     }
 }
 
-.footer2{
-    .footer_sidebar{
-        .widget{
+.footer2 {
+    .footer-sidebar {
+        .widget {
             p{
             }
         }
-        
+
         .recent-posts{
             li{
-                a{               
+                a{
                 }
                 & + li{
                 }
             }
         }
-    
+
         .tweet{
             p{
                 a{
@@ -150,21 +118,21 @@
             .time_past{
             }
         }
-        
-    
+
+
         address{
             span{
             }
         }
     }
-    .copyright_area{
-        .copy_inner{
+    .copyright-area {
+        .copy-inner {
             border: none;
 			&:before{
 				display: none;
 			}
         }
-        .copyright_text{
+        .copyright-text {
             a{
             }
         }

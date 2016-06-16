@@ -1,4 +1,4 @@
-.footer_sidebar{
+.footer-sidebar {
     h5.widget-title{
         font-weight: 700;
         color: $dark;
@@ -28,9 +28,9 @@
     }
 }
 
-.footer2{
+.footer2 {
     background: #fff;
-    .footer_sidebar{
+    .footer-sidebar {
         .widget{
             p{
                 color: $lightGray;
@@ -58,10 +58,10 @@
             }
         }
     }
-    .copyright_area{
+    .copyright-area {
         color: $lightGray;
         background: $dark;
-        .copyright_text{
+        .copyright-text {
             a{
                 color: #fff;
                 &:hover {
