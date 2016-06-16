@@ -3,7 +3,6 @@
 @import "style/header";
 @import "style/body";
 @import "style/featured_events";
-// shits below the hero
 @import "style/help-process";
 @import "style/upcoming_recent_events";
 @import "style/communities_row";
@@ -11,12 +10,12 @@
 @import "style/newsletter_signup";
 @import "style/footer";
 @import "style/navbar_variation";
-// shit on hero
+// index.html hero
 @import "style/featured_news";
 @import "style/page-header";
 @import "style/404";
 @import "style/contact";
-// About us stuff
+// About us
 @import "style/team";
 @import "style/events_news";
 @import "style/about";
@@ -30,6 +29,7 @@
 @import "theme/variables";
 @import "theme/prefix";
 @import "theme/header";
+// index.html hero
 @import "theme/featured_events";
 @import "theme/help-process";
 @import "theme/upcoming_recent_events";
@@ -42,6 +42,7 @@
 @import "theme/page-header";
 @import "theme/404";
 @import "theme/contact";
+// About us
 @import "theme/team";
 @import "theme/events_news";
 @import "theme/about";
