@@ -21,15 +21,12 @@ title: SKGTech - Startups in Thessaloniki
         </div>
 
         <div class="row m0 filters_row">
-            <h5>Industry:</h5>
             <ul class="gallery-filter causes-filter nav pull-left">
                 <li data-filter class="active">ALL</li>
-                <li data-filter=".education">SaaS</li>
-                <li data-filter=".environment">Transportation</li>
-                <li data-filter=".buiding-homes">Enterprise Software</li>
-                <li data-filter=".donating-clothes">Marketplace</li>
-                <li data-filter=".food">E-COMMERCE</li>
-                <li data-filter=".others">TELECOMMUNICATIONS</li>
+                {% assign startups = site.data.startups %}
+                {% for s in startups %}
+                    <li data-filter=".{{ s.industry }}">{{ s.industry }}</li>
+                {% endfor %}
             </ul>
 
         </div>
@@ -38,181 +35,44 @@ title: SKGTech - Startups in Thessaloniki
             <div class="causes_container popup-gallery">
                 <div class="grid-sizer"></div>
 
-                <div class="col-sm-12 cause-item list-item environment">
+                {% assign startups = site.data.startups | sort: "company" %}
+                {% for s in startups %}
+                <div class="col-sm-12 cause-item list-item {{ s.industry }}">
                     <div class="images_row pull-left">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause02.jpg" alt="">
+                        <img src="/assets/img/startups/{{ s.logo }}" alt="">
                     </div>
                     <div class="cause_excepts pull-left">
-                        <h4 class="cuase_title"><a href="single-cause.html">Goodvidio</a></h4>
-                        <p>Goodvidio is builds ecommerce video discovery as a service serving major clientele.</p>
-                        <br><p><strong>CEO:</strong> <a href="#">Thanasis Polychronakis</a></p>
-                        <p><strong>CTO:</strong> <a href="#">Kostantinos Margaritis</a></p>
+                        <h4 class="cuase_title"><a href="{{ s.url }}">{{ s.name }}</a></h4>
+                        <p>{{ s.description }}</p>
+                        <br><p><strong>CEO:</strong> <a href="#">{{ s.ceo }}</a></p>
+                        <p><strong>CTO:</strong> <a href="#">{{ s.cto }}</a></p>
                     </div>
                     <div class="fund_raise_info pull-left">
                         <div class="row fund_raises m0">
                             <div class="pull-left raised amount_box">
                                 <h6>Founded</h6>
-                                <h3>2014</h3>
+                                <h3>{{ s.yearFounded | date: "%b %Y" }}</h3>
                             </div>
                             <div class="pull-left goal amount_box">
-                                <h6>State</h6>
-                                <h3>Launched</h3>
+                                <h6>Stage</h6>
+                                <h3>{{ s.stage }}</h3>
                             </div>
                             <div class="pull-left raised amount_box">
                                 <h6>Funding</h6>
-                                <h3>Seed</h3>
+                                <h3>{{ s.funding }}</h3>
                             </div>
                             <div class="pull-left raised amount_box">
                                 <h6>industry</h6>
-                                <h3>e-commerce</h3>
+                                <h3>{{ s.industry }}</h3>
                             </div>
                             <div class="pull-left raised amount_box">
                                 <h6>team size</h6>
-                                <h3>13</h3>
+                                <h3> {{ s.teamSize }}</h3>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 cause-item list-item buiding-homes">
-                    <div class="images_row pull-left">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause03.jpg" alt="">
-                    </div>
-                    <div class="cause_excepts pull-left">
-                        <h4 class="cuase_title"><a href="single-cause.html">HELP US PRINTING 100 T-SHIRTS</a></h4>
-                        <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Suspen disse iaculis libero justo, vulputate tristique libero maximus eu. Ut ullamcorper,</p>
-                    </div>
-                    <div class="fund_raise_info pull-left">
-                        <h5 class="days-left">193 days left</h5>
-                        <div class="row fund_progress m0">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="percentage"><span class="counter">68</span>%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row fund_raises m0">
-                            <div class="pull-left raised amount_box">
-                                <h6>raised</h6>
-                                <h3>$65,360</h3>
-                            </div>
-                            <div class="pull-left goal amount_box">
-                                <h6>goal</h6>
-                                <h3>$124,500</h3>
-                            </div>
-                        </div>
-                        <div class="row m0 text-center">
-                            <a href="#donate_box" class="btn-primary btn-outline">donate now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 cause-item list-item donating-clothes">
-                    <div class="images_row pull-left">
-                        <div id="causes_carousel_inner2" class="carousel slide" data-ride="carousel" data-interval="3000">
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active"><img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause01.jpg" alt=""></div>
-                                <div class="item"><img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause02.jpg" alt=""></div>
-                            </div>
-
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#causes_carousel_inner2" data-slide-to="0" class="active"></li>
-                                <li data-target="#causes_carousel_inner2" data-slide-to="1"></li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div class="cause_excepts pull-left">
-                        <h4 class="cuase_title"><a href="single-cause.html">GIVE EDUCATION TO CHILDRENS</a></h4>
-                        <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Suspen disse iaculis libero justo, vulputate tristique libero maximus eu. Ut ullamcorper,</p>
-                    </div>
-                    <div class="fund_raise_info pull-left">
-                        <h5 class="days-left">193 days left</h5>
-                        <div class="row fund_progress m0">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="percentage"><span class="counter">68</span>%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row fund_raises m0">
-                            <div class="pull-left raised amount_box">
-                                <h6>raised</h6>
-                                <h3>$65,360</h3>
-                            </div>
-                            <div class="pull-left goal amount_box">
-                                <h6>goal</h6>
-                                <h3>$124,500</h3>
-                            </div>
-                        </div>
-                        <div class="row m0 text-center">
-                            <a href="#donate_box" class="btn-primary btn-outline">donate now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 cause-item list-item food">
-                    <div class="images_row pull-left">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause02.jpg" alt="">
-                    </div>
-                    <div class="cause_excepts pull-left">
-                        <h4 class="cuase_title"><a href="single-cause.html">HELP SENIOR CITIZENS</a></h4>
-                        <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Suspen disse iaculis libero justo, vulputate tristique libero maximus eu. Ut ullamcorper,</p>
-                    </div>
-                    <div class="fund_raise_info pull-left">
-                        <h5 class="days-left">193 days left</h5>
-                        <div class="row fund_progress m0">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="percentage"><span class="counter">68</span>%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row fund_raises m0">
-                            <div class="pull-left raised amount_box">
-                                <h6>raised</h6>
-                                <h3>$65,360</h3>
-                            </div>
-                            <div class="pull-left goal amount_box">
-                                <h6>goal</h6>
-                                <h3>$124,500</h3>
-                            </div>
-                        </div>
-                        <div class="row m0 text-center">
-                            <a href="#donate_box" class="btn-primary btn-outline">donate now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 cause-item list-item others">
-                    <div class="images_row pull-left">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/cause03.jpg" alt="">
-                    </div>
-                    <div class="cause_excepts pull-left">
-                        <h4 class="cuase_title"><a href="single-cause.html">HELP US PRINTING 100 T-SHIRTS</a></h4>
-                        <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Suspen disse iaculis libero justo, vulputate tristique libero maximus eu. Ut ullamcorper,</p>
-                    </div>
-                    <div class="fund_raise_info pull-left">
-                        <h5 class="days-left">193 days left</h5>
-                        <div class="row fund_progress m0">
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="percentage"><span class="counter">68</span>%</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row fund_raises m0">
-                            <div class="pull-left raised amount_box">
-                                <h6>raised</h6>
-                                <h3>$65,360</h3>
-                            </div>
-                            <div class="pull-left goal amount_box">
-                                <h6>goal</h6>
-                                <h3>$124,500</h3>
-                            </div>
-                        </div>
-                        <div class="row m0 text-center">
-                            <a href="#donate_box" class="btn-primary btn-outline">donate now</a>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <!-- <ul class="gallery-pagination list-unstyled">
                 <li class="prev"><a href="#">prev</a></li>
