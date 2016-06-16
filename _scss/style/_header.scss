@@ -1,6 +1,6 @@
 .navbar{
     padding: 23px 0;
-    
+
     border: none;
     box-shadow: none;
     margin: 0;
@@ -38,11 +38,11 @@
             }
         }
     }
-    
+
     .navbar-header{
-        
+
     }
-    
+
     &.affix{
         position: fixed;
         top: 0;
@@ -128,9 +128,9 @@
                                     left: 100%;
                                     top: 0;
                                 }
-                                li{                                        
+                                li{
                                     a{
-                                        
+
                                     }
                                 }
                             }
@@ -142,7 +142,7 @@
                 &>a{
                     background: none;
                     box-shadow: none;
-                    
+
                     & + ul{
                         @media (min-width: 1025px){
                             transform: scale(1,1);
@@ -172,13 +172,13 @@
                 a{
                     background: none;
                     box-shadow: none;
-                    
+
                     & + ul{
                         @media (min-width: 1025px){
                         }
                         li{
                             a{
-                                
+
                             }
                             &:hover,&.active,&.open{
                                 a{
@@ -197,7 +197,7 @@
 
 .header1{
     padding: 30px 0;
-    
+
 }
 .logo{
     a{
@@ -222,7 +222,7 @@
             background: none;
             box-shadow: none;
             text-transform: uppercase;
-            
+
             font: 700 13px/30px $montserrat;
             padding: 0 12px;
             outline: none;
@@ -249,14 +249,14 @@
 	}
 }
 
-.emergency-contact{
+.contact-info {
     .pull-left{
         padding-right: 20px;
         text-transform: uppercase;
         & + .pull-left{
             border-left: 1px solid;
             padding-right: 25px;
-            padding-left: 20px; 
+            padding-left: 20px;
             h5{
                 font-size: 18px;
             }
@@ -264,7 +264,7 @@
         span{
             display: table-cell;
             font-size: 30px;
-            
+
             padding-right: 12px;
             &.rotate{
                 i{
@@ -279,21 +279,21 @@
         h6{
             font-family: $montserrat;
             font-size: 11px;
-            
+
             margin: 0;
             line-height: 1.25;
         }
         h5{
             font-family: $montserrat;
             font-weight: 700;
-            
+
             margin: 0;
             line-height: 1.25;
         }
         h4{
             font-family: $montserrat;
             font-weight: 700;
-            
+
             margin: 0;
             line-height: 1.25;
         }
@@ -301,15 +301,15 @@
 }
 
 /*TopBar*/
-.topbar{    
-    text-transform: uppercase;    
+.topbar{
+    text-transform: uppercase;
     font: 12px/50px $montserrat;
 	.welcome-notice{
 		@media (max-width: 479px){
-			width: 100%;			
+			width: 100%;
 		}
 	}
-    a{        
+    a{
     }
     .nav{
 		@media (max-width: 767px){
@@ -324,7 +324,7 @@
 			}
             a{
                 padding: 0 15px;
-                line-height: 50px;                
+                line-height: 50px;
                 font-weight: 700;
                 text-shadow: none;
 				@media (max-width: 767px){
@@ -339,19 +339,19 @@
 					}
                 }
                 &:hover,&:focus{
-                    
+
                     box-shadow: none;
                 }
             }
             &.search_form_trigger{
                 a{
-                    
+
                 }
             }
             &.search-form{
                 form{
-                    position: relative;                    
-                    
+                    position: relative;
+
                     .form-control{
                         line-height: 50px;
                         padding: 0 15px;
@@ -386,14 +386,14 @@
 								width: 184px;
 							}
                             &::-moz-placeholder {
-                                
+
                                 opacity: 1;
                             }
                             &:-ms-input-placeholder {
-                                
+
                             }
                             &::-webkit-input-placeholder {
-                                
+
                             }
                         }
                     }
@@ -405,7 +405,7 @@
                         border: none;
                         border-radius: 0;
                         font-size: 16px;
-                        
+
                         right: 0;
                         display: block;
                         width: 53px;
@@ -426,11 +426,11 @@
     .form-group{
         width: 203px;
         display: block;
-        float: left;        
-    }    
+        float: left;
+    }
     .form-control{
         line-height: 50px;
-        padding: 0 15px;        
+        padding: 0 15px;
         border: none;
         height: 50px;
         box-shadow: none;
@@ -441,52 +441,52 @@
         border-radius: 0;
         @include transition;
         &::-moz-placeholder {
-            
+
             opacity: 1;
             @include transition;
         }
         &:-ms-input-placeholder {
-            
+
             @include transition;
         }
         &::-webkit-input-placeholder {
-            
+
             @include transition;
         }
         &:focus{
             box-shadow: none;
-            
-            
+
+
             font-weight: 300;
             &::-moz-placeholder {
-                
+
                 opacity: 1;
             }
             &:-ms-input-placeholder {
-                
+
             }
             &::-webkit-input-placeholder {
-                
+
             }
         }
     }
-    button{        
+    button{
         padding: 0;
         box-shadow: none;
         border: none;
         border-radius: 0;
         font-size: 16px;
-        
+
         width: 53px;
         height: 50px;
         text-align: center;
         line-height: 50px;
-        
+
         text-shadow: none;
         i{}
         &:hover,&:focus{
-            
-            
+
+
         }
     }
 }
