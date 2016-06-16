@@ -1,7 +1,5 @@
-.page-header{
-    background: url(http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/page-header.jpg) no-repeat scroll center top;
+.page-header {
     text-transform: uppercase;
-    background-size: cover;
 	padding-bottom: 0;
     h4{
         float: left;
@@ -20,4 +18,20 @@
 			margin: 40px 0;
 		}
     }
+
+}
+
+.about {
+    background: url(/assets/img/heroes/about.jpg) no-repeat scroll center top;
+    background-size: cover;
+}
+
+.projects {
+    background: url(/assets/img/heroes/projects.jpg) no-repeat scroll center top;
+    background-size: cover;
+}
+
+.startups {
+    background: url(/assets/img/heroes/startups.jpg) no-repeat scroll center top;
+    background-size: cover;
 }
