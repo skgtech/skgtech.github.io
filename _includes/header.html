@@ -1,46 +1,79 @@
 <nav class="navbar navbar-default navbar-static-top navbar2">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="nav navbar-nav">
-                <li><a href="/">home</a></li>
-                <li><a href="/#calendar">calendar</a></li>
-                <li><a href="/#communities">communities</a></li>
-                <li><a href="/startups">startups</a></li>
-                <li><a href="/projects">projects</a></li>
-                <li><a href="/about">about</a></li>
-            </ul>
-            <ul class="nav social_navbar navbar-right">
-                <li><a href="https://www.facebook.com/skgtech.io"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/skg_tech"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://github.com/skgtech"><i class="fa fa-github"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCHh9IjeM7L5Xfhy_EmTvhFw"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="nav navbar-nav">
+
+        <!-- HOME -->
+        {% if page.url == '/' %}
+        <li class="active">
+          {% else %}
+        <li>
+        {% endif %}
+            <a href="/">home</a>
+        </li>
+
+        <li><a href="/#calendar">calendar</a></li>
+        <li><a href="/#communities">communities</a></li>
+
+        <!-- STARTUPS -->
+        {% if page.url == '/startups' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/startups">startups</a>
+        </li>
+
+        <!-- PROJECTS -->
+        {% if page.url == '/projects' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/projects">projects</a>
+        </li>
+
+        <!-- ABOUT US -->
+        {% if page.url == '/about' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/about">about</a>
+        </li>
+      </ul>
+      <ul class="nav social_navbar navbar-right">
+        <li><a href="https://www.facebook.com/skgtech.io"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/skg_tech"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/skgtech"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCHh9IjeM7L5Xfhy_EmTvhFw"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <header class="row header1">
-    <div class="container">
-        <div class="logo pull-left">
-            <a href="/"><img src="images/skgtech-logo.png" alt="SKGTech - Thessaloniki's Tech Community"></a>
-        </div>
-
-        <div class="pull-right contact-info">
-            <div class="pull-left">
-                <span><i class="fa fa-envelope-o"></i></span>
-                <div class="infos_col">
-                    <h6>Say Hi at</h6>
-                    <a href="mailto:hello@skgtech.io"><h5>hello@skgtech.io</h5></a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="logo pull-left">
+      <a href="/"><img src="images/skgtech-logo.png" alt="SKGTech - Thessaloniki's Tech Community"></a>
     </div>
+
+    <div class="pull-right contact-info">
+      <div class="pull-left">
+        <span><i class="fa fa-envelope-o"></i></span>
+        <div class="infos_col">
+          <h6>Say Hi at</h6>
+          <a href="mailto:hello@skgtech.io"><h5>hello@skgtech.io</h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
