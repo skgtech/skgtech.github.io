@@ -63,7 +63,7 @@ title: SKGTech - About Us
                     {% assign people = site.data.people | sort: "name" %}
                     {% for p in people %}
                         <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-                            <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/2.jpg" alt="{{ p.name }}" class="img-responsive">
+                            <img src="{{ p.img }}" alt="{{ p.name }}" class="img-responsive">
                             <h4>{{ p.name }}</h4>
                             <h6>{{ p.title }}</h6>
                             <ul class="social-links list-inline">
