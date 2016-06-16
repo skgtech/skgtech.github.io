@@ -151,9 +151,9 @@
       - href: https://twitter.com/attheodo
         title: attheodo on Twitter
         type: twitter
-     - href: http://attheo.do
-       title: attheodo on Twitter
-       type: link
+      - href: http://attheo.do
+        title: attheodo on Twitter
+        type: link
 - first_name: Sakis
   last_name: Zafiropoulos
   title: Designer
