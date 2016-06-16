@@ -59,33 +59,28 @@ title: SKGTech - About Us
         <div class="row team_members_row">
             <div class="col-sm-12">
                 <h3 class="team_page_title">CORE TEAM MEMBERS</h3>
-                <p class="team_page_para about_var">SKGTech's actions and events are coordinated by the core team of the following people:</p>
-
                 <div class="row">
-                    <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/2.jpg" alt="" class="img-responsive">
-                        <h4>Thanasis Polychronakis</h4>
-                        <h6>Web Developer</h6>
-                    </div>
-                    <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/3.jpg" alt="" class="img-responsive">
-                        <h4>Thanos Theodoridis</h4>
-                        <h6>Software Engineer</h6>
-                    </div>
-                    <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/4.jpg" alt="" class="img-responsive">
-                        <h4>Kostantinos Margaritis</h4>
-                        <h6>Software Engineer</h6>
-                    </div>
-                    <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-                        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/5.jpg" alt="" class="img-responsive">
-                        <h4>Vaios Karampinis</h4>
-                        <h6>Web Developer</h6>
-                    </div>
+                    {% assign people = site.data.people | sort: "name" %}
+                    {% for p in people %}
+                        <div class="col-xs-3 col-sm-4 col-md-3 team_member">
+                            <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/team/2.jpg" alt="{{ p.name }}" class="img-responsive">
+                            <h4>{{ p.name }}</h4>
+                            <h6>{{ p.title }}</h6>
+                            <ul class="social-links list-inline">
+                                {% for link in p.links %}
+                                    <li>
+                                        <a href="{{ link.href }}" title="{{ link.title }}">
+                                            <i class="fa fa-{{ link.type }} fa-lg"></i>
+                                        </a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
-
+        <h3 class="team_page_title">COMPANY INFO</h3>
         <div class="row mission_vision">
             <div class="col-sm-6">
                 <i class="fa fa-info-circle"></i>
