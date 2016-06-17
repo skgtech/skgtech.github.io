@@ -1,5 +1,7 @@
+# Please include a 360x223 image for your community
 - name: "Open Coffee"
   period: "Monthly"
+  image: opencoffee.jpg
   happensAt: "Every third Tuesday of each month"
   description: "Open Coffee aims to be the single point of reference for greek start-ups."
   website: "http://opencoffee.gr/"
@@ -11,6 +13,7 @@
       email: "christos@bacharakis.com"
 - name: "CocoaHeads SKG"
   period: "Monthly"
+  image: cocoaheads.jpg
   happensAt: "Every last Tuesday of the month"
   description: "We meet every last Tuesday of the month and bring together developers for drinks and talks about anything Apple related."
   website: "http://cocoaheadsskg.github.io"
@@ -24,6 +27,7 @@
       email: "tsiflitzis@gmail.com"
 - name: "Thessaloniki Ruby Meetup (thessrb)"
   period: "Monthly"
+  image: thessrb.jpg
   description: "thessrb is the oldest meetup of town, a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
   website: "http://git.io/thessrb"
   maintainers:
@@ -35,6 +39,7 @@
       email: "Vassilisrizopoulos@gmail.com"
 - name: "OpenThessaloniki"
   period: "Sporadic"
+  image: openthessaloniki.jpg
   happensAt: "Every Thursday"
   website: "http://www.openthessaloniki.org/"
   twitter: "https://twitter.com/OpenThessalonik"
@@ -44,6 +49,7 @@
       email: "akritiko@gmail.com"
 - name: "Java Meetup"
   period: "Monthly"
+  image: java.jpg
   description: "This is a group for anyone interested in java, j2ee, jvm languages, clean code practices, android development, etc. All skills levels are welcome. I started this group to meet and share ideas and knowledge with other java enthusiasts. Looking forward to exploring new java paths with everybody."
   website: "http://www.meetup.com/Thessaloniki-Java-Meetup-Group/"
   twitter: "https://twitter.com/skgjava"
@@ -54,6 +60,7 @@
       website: "http://onlysoftware.wordpress.com/"
 - name: "Behance Thessaloniki"
   period: "Biannually"
+  image: behance.jpg
   happensAt: "May/November"
   description: "Twice annually, Behance presents Portfolio Review Week, an unprecedented series of volunteer-organized events that has spread to hundreds of cities internationally, with a goal of bringing together creative professionals."
   website: "http://www.meetup.com/BehanceReviews/Behance-Thessaloniki/"
@@ -64,6 +71,7 @@
       website: "http://be.net/6x6"
 - name: "Thessaloniki Toastmasters"
   period: "Twice a month"
+  image: toastmasters.jpg
   description: "A open, learn-by-doing workshop in which participants hone their speaking and leadership skills in a no-pressure atmosphere."
   website: "https://www.facebook.com/ThessalonikiToastmasters"
   maintainers:
@@ -75,6 +83,7 @@
       email: "dimitris@tsapakidis.com"
 - name: "Node.js"
   period: "Monthly"
+  image: node.jpg
   description: 'Thessaloniki Node.js Meetup is an initiative to connect "Noders" across Thessaloniki in order to exchange ideas, knowledge and experience.'
   website: "http://www.meetup.com/Thessaloniki-Node-js-Meetup/"
   twitter: "https://twitter.com/skgnodejs/"
@@ -85,6 +94,7 @@
       website: "https://twitter.com/thanpolas"
 - name: "PyThess"
   period: "Monthly"
+  image: pythess.jpg
   description: 'The PyThess meetup is the best meetup in existence, and also ever. Its goal is to get people who are interested in the Python programming language in the same room together, and then go for drinks. We aim to talk about Python, world domination and various other everyday topics.'
   website: "http://www.meetup.com/PyThess/"
   twitter: "https://twitter.com/stavros"
@@ -93,6 +103,7 @@
       email: "hi@stavros.io"
 - name: "Drupal meetup Thessaloniki"
   period: "Monthly"
+  image: drupal.jpg
   description: "We talk about all things drupal. We care about front-end, back-end, PHP, js, devops, code and translation. Open to all levels of expertise."
   website: "http://mydrupal.gr/"
   maintainers:
@@ -102,6 +113,7 @@
       email: "me@theodorosploumis.com"
 - name: "Thessaloniki .NET Meetup"
   period: "Monthly"
+  image: dotnet.jpg
   description: "Thessaloniki.Net MeetUp is a group for anyone interested in .NET programming and programming in general"
   website: "http://www.meetup.com/Thessaloniki-NET-Meetup/"
   maintainers:
@@ -111,6 +123,7 @@
       email: "ziaziosk@gmail.com"
 - name: "SHESHARP"
   period: "Sporadic"
+  image: shesharp.jpg
   description: "A greek community of people dedicated to promote women's engagement with technology & science. Its main activities consist of free workshops, meetups open to anyone interested, as well as partnerships with other tech communities and local chapters of Thessaloniki."
   website: "http://www.shesharp.org/"
   maintainers:
@@ -118,6 +131,7 @@
       email: "shesharpgr@gmail.com"
 - name: "AgriEntrepreneurship"
   period: "At least once a month"
+  image: agrientrepreneurship.jpg
   description: "We are a group active in agricultural entrepreneurship. We meet to discuss a relevant topic with an invited speaker in agro-food (production, processing, packaging, branding, promotion etc.), agri-tourism and agro-technology."
   website: "https://www.facebook.com/groups/AgriEntrepreneurship/"
   maintainers:
@@ -125,6 +139,7 @@
       website: "https://twitter.com/maratsoumari"
 - name: "Bitcoin and Blockchain Tech Meetup"
   period: "Monthly"
+  image: blockchain.jpg
   description: 'This meetup is all about learning more about cryptocurrencies. We make regular introductions to Bitcoin and the blockchain as well as more advanced talks on the ins and outs of this new and exciting technology. Join us if you want to be part of the community and be updated on all related events in Thessaloniki (and elsewhere).'
   website: "http://www.meetup.com/BlockchainGreece-1"
   twitter: "https://twitter.com/kkarasavvas"
@@ -133,6 +148,7 @@
       email: "kkarasavvas@gmail.com"
 - name: "Tech Ministry"
   period: "Daily"
+  image: techministry.jpg
   description: "TechMinistry is a hackerspace that promotes open technologies and free exchange of knowledge. It is a space where you can create {software / hardware / craft / art / food}, you can learn new technologies, share your knowledge and experiences and get to know creative people of the city. The space is funded exclusively by the contributions of its members and donations of friends."
   website: "https://techministry.gr"
   twitter: "https://twitter.com/thetechministry"
