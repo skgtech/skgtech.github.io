@@ -1,8 +1,11 @@
 var gulp        = require('gulp');
+var browserify  = require('browserify');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
+var source      = require('vinyl-source-stream');
+var buffer      = require('vinyl-buffer');
 var cp          = require('child_process');
-
+var loadPlugins = require('gulp-load-plugins')();
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -20,19 +23,39 @@ gulp.task('jekyll-build', function (done) {
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', ['browserify','jekyll-build'], function () {
     browserSync.reload();
 });
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+gulp.task('browser-sync', ['browserify','sass', 'jekyll-build'], function() {
     browserSync({
         server: {
             baseDir: '_site'
         }
     });
+});
+
+/**
+ * Browserify js scripts
+ */
+gulp.task('browserify', function () {
+  var b = browserify({
+    entries: './_app/app.js',
+    debug: true
+  });
+
+  return b.bundle()
+    .pipe(source('app.js'))
+    .pipe(buffer())
+    .pipe(loadPlugins.sourcemaps.init({loadMaps: true}))
+      .pipe(loadPlugins.uglify())
+      .on('error', loadPlugins.util.log)
+    .pipe(loadPlugins.sourcemaps.write('./'))
+    .pipe(gulp.dest('./assets/js/'));
+
 });
 
 /**
@@ -56,11 +79,22 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('_scss/**/*', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*.html', 'startups/*.html', 'about/*.html', 'projects/*.html', '_data/*.yaml', 'js/*.js'], ['jekyll-rebuild']);
+    gulp.watch([
+        '*.html',
+        '_layouts/*.html',
+        '_posts/*',
+        '_includes/*.html',
+        'startups/*.html',
+        'about/*.html',
+        'projects/*.html',
+        '_data/*.yaml',
+        'js/*.js',
+        '_app/*.js'
+    ], ['jekyll-rebuild']);
 });
 
 /**
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browserify', 'browser-sync', 'watch']);
