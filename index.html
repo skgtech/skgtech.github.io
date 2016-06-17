@@ -77,16 +77,20 @@ layout: default
             <h6 class="label label-default">SKGTech Events</h6>
             <h3>Noteworthy events and happenings in the city</h3>
         </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-6 upcoming_events">
+        <div class="row" id="upcoming-events">
+
+            <div id="event-item">
+                <div class="loading"></div>
+            <div class="col-sm-12 col-md-6 upcoming_events hide">
+
                 <div class="row event_cover_photo">
                     <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/upcoming01.jpg" alt="" class="img-responsive">
-                    <div class="upcoming_label label"><i class="fa fa-calendar"></i>August 15 - 18:00</div>
+                    <div class="upcoming_label label"><i class="fa fa-calendar"></i> <span>August 15 - 18:00</span></div>
                     <h6 class="event_time_loc">
-                        <span class="loc">Hosted at: <a href="#">Techministry</a></span>
+                        <span class="loc">Hosted at: <span class="location"></span></span>
                     </h6>
                 </div>
-                <h4 class="event_title"><a href="single-event.html">Node.js Meetup</a></h4>
+                <h4 class="event_title"><a href="single-event.html"><span>Node.js Meetup</span></a></h4>
                 <p class="event_summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada dapibus diam, ut fringilla purus efficitur eget. Morbi sagittis mi ac eros semper pharetra. Praesent sed purus purus.</p>
                 <div class="row shareOnRow m0">
                     <ul class="list-unstyled">
@@ -96,24 +100,8 @@ layout: default
                     </ul>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-6 upcoming_events">
-                <div class="row event_cover_photo">
-                    <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/upcoming01.jpg" alt="" class="img-responsive">
-                    <div class="upcoming_label label"><i class="fa fa-calendar"></i>August 15 - 18:00</div>
-                    <h6 class="event_time_loc">
-                        <span class="loc">Hosted at: <a href="#">Techministry</a></span>
-                    </h6>
-                </div>
-                <h4 class="event_title"><a href="single-event.html">CocoaHeads SKG - Meetup #5</a></h4>
-                <p class="event_summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada dapibus diam, ut fringilla purus efficitur eget. Morbi sagittis mi ac eros semper pharetra. Praesent sed purus purus.</p>
-                <div class="row shareOnRow m0">
-                    <ul class="list-unstyled">
-                        <li>Share it</li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
             </div>
+
         </div>
     </div>
 </section>
