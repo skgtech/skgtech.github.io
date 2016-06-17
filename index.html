@@ -4,8 +4,9 @@ layout: default
 
 <!--Featured News Carousel-->
 <section class="row featured_news">
+
     <div class="item">
-        <img src="images/skgtech_team.jpg" alt="">
+        <img src="/assets/img/featured_news/skgtech_team.jpg" alt="SKGTech">
         <div class="row caption m0">
             <div class="container">
                 <div class="volunteer_summery_box col-lg-5 col-md-10">
@@ -15,20 +16,24 @@ layout: default
             </div>
         </div>
     </div>
-
+    {% assign news = site.data.featured_news %}
+    {% for n in news %}
     <div class="item">
-        <img src="http://themedesigner.in.dimgx.net/demo/Helping-Hands/images/featured-slider2.jpg" alt="">
+        <img src="/assets/img/featured_news/{{ n.image }}" alt="{{ n.title }}">
         <div class="row caption m0">
             <div class="container">
                 <div class="col-lg-5 col-md-10">
-                    <h6 class="label label-default white">ANNOUNCEMENT</h6>
-                    <h3 class="news-title"><a href="single.html">DEVit 2017 ON THE MAKING.</a></h3>
-                    <p>The 3rd annual web-development conference is coming. Would you like to get involved?</p>
-                    <a href="single.html" class="btn-primary">learn more</a>
+                    {% if n.tagTitle %}
+                    <h6 class="label label-default white">{{ n.tagTitle }}</h6>
+                    {% endif %}
+                    <h3 class="news-title"><a href="{{ n.link }}">{{ n.title }}</a></h3>
+                    <p>{{ n.description }}</p>
+                    <a href="{{ n.link }}" class="btn-primary" target="_blank">learn more</a>
                 </div>
             </div>
         </div>
     </div>
+    {% endfor %}
 </section>
 
 <div class="page-wrapper row">
@@ -125,6 +130,7 @@ layout: default
             {% assign communities = site.data.communities | sort: "name" %}
             {% for c in communities %}
             <!-- Item -->
+            <div class="col-sm-6 col-md-4 community-sizer"></div>
             <div class="col-sm-6 col-md-4 community-listing">
                 <div class="images_row row m0">
                     <a href="{{ c.website }}">
