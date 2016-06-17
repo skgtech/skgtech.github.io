@@ -20,6 +20,8 @@
   "homepage": "https://github.com/skgtech/skgtech.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "calendarth": "0.0.6",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.1"
   }
