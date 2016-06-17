@@ -28,19 +28,13 @@ title: SKGTech - About Us
         <div class="col-sm-6 history">
           <h6 class="label label-defatult">history</h6>
           <div class="history_carousel">
+          {% assign items = site.data.history %}
+          {% for i in items %}
             <div class="item">
-              <h3 class="year">2014</h3>
-              <p>SKGTech is officially founded under the umbrella of a non-profit organization legal entity.</p>
+              <h3 class="year">{{ i.year }}</h3>
+              <p>{{ i.description }}</p>
             </div>
-            <div class="item">
-              <h3 class="year">2015</h3>
-              <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Etiam molestie odio lacus, vulputate feugiat tortor condimentum eu.</p>
-            </div>
-            <div class="item">
-              <h3 class="year">2016</h3>
-              <p>Pellentesque mollis eros quis massa interdum porta et vel nisi. Duis vel viverra quam. Etiam molestie odio lacus, vulputate feugiat tortor condimentum eu.</p>
-              <p>Etiam hendrerit maximus urna a lobortis. Etiam commodo metus volutpat, tempor diam sit amet, suscipit eros. Morbi laoreet sodales turpis, sit amet fermentum orci ultrices non.</p>
-            </div>
+          {% endfor %}
           </div>
         </div>
       </div>
