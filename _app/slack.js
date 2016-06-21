@@ -43,11 +43,16 @@ Slack.prototype.handleFormSubmit = function (e) {
   var that = this;
   e.preventDefault();
   var email = that.$emailEl.val();
-  that.$ctaEl.attr('value','loading...');
+
+  that.$ctaEl.button('loading');
 
   that.subscribe(email, function(err){
 
+    $('.slack-alert').addClass('hidden');
+
     if(err) {
+
+        that.$ctaEl.button('reset');
 
         switch(err) {
             case 'emptyEmail':
@@ -63,7 +68,10 @@ Slack.prototype.handleFormSubmit = function (e) {
 
     } else {
         $('.slack-alert.slack-success').removeClass('hidden');
-        that.$ctaEl.text('complete');
+        $('.slack-email').addClass('hidden');
+        $('.slack-submit').addClass('hidden');
+        that.$ctaEl.button('reset');
+
     }
 
   });
