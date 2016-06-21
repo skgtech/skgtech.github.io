@@ -97,6 +97,8 @@ Calendar.prototype._assignValues = function($item, item) {
   var $eventDescription = $item.find('.event_summery');
   var $eventURL = $item.find('.event_title a');
   var $eventImage = $item.find('.event_cover_photo img');
+  var $facebookURL = $item.find('.facebook-url');
+  var $twitterURL = $item.find('.twitter-url');
 
   var eventData = this._parseDesc(item.description);
 
@@ -146,8 +148,14 @@ Calendar.prototype._assignValues = function($item, item) {
 
      $eventURL.attr('href', eventURL);
 
+     // Set sharing links
+     $facebookURL.attr('href', 'https://facebook.com/sharer.php?u='+eventURL);
+     $twitterURL.attr('href', 'https://twitter.com/intent/tweet?text=' + item.summary +'&url='+ eventURL + '&via=skg_tech&related=skg_tech');
+
  }
- $item.find('.loading').addClass('hide'); 
+ $item.find('.loading').addClass('hide');
+
+
 
  return $item.html();
 
