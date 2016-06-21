@@ -16,6 +16,7 @@
 		}
     }
 
+
     &.style2{
 
         overflow: hidden;
@@ -109,7 +110,14 @@
         }
         .btn-primary{
         }
+
+        .newsletter-error p {
+            color: #FF2E63;
+            font-weight: bold;
+        }
     }
+
+
 
     .slack-alert {
 
@@ -127,4 +135,7 @@
         }
 
     }
+
+
+
 }
