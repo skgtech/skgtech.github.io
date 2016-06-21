@@ -2,7 +2,7 @@
   stage: "Launched"
   url: "http://goodvid.io"
   industry: "E-Commerce"
-  yearFounded: "18/2/2014"
+  yearFounded: "18/02/2014"
   funding: "Seed"
   description: "Ecommerce video discovery as a service"
   ceo: "Dimitrios Kourtesis"
@@ -15,7 +15,7 @@
   stage: "Established"
   url: "http://www.brainbox.gr"
   industry: "Transportation"
-  yearFounded: "8/1/2008"
+  yearFounded: "08/01/2008"
   funding: "Self-Funded"
   description: "Bike sharing and bike parking electronic products in the EMEA region."
   ceo: "George Voulgaroudis"
@@ -28,7 +28,7 @@
   stage: "Established"
   url: "http://www.schoox.com"
   industry: "e-learning"
-  yearFounded: "1/1/2010"
+  yearFounded: "01/01/2010"
   funding: "Series A"
   description: "Solving corporate training challenges instantly"
   ceo: "Lefteris Ntouanoglou"
@@ -37,3 +37,68 @@
   ctoEmail: "bill@schoox.com"
   teamSize: 20
   logo: "schoox.jpg"
+- name: "netscan.co"
+  stage: "Launched"
+  url: "http://netscan.co"
+  industry: "Telecomunication"
+  yearFounded: "11/23/2013"
+  funding: "Bootstrapped (self funded)"
+  description: "Network connectivity scanner"
+  ceo: "Thanasis Polychronakis"
+  ceoEmail: "http://thanpol.as"
+  cto: "Thanasis Polychronakis"
+  ctoEmail: "http://thanpol.as"
+  teamSize: 2
+  logo: 
+- name: "GeekBot"
+  stage: "Launched"
+  url: "https://geekbot.io/"
+  industry: "Digtital products"
+  yearFounded: "01/06/2015"
+  funding: "Bootstrapped (self funded)"
+  description: "the first ever slackbot assistant that helps you set up real asynchronous stand up meetings inside slack."
+  ceo: "Nick Papanotas"
+  ceoEmail: "nikolas@venturegeeks.com"
+  cto: 
+  ctoEmail:
+  teamSize: 5
+  logo:
+- name: "Book 'n' Bloom"
+  stage: "Launched"
+  url: "https://booknbloom.com/"
+  industry: "SMBs"
+  yearFounded: "11/01/2012"
+  funding: "Series A"
+  description: "Book'n'Bloom is an intuitive and secure online appointment system, which is fully integrated into Facebook and allows small and medium-sized businesses to retain current customers and attract new ones."
+  ceo: "Claus Rosenberg Gotthard"
+  ceoEmail: "charalampos@booknbloom.com"
+  cto: "Konstantinos Gounitsiotis"
+  ctoEmail: "konstantinos@booknbloom.com"
+  teamSize: 13
+  logo:
+- name: "Fieldscale"
+  stage: "Launched"
+  url: "http://www.fieldscale.com"
+  industry: "Enterprise Software"
+  yearFounded: "01/01/2015"
+  funding: "Seed (up to $1m)"
+  description: "New generation simulation software"
+  ceo: "Yiorgos Bontzios"
+  ceoEmail: 
+  cto: "George Bouzianas"
+  ctoEmail:
+  teamSize: 13
+  logo: 
+- name: "Photoshooter"
+  stage: "Launched"
+  url: "http://www.photoshooter.gr"
+  industry: "Marketplace"
+  yearFounded: "01/10/2014"
+  funding: "Bootstrapped (self funded)"
+  description: "Marketplace for photoshooters"
+  ceo: "Michalis Tzikas"
+  ceoEmail:
+  cto: "Michalis Tzikas"
+  ctoEmail:
+  teamSize: 3
+  logo:
