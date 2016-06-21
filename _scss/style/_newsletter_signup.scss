@@ -60,6 +60,7 @@
 
 }
 
+
 .newsletter-signup-form {
     .form-control{
         border-radius: 2px;
@@ -108,5 +109,22 @@
         }
         .btn-primary{
         }
+    }
+
+    .slack-alert {
+
+        &.slack-success p {
+            margin-top: 15px;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        &.slack-already-subscribed p, &.slack-invalid-email p {
+            color: #FF2E63;
+            font-weight: bold;
+        }
+
     }
 }
