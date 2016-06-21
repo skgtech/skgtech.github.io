@@ -10,18 +10,16 @@
  * @fileOverview Frontend application bootstrap file
  */
 
-global.$ = require('jquery');
-
 var Calendar = require('./calendar');
-//var SlackApp = require('./slack-invite');
+var Slack = require('./slack');
 //require('./newsletter');
 
 var calendar = new Calendar();
 calendar.init();
 
-// var slackApp = new SlackApp();
-// slackApp.init({
-//   email_container: '.slack-subscribe-email',
-//   cta: '.slack-subscribe-button',
-//   form: '.slack-form'
-// });
+var slack = new Slack();
+slack.init({
+  emailField: '.slack-email',
+  cta: '.slack-submit',
+  form: '.slack-form'
+});
