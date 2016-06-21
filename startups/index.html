@@ -17,7 +17,7 @@ title: SKGTech - Startups in Thessaloniki
         <div class="row sectionTitle text-center">
             <h6 class="label label-default">STARTUPS OF THESSALONIKI</h6>
             <h3>AN UP-TO-DATE CATALOG OF STARTUPS IN OUR CITY</h3>
-            <p>Want to see your startup here? <a href="#">Shoot us an email</a></p>
+            <p>Want to see your startup here? <a href="mailto:hello@skgtech.io">Shoot us an email</a></p>
         </div>
 
         <div class="row m0 filters_row">
@@ -44,8 +44,10 @@ title: SKGTech - Startups in Thessaloniki
                     <div class="cause_excepts pull-left">
                         <h4 class="cuase_title"><a href="{{ s.url }}">{{ s.name }}</a></h4>
                         <p>{{ s.description }}</p>
-                        <br><p><strong>CEO:</strong> <a href="#">{{ s.ceo }}</a></p>
-                        <p><strong>CTO:</strong> <a href="#">{{ s.cto }}</a></p>
+                        <br><p><strong>CEO:</strong> <a href="mailto:{{ s.ceoEmail }}">{{ s.ceo }}</a></p>
+                        {% if s.cto %}
+                        <p><strong>CTO:</strong> <a href=" mailto:{{ s.ctoEmail }}">{{ s.cto }}</a></p>
+                        {% endif %}
                     </div>
                     <div class="fund_raise_info pull-left">
                         <div class="row fund_raises m0">
