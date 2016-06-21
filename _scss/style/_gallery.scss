@@ -3,6 +3,14 @@
     .sectionTitle{
         margin-bottom: 50px;
     }
+
+    a {
+        color: $green;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .gallery-filter{
