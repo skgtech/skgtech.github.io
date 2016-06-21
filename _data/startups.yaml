@@ -40,33 +40,33 @@
 - name: "netscan.co"
   stage: "Launched"
   url: "http://netscan.co"
-  industry: "Telecomunication"
+  industry: "Telecom"
   yearFounded: "11/23/2013"
   funding: "Bootstrapped (self funded)"
   description: "Network connectivity scanner"
   ceo: "Thanasis Polychronakis"
-  ceoEmail: "http://thanpol.as"
+  ceoEmail: thanpolas@gmail.com
   cto: "Thanasis Polychronakis"
-  ctoEmail: "http://thanpol.as"
+  ctoEmail: thanpolas@gmail.com
   teamSize: 2
-  logo: 
+  logo: netscan.jpg
 - name: "GeekBot"
   stage: "Launched"
   url: "https://geekbot.io/"
-  industry: "Digtital products"
+  industry: "Chatbots"
   yearFounded: "01/06/2015"
   funding: "Bootstrapped (self funded)"
-  description: "the first ever slackbot assistant that helps you set up real asynchronous stand up meetings inside slack."
+  description: "The first ever slackbot assistant that helps you set up real asynchronous stand up meetings inside slack."
   ceo: "Nick Papanotas"
   ceoEmail: "nikolas@venturegeeks.com"
-  cto: 
+  cto:
   ctoEmail:
   teamSize: 5
-  logo:
+  logo: geekbot.jpg
 - name: "Book 'n' Bloom"
   stage: "Launched"
   url: "https://booknbloom.com/"
-  industry: "SMBs"
+  industry: "Online Reservations"
   yearFounded: "11/01/2012"
   funding: "Series A"
   description: "Book'n'Bloom is an intuitive and secure online appointment system, which is fully integrated into Facebook and allows small and medium-sized businesses to retain current customers and attract new ones."
@@ -75,20 +75,20 @@
   cto: "Konstantinos Gounitsiotis"
   ctoEmail: "konstantinos@booknbloom.com"
   teamSize: 13
-  logo:
+  logo: booknbloom.jpg
 - name: "Fieldscale"
   stage: "Launched"
   url: "http://www.fieldscale.com"
-  industry: "Enterprise Software"
+  industry: "Simulation Software"
   yearFounded: "01/01/2015"
   funding: "Seed (up to $1m)"
   description: "New generation simulation software"
   ceo: "Yiorgos Bontzios"
-  ceoEmail: 
+  ceoEmail: yiorgos@fieldscale.com
   cto: "George Bouzianas"
-  ctoEmail:
+  ctoEmail: bouzias@fieldscale.com
   teamSize: 13
-  logo: 
+  logo: fieldscale.jpg
 - name: "Photoshooter"
   stage: "Launched"
   url: "http://www.photoshooter.gr"
@@ -101,4 +101,4 @@
   cto: "Michalis Tzikas"
   ctoEmail:
   teamSize: 3
-  logo:
+  logo: photoshooter.jpg
