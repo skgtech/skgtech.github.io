@@ -13,7 +13,7 @@
 var Calendar = require('./calendar');
 var Slack = require('./slack');
 require('./theme');
-//require('./newsletter');
+require('./newsletter');
 
 var calendar = new Calendar();
 calendar.init();
