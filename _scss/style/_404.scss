@@ -1,5 +1,5 @@
 .content_404{
-    padding: 145px 0 135px;
+    //padding: 145px 0 135px;
 	@media (max-width: 767px){
 		padding: 45px 0;
 	}
@@ -30,7 +30,7 @@
 		}
     }
     .buttons{
-        margin-bottom: 135px;
+        margin-bottom: 50px;
 		@media (max-width: 767px){
 			margin-bottom: 0;
 		}
@@ -57,7 +57,7 @@
         font-family: $montserrat;
         font-weight: 700;
     }
-    address{        
+    address{
         font-family: $montserrat;
         font-weight: 700;
         line-height: 30px;
@@ -84,7 +84,7 @@
         text-transform: none;
         margin-bottom: 25px;
     }
-    
+
     &.row{
         & + .address_box{
             margin-top: 25px;
