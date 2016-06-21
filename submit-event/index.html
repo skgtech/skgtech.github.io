@@ -1,0 +1,101 @@
+---
+layout: default
+title: SKGTech - Submit event
+---
+<div class="page-wrapper row">
+<section class="row content_faqs page-content">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-10 col-sm-offset-1">
+                <h3 class="team_page_title">SKGTech Calendar</h3>
+                <p class="team_page_para about_var">SKGTech Calendar uses a public <a href="#">Google calendar</a> for storing and reading the upcoming events and meetups.</p>
+
+                <div class="row m0 questions" id="general">
+                    <h3 class="question_type">Submitting an Event</h3>
+                    <div class="panel-group question_accordion" id="question_accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading1">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#question_accordion1" href="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                        How do I create an event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+                                <div class="panel-body">
+                                    <p>Go to <a href="https://calendar.google.com">Google calendar</a> and create a new event.</p><br>
+                                    <ul>
+                                        <li>Use a short and descriptive title for the event.</li>
+                                        <li>Define the starting time and ending time on the event. Only the starting time will be shown on SKGTech's calendar entry.</li>
+                                    </ul>
+                                    <br><img src="http://than.pol.as/Uwu3/Screen%20Shot%202014-04-11%20at%2011.40.03%20AM.png"><br>
+                                    <p>In the <strong>"Where"</strong> field, you must enter a reverse-geocodable address so that Google Maps can resolve a location:</p><br>
+                                    <ul>
+                                        <li>A <strong>good</strong> address: "Mitropoleos 110, Thessaloniki, 54621, Greece"</li>
+                                        <li>A <strong>bad</strong> address: "Mitropoleo 100, 2nd floor"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading2">
+                                <h4 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#question_accordion1" href="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        How do I set the Event's venue, map, info and image?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
+                                <div class="panel-body">
+                                    <p>SKGTech calendar uses the event's description field to parse the venye, info, map, about and image metadate. The fields have a unique name and are separated using a colon from their values.</p>
+                                    <br><img src="http://than.pol.as/UxGC/Screen%20Shot%202014-04-11%20at%2011.43.53%20AM.png"><br>
+                                    <br><p>Here are all the possible metadata fields:</p><br>
+                                    <ul>
+                                        <li><strong>Venue:</strong> This is a free text field where you name a particular venue and any special instruction on where to find the event space (i.e 2nd floor, office #3).</li>
+                                        <li><strong>Info:</strong>This field expects a URL that points to a webpage with more information around the event.</li>
+                                        <li><strong>Map:</strong>This field expects a Google Maps URL that points directly to a Google Maps page with the exact location of the event.</li>
+                                        <li><strong>About:</strong>A free text description of the event.</li>
+                                        <li><strong>Image:</strong>A link to an image for this event. This image <strong>must</strong> be <stong>556x345<strong>. If no image is declared, the calendar will use an embarassing placeholder image.</li>
+                                    </ul>
+                                    <p>All the above fields are optional however <string>at least one must be defined</strong>. Here's an example from the "Description" event for the OpenThessaloniki event:</p>
+                                    <p>Venue: 2nd Floor, Office 3 <br>Info: http://www.openthessaloniki.org/
+<br>Map: "https://www.google.com/maps?q=Ethnikis+Antistaseos+17,+Kalamaria[...]"
+<br>About: A meetup about Open Data.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading3">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#question_accordion1" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                        How do I publish my event?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                <div class="panel-body">
+                                    <br><img src="http://than.pol.as/Uxli/Screen%20Shot%202014-04-11%20at%2011.51.59%20AM.png"></br>
+                                    <p>In order for your event to be submitted and await moderation, you need to past the following email address in the <strong>Add Guests</strong> field and press the "Add" button. </p><br>
+                                    <ul>
+                                        <li>2ul10sd9g30mnk1vpmcnnp5qv4@group.calendar.google.com</li>
+                                    </ul>
+                                    <br><p>We know this is hard to remember so if you are a frequent event organizer it might be easier if you create a new contact named "SKGTech calendar" and assign that e-mail address.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+{% include newsletter.html %}
