@@ -1,0 +1,40 @@
+.single-project{
+    h4{
+        color: $ashLight;
+    }
+}
+
+.featureswithImage{
+    .list-heading{
+        color: $ashLight;
+    }
+    ul{
+        li{
+            color: $dark;
+            &:before{
+                background: $green;
+            }
+        }
+    }
+}
+
+.text-block{
+    background: $green;
+    color: #fff;
+}
+
+.shareOnRow{
+    ul{
+        li{
+            color: $ashLight;
+            & + li{
+                a{
+                    color: $ashLight;
+                    &:hover,&:focus{
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

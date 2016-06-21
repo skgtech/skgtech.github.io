@@ -1,0 +1,111 @@
+/*Navbar 2*/
+.navbar2{
+    background: $green;
+    #mainNav{
+        .nav{
+            li{
+                a{
+                    color: lighten(saturate(adjust-hue($green, 0.0672), 6.9285), 34.9020);
+                    &:hover,&:focus{
+                        background: darken(desaturate(adjust-hue($green, -0.0400), 5.4714), 3.5294);
+                        color: #fff;
+                    }
+                }
+                &.active{
+                    &>a{
+                        color: $dark;
+                        background: #fff;
+                    }
+                }
+                .dropdown-menu{
+                    li{
+                        a{
+                            color: $dark;
+                            &:hover,&:focus{
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-right{
+        li{
+            .dropdown-menu{
+                background: darken(desaturate(adjust-hue($green, -0.0400), 5.4714), 3.5294);
+            }
+        }
+    }
+
+    .search_form{
+        .form-control{
+            background: $green;
+            color: #fff;
+            &::-moz-placeholder {
+                color: lighten(saturate(adjust-hue($green, 0.0672), 6.9285), 34.9020);
+            }
+            &:-ms-input-placeholder {
+                color: lighten(saturate(adjust-hue($green, 0.0672), 6.9285), 34.9020);
+            }
+            &::-webkit-input-placeholder {
+                color: lighten(saturate(adjust-hue($green, 0.0672), 6.9285), 34.9020);
+            }
+        }
+    }
+
+    &.navbar2-bottom{
+        #mainNav{
+            .nav{
+                li{
+                    a{
+                    }
+                    &.active{
+                        &>a{
+                            color: #fff;
+                            background: darken(desaturate(adjust-hue($green, -0.0400), 5.4714), 3.5294);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Navbar 3*/
+.navbar3{
+	background: none;
+    #mainNav{
+        .navbar-nav{
+            li{
+                a{
+                    color: #fff;
+                    &:hover,&:focus{
+                        color: $dark;
+                    }
+                }
+                &.active{
+                    &>a{
+                        color: $dark;
+                        background: #fff;
+                    }
+                }
+                .dropdown-menu{
+                    li{
+                        a{
+                            color: $dark;
+                            &:hover,&:focus{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    &.affix{
+        background: #3b4858;
+    }
+}

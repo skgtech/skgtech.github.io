@@ -1,0 +1,41 @@
+.cause-item{
+    .carousel-indicators{
+        li{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+    .images_row{
+        background: $dark;
+    }
+
+    .cause_excepts{
+        background: #f1f4f8;
+        a {
+            color: $green;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+    .cuase_title{
+        a{
+            color: $dark;
+        }
+    }
+    p{
+        color: $ashLight;
+    }
+
+    &.list-item{
+        .fund_raise_info{
+			background: #f8fafc;
+            .days-left{
+                color: $lightGreen;
+            }
+        }
+    }
+}

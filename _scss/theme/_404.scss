@@ -1,0 +1,41 @@
+.error_message{
+    .error_no{
+        color: $dark;
+    }
+    .error_details{
+        color: $dark;
+    }
+    .buttons{
+        .btn-primary{
+            & + .btn-primary{
+            }
+        }
+    }
+}
+
+.address_box{
+    .inner{
+        background: #f1f5fa;
+    }
+    h3{
+        color: $dark;
+    }
+    address{
+        color: $dark;
+        a{
+            color: $green;
+        }
+    }
+    .fa-question{
+        color: #fff;
+        background: $green;
+    }
+    p{
+        color: #6e7c8d;
+    }
+    
+    &.row{
+        & + .address_box{
+        }
+    }
+}

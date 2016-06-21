@@ -1,0 +1,40 @@
+.how-to-help.row {
+    margin-top: -122px;
+    z-index: 2;
+	@media (max-width: 991px){
+		margin-top: 0;
+	}
+}
+
+.help-process {
+    padding: 0 60px;
+	@media (max-width: 991px){
+		border-top: 1px solid;
+	}
+	@media (max-width: 767px){
+		padding: 0 25px;
+	}
+    &  + .help-process {
+        border-left: 1px solid;
+		@media (max-width: 991px){
+			border-left: none;
+		}
+    }
+    .media{}
+    .media-left {
+        vertical-align: middle;
+        padding-right: 25px;
+    }
+    .media-body {}
+    h5{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: $montserrat;
+
+        text-transform: uppercase;
+    }
+    p{
+        margin-bottom: 25px;
+        line-height: 21px;
+    }
+}

@@ -1,0 +1,54 @@
+.contact_page_title{
+    font-family: $montserrat;
+    font-weight: 700;
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    &.map-title{
+        margin-bottom: 25px;
+    }
+}
+
+.contact_page_para{
+    font: 21px/30px $karla;
+    letter-spacing: -0.1px;    
+    margin-bottom: 30px;
+}
+
+.contact-form{
+    margin-bottom: 53px;
+    .form-control{
+        border: 1px solid;
+        border-radius: 2px;
+        max-width: 322px;
+        height: 44px;
+        line-height: 30px;
+        margin-bottom: 20px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        
+        box-shadow: none;
+        &::-moz-placeholder {
+            
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            
+        }
+        &::-webkit-input-placeholder {
+            
+        }
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    textarea.form-control{
+        max-width: 462px;
+        height: 164px;
+        resize: none;
+    }
+    
+}
+
+#mapBox{
+    height: 343px;
+}

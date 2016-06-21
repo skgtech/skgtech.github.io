@@ -1,51 +1,35 @@
 {
-  "private": true,
-  "name": "SKGTech.io",
-  "version": "0.0.2",
-  "description": "Thessaloniki tech community",
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.8.1",
-    "browserify": "^10.2.4",
-    "calendarth": "0.0.6",
-    "del": "^1.2.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-shell": "^0.4.2",
-    "gulp-sourcemaps": "^1.5.2",
-    "gulp-uglify": "^1.2.0",
-    "gulp-util": "^3.0.6",
-    "jquery": "^2.2.4",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
-  },
-  "scripts": {
-    "start": "gulp",
-    "test": "mocha ./tests/test.js"
-  },
+  "name": "skgtech",
+  "version": "3.0.0",
+  "description": "SKGTech Official Website",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/skgtech/skgtech.github.io.git"
   },
+  "keywords": [
+    "skgtech",
+    "thessaloniki",
+    "community"
+  ],
+  "author": "",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/skgtech/skgtech.github.io/issues"
   },
-  "keywords": [
-    "thessaloniki",
-    "skg",
-    "skgtech"
-  ],
-  "author": {
-    "name": "SKGTech.io",
-    "url": "https://github.com/skgtech/"
-  },
-  "contributors": [
-    {
-      "name": "SKGTech.io <hello@skgtech.io>"
-    }
-  ],
-  "license": "MIT"
+  "homepage": "https://github.com/skgtech/skgtech.github.io#readme",
+  "devDependencies": {
+    "jquery": "^2.2.4",
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "calendarth": "0.0.6",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-util": "^3.0.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
 }

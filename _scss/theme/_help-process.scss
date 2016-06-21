@@ -1,0 +1,25 @@
+.how-to-help.row{
+    background: $dark;
+    opacity: 0.9;
+}
+
+.help-process {
+	@media (max-width: 991px){
+		border-top-color: #505d6f;
+	}
+    &  + .help-process2{
+        border-left-color: rgba(255, 255, 255, 0.1);
+    }
+    h5{
+        color: #fff;
+    }
+    p{
+        color: #C4C4C4;
+    }
+    a{
+        color: $green;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

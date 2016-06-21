@@ -1,0 +1,120 @@
+body{
+    p{
+        color: $ashLight;
+    }
+}
+
+/*Button*/
+.btn-primary{
+    border-color: $green;
+    background: $green;
+    color: #fff;
+    &.btn-outline{
+        color: $green;
+		&:hover,&:focus{
+			color: #fff;
+		}
+    }
+    &.white{
+        border-color: #fff;
+        background: #fff;
+        color: $dark;
+        &.btn-outline{
+            color: #fff;
+            background: transparent;
+			&:hover,&:focus{
+				color: #fff;
+			}
+        }
+        &:hover,&:focus{
+            background: $dark;
+            border-color: $dark;
+            color: #fff;
+        }
+    }
+    &.dark{
+        border-color: $dark;
+        background: $dark;
+        color: #fff;
+        &.btn-outline{
+            color: $dark;
+            background: transparent;
+			&:hover,&:focus{
+				color: #fff;
+			}
+        }
+        &:hover,&:focus{
+            background: $green;
+            border-color: $green;
+            color: #fff;
+        }
+    }
+    &.facebook-page{
+        background: #315e9b;
+        color: #536072;
+        &:hover,&:focus{
+            background: $green;
+            border-color: $green;
+            color: #fff;
+        }
+    }
+    &:hover,&:focus{
+        background: $dark;
+    }
+}
+
+/*Label*/
+.label,.label.widget-title{
+    background: $green;
+    color: #fff;
+    &.white{
+        background: #fff;
+        color: $dark;
+    }
+    &.halted {
+        background: #FF2E63;
+        color: white;
+    }
+    &.running {
+        background: #FFB82E;
+        color: white;
+    }
+}
+
+
+
+/*Fund Rises*/
+.fund_raises{
+    .amount_box{
+        &+.amount_box{
+            border-left-color: #dee0e9;
+        }
+    }
+    h6{
+        color: $lightGreen;
+    }
+    h2,h3{
+        color: $dark;
+    }
+}
+
+
+.progress{
+    background: #dee0e9;
+    .progress-bar{
+        background: $green;
+    }
+    .percentage{
+        background: $green;
+        &:after{
+            border-top-color: $green;
+        }
+    }
+}
+
+/*Section Title */
+.sectionTitle{
+    h3{
+        color: $dark;
+    }
+}

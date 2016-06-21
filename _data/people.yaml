@@ -1,20 +1,16 @@
 # The SKGTech people list
 #
-# Link types (add here any new ones):
+# Link types
 #   behance
 #   twitter
 #   github
 #   link
 #   facebook
-#
 
-#
-#
-# Order alphabetically based on last name please
-#
-#
+# --- IMPORTANT: Your profile pic size MUSt be 163x170! ----
 
-- name: Kostas Bariotis
+- first_name: Kostas
+  last_name: Bariotis
   title: Web Developer
   company: Goodvidio
   companyUrl: https://goodvid.io/
@@ -29,7 +25,8 @@
     - href: http://kostasbariotis.com
       title: Kostas Website
       type: link
-- name: Vaios Karampinis
+- first_name: Vaios
+  last_name: Karampinis
   title: Web Developer
   img: /assets/img/people/oden.png
   links:
@@ -39,7 +36,8 @@
     - href: https://github.com/vkarampinis
       title: Vaios on GitHub
       type: github
-- name: Dimitri Ntempos
+- first_name: Dimitri
+  last_name: Ntempos
   title: Product Manager
   img: /assets/img/people/ntemposd.jpg
   links:
@@ -52,7 +50,8 @@
     - href: https://github.com/ntemposd
       title: Dimitri on GitHub
       type: github
-- name: Tasso Efkarpidis
+- first_name: Tasso
+  last_name: Efkarpidis
   title: Designer
   company: Nobraincellz
   companyUrl: http://www.nobraincellz.gr/
@@ -64,7 +63,8 @@
     - href: http://www.nobraincellz.gr/
       title: Nobraincellz website
       type: link
-- name: Adonis Kakoulidis
+- first_name: Adonis
+  last_name: Kakoulidis
   title: Web Developer
   company: Goodvidio
   companyUrl: https://goodvid.io/
@@ -79,7 +79,8 @@
     - href: https://adonisk.com
       title: Adonis K. Website
       type: link
-- name: Theodore Keloglou
+- first_name: Theodore
+  last_name: Keloglou
   title: Software Developer
   img: /assets/img/people/sirodoht.jpg
   links:
@@ -92,7 +93,8 @@
     - href: http://sirodoht.xyz
       title: Theodore Website
       type: link
-- name: Kostas Margaritis
+- first_name: Kostas
+  last_name: Margaritis
   title: Software Engineer
   company: Goodvidio
   companyUrl: https://goodvid.io/
@@ -107,7 +109,8 @@
     - href: http://typeofundefined.io
       title: Margaritis Website
       type: link
-- name: Thanasis Polychronakis
+- first_name: Thanasis
+  last_name: Polychronakis
   title: Web Developer
   company: Insight Replay, Inc.
   companyUrl: http://insightreplay.com/
@@ -122,7 +125,8 @@
     - href: https://thanpol.as
       title: Thanasis Website
       type: link
-- name: Charis Rafailidis
+- first_name: Charis
+  last_name: Rafailidis
   title: All-Around Player (Web Developer)
   company:
   companyUrl:
@@ -134,8 +138,9 @@
     - href: https://twitter.com/hrafailidis
       title: Charis on Twitter
       type: twitter
-- name: Thanos Theodoridis
-  title: iOS Developer
+- first_name: Thanos
+  last_name: Theodoridis
+  title: Software Engineer
   company: Contractor
   companyUrl: http://www.attheo.do
   img: /assets/img/people/attheodo.jpg
@@ -146,7 +151,11 @@
       - href: https://twitter.com/attheodo
         title: attheodo on Twitter
         type: twitter
-- name: Sakis Zafiropoulos
+      - href: http://attheo.do
+        title: attheodo on Twitter
+        type: link
+- first_name: Sakis
+  last_name: Zafiropoulos
   title: Designer
   company: Nobraincellz
   companyUrl: http://www.nobraincellz.gr/
@@ -158,7 +167,8 @@
     - href: https://twitter.com/sakisnbc
       title: Sakis on Twitter
       type: twitter
-- name: Theodoros Ploumis
+- first_name: Theodoros
+  last_name: Ploumis
   title: Drupal Developer
   company: Freelancer
   companyUrl: http://www.theodorosploumis.com

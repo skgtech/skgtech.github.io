@@ -1,0 +1,37 @@
+.page-header {
+    text-transform: uppercase;
+	padding-bottom: 0;
+    h4{
+        float: left;
+        padding: 0 23px;
+        line-height: 50px;
+        font-family: $montserrat;
+        font-weight: bold;
+        margin: 142px 0;
+		@media (max-width: 1199px){
+			margin: 100px 0;
+		}
+		@media (max-width: 991px){
+			margin: 60px 0;
+		}
+		@media (max-width: 767px){
+			margin: 40px 0;
+		}
+    }
+
+}
+
+.about {
+    background: url(/assets/img/heroes/about.jpg) no-repeat scroll center top;
+    background-size: cover;
+}
+
+.projects {
+    background: url(/assets/img/heroes/projects.jpg) no-repeat scroll center top;
+    background-size: cover;
+}
+
+.startups {
+    background: url(/assets/img/heroes/startups.jpg) no-repeat scroll center top;
+    background-size: cover;
+}

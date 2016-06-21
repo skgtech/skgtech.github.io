@@ -1,0 +1,26 @@
+.contact_page_title{
+    color: $dark;
+}
+
+.contact_page_para{
+    color: $green;
+}
+
+.contact-form{
+    .form-control{
+        border-color: #cfd4db;
+        color: $ashLight;
+        &::-moz-placeholder {
+            color: $ashLight;
+        }
+        &:-ms-input-placeholder {
+            color: $ashLight;
+        }
+        &::-webkit-input-placeholder {
+            color: $ashLight;
+        }
+        &:focus{
+            border-color: $green;
+        }
+    }    
+}

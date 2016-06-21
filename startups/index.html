@@ -1,125 +1,89 @@
 ---
 layout: default
-title: Thessaloniki Startups
-class: startups
-weight: 80
+title: SKGTech - Startups in Thessaloniki
 ---
-<div class="hero jumbotron">
-  <div class="text">Startups in Thessaloniki</div>
-</div>
-
-<div class="featured_event jumptron">
-  <div class="label">
-    {% include index/icons/featured_event.html %}
-    <div class="label-text">
-      Guide
+<section class="row page-header">
+    <div class="startups">
+    <div class="container">
+        <h4>STARTUPS OF THESSALONIKI</h4>
     </div>
-  </div>
-  <div class="text">
-    <a href="http://magazine.startus.cc/thessaloniki-startup-city-guide/" target="_blank" title="{{ motd.title }}">
-      Thessaloniki Startup Guide
-    </a>
-  </div>
 </div>
-
-
-<section class="section people-section">
-  <div class="startups-section section">
-    <header>
-      <div class="appellation">
-        {% include index/icons/communities.html %}
-        <div class="appellation-text">
-          Startups
-        </div>
-      </div>
-      <div>
-        Want to see your startup here?
-        <a href="https://github.com/skgtech/skgtech.github.io/blob/master/_data/startups.yaml" target="_blank" title="The Communities data file">Submit a Pull Request</a> or <a href="mailto:info@skgtech.io" title="Email skgtech">shoot us an email</a>.
-      </div>
-    </header>
-    <div class="separator"></div>
-
-    <div class="row community-entries">
-      {% assign startups = site.data.startups | sort: "brandName" %}
-      {% for s in startups %}
-      {% assign currentmod = forloop.index0 | modulo:3 %}
-
-      <div class="col-md-4 col-sm-12">
-        <div class="community-entry community-entry-{{ currentmod }}">
-          <header>
-            <div class="community-item-header"></div>
-            <div class="community-img-overlay">
-              <div class="community-title">
-                <a class="community-title" href="{{ s.companyUrl }}">
-                  {{ s.brandName }}
-                </a>
-              </div>
-            </div>
-          </header>
-          <div class="community-text">
-            <p>
-              {{ s.highLevelPitch }}
-            </p>
-            <div class="community-text-detail">
-              <span>Founded:</span> {{ s.yearFounded | date: "%b %Y" }}
-            </div>
-            <div class="community-text-detail">
-              <span>Business Type:</span>
-              {% if s.companyType == "Other - Please select bellow" %}
-              {{ s.customCompanyType }}
-              {% else %}
-              {{ s.companyType }}
-              {% endif %}
-            </div>
-            <div class="community-text-detail">
-              <span>Industry:</span> {{ s.industry }}
-            </div>
-            <div class="community-text-detail">
-              <span>Funding State:</span> {{ s.stateOfFunding }}
-            </div>
-            <div class="community-text-detail">
-              <span>Stage:</span> {{ s.stage }}
-            </div>
-            <div class="community-text-detail">
-              <span>Team size:</span> {{ s.teamMembers }}
-            </div>
-            <div class="community-text-detail">
-              <span>People:</span>
-              <ul class="unlisted">
-                <li>
-                  <i class="fa fa-angle-right"></i>&nbsp;<strong>CEO</strong>&nbsp;
-                  {%if s.ceoEmail %}
-                  <a href="mailto:{{ s.ceoEmail }}">{{ s.ceo }}</a>
-                  {% elsif s.ceoContactUrl %}
-                  <a href="{{s.ceoContactUrl}}" target="_blank">{{ s.ceo }}</a>
-                  {% else %}
-                  {{ s.ceo }}
-                  {% endif %}
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>&nbsp;<strong>CTO</strong>&nbsp;
-                  {%if s.ctoEmail %}
-                  <a href="mailto:{{ s.ctoEmail }}">{{ s.cto }}</a>
-                  {% else %}
-                  {{ s.cto }}
-                  {% endif %}
-                </li>
-                <li>
-                  <i class="fa fa-angle-right"></i>&nbsp;<strong>Contact</strong>&nbsp;
-                  {%if s.contactPersonEmail %}
-                  <a href="mailto:{{ s.contactPersonEmail }}">{{ s.contactPerson }}</a>
-                  {% elsif s.contactPersonContactUrl %}
-                  <a href="{{s.contactPersonContactUrl}}" target="_blank">{{ s.contactPerson }}</a>
-                  {% else %}
-                  {{ s.contactPerson }}
-                  {% endif %}
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
 </section>
+
+<div class="page-wrapper row">
+
+<section class="row gallery-content">
+    <div class="container">
+        <div class="row sectionTitle text-center">
+            <h6 class="label label-default">STARTUPS OF THESSALONIKI</h6>
+            <h3>AN UP-TO-DATE CATALOG OF STARTUPS IN OUR CITY</h3>
+            <p>Want to see your startup here? <a href="mailto:hello@skgtech.io">Shoot us an email</a></p>
+        </div>
+
+        <div class="row m0 filters_row">
+            <ul class="gallery-filter causes-filter nav pull-left">
+                <li data-filter class="active">ALL</li>
+                {% assign startups = site.data.startups %}
+                {% for s in startups %}
+                    <li data-filter=".{{ s.industry }}">{{ s.industry }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+
+        <div class="row">
+            <div class="causes_container popup-gallery">
+                <div class="grid-sizer"></div>
+
+                {% assign startups = site.data.startups | sort: "company" %}
+                {% for s in startups %}
+                <div class="col-sm-12 cause-item list-item {{ s.industry }}">
+                    <div class="images_row pull-left">
+                        <img src="/assets/img/startups/{{ s.logo }}" alt="">
+                    </div>
+                    <div class="cause_excepts pull-left">
+                        <h4 class="cuase_title"><a href="{{ s.url }}">{{ s.name }}</a></h4>
+                        <p>{{ s.description }}</p>
+                        <br><p><strong>CEO:</strong> <a href="mailto:{{ s.ceoEmail }}">{{ s.ceo }}</a></p>
+                        {% if s.cto %}
+                        <p><strong>CTO:</strong> <a href=" mailto:{{ s.ctoEmail }}">{{ s.cto }}</a></p>
+                        {% endif %}
+                    </div>
+                    <div class="fund_raise_info pull-left">
+                        <div class="row fund_raises m0">
+                            <div class="pull-left raised amount_box">
+                                <h6>Founded</h6>
+                                <h3>{{ s.yearFounded | date: "%b %Y" }}</h3>
+                            </div>
+                            <div class="pull-left goal amount_box">
+                                <h6>Stage</h6>
+                                <h3>{{ s.stage }}</h3>
+                            </div>
+                            <div class="pull-left raised amount_box">
+                                <h6>Funding</h6>
+                                <h3>{{ s.funding }}</h3>
+                            </div>
+                            <div class="pull-left raised amount_box">
+                                <h6>industry</h6>
+                                <h3>{{ s.industry }}</h3>
+                            </div>
+                            <div class="pull-left raised amount_box">
+                                <h6>team size</h6>
+                                <h3> {{ s.teamSize }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- <ul class="gallery-pagination list-unstyled">
+                <li class="prev"><a href="#">prev</a></li>
+                <li class="page-no first-no active"><a href="#">1</a></li>
+                <li class="page-no last-no"><a href="#">2</a></li>
+                <li class="next"><a href="#">next</a></li>
+            </ul> -->
+        </div>
+    </div>
+</section>
+
+{% include newsletter.html %}
