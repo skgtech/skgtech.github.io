@@ -153,9 +153,8 @@ Calendar.prototype._assignValues = function($item, item) {
      $twitterURL.attr('href', 'https://twitter.com/intent/tweet?text=' + item.summary +'&url='+ eventURL + '&via=skg_tech&related=skg_tech');
 
  }
+
  $item.find('.loading').addClass('hide');
-
-
 
  return $item.html();
 
