@@ -51,6 +51,11 @@
     &.about_var{
         min-height: auto;
     }
+
+    a {
+        color: $green;
+        text-decoration: underline;
+    }
 }
 
 .team_member{
