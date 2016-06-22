@@ -10,7 +10,5 @@ Thumbs.db
 .rvmrc
 
 node_modules
-assets/components
 
-wiki
-temp
+css/style.css

@@ -1,28 +1,61 @@
 ---
 layout: default
-title: Projects
-class: projects
-weight: 70
+title: SKGTech - Projects
 ---
-<div class="hero jumbotron">
-  <div class="text">This is our work</div>
-</div>
-<section class="section projects-section">
-  <header>
-    <div class="appellation">
-      <i class="fa fa-cog fa-2x"></i>
-      <div class="appellation-text">
-        PROJECTS
-      </div>
-    </div>
-  </header>
-  <div class="separator"></div>
+<section class="row page-header">
+    <div class="projects">
+  <div class="container">
+    <h4>our projects</h4>
+  </div>
+  </div>
+</section>
 
-  <div class="gradient-background section-padding">
-    <div class="row project-entries">
-      {% for entry in site.data.projects %}
-        {% include project-item.html %}
-      {% endfor %}
+<div class="page-wrapper row">
+
+<section class="row gallery-content">
+  <div class="container">
+    <div class="row sectionTitle text-center">
+      <h6 class="label label-default">SKGTECH projects</h6>
+      <h3>AN UP-TO-DATE LIST OF ALL OUR PROJECTS AND ACTIONS</h3>
+    </div>
+
+
+    <div class="row">
+      <div class="gallery_container row-style">
+        <div class="grid-sizer"></div>
+
+        {% assign projects = site.data.projects %}
+        {% for p in projects %}
+
+        {% if p.status == 'Completed' %}
+            {% assign status = '' %}
+        {% elsif p.status == 'Halted' %}
+            {% assign status = 'halted' %}
+        {% else %}
+            {% assign status = 'running' %}
+        {% endif %}
+
+            <div class="col-sm-12 gallery-item">
+              <div class="media">
+                <div class="media-left">
+                  <a href="{{ p.link }}" target="_blank"><img src="/assets/img/projects/{{ p.img }}" alt="{{ p.title }}"></a>
+                </div>
+                <div class="media-body">
+                  <h4 class="title"><a href="{{ p.link }}" target="_blank">{{ p.name }}</a></h4>
+
+                  <p>{{ p.description }}</p>
+                  <div class="pull-right">
+                    <div class="upcoming_label label"><i class="fa fa-calendar"></i>{{ p.year }}</div>
+                  <div class="label {{ status }}">{{ p.status }}</div></div>
+                </div>
+              </div>
+            </div>
+        {% endfor %}
+
+      </div>
+
     </div>
   </div>
 </section>
+
+{% include newsletter.html %}

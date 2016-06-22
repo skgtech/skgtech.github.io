@@ -1,23 +1,79 @@
-<header class="" id="header">
-  <nav class="navbar">
+<nav class="navbar navbar-default navbar-static-top navbar2">
+  <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed responsive-button" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNav" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">
-        <img src="/assets/img/skgtech-logo.png" alt="SKGTech Logo">
-      </a>
     </div>
-    <div id="main-menu" class="nav pull-right navbar-nav collapse navbar-collapse main-menu">
-        <a class="item1" href="/#calendar">Calendar</a>
-        <a class="item2" href="/#communities">Communities</a>
-        <a class="item3" href="/startups">Startups</a>
-        <a class="item3" href="/people">People</a>
-        <a class="item4" href="/projects">Projects</a>
-        <a class="item5" href="/about">About</a>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="nav navbar-nav">
+
+        <!-- HOME -->
+        {% if page.url == '/' %}
+        <li class="active">
+          {% else %}
+        <li>
+        {% endif %}
+            <a href="/">home</a>
+        </li>
+
+        <li><a href="/#calendar">calendar</a></li>
+        <li><a href="/#communities">communities</a></li>
+
+        <!-- STARTUPS -->
+        {% if page.url == '/startups/' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/startups">startups</a>
+        </li>
+
+        <!-- PROJECTS -->
+        {% if page.url == '/projects/' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/projects">projects</a>
+        </li>
+
+        <!-- ABOUT US -->
+        {% if page.url == '/about/' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/about">about</a>
+        </li>
+      </ul>
+      <ul class="nav social_navbar navbar-right">
+        <li><a href="https://www.facebook.com/skgtech.io"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/skg_tech"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://github.com/skgtech"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCHh9IjeM7L5Xfhy_EmTvhFw"><i class="fa fa-youtube"></i></a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
+<header class="row header1">
+  <div class="container">
+    <div class="logo pull-left">
+      <a href="/"><img src="/assets/img/skgtech-logo.png" alt="SKGTech - Thessaloniki's Tech Community"></a>
+    </div>
+
+    <div class="pull-right contact-info">
+      <div class="pull-left">
+        <span><i class="fa fa-envelope-o"></i></span>
+        <div class="infos_col">
+          <h6>Say Hi at</h6>
+          <a href="mailto:hello@skgtech.io"><h5>hello@skgtech.io</h5></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

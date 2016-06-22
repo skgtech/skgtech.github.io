@@ -1,0 +1,194 @@
+.causes_container{
+	@media (max-width: 767px){
+		max-width: 390px;
+		margin: 0 auto;
+	}
+    .grid-sizer{
+    }
+}
+
+.cause-item{
+    padding: 15px;
+	@media (max-width: 767px){
+	}
+    .item{
+        padding: 0;
+    }
+    .carousel-indicators{
+        bottom: 20px;
+        margin-bottom: 0;
+        display: table;
+        width: auto;
+        margin-left: auto;
+        transform: translateX(-50%);
+        li{
+            width: 12px;
+            height: 12px;
+            border: none;
+            margin: 0;
+            float: left;
+            & + li{
+                margin-left: 8px;
+            }
+            &.active{
+            }
+        }
+    } 
+    .images_row{
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        img{
+            @include transition;
+			max-width: 100%;
+        }
+        a.btn-primary{
+            position: absolute;
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+            z-index: 10;
+            @include transition;
+        }
+    }
+
+    .cause_excepts{
+        padding: 30px;
+    }
+    .fund_raises{
+        .amount_box{
+            width: 50%;
+			@media (max-width: 1199px){
+				padding-right: 10px;
+			}
+			& + .amount_box{
+				@media (max-width: 1199px){
+					padding-left: 10px;
+				}
+			}
+        }
+    }
+    .cuase_title{
+        margin: 0 0 20px;
+        a{
+            font: 700 16px/1.25 $montserrat;
+        }
+    }
+    p{
+        font: 16px/24px $karla;
+        margin-bottom: 50px;
+    }
+
+    &:hover,&:focus{
+        .images_row{
+            img{
+                opacity: 0.3;
+            }
+            a.btn-primary{
+                bottom: 50%;
+            }
+        }
+    }
+    
+    &.list-item{
+        .images_row{
+            width: 360px;
+            height: 223px;
+			@media (max-width: 1199px){
+				width: 340px;
+				height: 210px;
+			}
+			@media (max-width: 991px){
+				width: 50%;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+				height: auto;
+			}
+        }
+        .cause_excepts{
+            width: 420px;
+            height: 223px;
+			@media (max-width: 1199px){
+				width: 310px;
+				height: 210px;
+				padding: 20px 15px;
+			}
+			@media (max-width: 991px){
+				width: 50%;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+				height: auto;
+			}
+			h4{				
+				@media (max-width: 1199px){
+					margin-bottom: 10px;
+				}
+			}
+            p{
+                margin-bottom: 0;
+				@media (max-width: 1199px){
+					line-height: 22px;
+					font-size: 15px;
+				}
+            }
+        }
+        .fund_raise_info{
+            width: 360px;
+            height: 223px;
+            padding: 30px;
+			@media (max-width: 1199px){
+				width: 290px;
+				height: 210px;
+				padding: 20px 15px;
+			}
+			@media (max-width: 991px){
+				width: 100%;
+			}
+			@media (max-width: 767px){
+				width: 100%;
+				height: auto;
+			}
+            .days-left{
+                font: 13px/20px $montserrat;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            .btn-primary{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.single-cause{
+    .progressBarRow{
+        margin-bottom: 55px;
+		width: 100%;
+		max-width: 100%;
+		@media (max-width: 767px){
+			padding: 0;
+		}
+    }
+	.progress_barBox{
+		width: 100%;
+	}
+    .latest-donors{
+        margin-bottom: 15px;
+    }
+	.btn-primary{
+		@media (max-width: 767px){
+			float: left !important;
+			margin-bottom: 50px;
+		}
+	}
+	
+	.donor{
+		@media (max-width: 639px){
+			width: 50%;
+		}
+	}
+}

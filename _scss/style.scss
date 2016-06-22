@@ -1,0 +1,52 @@
+@import "style/variables";
+@import "style/prefix";
+@import "style/faqs";
+@import "style/header";
+@import "style/body";
+@import "style/featured_events";
+@import "style/help-process";
+@import "style/upcoming_recent_events";
+@import "style/communities_row";
+@import "style/communities";
+@import "style/newsletter_signup";
+@import "style/footer";
+@import "style/navbar_variation";
+// index.html hero
+@import "style/featured_news";
+@import "style/page-header";
+@import "style/404";
+@import "style/contact";
+// About us
+@import "style/team";
+@import "style/events_news";
+@import "style/about";
+@import "style/gallery";
+// shit for calendar on index
+@import "style/project-details";
+// startups basically
+@import "style/cause";
+
+/* Theme */
+@import "theme/variables";
+@import "theme/prefix";
+@import "theme/header";
+// index.html hero
+@import "theme/featured_events";
+@import "theme/help-process";
+@import "theme/upcoming_recent_events";
+@import "theme/communities_row";
+@import "theme/communities";
+@import "theme/newsletter_signup";
+@import "theme/footer";
+@import "theme/navbar_variation";
+@import "theme/featured_news";
+@import "theme/page-header";
+@import "theme/404";
+@import "theme/contact";
+// About us
+@import "theme/team";
+@import "theme/events_news";
+@import "theme/about";
+@import "theme/gallery";
+@import "theme/project-details";
+@import "theme/cause";

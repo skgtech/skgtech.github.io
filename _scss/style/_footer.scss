@@ -1,0 +1,148 @@
+.footer {
+    overflow: hidden;
+}
+
+.footer-sidebar {
+    padding: 73px 0 83px;
+    .widget-title{
+        margin-bottom: 30px;
+    }
+    h5.widget-title{
+        text-transform: uppercase;
+        font-family: $montserrat;
+        margin-top: 0;
+    }
+
+    .widget{
+		@media (max-width: 991px){
+			margin-bottom: 20px;
+		}
+        p{
+            font: 16px/24px $karla;
+            margin-bottom: 2px;
+        }
+        .btn-primary{
+            margin-top: 25px;
+            min-width: 193px;
+        }
+    }
+
+
+    address{
+        font: 16px/24px $karla;
+        span{
+        }
+    }
+}
+
+.copyright-area {
+    font: 16px/24px $karla;
+    .copy-inner{
+        padding: 23px 0;
+		position: relative;
+		&:before{
+			content: '';
+			width: calc(100% - 30px);
+			left: 15px;
+			display: block;
+			height: 1px;
+			position: absolute;
+			top: 0;
+		}
+    }
+    .copyright-text {
+        a{
+        }
+    }
+    .nav{
+		float: right;
+        li{
+            float: left;
+			@media (max-width: 991px){
+				float: none;
+				text-align: right;
+			}
+			@media (max-width: 767px){
+				float: left;
+				text-align: left;
+				margin-top: 15px;
+			}
+			@media (max-width: 479px){
+				float: none;
+				text-align: left;
+			}
+            & + li{
+                margin-left: 12px;
+				@media (max-width: 991px){
+					margin-left: 0;
+				}
+				@media (max-width: 767px){
+					margin-left: 10px;
+				}
+				@media (max-width: 479px){
+					margin-left: 0;
+					margin-top: 0;
+				}
+            }
+            a{
+                padding: 0;
+                &:hover,&:focus{
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+.footer2 {
+    .footer-sidebar {
+        .widget {
+            p{
+            }
+        }
+
+        .recent-posts{
+            li{
+                a{
+                }
+                & + li{
+                }
+            }
+        }
+
+        .tweet{
+            p{
+                a{
+                }
+            }
+            .time_past{
+            }
+        }
+
+
+        address{
+            span{
+            }
+        }
+    }
+    .copyright-area {
+        .copy-inner {
+            border: none;
+			&:before{
+				display: none;
+			}
+        }
+        .copyright-text {
+            a{
+            }
+        }
+        .nav{
+            li{
+                a{
+                    &:hover,&:focus{
+                    }
+                }
+            }
+        }
+    }
+}

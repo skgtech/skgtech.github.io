@@ -1,0 +1,32 @@
+.history_carousel{
+    background: #f1f5fa;
+    .item{
+        p{
+            color: $ashLight;
+        }
+    }
+
+    .owl-nav{
+        border-color: $lightGreen;
+        .owl-prev,
+        .owl-next{
+            color: $lightGreen;
+        }
+        .owl-prev{}
+        .owl-next{
+            border-left-color: $lightGreen;
+        }
+    }
+}
+
+.mission_vision{
+    i{
+        color: $green;
+    }
+    h5{
+        color: $dark;
+    }
+    p{
+        color: $ashLight;
+    }
+}
