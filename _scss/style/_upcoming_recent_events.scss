@@ -89,6 +89,8 @@
         margin-bottom: 0;
     }
 
+
+
     &.style2{
         .event_summery{
             margin: 20px 0 25px;
@@ -128,5 +130,16 @@
 			}
         }
         .event_summery{}
+    }
+}
+.maintainer {
+    margin-top: 50px;
+    h4 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        font: $montserrat;
+        text-transform: uppercase;
+        color: #D4D4D4;
     }
 }
