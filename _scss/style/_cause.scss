@@ -80,17 +80,6 @@
         margin-bottom: 50px;
     }
 
-    &:hover,&:focus{
-        .images_row{
-            img{
-                opacity: 0.3;
-            }
-            a.btn-primary{
-                bottom: 50%;
-            }
-        }
-    }
-    
     &.list-item{
         .images_row{
             width: 360px;
