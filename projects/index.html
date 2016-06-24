@@ -44,9 +44,22 @@ title: SKGTech - Projects
                   <h4 class="title"><a href="{{ p.link }}" target="_blank">{{ p.name }}</a></h4>
 
                   <p>{{ p.description }}</p>
+                  <div>
+                    <ul>
+                      {% for media in p.media %}
+                        <li>
+                          <a href="{{ media.link }}" title="{{ media.name }}" target="_blank">
+                            <i class="fa fa-star"></i>
+                            {{ media.name }}
+                          </a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
                   <div class="pull-right">
                     <div class="upcoming_label label"><i class="fa fa-calendar"></i>{{ p.year }}</div>
-                  <div class="label {{ status }}">{{ p.status }}</div></div>
+                    <div class="label {{ status }}">{{ p.status }}</div>
+                  </div>
                 </div>
               </div>
             </div>
