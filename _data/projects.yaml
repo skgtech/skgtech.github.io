@@ -7,7 +7,24 @@
   status: Completed
   link: http://devitconf.org/
   img: devit2016.jpg
-  description: The 2016 DEVit Conference brings 15 international speakers and 3 masterfull workshops in Thessaloniki! Taking place on 20th of May at the Ioannis Vellidis venue with a capacity of over 1,000 seated attendees, grab your tickets today!
+  description: The 2016 DEVit Conference brought 13 international speakers and 3 masterfull workshops in Thessaloniki! Over 400 attendees from all over Greece participated in the biggest technological event of the country.
+  media:
+    - name: Official DEVit Photos by dD Photography
+      link: https://www.facebook.com/DEVitConf/photos/?tab=albums
+      by: Dimitris Doutsiopoulos
+      byLink: http://www.ddphotography.gr/
+    - name: DEVit Moments Video Clip
+      link: https://www.youtube.com/watch?v=N9Je03NHl4Y
+      by: Fokas Media
+      byLink: http://fokas.media/
+    - name: Photos by the community
+      link: https://photos.google.com/share/AF1QipMZpm8wUt0UIyXNY3ywQgo7a-KNmdr4w9aC5E61omATzWYZipUL9wOFH5PBzmenrQ?key=b01LUWVkbWc2LVJ3UmVhQVVNOHhxNHMyRlNSc1J3
+    - name: Photos by Mark Pitsilos
+      link: https://www.facebook.com/mark.pitsilos.photography/photos/?tab=album&album_id=639248446238426
+    - name: Photos by Bacharakis
+      link: https://www.flickr.com/photos/christosbacharakis/albums/72157668847097595/with/26620414944/
+      by: Christos Bacharakis
+      byLink: https://twitter.com/bacharakis
 - name: How To Remote
   status: Completed
   year: June 2015
