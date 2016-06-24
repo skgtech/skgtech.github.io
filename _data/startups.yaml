@@ -126,3 +126,17 @@
   contactPerson: "Michalis Tzikas"
   cto: "Michalis Tzikas"
   teamMembers: 3
+- companyName: "Athlenda"
+  brandName: "Athlenda"
+  stage: "Launched"
+  companyUrl: "http://www.athlenda.com"
+  companyType: "SaaS - Marketplace"
+  industry: "Sports"
+  yearFounded: "1/06/2015"
+  stateOfFunding: "Seed"
+  highLevelPitch: "An international online platform that combines video analysis and networking features, bringing together athletes to people looking for athletes"
+  ceo: "Lazaros Papadopoulos"
+  cto: "Nikos Sfingos"
+  contactPerson: "Eugeneia Zachariadou"
+  contactPersonContactUrl: "https://www.linkedin.com/in/eugeniazachariadou"
+  teamMembers: 8
