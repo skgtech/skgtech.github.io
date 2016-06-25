@@ -44,8 +44,8 @@ title: SKGTech - Projects
                   <h4 class="title"><a href="{{ p.link }}" target="_blank">{{ p.name }}</a></h4>
 
                   <p>{{ p.description }}</p>
-                  <div>
-                    <ul>
+                  <div class="media-list">
+                    <ul class="list-unstyled">
                       {% for media in p.media %}
                         <li>
                           <a href="{{ media.link }}" title="{{ media.name }}" target="_blank">
@@ -56,7 +56,7 @@ title: SKGTech - Projects
                       {% endfor %}
                     </ul>
                   </div>
-                  <div class="pull-right">
+                  <div class="labels">
                     <div class="upcoming_label label"><i class="fa fa-calendar"></i>{{ p.year }}</div>
                     <div class="label {{ status }}">{{ p.status }}</div>
                   </div>
