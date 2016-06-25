@@ -125,8 +125,30 @@
 		}
     }
     .media-body{
-        padding: 0 30px;
-        vertical-align: middle;
+        padding: 30px 30px;
+        vertical-align: top;
+
+        .label {
+          width: 105px;
+          text-align: center;
+          padding: 0;
+        }
+
+        .labels {
+          position: absolute;
+          bottom: 30px;
+          right: 30px;
+
+          @media (max-width: 767px) {
+            position: initial;
+            bottom: initial;
+            right: initial;
+          }
+        }
+
+        .media-list {
+          padding-bottom: 10px;
+        }
     }
     h4{
         font: 700 16px/24px $montserrat;
