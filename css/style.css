@@ -1394,25 +1394,23 @@ a, .btn, button {
         padding: 40px 0; } }
   /* line 28, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
   .featured_news .news-title {
-    margin: 25px 0; }
+    margin: 25px 0;
+    line-height: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; }
     @media (max-width: 1199px) {
       /* line 28, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
       .featured_news .news-title {
         margin: 20px 0 10px; } }
-    /* line 33, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
-    .featured_news .news-title a {
-      line-height: 32px;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      text-transform: uppercase; }
-  /* line 41, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+  /* line 39, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
   .featured_news .motd-title {
     margin: 10px 0; }
     @media (max-width: 1199px) {
-      /* line 41, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+      /* line 39, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
       .featured_news .motd-title {
         margin: 20px 0 10px; } }
-    /* line 48, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+    /* line 46, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
     .featured_news .motd-title a {
       color: white;
       font-size: 18px;
@@ -1420,16 +1418,16 @@ a, .btn, button {
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       text-transform: uppercase; }
-  /* line 58, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+  /* line 56, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
   .featured_news p {
     font: 16px/24px "Karla", sans-serif;
     opacity: 0.72;
     margin-bottom: 35px; }
     @media (max-width: 1199px) {
-      /* line 58, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+      /* line 56, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
       .featured_news p {
         margin-bottom: 10px; } }
-  /* line 66, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+  /* line 64, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
   .featured_news .owl-dots {
     display: table;
     position: absolute;
@@ -1437,16 +1435,16 @@ a, .btn, button {
     bottom: 145px;
     transform: translateX(-50%); }
     @media (max-width: 991px) {
-      /* line 66, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+      /* line 64, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
       .featured_news .owl-dots {
         bottom: 20px; } }
-    /* line 75, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+    /* line 73, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
     .featured_news .owl-dots .owl-dot {
       width: 12px;
       height: 12px;
       border-radius: 100%;
       float: left; }
-      /* line 81, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
+      /* line 79, /Users/Bariotis/www/skgtech.github.io/_scss/style/_featured_news.scss */
       .featured_news .owl-dots .owl-dot + .owl-dot {
         margin-left: 5px; }
 
