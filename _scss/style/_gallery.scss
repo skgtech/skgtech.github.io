@@ -59,6 +59,7 @@
 	@media (max-width: 479px){
 		width: 100%;
 	}
+
     .image_row{
         margin: 0;
         position: relative;
@@ -148,6 +149,10 @@
 
         .media-list {
           padding-bottom: 10px;
+
+          li {
+            margin-bottom: 8px;
+          }
         }
     }
     h4{
