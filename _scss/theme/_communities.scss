@@ -1,0 +1,35 @@
+.community-listing{
+    .carousel-indicators{
+        li{
+            background: #91a1b4;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+    .images_row{
+        background: $dark;
+    }
+
+    .community_excepts{
+        background: #f1f4f8;
+    }
+    .community_title{
+        a{
+            color: $dark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+    }
+    .community-maintainers{
+        color: $lightGreen;
+    }
+    p{
+        color: $ashLight;
+    }
+    .community-date{
+        color: $lightGreen;
+        background: #f8fafc;
+    }
+}

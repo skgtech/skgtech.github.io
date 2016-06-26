@@ -1,0 +1,90 @@
+.gallery-filter{
+    li{
+        color: $lightGreen;
+    }
+    .active{
+        background: $green;
+        color: #fff;
+    }
+}
+
+.gallery-item{
+    .popup{
+        background: $green;
+        i{
+            color: #fff;
+            border-color: #f8fbfa;
+        }
+    }
+    .inner{
+        background: #f1f4f8;
+        h5{
+            color: $dark;
+        }
+    }
+
+    .media{
+        background: #f1f4f8;
+    }
+    h4{
+        a{
+            color: $dark;
+        }
+    }
+    p{
+        color: $darkGray;
+    }
+
+    .btn-primary {
+        &:hover {
+            color: white;
+            background: $green;
+            border-color: $green;
+        }
+    }
+}
+
+
+.featured-content{
+    .owl-dots{
+        .owl-dot{
+            background: $lightGreen;
+            &.active{
+                background: #fff;
+            }
+        }
+    }
+}
+
+.gallery-pagination{
+    li{
+        a{
+            color: $dark;
+            border-color: $lightGreen;
+            &:hover,&:focus{
+                background: #f1f4f8;
+            }
+        }
+        &.active a{
+            color: $green;
+        }
+    }
+}
+
+.view-filter{
+    border-color: $lightGreen;
+    li{
+        & + li{
+            border-left-color: $lightGreen;
+        }
+        a{
+            color: $lightGreen;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+        &.active a{
+            color: $green;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.upcoming_events{
+    .event_cover_photo{
+        .upcoming_label{
+            color: $dark;
+			background: #fff;
+            i {
+                margin-right: 15px;
+            }
+        }
+        .event_time_loc{
+            font-weight: normal;
+            text-transform: none;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            a{
+                font-weight: normal;
+                text-transform: none;
+                color: $green;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .event_title{
+        a{
+            color: $dark;
+            &:hover,&:focus{
+                color: $green;
+            }
+        }
+    }
+    .event_summery{
+        color: $ashLight;
+    }
+
+}

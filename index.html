@@ -1,9 +1,186 @@
 ---
 layout: default
 ---
-{% include index/hero.html %}
-{% include index/newsletter.html %}
-{% include index/calendar.html %}
-{% include index/slack.html %}
-{% include index/communities.html %}
-{% include index/footer.html %}
+
+<!--Featured News Carousel-->
+<section class="row featured_news">
+  {% assign motd = site.data.motd[0] %}
+    <div class="item">
+        {% if motd.image %}
+          <img src="/assets/img/motd/{{ motd.image }}" alt="SKGTech">
+        {% else %}
+          <img src="/assets/img/motd/skgtech_team.jpg" alt="SKGTech">
+        {% endif %}
+        <div class="row caption m0">
+            <div class="container">
+                <div class="volunteer_summery_box col-lg-10 col-md-10">
+                    <h3 class="news-title">A VRIBRANT COMMUNITY OF DEVELOPERS, DESIGNERS, PRODUCT PEOPLE AND ENTREPRENEURS.</h3>
+                    <p>Welcome to Thessaloniki's Tech Community Official Website</p>
+                </div>
+            </div>
+            {% if motd %}
+            <div class="container motd">
+                <div class="col-lg-5 col-md-10">
+                    <h6 class="label label-default white">{{ motd.tagTitle }}</h6>
+
+                    <h3 class="motd-title"><a href="{{ motd.link }}">{{ motd.title }}</a></h3>
+                    <p>{{ motd.description }}</p>
+                    <a href="{{ motd.link }}" class="btn-primary" target="_blank">learn more</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <!-- {% assign news = site.data.featured_news %}
+    {% for n in news %}
+    <div class="item">
+        <img src="/assets/img/featured_news/{{ n.image }}" alt="{{ n.title }}">
+        <div class="row caption m0">
+            <div class="container">
+                <div class="col-lg-5 col-md-10">
+                    {% if n.tagTitle %}
+                    <h6 class="label label-default white">{{ n.tagTitle }}</h6>
+                    {% endif %}
+                    <h3 class="news-title"><a href="{{ n.link }}">{{ n.title }}</a></h3>
+                    <p>{{ n.description }}</p>
+                    <a href="{{ n.link }}" class="btn-primary" target="_blank">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %} -->
+</section>
+
+<div class="page-wrapper row">
+    <section class="how-to-help row">
+        <div class="col-md-4 help-process">
+            <div class="media">
+                <div class="media-left"><span><img src="assets/img/icons/add_to_calendar_icon.png" alt=""></span></div>
+                <div class="media-body">
+                    <h5>add event on the calendar</h5>
+                    <p>Know of a noteworthy event? <a href="/submit-event">Add to calendar.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 help-process">
+            <div class="media">
+                <div class="media-left"><span><img src="assets/img/icons/communities_icon.png" alt=""></span></div>
+                <div class="media-body">
+                    <h5>add your community</h5>
+                    <p>Want to feature your community here? <a href="https://github.com/skgtech/skgtech.github.io/blob/master/_data/communities.yaml">Send a pull request.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 help-process">
+            <div class="media">
+                <div class="media-left"><span><img src="assets/img/icons/startups_icon.png" alt=""></span></div>
+                <div class="media-body">
+                    <h5>add your startup</h5>
+                    <p>Are you part of a startup in Thessaloniki? <a href="mailto:hello@skgtech.io">Send us an e-mail.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% include slack.html %}
+
+<!-- Calendar -->
+<a name="calendar"></a>
+<section class="row upcoming_recent_events style2">
+    <div class="container">
+        <div class="row sectionTitle text-center">
+            <h6 class="label label-default">SKGTech Events</h6>
+            <h3>Noteworthy events and happenings in the city</h3>
+        </div>
+        <div class="row" id="upcoming-events">
+
+            <div id="event-item">
+            <div class="loading"></div>
+            <div class="col-sm-12 col-md-6 upcoming_events_sizer"></div>
+            <div class="col-sm-12 col-md-6 upcoming_events hide">
+
+                <div class="row event_cover_photo">
+                    <img src="" alt="" class="img-responsive">
+                    <div class="upcoming_label label"><i class="fa fa-calendar"></i> <span>August 15 - 18:00</span></div>
+                    <h6 class="event_time_loc">
+                        <span class="loc">Hosted at: <span class="location"></span></span>
+                    </h6>
+                </div>
+                <h4 class="event_title"><a href="single-event.html"><span>Node.js Meetup</span></a></h4>
+                <p class="event_summery">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada dapibus diam, ut fringilla purus efficitur eget. Morbi sagittis mi ac eros semper pharetra. Praesent sed purus purus.</p>
+                <div class="row shareOnRow m0">
+                    <ul class="list-unstyled">
+                        <li>SHARE IT</li>
+                        <li><a class="facebook-url" href="" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter-url" href="" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        <!-- calendar maintainer shesharp -->
+        <div class="row maintainer">
+            <div class="col-md-4 col-md-offset-4">
+                <h4>Calendar kindly maintained by</h4>
+                <a href="http://www.shesharp.org/"><img src="/assets/img/shesharp-logo-small.png" alt="shesharp" class="img-responsive center-block"></a>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Communities -->
+<a name="communities"></a>
+<section class="row communities_row style2">
+    <div class="container">
+        <div class="row sectionTitle text-center">
+            <h6 class="label label-default">SKGTECH COMMUNITIES</h6>
+            <h3>AWESOME COMMUNITIES TO JOIN</h3>
+        </div>
+        <div class="row">
+            {% assign communities = site.data.communities | sort: "name" %}
+            {% for c in communities %}
+            <!-- Item -->
+            <div class="col-sm-6 col-md-4 community-sizer"></div>
+            <div class="col-sm-6 col-md-4 community-listing">
+                <div class="images_row row m0">
+                    <a href="{{ c.website }}">
+                        {% if c.image %}
+                            <img src="/assets/img/communities/{{ c.image }}" alt="{{ c.name }}">
+                        {% else %}
+                            <img src="/assets/img/placeholders/community_placeholder.jpg" alt="{{ c.name }}">
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="community_excepts row m0">
+                    <h4 class="community_title"><a href="{{ c.website }}">{{ c.name }}</a></h4>
+                    <h5 class="community-maintainers">
+                        <ul>
+                            {% for m in c.maintainers %}
+                                <li>
+                                    {% if m.email %}
+                                        <a href="mailto:{{ m.email }}">
+                                    {% elsif m.website %}
+                                        <a href="{{ m.website }}">
+                                    {% endif %}
+                                    {{ m.name }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </h5>
+                    <p>{{ c.description }}</p>
+                    <!-- <a href="{{ c.website }}" class="btn-primary btn-outline">more info</a> -->
+                </div>
+                <div class="community-date row m0">
+                    <h5><i class="fa fa-calendar"></i>{{ c.period }} Meetings</h5>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+{% include newsletter.html %}

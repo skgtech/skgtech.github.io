@@ -1,0 +1,38 @@
+.communities_row{
+    padding: 90px 0 100px;
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../assets/img/world-map.png) repeat fixed center center;
+        opacity: .12;
+        z-index: 0;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    .sectionTitle{
+        margin-bottom: 55px;
+        h3{
+
+        }
+    }
+
+    &.style2{
+        background: $green;
+        .sectionTitle{
+            .label{
+
+            }
+        }
+        .quotation_block{
+            h6{
+            }
+        }
+    }
+}

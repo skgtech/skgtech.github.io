@@ -1,58 +1,60 @@
 # The SKGTech people list
 #
-# Link types (add here any new ones):
+# Link types
 #   behance
 #   twitter
 #   github
 #   link
 #   facebook
-#
 
-#
-#
-# Order alphabetically based on last name please
-#
-#
+# --- IMPORTANT: Your profile pic size MUSt be 163x170! ----
 
-- name: Kostas Bariotis
+- first_name: Kostas
+  last_name: Bariotis
   title: Web Developer
   company: Goodvidio
   companyUrl: https://goodvid.io/
   img: /assets/img/people/kbariotis.jpg
   links:
-    - href: https://github.com/kbariotis
-      title: Kostas on Github
-      type: github
     - href: https://twitter.com/kbariotis
       title: Kostas on Twitter
       type: twitter
+    - href: https://github.com/kbariotis
+      title: Kostas on Github
+      type: github
     - href: http://kostasbariotis.com
       title: Kostas Website
       type: link
-- name: Vaios Karampinis
+- first_name: Vaios
+  last_name: Karampinis
   title: Web Developer
   img: /assets/img/people/oden.png
   links:
-    - href: http://oden.gr
-      title: Vaios' Website
-      type: link
+    - href: https://twitter.com/vkarampinis
+      title: Vaios on Twitter
+      type: twitter
     - href: https://github.com/vkarampinis
       title: Vaios on GitHub
       type: github
-- name: Dimitri Ntempos
+    - href: http://oden.gr
+      title: Vaios' Website
+      type: link
+- first_name: Dimitri
+  last_name: Ntempos
   title: Product Manager
   img: /assets/img/people/ntemposd.jpg
   links:
-    - href: http://ntemposd.me
-      title: Dimitri's Website
-      type: link
     - href: https://twitter.com/ntemposd
       title: Dimitri on Twitter
       type: twitter
     - href: https://github.com/ntemposd
       title: Dimitri on GitHub
       type: github
-- name: Tasso Efkarpidis
+    - href: http://ntemposd.me
+      title: Dimitri's Website
+      type: link
+- first_name: Tasso
+  last_name: Efkarpidis
   title: Designer
   company: Nobraincellz
   companyUrl: http://www.nobraincellz.gr/
@@ -64,112 +66,123 @@
     - href: http://www.nobraincellz.gr/
       title: Nobraincellz website
       type: link
-- name: Adonis Kakoulidis
+- first_name: Adonis
+  last_name: Kakoulidis
   title: Web Developer
   company: Goodvidio
   companyUrl: https://goodvid.io/
   img: /assets/img/people/adonisk.jpg
   links:
-    - href: https://github.com/varemenos
-      title: Adonis K. on Github
-      type: github
     - href: https://twitter.com/_adonisk
       title: Adonis K. on Twitter
       type: twitter
+    - href: https://github.com/varemenos
+      title: Adonis K. on Github
+      type: github
     - href: https://adonisk.com
       title: Adonis K. Website
       type: link
-- name: Theodore Keloglou
+- first_name: Theodore
+  last_name: Keloglou
   title: Software Developer
   img: /assets/img/people/sirodoht.jpg
   links:
-    - href: https://github.com/sirodoht
-      title: Theodore on Github
-      type: github
     - href: https://twitter.com/sirodoht
       title: Theodore on Twitter
       type: twitter
+    - href: https://github.com/sirodoht
+      title: Theodore on Github
+      type: github
     - href: http://sirodoht.xyz
       title: Theodore Website
       type: link
-- name: Kostas Margaritis
+- first_name: Kostas
+  last_name: Margaritis
   title: Software Engineer
   company: Goodvidio
   companyUrl: https://goodvid.io/
   img: /assets/img/people/margaritis.jpg
   links:
-    - href: https://github.com/margaritis
-      title: Margaritis on Github
-      type: github
     - href: https://twitter.com/_margaritis
       title: Margaritis on Twitter
       type: twitter
+    - href: https://github.com/margaritis
+      title: Margaritis on Github
+      type: github
     - href: http://typeofundefined.io
       title: Margaritis Website
       type: link
-- name: Thanasis Polychronakis
+- first_name: Thanasis
+  last_name: Polychronakis
   title: Web Developer
   company: Insight Replay, Inc.
   companyUrl: http://insightreplay.com/
   img: /assets/img/people/thanpolas.jpg
   links:
-    - href: https://github.com/thanpolas
-      title: Thanasis on Github
-      type: github
     - href: https://twitter.com/thanpolas
       title: Thanasis on Twitter
       type: twitter
+    - href: https://github.com/thanpolas
+      title: Thanasis on Github
+      type: github
     - href: https://thanpol.as
       title: Thanasis Website
       type: link
-- name: Charis Rafailidis
+- first_name: Charis
+  last_name: Rafailidis
   title: All-Around Player (Web Developer)
   company:
   companyUrl:
   img: /assets/img/people/charisra.jpg
   links:
-    - href: https://github.com/charisra
-      title: Charis on Github
-      type: github
     - href: https://twitter.com/hrafailidis
       title: Charis on Twitter
       type: twitter
-- name: Thanos Theodoridis
-  title: iOS Developer
+    - href: https://github.com/charisra
+      title: Charis on Github
+      type: github
+- first_name: Thanos
+  last_name: Theodoridis
+  title: Software Engineer
   company: Contractor
   companyUrl: http://www.attheo.do
   img: /assets/img/people/attheodo.jpg
   links:
-      - href: https://github.com/attheodo
-        title: attheodo on GitHub
-        type: github
-      - href: https://twitter.com/attheodo
-        title: attheodo on Twitter
-        type: twitter
-- name: Sakis Zafiropoulos
+    - href: https://twitter.com/attheodo
+      title: attheodo on Twitter
+      type: twitter
+    - href: https://github.com/attheodo
+      title: attheodo on GitHub
+      type: github
+    - href: http://attheo.do
+      title: attheodo on Twitter
+      type: link
+- first_name: Sakis
+  last_name: Zafiropoulos
   title: Designer
   company: Nobraincellz
   companyUrl: http://www.nobraincellz.gr/
   img: /assets/img/people/sakisnbc.jpg
   links:
-    - href: https://www.behance.net/sakisnbc
-      title: Sakis on Behance
-      type: behance
     - href: https://twitter.com/sakisnbc
       title: Sakis on Twitter
       type: twitter
-- name: Theodoros Ploumis
+    - href: https://www.behance.net/sakisnbc
+      title: Sakis on Behance
+      type: behance
+- first_name: Theodoros
+  last_name: Ploumis
   title: Drupal Developer
   company: Freelancer
   companyUrl: http://www.theodorosploumis.com
   img: /assets/img/people/tplcom.jpg
   links:
-      - href: https://github.com/theodorosploumis
-        title: Theodoros Ploumis on GitHub
-        type: github
-      - href: https://twitter.com/theoploumis
-        title: Theodoros Ploumis on Twitter
-        type: twitter
-      - href: http://www.theodorosploumis.com
-        title: Theodoros Ploumis website
-        type: link
+    - href: https://twitter.com/theoploumis
+      title: Theodoros Ploumis on Twitter
+      type: twitter
+    - href: https://github.com/theodorosploumis
+      title: Theodoros Ploumis on GitHub
+      type: github
+    - href: http://www.theodorosploumis.com
+      title: Theodoros Ploumis website
+      type: link

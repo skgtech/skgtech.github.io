@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>http://skgtech.io/</loc>
+    <lastmod>2016-06-16T15:55:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://skgtech.io/startups/</loc>
+    <lastmod>2016-06-16T15:55:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://skgtech.io/projects/</loc>
+    <lastmod>2016-06-16T15:55:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://skgtech.io/about/</loc>
+    <lastmod>2016-06-16T15:55:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://skgtech.io/submit-event/</loc>
+    <lastmod>2016-06-16T15:55:33+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>http://skgtech.io/assets/files/SKGTech-Bylaws.pdf</loc>
+    <lastmod>2016-06-16T15:55:32+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+</urlset>
