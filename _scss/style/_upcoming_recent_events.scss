@@ -16,11 +16,7 @@
 .upcoming_events{
     padding: 15px;
     text-transform: uppercase;
-	@media (max-width: 767px){
-		max-width: 400px;
-		margin: 0 auto;
-	}
-    .event_cover_photo{
+	  .event_cover_photo{
         position: relative;
         margin: 0;
         img{
