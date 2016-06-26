@@ -75,6 +75,19 @@ Calendar.prototype._handleCalResult = function(err, data) {
   htmlOutput += '';
   this.$eventsContainer.append(htmlOutput);
 
+  if ( $('.upcoming_events').length ){
+      $('.upcoming_events').imagesLoaded( function() {
+          //
+          $("#upcoming-events").isotope({
+              itemSelector: ".upcoming_events",
+              layoutMode: 'masonry',
+              masonry: {
+                  columnWidth: '.upcoming_events_sizer'
+              }
+          });
+
+      });
+  }
 
 };
 
