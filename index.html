@@ -4,19 +4,34 @@ layout: default
 
 <!--Featured News Carousel-->
 <section class="row featured_news">
-
+  {% assign motd = site.data.motd[0] %}
     <div class="item">
-        <img src="/assets/img/featured_news/skgtech_team.jpg" alt="SKGTech">
+        {% if motd.image %}
+          <img src="/assets/img/motd/{{ motd.image }}" alt="SKGTech">
+        {% else %}
+          <img src="/assets/img/motd/skgtech_team.jpg" alt="SKGTech">
+        {% endif %}
         <div class="row caption m0">
             <div class="container">
-                <div class="volunteer_summery_box col-lg-5 col-md-10">
+                <div class="volunteer_summery_box col-lg-10 col-md-10">
                     <h3 class="news-title"><a href="single.html">A VRIBRANT COMMUNITY OF DEVELOPERS, DESIGNERS, PRODUCT PEOPLE AND ENTREPRENEURS.</a></h3>
                     <p>Welcome to Thessaloniki's Tech Community Official Website</p>
                 </div>
             </div>
+            {% if motd %}
+            <div class="container motd">
+                <div class="col-lg-5 col-md-10">
+                    <h6 class="label label-default white">{{ motd.tagTitle }}</h6>
+
+                    <h3 class="motd-title"><a href="{{ motd.link }}">{{ motd.title }}</a></h3>
+                    <p>{{ motd.description }}</p>
+                    <a href="{{ n.link }}" class="btn-primary" target="_blank">learn more</a>
+                </div>
+            </div>
+            {% endif %}
         </div>
     </div>
-    {% assign news = site.data.featured_news %}
+    <!-- {% assign news = site.data.featured_news %}
     {% for n in news %}
     <div class="item">
         <img src="/assets/img/featured_news/{{ n.image }}" alt="{{ n.title }}">
@@ -33,7 +48,7 @@ layout: default
             </div>
         </div>
     </div>
-    {% endfor %}
+    {% endfor %} -->
 </section>
 
 <div class="page-wrapper row">
