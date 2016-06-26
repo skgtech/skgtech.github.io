@@ -14,20 +14,6 @@
     }
     navbarAffix();
 
-    // Hero carousel on /index.html
-    function featured_news(){
-        if ( $('.featured_news').length ){
-            $('.featured_news').owlCarousel({
-                loop: true,
-                margin: 0,
-                nav: false,
-                dots: true,
-                items: 1
-            });
-        }
-    }
-    featured_news();
-
     // Community listing layout on index.html
     function eventListing(){
         if ( $('.communities_row').length ){
@@ -76,18 +62,18 @@
     causesListing();
 
     // SKGTech history carousel on /about.html
-    function history_carousel(){
-        if ( $('.history_carousel').length ){
-            $('.history_carousel').owlCarousel({
-                loop: false,
-                margin: 0,
-                nav: true,
-                navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
-                dots: false,
-                items: 1
-            });
-        }
-    }
-    history_carousel();
+    // function history_carousel(){
+    //     if ( $('.history_carousel').length ){
+    //         $('.history_carousel').owlCarousel({
+    //             loop: false,
+    //             margin: 0,
+    //             nav: true,
+    //             navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
+    //             dots: false,
+    //             items: 1
+    //         });
+    //     }
+    // }
+    // history_carousel();
 
 })(jQuery);
