@@ -25,18 +25,6 @@
       email: "at@atworks.gr"
     - name: "Dimitri James Tsiflitzis"
       email: "tsiflitzis@gmail.com"
-- name: "Thessaloniki Ruby Meetup (thessrb)"
-  period: "Monthly"
-  image: thessrb.jpg
-  description: "thessrb is the oldest meetup of town, a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
-  website: "http://git.io/thessrb"
-  maintainers:
-    - name: "Petros Amiridis"
-      email: "petros@amiridis.net"
-    - name: "Haris Dimitriou"
-      email: "xaris.dimitriou@gmail.com"
-    - name: "Vassilis Rizopoulos"
-      email: "Vassilisrizopoulos@gmail.com"
 - name: "OpenThessaloniki"
   period: "Sporadic"
   image: openthessaloniki.jpg
@@ -58,6 +46,18 @@
       email: "ppapapetrou76@gmail.com"
       twitter: "https://twitter.com/ppapapetrou76"
       website: "http://onlysoftware.wordpress.com/"
+- name: "Thessaloniki Ruby Meetup (thessrb)"
+  period: "Monthly"
+  image: thessrb.jpg
+  description: "thessrb is the oldest meetup of town, a group of (not just) geeks, who love Ruby (among other things), live (not just) in Thessaloniki (Greece), and meet at least once a month to throw some presentations (sometimes) and have beers (every time)."
+  website: "http://git.io/thessrb"
+  maintainers:
+    - name: "Petros Amiridis"
+      email: "petros@amiridis.net"
+    - name: "Haris Dimitriou"
+      email: "xaris.dimitriou@gmail.com"
+    - name: "Vassilis Rizopoulos"
+      email: "Vassilisrizopoulos@gmail.com"
 - name: "Behance Thessaloniki"
   period: "Biannually"
   image: behance.jpg
