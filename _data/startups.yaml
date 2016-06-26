@@ -102,3 +102,16 @@
   ctoEmail:
   teamSize: 3
   logo: photoshooter.jpg
+- name: "Athlenda"
+  stage: "Launched"
+  url: "http://www.athlenda.com"
+  industry: "SaaS - Marketplace"
+  yearFounded: "1/06/2015"
+  funding: "Seed"
+  description: "Social network for Athletes"
+  ceo: "Lazaros Papadopoulos"
+  ceoEmail:
+  cto: "Nikos Sfingos"
+  ctoEmail:
+  teamSize: 8
+  logo: athlenda.jpg
