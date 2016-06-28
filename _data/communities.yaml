@@ -155,15 +155,3 @@
   maintainers:
     - name: "Tech Ministry"
       email: "members@techministry.gr"
-- name: "AzureHeads"
-  period: "Sporadic"
-  image: azureheads.jpg
-  description: "AzureHeads is a group of people obsessed with the possibilities of cloud computing and Microsoft's cloud offering, Microsoft Azure."
-  website: "http://www.azureheads.gr"
-  facebook: "https://www.facebook.com/azureheads"
-  twitter: "https://twitter.com/azureheads"
-  maintainers:
-    - name: "Paris Polyzos"
-      email: "ppolyzos@outlook.com"
-    - name: "Kostas Pantos"
-      email: "kostas@pantos.name"
