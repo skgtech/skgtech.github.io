@@ -117,7 +117,7 @@ Calendar.prototype._assignValues = function($item, item) {
 
   // Set event photo
   if (eventData.image) {
-
+      $eventImage.attr('src', eventData.image);
   } else {
       $eventImage.attr('src', '/assets/img/placeholders/event_image_placeholder.jpg');
   }
