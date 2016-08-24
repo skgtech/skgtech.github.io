@@ -155,3 +155,16 @@
   maintainers:
     - name: "Tech Ministry"
       email: "members@techministry.gr"
+- name: "Agile & Lean Thessaloniki Meetup"
+  period: "Monthly"
+  image: agile.jpg
+  description: "A community for agile practitioners and for those interested in learning about the agile philosophy in software development.Our purpose is to educate our members about everything Agile & Lean while building a community to share,learn and experiment with various practices"
+  website: "http://www.meetup.com/Agile-Greece/"
+  twitter: "https://twitter.com/AgileGreeceOrg"
+  maintainers:
+    - name: "Nikos Batsios"
+      email: "nbatsios@mac.com"
+    - name: "Patroklos Papapetrou"
+      email: "ppapapetrou76@gmail.com"
+    - name: "Yiannis Mavraganis"
+      email: "ymavra@gmail.com"  
