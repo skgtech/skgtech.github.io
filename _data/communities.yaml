@@ -155,3 +155,12 @@
   maintainers:
     - name: "Tech Ministry"
       email: "members@techministry.gr"
+- name: "Nodes"
+  period: "Daily"
+  image: nodes_splasher.jpg
+  description: "Nodes is a leading European App Agency, engaging in Enterprise level app development for international and domestic clients and customers. Having published more than 1000 apps since 2009, we've worked with clients large and small, such as Unilever, Samsung, BMW and many others. "
+  website: "https://www.nodesagency.com"
+  twitter: "https://twitter.com/nodesdk"
+  maintainers:
+    - name: "Nodes"
+      email: "mape@nodes.dk"
