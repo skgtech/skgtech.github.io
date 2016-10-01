@@ -146,12 +146,12 @@
   maintainers:
     - name: "Kostas Karasavvas"
       email: "kkarasavvas@gmail.com"
-- name: "Tech Ministry"
+- name: "Lambda Space"
   period: "Daily"
-  image: techministry.jpg
-  description: "TechMinistry is a hackerspace that promotes open technologies and free exchange of knowledge. It is a space where you can create {software / hardware / craft / art / food}, you can learn new technologies, share your knowledge and experiences and get to know creative people of the city. The space is funded exclusively by the contributions of its members and donations of friends."
-  website: "https://techministry.gr"
-  twitter: "https://twitter.com/thetechministry"
+  image: lambdaspace.png
+  description: "Lambda Space is a hackerspace that promotes open technologies and free exchange of knowledge. It is a space where you can create {software / hardware / craft / art / food}, you can learn new technologies, share your knowledge and experiences and get to know creative people of the city. The space is funded exclusively by the contributions of its members and donations of friends."
+  website: "https://lambdaspace.gr"
+  twitter: "https://twitter.com/lambdaspace"
   maintainers:
-    - name: "Tech Ministry"
-      email: "members@techministry.gr"
+    - name: "Lambda Space"
+      email: "info@lambdaspace.gr"
