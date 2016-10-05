@@ -43,3 +43,22 @@ analytics :
   google :
     tracking_id : 'UA-41787746-3'
     domain: 'skgtech.io'
+
+authors:
+  thanpolas:
+    name: Thanasis Polychronakis
+    display_name: Thanasis
+    gravatar: cbb9cafe03e785d80a9aa973c5e43c44
+    email: thanpolas@gmail.com
+    web: http://thanpol.as
+    twitter: thanpolas
+    github: thanpolas
+  marga:
+    name: Konstantinos Margaritis
+    display_name: Konstantinos Margaritis
+    gravatar: 15a64213080e0ee13d02f0eab0f8819b
+    email: kostas@devitconf.org
+    web: http://typeofundefined.io/
+    twitter: _margaritis
+    github: margaritis
+
