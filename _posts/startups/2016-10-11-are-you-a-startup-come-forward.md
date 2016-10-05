@@ -21,7 +21,7 @@ As a web developer and founder myself, I understand and relate to the ambition, 
 
 Almost everyone at SKGTech works at a startup, either locally or remotely, we care deeply about a thriving ecosystem and startups are the reason why ecosystems exist in the first place. 
 
-We understand that if any startup company in Thessaloniki makes it, and by 'makes it' we mean either an acquisition or (who knows) even IPO, then that fact will be the spark to ignite a true startup ecosystem. So it's in everyones best interest to see new startups being founded, support them anyway they can and push them to success.
+We understand that if any startup company in Thessaloniki makes it, and by 'makes it' we mean either an acquisition or (who knows) even IPO, then that fact will be the spark to ignite a true startup ecosystem. So it's in everyones best interest to see new startups being founded, support them anyway we can and push them to success.
 
 ## What Startups can gain from local exposure
 
@@ -46,5 +46,7 @@ The most basic and simple thing you can do is register at our local "Startup Reg
 Next, you need to step up your game and put feet on the ground. Checkout the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](http://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you. 
 
 A very bright example on these kind of tactics is the CEO of [Callibrie](http://callibrie.com/), a local startup that has been operating for nearly 2 years now. The founder of that company, a non-tech founder that is, participated (and still does) in each and every meetup that was organized, everyone knew him, so when the time came and he got funded and he was ready to scale up operations by creating a new team the talent flowed naturally to him. That wouldn't be possible if he chose to remain private and be closed to himself.
+
+Another similar case is [GoodVidio](https://goodvid.io/) whose founders are active participants in the community, when they needed to scale up their team they already had the connections, everyone already knew them. So things were a lot  easier for them when their company needed to grow.
 
 So if you are Startup in Thessaloniki, or whatever your town is, come forward! We want to help.
