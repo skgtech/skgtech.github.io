@@ -4,6 +4,7 @@ title: "Are you a Startup? Come Forward!"
 description: "As a Startup you can have a great impact on your local community and likewise you have a lot to benefit from it, in this article I explain why it is important for you as a Startup to come forward and be a part of your local community."
 category : startups
 tags : [startups, skg, innovation]
+author: thanpolas
 ---
 
 Hello, I am Thanasis and in my lifetime I have founded and closed many startups. Today I am on my fifth venture, working on a SaaS business for the past two years, a niche service that offers client-side network diagnostics [netscan.co](https://www.netscan.co).
@@ -26,7 +27,7 @@ We understand that if any startup company in Thessaloniki makes it, and by 'make
 
 In order to be able to support and push local Startups, one needs to know what startups are in their town, so they can in their turn proudly advertise them to their own network or at meetings with stakeholders. What this can provide you is pure opportunity. 
 
-Having the local community be aware of who you are, what you do and what stage you are in will almost definitely bring you new opportunity manifesting in all sorts of forms... Collaborations, feedback on competition and market, advice from fellow entrepreneurs, new recruits, people with major expertise on the subject might give you a call and why not even some sort of funding opportunities
+Having the local community be aware of who you are, what you do and what stage you are in will almost definitely bring you new opportunity manifesting in all sorts of forms... I will name just one before anything else, introductions. Introductions are to entrepreneurs what gasoline is to cars: required to move forward [*Quote from Romain Serman*](https://medium.com/@romainserman/silicon-valley-etiquette-6934cf6f8f73#.obg6k0c1w). Out of that, you will get collaborations, feedback on competition and market, advice from fellow entrepreneurs, new recruits, people with major expertise on the subject might give you a call and why not even some sort of funding opportunities
 
 > Essentially you now have an audience, that is already very positively biased towards you and in many cases wants to actively help you.
 
