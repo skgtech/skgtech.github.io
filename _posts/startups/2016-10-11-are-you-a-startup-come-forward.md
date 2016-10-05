@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Are you a Startup? Come Forward!"
-description: "A new solution for Javascript dependency management is now ready. Announcing the release of Mantri, a traditionaλ dependency system."
+description: "As a Startup you can have a great impact on your local community and likewise you have a lot to benefit from it, in this article I explain why it is important for you as a Startup to come forward and be a part of your local community."
 category : startups
 tags : [startups, skg, innovation]
 ---
