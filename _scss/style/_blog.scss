@@ -116,4 +116,32 @@
 
   }
 
+  .post-share {
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    .post-share-content {
+      margin-top: 20px;
+    }
+  }
+
+  .gplus {
+    position: relative;
+    left: 10px;
+  }
+
+  .facebook {
+    position: relative;
+    top: -5px;
+    left: 10px;
+  }
+  .facebook-sidebar {
+    position: relative;
+    top: -25px;
+    left: 170px;
+  }
+  .fb_reset {
+    display: inline-block;
+  }
+
 }
