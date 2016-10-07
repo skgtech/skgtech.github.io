@@ -35,7 +35,7 @@ Are you sure you want to pass on that?
 
 Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever. Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki, wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
 
-The reason is simple, that web developer already has a job at another startup, they have a front row sit at the game. They know how the game is plaid and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new.
+The reason is simple, that web developer already has a job at another startup, they have a front row sit at the game. They know how the game is played and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new.
 
 As such the developer is also very well connected and in one way or another participates in local meetups and is a member of the local tech community. When you come to that developer out of the blue and say we've been working on our product for x amount of time (usually years), the developer will naturally take a skeptical stance against you.
 
