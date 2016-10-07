@@ -2,6 +2,7 @@
 layout: post
 title: "Are you a Startup? Come Forward!"
 description: "As a Startup you can have a great impact on your local community and likewise you have a lot to benefit from it, in this article I explain why it is important for you as a Startup to come forward and be a part of your local community."
+date: 2016-10-11 08:00:00 +0300
 category : startups
 tags : [startups, skg, innovation]
 author: thanpolas
