@@ -1,0 +1,51 @@
+---
+layout: default
+title: SKGTech Blog
+---
+<section class="row page-header">
+  <div class="blog">
+    <div class="container">
+      <h4>Blog</h4>
+    </div>
+  </div>
+</section>
+
+<div class="page-wrapper row">
+
+<section class="row blog-content">
+  <div class="container">
+    <div class="row sectionTitle text-center">
+      <h6 class="label label-default">SKGTECH BLOG</h6>
+      <h3>POSTS FROM THE COMMUNITY</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 text-center">
+
+        {% for post in site.posts %}
+
+          <article class="post post-type-text row text-center">
+            <div class="row article-body">
+                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <ul class="post-meta nav">
+                  <li><i class="fa fa-calendar-o"></i> {{ post.date | date: "%b %-d, %Y" }}</li>
+                  <li><i class="fa fa-user"></i>Author: <a href="{{ site.authors[post.author].web }}">{{ site.authors[post.author].display_name }}</a></li>
+                  <li><i class="fa fa-folder"></i>Category: {{ post.category }}</li>
+                  <!-- <li><i class="fa fa-tags"></i>Tags: {{ post.tags | join: ", " }}</li> -->
+                </ul>
+                <div class="post-description row">
+                  <p>{{ post.description }}</p>
+                </div>
+            </div>
+          </article>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% include newsletter.html %}
+{% include footer-skgtech-info.html %}
