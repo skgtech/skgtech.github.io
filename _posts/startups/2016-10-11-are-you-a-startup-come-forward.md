@@ -19,13 +19,13 @@ As a web developer and founder myself, I understand and relate to the ambition, 
 
 ## Why Startups have an impact on local
 
-Almost everyone at SKGTech works at a startup, either locally or remotely, we care deeply about a thriving ecosystem and startups are the reason why ecosystems exist in the first place. 
+Almost everyone at SKGTech works at a startup, either locally or remotely, we care deeply about a thriving ecosystem and startups are the reason why ecosystems exist in the first place.
 
 We understand that if any startup company in Thessaloniki makes it, and by 'makes it' we mean either an acquisition or (who knows) even IPO, then that fact will be the spark to ignite a true startup ecosystem. So it's in everyones best interest to see new startups being founded, support them anyway we can and push them to success.
 
 ## What Startups can gain from local exposure
 
-In order to be able to support and push local Startups, one needs to know what startups are in their town, so they can in their turn proudly advertise them to their own network or at meetings with stakeholders. What this can provide you is pure opportunity. 
+In order to be able to support and push local Startups, one needs to know what startups are in their town, so they can in their turn proudly advertise them to their own network or at meetings with stakeholders. What this can provide you is pure opportunity.
 
 Having the local community be aware of who you are, what you do and what stage you are in will almost definitely bring you new opportunity manifesting in all sorts of forms... I will name just one before anything else, introductions. Introductions are to entrepreneurs what gasoline is to cars: required to move forward [*Quote from Romain Serman*](https://medium.com/@romainserman/silicon-valley-etiquette-6934cf6f8f73#.obg6k0c1w). Out of that, you will get collaborations, feedback on competition and market, advice from fellow entrepreneurs, new recruits, people with major expertise on the subject might give you a call and why not even some sort of funding opportunities
 
@@ -35,7 +35,7 @@ Are you sure you want to pass on that?
 
 Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever. Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki, wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
 
-The reason is simple, that web developer already has a job at another startup, they have a front row sit at the game. They know how the game is plaid and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new. 
+The reason is simple, that web developer already has a job at another startup, they have a front row sit at the game. They know how the game is plaid and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new.
 
 As such the developer is also very well connected and in one way or another participates in local meetups and is a member of the local tech community. When you come to that developer out of the blue and say we've been working on our product for x amount of time (usually years), the developer will naturally take a skeptical stance against you.
 
@@ -43,7 +43,7 @@ As such the developer is also very well connected and in one way or another part
 
 The most basic and simple thing you can do is register at our local "Startup Registry" that you can find in the [Startups](http://skgtech.io/startups) page. That won't take more than 5 minutes of your time and it will expose you to the very highly expert audience of SKGTech.
 
-Next, you need to step up your game and put feet on the ground. Checkout the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](http://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you. 
+Next, you need to step up your game and put feet on the ground. Checkout the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](http://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you.
 
 A very bright example on these kind of tactics is the CEO of [Callibrie](http://callibrie.com/), a local startup that has been operating for nearly 2 years now. The founder of that company, a non-tech founder that is, participated (and still does) in each and every meetup that was organized, everyone knew him, so when the time came and he got funded and he was ready to scale up operations by creating a new team the talent flowed naturally to him. That wouldn't be possible if he chose to remain private and be closed to himself.
 
