@@ -41,6 +41,15 @@
             <a href="/projects">projects</a>
         </li>
 
+        <!-- BLOG -->
+        {% if page.url == '/blog/' or page.layout == 'post' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/blog">blog</a>
+        </li>
+
         <!-- ABOUT US -->
         {% if page.url == '/about/' %}
             <li class="active">

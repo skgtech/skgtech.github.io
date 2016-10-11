@@ -1,26 +1,113 @@
 ---
 layout: default
 ---
-{% assign author = site.authors[page.author] %}
+<section class="row page-header">
+  <div class="blog">
+    <div class="container">
+      <h4>Blog</h4>
+    </div>
+  </div>
+</section>
 
-{% include blog-header.html %}
+<div class="page-wrapper row">
 
-{% include navigation.html %}
+<section class="row blog-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
 
+        <article class="post single-post row" itemscope itemtype="http://schema.org/BlogPosting">
+          <div class="row article-body">
+            <div class="container">
+              <div class="col-md-12">
+                <h3 class="post-title" itemprop="name headline">{{ page.title }}</h3>
+                <ul class="post-meta nav">
+                  <li><i class="fa fa-calendar-o"></i>
+                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+                  </li>
+                  <li><i class="fa fa-user"></i>Author: <a href="{{ site.authors[page.author].web }}">
+                    <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                      <span itemprop="name">{{ site.authors[page.author].display_name }}</span></a>
+                    </span>
+                  </li>
+                  <li><i class="fa fa-folder"></i>Category: {{ page.category }}</li>
+                </ul>
+              </div>
+              <div class="col-md-8">
+                <div class="post-content" itemprop="articleBody">
 
-<div class="container content">
-  <!--===============================-->
-  <!--== Post ======================-->
-  <!--===============================-->
-  {% include post.html %}
-  <!--==========-->
+                  {{ content }}
 
-  <!--===============================-->
-  <!--== Footer =====================-->
-  <!--===============================-->
+                </div>
+                <div class="post-share">
+                  <span class="label label-info">Share it</span>
+                  <div class="post-share-content">
+                    <span class="twitter">
+                      <a href="https://twitter.com/share" class="twitter-share-button" data-via="SKG_Tech" data-lang="en" data-related="SKG_Tech" data-counturl="{{ page.url | prepend: site.baseurl | prepend: site.url }}">Tweet</a>
+                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </span>
+                    <span class="gplus">
+                      <script src="https://apis.google.com/js/platform.js" async defer></script>
+                      <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+                    </span>
+                    <span class="facebook">
+                      <div id="fb-root"></div>
+                      <script>
+                        (function(d, s, id) {
+                          var js, fjs = d.getElementsByTagName(s)[0];
+                          if (d.getElementById(id)) return;
+                          js = d.createElement(s); js.id = id;
+                          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+                          fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                      </script>
+                      <div class="fb-share-button" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count"></div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
 
-  {% include footer.html %}
+      </div>
 
-  <!--==========-->
+      <div class="col-md-4 post-sidebar">
+        <div class="widget">
+          <h4 class="widget-title">Tags</h4>
+          <div class="tags">
+            {% for tag in page.tags %}
+              <span>{{ tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
 
-</div>
+        <div class="widget">
+          <h4 class="widget-title">Share it</h4>
+          <span class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="SKG_Tech" data-lang="en" data-related="SKG_Tech" data-counturl="{{ page.url | prepend: site.baseurl | prepend: site.url }}">Tweet</a>
+          </span>
+          <span class="gplus">
+            <div class="g-plus" data-action="share" data-annotation="bubble"></div>
+          </span>
+          <span class="facebook-sidebar">
+            <div id="fb-root"></div>
+            <div class="fb-share-button" data-href="{{ page.url | prepend: site.url }}" data-layout="button_count"></div>
+          </span>
+        </div>
+
+        <div class="widget">
+          <h4 class="widget-title">Latest posts</h4>
+          <ul class="nav">
+            {% for post in site.posts limit:5 %}
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

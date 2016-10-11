@@ -2,6 +2,7 @@
 layout: post
 title: "Are you a Startup? Come Forward!"
 description: "As a Startup you can have a great impact on your local community and likewise you have a lot to benefit from it, in this article I explain why it is important for you as a Startup to come forward and be a part of your local community."
+date: 2016-10-11 08:00:00 +0300
 category : startups
 tags : [startups, skg, innovation]
 author: thanpolas
@@ -19,7 +20,7 @@ As a web developer and founder myself, I understand and relate to the ambition, 
 
 ## Why Startups have an impact on local
 
-Almost everyone at SKGTech works at a startup, either locally or remotely, we care deeply about a thriving ecosystem and startups are the reason why ecosystems exist in the first place. 
+Almost everyone at SKGTech works at a startup, either locally or remotely, we care deeply about a thriving ecosystem and startups are the reason why ecosystems exist in the first place.
 
 We understand that if any startup company in Thessaloniki makes it, and by 'makes it' we mean either an acquisition or (who knows) even IPO, then that fact will be the spark to ignite a true startup ecosystem. So it's in everyone's best interest to see new startups being founded, support them any way we can and push them to success.
 
