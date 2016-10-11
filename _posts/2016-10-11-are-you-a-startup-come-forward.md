@@ -16,7 +16,7 @@ Now you see what I did there? I advertised my company, I got some exposure. Some
 
 There is no doubt that a consumer business needs as much exposure as it can get, so I really don't need to sell that point for this kind of companies, if you indeed are a consumer product and you're not doing everything in your power for exposure you are doing it wrong. The discussion and aim of this article are to talk about the benefits a SaaS, B2B business has by exposing itself to the local community.
 
-As a web developer and founder myself, I understand and relate to the ambition, vision, and world view of a first-time entrepreneur. The world is your palms, there is nothing that can stop you, you will change the world. The problem here is when you are being so much consumed by this cool-aid that you neglect the environment you are operating on. Either by sheer confidence, or ego, or introversion you choose to turn a blind eye to your surroundings and the great benefits that would get you. Please give me 5 more minutes as I try to explain what you stand to gain by exposing yourself...
+As a web developer and founder myself, I understand and relate to the ambition, vision, and world view of a first-time entrepreneur. The world is in your palms, there is nothing that can stop you, you will change the world. The problem here is when you are being so much consumed by this cool-aid that you neglect the environment you are operating on. Either by sheer confidence, or ego, or introversion you choose to turn a blind eye to your surroundings and the great benefits that would get you. Please give me 5 more minutes as I try to explain what you stand to gain by exposing yourself...
 
 ## Why Startups have an impact on local
 
@@ -34,7 +34,7 @@ Having the local community be aware of who you are, what you do and what stage y
 
 Are you sure you want to pass on that?
 
-Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever? Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki, wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
+Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever? Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki (a small town of a bit more than 1 million residents), wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
 
 The reason is simple, that web developer already has a job at another startup, they have a front row seat at the game. They know how the game is played and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new. 
 
@@ -46,7 +46,7 @@ The most basic and simple thing you can do is register at our local "Startup Reg
 
 Next, you need to step up your game and put feet on the ground. Check out the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](http://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you. 
 
-A very bright example of this kind of tactics is the CEO of [Callibrie](http://callibrie.com/), a local startup that has been operating for nearly 2 years now. The founder of that company, a non-tech founder that is, participated (and still does) in each and every meetup that was organized, everyone knew him, so when the time came and he got funded and he was ready to scale up operations by creating a new team the talent flowed naturally to him. That wouldn't be possible if he chose to remain private and be closed to himself.
+A very bright example of this kind of tactics is the CEO of [Callibrie](http://callibrie.com/), a local startup that has been operating for nearly 2 years now. The founder of that company, a non-tech founder that is, participated (and still does) in each and every meetup that was organized, everyone knew him, so when the time came and he got funded and he was ready to scale up operations by creating a new team, the talent flowed naturally to him. That wouldn't be possible if he chose to remain private and be closed to himself.
 
 Another similar case is [GoodVidio](https://goodvid.io/) whose founders are active participants in the community, when they needed to scale up their team they already had the connections, everyone already knew them. So things were a lot  easier for them when their company needed to grow.
 
