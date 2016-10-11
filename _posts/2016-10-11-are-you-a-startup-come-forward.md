@@ -14,7 +14,7 @@ Hello, I am Thanasis and in my lifetime I have founded and dissolved many startu
 
 Now you see what I did there? I advertised my company, I got some exposure. Some of you may argue that, hey, you are a B2B company you don't need exposure; and that would be correct. However on the local scale, exposure matters and this is what I want to talk to you about.
 
-There is no doubt that a consumer business needs as much exposure as it can get, so I really don't need to sell that point for this kind of companies, if you indeed are a consumer product and you're not doing everything in your power for exposure you are doing it wrong. The discussion and aim of this article is to talk about the benefits a SaaS, B2B business has by exposing itself on the local community.
+There is no doubt that a consumer business needs as much exposure as it can get, so I really don't need to sell that point for this kind of companies, if you indeed are a consumer product and you're not doing everything in your power for exposure you are doing it wrong. The discussion and aim of this article are to talk about the benefits a SaaS, B2B business has by exposing itself to the local community.
 
 As a web developer and founder myself, I understand and relate to the ambition, vision, and world view of a first-time entrepreneur. The world is your palms, there is nothing that can stop you, you will change the world. The problem here is when you are being so much consumed by this cool-aid that you neglect the environment you are operating on. Either by sheer confidence, or ego, or introversion you choose to turn a blind eye to your surroundings and the great benefits that would get you. Please give me 5 more minutes as I try to explain what you stand to gain by exposing yourself...
 
@@ -34,9 +34,9 @@ Having the local community be aware of who you are, what you do and what stage y
 
 Are you sure you want to pass on that?
 
-Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever. Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki, wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
+Exposure will also give you access to local talent. Think about this for a moment, if you are to become successful, you will have to grow your team. How many more chances do you have with local developers that already know you versus hearing you for the first time ever? Remember, we are at the local level now, a Startup in Thessaloniki, poaches a Web Developer in Thessaloniki, wouldn't it be awkward for both of you if the developer wasn't aware of you? It surely would be awkward and surely you'd have virtually no chance of recruiting that developer.
 
-The reason is simple, that web developer already has a job at another startup, they have a front row sit at the game. They know how the game is played and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new. 
+The reason is simple, that web developer already has a job at another startup, they have a front row seat at the game. They know how the game is played and they know that staying sharp and top-level is nothing less than being an athlete, having to train on a daily basis and keep up with everything new. 
 
 As such the developer is also very well connected and in one way or another participates in local meetups and is a member of the local tech community. When you come to that developer out of the blue and say we've been working on our product for x amount of time (usually years), the developer will naturally take a skeptical stance against you.
 
