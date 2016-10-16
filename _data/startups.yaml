@@ -115,3 +115,15 @@
   ctoEmail:
   teamSize: 8
   logo: athlenda.jpg
+- name: "ErgoSensePro"
+  stage: "Beta"
+  url: "http://www.ergosensepro.com/"
+  industry: "Sports"
+  yearFounded: "15/12/2015"
+  funding: "Bootstrapped (self funded)"
+  description: "ErgoSensePro develops personalized and optimal strength and conditioning training programs for athletes."
+  ceo: "Aleck Alexopoulos"
+  ceoEmail: "alexopoulos.aleck@gmail.com"
+  teamSize: 4
+  logo: ErgoSensePro.jpg
+
