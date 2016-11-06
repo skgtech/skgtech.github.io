@@ -57,6 +57,12 @@ More specific tasks:
 * The project's homepage is the file `index.html` in the root folder.
 * All the site's data are in the `_data/` folder.
 
+#### Deploy
+
+* Generated styles and scripts must be committed.
+* Use `npm run browserify-prod` to generate a production build (only react transformer needs this, but it must be run on every build).
+* Anything merged on `master` branch automatically gets deployed by GitHub Pages.
+
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
