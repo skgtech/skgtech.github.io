@@ -44,7 +44,8 @@ gulp.task('browser-sync', ['browserify','sass', 'jekyll-build'], function() {
 gulp.task('browserify', function () {
   var b = browserify({
     entries: './_app/app.js',
-    debug: true
+    transform: ['reactify'],
+    debug: true,
   });
 
   return b.bundle()
@@ -84,10 +85,12 @@ gulp.task('watch', function () {
         '_layouts/*.html',
         '_posts/*',
         '_includes/*.html',
-        'startups/*.html',
         'submit-event/*.html',
-        'about/*.html',
+        'startups/*.html',
         'projects/*.html',
+        'jobs/*.html',
+        'blog/*.html',
+        'about/*.html',
         '_data/*.yaml',
         'js/*.js',
         '_app/*.js'

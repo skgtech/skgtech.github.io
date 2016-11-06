@@ -32,6 +32,15 @@
             <a href="/startups">startups</a>
         </li>
 
+        <!-- JOBS -->
+        {% if page.url == '/jobs/' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/jobs">jobs</a>
+        </li>
+
         <!-- PROJECTS -->
         {% if page.url == '/projects/' %}
             <li class="active">

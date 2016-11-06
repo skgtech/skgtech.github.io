@@ -1493,6 +1493,11 @@ a, .btn, button {
   background: url(/assets/img/heroes/blog.jpg) no-repeat scroll center top;
   background-size: cover; }
 
+/* line 44, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_page-header.scss */
+.jobs {
+  background: url(/assets/img/heroes/jobs.jpg) no-repeat scroll center top;
+  background-size: cover; }
+
 @media (max-width: 767px) {
   /* line 1, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_404.scss */
   .content_404 {
@@ -2750,6 +2755,45 @@ a, .btn, button {
   /* line 143, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_blog.scss */
   .blog-content .fb_reset {
     display: inline-block; }
+
+/* line 1, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item {
+  background: #f1f4f8;
+  height: 70px;
+  margin-bottom: 25px; }
+
+/* line 7, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item-title {
+  font-size: 18px;
+  height: 100%;
+  padding: 25px;
+  font-family: "Montserrat", sans-serif; }
+
+/* line 14, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item-company {
+  padding: 22px;
+  height: 100%;
+  background: #f8fafc;
+  font-size: 18px;
+  font-family: "Karla", sans-serif; }
+
+/* line 23, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item-tags ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 5px; }
+
+/* line 29, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item-tags li {
+  display: inline-block;
+  background-color: #fff;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font: 700 13px/40px "Montserrat", sans-serif;
+  text-transform: lowercase;
+  color: #7f8b99; }
 
 /* Theme */
 /* line 2, /Users/sirodoht/Projects/skgtech.github.io/_scss/theme/_prefix.scss */
