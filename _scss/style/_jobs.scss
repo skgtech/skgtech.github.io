@@ -1,0 +1,39 @@
+.jobBoard-item {
+  background: #f1f4f8;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.jobBoard-item-title {
+  font-size: 18px;
+  height: 100%;
+  padding: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.jobBoard-item-company {
+  padding: 22px;
+  height: 100%;
+  background: #f8fafc;
+  font-size: 18px;
+  font-family: "Karla", sans-serif;
+}
+
+.jobBoard-item-tags {
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  li {
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font: 700 13px/40px "Montserrat", sans-serif;
+    text-transform: lowercase;
+    color: #7f8b99;
+  }
+}
