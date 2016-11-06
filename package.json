@@ -19,9 +19,12 @@
   },
   "homepage": "https://github.com/skgtech/skgtech.github.io#readme",
   "devDependencies": {
+    "axios": "0.15.2",
     "browser-sync": "2.13.0",
     "browserify": "13.0.1",
     "calendarth": "0.0.6",
+    "eslint": "3.9.1",
+    "eslint-plugin-react": "6.5.0",
     "gulp": "3.9.1",
     "gulp-load-plugins": "0.10.0",
     "gulp-sass": "2.3.1",
@@ -29,6 +32,9 @@
     "gulp-uglify": "1.5.3",
     "gulp-util": "3.0.6",
     "jquery": "2.2.4",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
+    "reactify": "1.1.1",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0"
   }
