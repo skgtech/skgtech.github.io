@@ -2,7 +2,9 @@
   "name": "skgtech",
   "version": "3.0.0",
   "description": "SKGTech Official Website",
-  "scripts": {},
+  "scripts": {
+    "browserify-prod": "export NODE_ENV=production && gulp browserify && unset NODE_ENV"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/skgtech/skgtech.github.io.git"
