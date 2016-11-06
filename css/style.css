@@ -2760,16 +2760,20 @@ a, .btn, button {
 .jobBoard-item {
   background: #f1f4f8;
   height: 70px;
-  margin-bottom: 25px; }
+  margin-bottom: 100px; }
+  @media (min-width: 992px) {
+    /* line 1, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+    .jobBoard-item {
+      margin-bottom: 25px; } }
 
-/* line 7, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+/* line 11, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
 .jobBoard-item-title {
   font-size: 18px;
   height: 100%;
   padding: 25px;
   font-family: "Montserrat", sans-serif; }
 
-/* line 14, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+/* line 18, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
 .jobBoard-item-company {
   padding: 22px;
   height: 100%;
@@ -2777,23 +2781,30 @@ a, .btn, button {
   font-size: 18px;
   font-family: "Karla", sans-serif; }
 
-/* line 23, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
-.jobBoard-item-tags ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 0;
-  margin-top: 5px; }
-
-/* line 29, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
-.jobBoard-item-tags li {
-  display: inline-block;
-  background-color: #fff;
-  margin: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font: 700 13px/40px "Montserrat", sans-serif;
-  text-transform: lowercase;
-  color: #7f8b99; }
+/* line 26, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+.jobBoard-item-tags {
+  height: 100%;
+  background: #f8fafc; }
+  @media (min-width: 992px) {
+    /* line 26, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+    .jobBoard-item-tags {
+      background: #f1f4f8; } }
+  /* line 34, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+  .jobBoard-item-tags ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 5px; }
+  /* line 40, /Users/sirodoht/Projects/skgtech.github.io/_scss/style/_jobs.scss */
+  .jobBoard-item-tags li {
+    display: inline-block;
+    background-color: #fff;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font: 700 13px/40px "Montserrat", sans-serif;
+    text-transform: lowercase;
+    color: #7f8b99; }
 
 /* Theme */
 /* line 2, /Users/sirodoht/Projects/skgtech.github.io/_scss/theme/_prefix.scss */
