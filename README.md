@@ -1,10 +1,10 @@
-[![Logo](assets/img/skgtech-logo.png  "SKGTech")](http://skgtech.io)
+[![Logo](assets/img/skgtech-logo.png  "SKGTech")](https://skgtech.io)
 
 #### SKGTech is a non profit organization based in Thessaloniki, Greece. The organization is comprised of creative and passionate people that love all the things revolving around technology.
 
 ### For Meetup Organizers
 
-SKGTech is using a public [Google Calendar](https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens) for storing and reading the events and meetups. See how you can [add your event](http://skgtech.io/submit-event).
+SKGTech is using a public [Google Calendar](https://www.google.com/calendar/embed?src=2ul10sd9g30mnk1vpmcnnp5qv4%40group.calendar.google.com&ctz=Europe/Athens) for storing and reading the events and meetups. See how you can [add your event](https://skgtech.io/submit-event).
 
 ## For Web Developers
 

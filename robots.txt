@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://skgtech.io/sitemap.xml
+Sitemap: https://skgtech.io/sitemap.xml
