@@ -1,5 +1,4 @@
 future: true
-permalink: /404.html
 permalink: /blog/:title/
 markdown: kramdown
 
