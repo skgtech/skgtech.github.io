@@ -1,6 +1,6 @@
 future: true
-permalink: /blog/:title/
 permalink: /404.html
+permalink: /blog/:title/
 markdown: kramdown
 
 exclude: [
