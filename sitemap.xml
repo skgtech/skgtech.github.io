@@ -3,32 +3,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
   <url>
-    <loc>http://skgtech.io/</loc>
+    <loc>https://skgtech.io/</loc>
     <lastmod>2016-06-16T15:55:33+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://skgtech.io/startups/</loc>
+    <loc>https://skgtech.io/startups/</loc>
     <lastmod>2016-06-16T15:55:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://skgtech.io/projects/</loc>
+    <loc>https://skgtech.io/projects/</loc>
     <lastmod>2016-06-16T15:55:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://skgtech.io/about/</loc>
+    <loc>https://skgtech.io/about/</loc>
     <lastmod>2016-06-16T15:55:33+00:00</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>http://skgtech.io/submit-event/</loc>
+    <loc>https://skgtech.io/submit-event/</loc>
     <lastmod>2016-06-16T15:55:33+00:00</lastmod>
     <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>http://skgtech.io/assets/files/SKGTech-Bylaws.pdf</loc>
+    <loc>https://skgtech.io/assets/files/SKGTech-Bylaws.pdf</loc>
     <lastmod>2016-06-16T15:55:32+00:00</lastmod>
     <changefreq>yearly</changefreq>
   </url>

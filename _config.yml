@@ -25,7 +25,7 @@ author :
   # feedburner : feedname
 githubrepo: "https://github.com/skgtech/skgtech.github.io"
 
-production_url : http://skgtech.io
+production_url : https://skgtech.io
 
 sass:
     sass_dir: ./_scss
@@ -35,7 +35,7 @@ og:
   app_id: "698696243515776"
   title: "Thessaloniki tech Community"
   site_name: "SKGTech"
-  image: "http://skgtech.io/assets/img/skgtech-social-logo.png"
+  image: "https://skgtech.io/assets/img/skgtech-social-logo.png"
 
 # Google Analytics
 analytics :

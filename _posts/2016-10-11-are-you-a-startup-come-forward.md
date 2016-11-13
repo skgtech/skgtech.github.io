@@ -42,9 +42,9 @@ As such the developer is also very well connected and in one way or another part
 
 ## What exactly do you mean by exposure?
 
-The most basic and simple thing you can do is register at our local "Startup Registry" that you can find in the [Startups](http://skgtech.io/startups) page. That won't take more than 5 minutes of your time and it will expose you to the very highly expert audience of SKGTech.
+The most basic and simple thing you can do is register at our local "Startup Registry" that you can find in the [Startups](https://skgtech.io/startups) page. That won't take more than 5 minutes of your time and it will expose you to the very highly expert audience of SKGTech.
 
-Next, you need to step up your game and put feet on the ground. Check out the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](http://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you. 
+Next, you need to step up your game and put feet on the ground. Check out the technological and startup events being organized in the city and attend. You can find them at the [frontpage of this site at skgtech.io](https://skgtech.io). It doesn't matter what type of event it is, tech or otherwise, just attend and network with the people there. The more you do that the more people will get to know you and trust you. 
 
 A very bright example of this kind of tactics is the CEO of [Callibrie](http://callibrie.com/), a local startup that has been operating for nearly 2 years now. The founder of that company, a non-tech founder that is, participated (and still does) in each and every meetup that was organized, everyone knew him, so when the time came and he got funded and he was ready to scale up operations by creating a new team, the talent flowed naturally to him. That wouldn't be possible if he chose to remain private and be closed to himself.
 
