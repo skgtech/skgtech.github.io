@@ -11,23 +11,35 @@ module.exports = React.createClass({
       jobs: [],
     };
   },
+  sanitizeLink: function (link) {
+    if (link.substr(0, 7) === 'http://' || link.substr(0, 8) === 'https://') {
+      return link;
+    } else {
+      return 'http://' + link;
+    }
+  },
+  processTrelloResponse: function (trelloData) {
+    var jobsData = [];
+    var self = this;
+    trelloData.forEach(function (item) {
+      var descSplit = item.desc.split('\n');
+      jobsData.push({
+        id: item.id,
+        name: item.name,
+        link: self.sanitizeLink(descSplit[0]),
+        company: descSplit[1],
+        companyLink: self.sanitizeLink(descSplit[2]),
+        tags: item.labels,
+      });
+    });
+
+    return jobsData;
+  },
   componentDidMount: function () {
     var self = this;
     return axios.get('https://api.trello.com/1/boards/hgNZ59E5/cards?fields=id,name,desc,labels')
       .then(function (res) {
-        var jobsData = [];
-        res.data.forEach(function (item) {
-          var descSplit = item.desc.split('\n');
-          jobsData.push({
-            id: item.id,
-            name: item.name,
-            link: descSplit[0],
-            company: descSplit[1],
-            companyLink: descSplit[2],
-            tags: item.labels,
-          });
-        });
-
+        var jobsData = self.processTrelloResponse(res.data);
         self.setState({
           jobs: jobsData,
         });
