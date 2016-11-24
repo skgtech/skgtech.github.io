@@ -54,13 +54,13 @@ module.exports = React.createClass({
       });
       return (
         <div className="jobBoard-item" key={ item.id }>
-          <div className="col-md-6 col-xs-12 jobBoard-item-title">
+          <div className="col-md-5 col-xs-12 jobBoard-item-title">
             <a href={ item.link } target="_blank">{ item.name }</a>
           </div>
           <div className="col-md-3 col-xs-6 jobBoard-item-company">
             <a href={ item.companyLink } target="_blank">{ item.company }</a>
           </div>
-          <div className="col-md-3 col-xs-6 jobBoard-item-tags text-right">
+          <div className="col-md-4 col-xs-6 jobBoard-item-tags text-right">
             <ul>{ listItems }</ul>
           </div>
         </div>
