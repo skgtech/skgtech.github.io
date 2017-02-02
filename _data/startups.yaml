@@ -6,9 +6,9 @@
   funding: "Seed"
   description: "Ecommerce video discovery as a service"
   ceo: "Dimitrios Kourtesis"
-  ceoEmail: ""
+  ceoEmail: "dkourtesis@goodvid.io"
   cto: "Konstantinos Bratanis"
-  ctoEmail: ""
+  ctoEmail: "kbratanis@goodvid.io"
   teamSize: 13
   logo: "goodvidio.jpg"
 - name: "EasyBike"
@@ -102,6 +102,19 @@
   ctoEmail:
   teamSize: 3
   logo: photoshooter.jpg
+- name: "Total Eclipse"
+  stage: "Launched"
+  url: "http://www.totaleclipsegames.com/"
+  industry: "Gaming"
+  yearFounded: "1/1/2004"
+  funding: "Seed"
+  description: "design and develop iPhone/iPad, Android, PC, Mac & Linux games"
+  ceo: "Argiris Bendilas"
+  ceoEmail: ""
+  cto: "Dimitrios Bratanis"
+  ctoEmail: ""
+  teamSize: 5
+  logo: "totaleclipse.png"
 - name: "Athlenda"
   stage: "Launched"
   url: "http://www.athlenda.com"
