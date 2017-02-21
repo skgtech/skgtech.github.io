@@ -159,7 +159,7 @@
   period: "Monthly"
   image: quacknhack.jpg
   happensAt: "Every two-three months"
-  description: "Quack & Hacks are a meetup for developers interested in contributing to the DuckDuckGo search engine. The open source platform (duckduckhack.com) allows anyone to create, "Instant Answers"--results that help answer a search in few or zero clicks. We bring together Thessaloniki's developer community for a day of DuckDuckHack-ing as often as we can! "
+  description: "Quack & Hacks are a meetup for developers interested in contributing to the DuckDuckGo search engine. The open source platform (duckduckhack.com) allows anyone to create, \"Instant Answers\"--results that help answer a search in few or zero clicks. We bring together Thessaloniki's developer community for a day of DuckDuckHack-ing as often as we can! "
   website: "https://www.meetup.com/Quack-Hack-Thessaloniki/"
   twitter: "https://twitter.com/ThessQuack/"
   maintainers:
