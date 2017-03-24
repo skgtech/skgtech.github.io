@@ -147,6 +147,8 @@
   funding: "Bootstrapped (self funded)"
   description: " Social Network for mobile apps users and developers."
   ceo: "Christian Sino"
-  ceoEmail: ""
+  ceoEmail: "christian@octappush.com"
+  cto: "Alex Spyropoulos"
+  ctoEmail: "alex@octappush.com"
   teamSize: 2
   logo: 
