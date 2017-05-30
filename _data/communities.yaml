@@ -180,3 +180,13 @@
     - name: "Stavros Kalapothas"
       website: "https://stavros.tlab.io"
       email: "stavros@tlab.io"
+- name: "Thessaloniki Software Testing and QA"
+  period: "Every 2 months"
+  image: testingqa.jpg
+  website: "https://www.meetup.com/Thessaloniki-Software-Testing-and-QA"
+  description: "Our meetup aims to create a community for knowledge sharing and ideas around Quality Assurance and Software Testing procedures."
+  maintainers:
+    - name: "Georgios Manolis"
+      email: "george_manolis@gmail.com"
+    - name: "Konstantinos Loupos"
+      email: "louposk@gmail.com"
