@@ -39,7 +39,7 @@
   logo: "schoox.jpg"
 - name: "netscan.co"
   stage: "Launched"
-  url: "http://netscan.co"
+  url: "https://netscan.co"
   industry: "Telecom"
   yearFounded: "11/23/2013"
   funding: "Bootstrapped (self funded)"
@@ -152,3 +152,16 @@
   ctoEmail: "alex@octappush.com"
   teamSize: 2
   logo: octappush.png
+- name: "Horizon Camera"
+  stage: "Launched"
+  url: "https://horizon.camera/"
+  industry: "Photo & Video"
+  yearFounded: "14/01/2014"
+  funding: "Bootstrapped (self funded)"
+  description: "Capture horizontal videos and photos no matter how you hold your device."
+  ceo: "Stelios Petrakis"
+  ceoEmail: "stelios@evilwindowdog.com"
+  cto: "Petros Douvantzis"
+  ctoEmail: "petros@evilwindowdog.com"
+  teamSize: 2
+  logo: horizoncamera.jpg
