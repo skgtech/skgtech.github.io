@@ -39,7 +39,7 @@ title: SKGTech - Startups in Thessaloniki
                 {% for s in startups %}
                 <div class="col-sm-12 cause-item list-item {{ s.industry }}">
                     <div class="images_row pull-left">
-                        <img src="/assets/img/startups/{{ s.logo }}" alt="">
+                        <a href="{{ s.url }}"><img src="/assets/img/startups/{{ s.logo }}" alt="">
                     </div>
                     <div class="cause_excepts pull-left">
                         <h4 class="cuase_title"><a href="{{ s.url }}">{{ s.name }}</a></h4>
