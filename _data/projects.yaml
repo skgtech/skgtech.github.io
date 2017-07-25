@@ -2,6 +2,27 @@
 # Sequence from newer to older
 #
 
+- name: DEVit 2017
+  year: May 2017
+  status: Completed
+  link: http://devitconf.org/
+  img: devit2017.jpg
+  description: The 2017 DEVit Conference, a 2-day event with 10 talks and 16 workshops (3 all-day). Over 450 attendees. A world class diversified conference together with SheSharp.
+  media:
+    - name: Official DEVit Photos by Dimitris Tsakiris Photography
+      link: https://www.facebook.com/pg/DEVitConf/photos/?tab=album&album_id=2587489731470462
+      by: Dimitris Tsakiris
+      byLink: http://www.dimitristsakiris.com/
+    - name: Official DEVit Photos (workshops) by Dimitris Tsakiris Photography
+      link: https://www.facebook.com/pg/DEVitConf/photos/?tab=album&album_id=2587718961447539
+      by: Dimitris Tsakiris     
+      byLink: http://www.dimitristsakiris.com/
+    - name: DEVit Moments Video Clip
+      link: https://www.youtube.com/watch?v=151GqY3c_r4
+      by: Fokas Media
+      byLink: http://fokas.media/
+    - name: Photos by Mark Pitsilos
+      link: https://www.facebook.com/pg/mark.pitsilos.photography/photos/?tab=album&album_id=833828940113708
 - name: DEVit 2016
   year: May 2016
   status: Completed
