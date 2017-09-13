@@ -190,3 +190,13 @@
       email: "georgios.manolis@comquent.de"
     - name: "Konstantinos Loupos"
       email: "louposk@gmail.com"
+- name: "Thessaloniki UX Meetup"
+  period: "Sporadic"
+  image: thessalonikiUXmeetup.png
+  description: "Let's talk about User Experience Design. Either you are a UX Designer or UX Researcher, a Product Manager or a Product Owner, a Designer or a Developer, a senior professional or a student, join Thessaloniki's UX Meetup and let's discuss about UX."
+  website: "https://www.meetup.com/preview/Thessaloniki-UX-Meetup"
+  maintainers:
+    - name: "Ioannis Feneris"
+      website: "http://ioannisfeneris.com"
+    - name: "Dimitris Stathis"
+      website: "https://www.linkedin.com/in/dstathisux/"
