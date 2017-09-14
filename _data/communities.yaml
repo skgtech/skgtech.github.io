@@ -200,3 +200,12 @@
       website: "http://ioannisfeneris.com"
     - name: "Dimitris Stathis"
       website: "https://www.linkedin.com/in/dstathisux/"
+- name: "OK!Thess Meetup"
+  period: "Monthly"
+  image: okthess.png
+  description: "In this meetup you are going to get our monthly updates, learn about our future plans and meet our hosted startups and communities."
+  website: "http://www.okthess.gr/meetup/"
+  maintainers:
+    - name: "Dimitri Ntempos"
+      email: "admin@okthess.gr"
+      website: "http://ntemposd.me"
