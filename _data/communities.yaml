@@ -209,3 +209,11 @@
     - name: "Dimitri Ntempos"
       email: "admin@okthess.gr"
       website: "http://ntemposd.me"
+- name: "Digital analytics meetup, Thessaloniki"
+  period: "Monthly"
+  image: digital-analytics-meetup-cover.jpg
+  description: "A monthly meeting where we discuss digital analytics (data collection, data analysis, data orieneted automations, Data-driven digital marketing etc.)."
+  website: "https://www.meetup.com/Digital-Analytics-Meetup-Thessaloniki/"
+  maintainers:
+    - name: "Panagiotis Tzamtzis"
+      website: "https://tzamtzis.gr/"
