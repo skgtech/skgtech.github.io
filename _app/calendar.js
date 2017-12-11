@@ -232,13 +232,13 @@ Calendar.prototype._parseDesc = function(descr) {
 
     switch(key) {
     case 'venue':
-      out.venue = value;
+      out.venue = this._stripHtml(value);
       break;
     case 'info':
-      out.infoUrl = value;
+      out.infoUrl = this._stripHtml(value);
       break;
     case 'map':
-      out.mapUrl = value;
+      out.mapUrl = this._stripHtml(value);
       break;
     case 'about':
       out.about = value;
@@ -247,8 +247,8 @@ Calendar.prototype._parseDesc = function(descr) {
       out.language = value;
       break;
     case 'image':
-     out.image = value;
-     break;
+      out.image = this._stripHtml(value);
+      break;
     default:
       out.rest += line + '<br />';
       break;
@@ -257,4 +257,17 @@ Calendar.prototype._parseDesc = function(descr) {
 
   return out;
 
+};
+
+/**
+ * A handy method to strip html tags from a string.
+ *
+ * @param {string} html the input string.
+ * @return {string} HTML free string.
+ * @private
+ */
+Calendar.prototype._stripHtml = function strip (html) {
+  var tmp = document.createElement('DIV');
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || '';
 };
