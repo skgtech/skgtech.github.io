@@ -269,5 +269,7 @@ Calendar.prototype._parseDesc = function(descr) {
 Calendar.prototype._stripHtml = function strip (html) {
   var tmp = document.createElement('DIV');
   tmp.innerHTML = html;
-  return tmp.textContent || tmp.innerText || '';
+  var returnValue = tmp.textContent || tmp.innerText || '';
+
+  return returnValue.trim();
 };
