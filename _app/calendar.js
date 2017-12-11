@@ -213,6 +213,10 @@ Calendar.prototype._parseDesc = function(descr) {
 
   var lines = descr.split('\n');
 
+  if (lines.length === 1) { // hack for html formated descriptions
+    lines = descr.split('<br>');
+  }
+
   lines.forEach(function(line) {
     if (!line.length) {
       return;
