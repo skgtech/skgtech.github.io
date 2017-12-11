@@ -16,6 +16,9 @@ var Calendar = module.exports = function() {
 /** @const {number} Maximum events to display, use an even number */
 Calendar.MAX_EVENTS_SHOW = 8;
 
+/** @const {number} Max days an event can be ahead in time expressed in ms */
+Calendar.MAX_FUTURE_EVENT = 5184000000; // 2 months.
+
 /**
  * Initialize the Calendarpage view.
  *
@@ -56,6 +59,14 @@ Calendar.prototype._handleCalResult = function(err, data) {
   var htmlOutput = '';
 
   data.items.forEach(function(item) {
+
+    // do not display events further than 2 months in the future
+    var startDt = new Date(item.start.dateTime);
+    var diff = startDt - Date.now();
+    if (diff > Calendar.MAX_FUTURE_EVENT) {
+      return;
+    }
+
 
     if (displayed >= Calendar.MAX_EVENTS_SHOW) {
       return;
