@@ -16,6 +16,9 @@ var Calendar = module.exports = function() {
 /** @const {number} Maximum events to display, use an even number */
 Calendar.MAX_EVENTS_SHOW = 8;
 
+/** @const {number} Max days an event can be ahead in time expressed in ms */
+Calendar.MAX_FUTURE_EVENT = 5184000000; // 2 months.
+
 /**
  * Initialize the Calendarpage view.
  *
@@ -56,6 +59,14 @@ Calendar.prototype._handleCalResult = function(err, data) {
   var htmlOutput = '';
 
   data.items.forEach(function(item) {
+
+    // do not display events further than 2 months in the future
+    var startDt = new Date(item.start.dateTime);
+    var diff = startDt - Date.now();
+    if (diff > Calendar.MAX_FUTURE_EVENT) {
+      return;
+    }
+
 
     if (displayed >= Calendar.MAX_EVENTS_SHOW) {
       return;
@@ -202,6 +213,10 @@ Calendar.prototype._parseDesc = function(descr) {
 
   var lines = descr.split('\n');
 
+  if (lines.length === 1) { // hack for html formated descriptions
+    lines = descr.split('<br>');
+  }
+
   lines.forEach(function(line) {
     if (!line.length) {
       return;
@@ -217,13 +232,13 @@ Calendar.prototype._parseDesc = function(descr) {
 
     switch(key) {
     case 'venue':
-      out.venue = value;
+      out.venue = this._stripHtml(value);
       break;
     case 'info':
-      out.infoUrl = value;
+      out.infoUrl = this._stripHtml(value);
       break;
     case 'map':
-      out.mapUrl = value;
+      out.mapUrl = this._stripHtml(value);
       break;
     case 'about':
       out.about = value;
@@ -232,8 +247,8 @@ Calendar.prototype._parseDesc = function(descr) {
       out.language = value;
       break;
     case 'image':
-     out.image = value;
-     break;
+      out.image = this._stripHtml(value);
+      break;
     default:
       out.rest += line + '<br />';
       break;
@@ -242,4 +257,17 @@ Calendar.prototype._parseDesc = function(descr) {
 
   return out;
 
+};
+
+/**
+ * A handy method to strip html tags from a string.
+ *
+ * @param {string} html the input string.
+ * @return {string} HTML free string.
+ * @private
+ */
+Calendar.prototype._stripHtml = function strip (html) {
+  var tmp = document.createElement('DIV');
+  tmp.innerHTML = html;
+  return tmp.textContent || tmp.innerText || '';
 };
