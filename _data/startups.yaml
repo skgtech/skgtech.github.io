@@ -165,3 +165,14 @@
   ctoEmail: "petros@evilwindowdog.com"
   teamSize: 2
   logo: horizoncamera.jpg
+- name: "K-INVENT"
+  stage: "Launched"
+  url: "http://www.k-invent.com/"
+  industry: "Photo & Video"
+  yearFounded: "01/06/2017"
+  funding: "Bootstrapped (self funded)"
+  description: "Solutions to any challenge of sports biomechanics and physical rehabilitation."
+  ceo: "Athanase Kollias"
+  ceoEmail: "akollias@k-invent.com"
+  teamSize: 4
+  logo: kinvent.png
