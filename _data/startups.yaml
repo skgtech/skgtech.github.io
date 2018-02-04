@@ -176,3 +176,22 @@
   ceoEmail: "akollias@k-invent.com"
   teamSize: 4
   logo: kinvent.png
+- name: "ErgoSensePro"
+  stage: "Beta"
+  url: "http://www.ergosensepro.com/"
+  yearFounded: "12/15/2015"
+  description: "Personalized and optimal strength and conditioning training programs for athletes."
+  ceo: "Aleck Alexopoulos"
+  ceoEmail: "alexopoulos.aleck@gmail.com"
+  teamSize: 3
+  logo: ErgoSensePro1.jpg
+- name: "Oviview"
+  stage: "Series A"
+  url: "http://www.oviview.com/"              
+  yearFounded: "04/09/2016"
+  description: "A business entity focused on creating innovating software"
+  ceo: "Asterios Kritikos"                 
+  ceoEmail: "info@oviview.com"                 
+  teamSize: 3
+  logo: oviview.png
+
