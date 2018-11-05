@@ -1,4 +1,17 @@
 # Please include a 360x223 image for your community
+- name: "Systems Engineering Meetup"
+  period: "Monthly"
+  image: syseng.jpg
+  description: "This is an open group for everyone interested in sharing and spreading the knowledge and best practices on how to design, build, manage, monitor and maintain high available, reliable and scalable Infrastructures, using cutting edge technologies. We are focusing on the topics of Systems Administration, Systems Engineering, Site Reliability Engineering, Databases Administration, Network Engineering and Cloud computing. The main focus is to present and introduce the best practices based on real case scenarios for the above topics."
+  website: "https://www.meetup.com/Thessaloniki-Systems-Engineering-Meetup/"
+  facebook: "https://www.facebook.com/systemsengineersgr/"
+  twitter: "https://twitter.com/sysengineersgr"
+  maintainers:
+    - name: "Stelios Doulakis"
+      website: "https://www.linkedin.com/in/doulakis"
+      email: "doulakis@gmail.com"
+    - name: "Vyronas Tsingaras"
+    - name: "Apostolos Vavalas"
 - name: "Open Coffee"
   period: "Monthly"
   image: opencoffee.jpg
