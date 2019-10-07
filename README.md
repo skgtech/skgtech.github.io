@@ -32,6 +32,8 @@ After cloning is finished you need to install the development dependencies:
 npm install
 ```
 
+> node-sass build fails with specific version. Node v8.16.1 with default npm tested and working.
+
 ### Working with the project
 
 ```shell
@@ -60,7 +62,7 @@ More specific tasks:
 #### Deploy
 
 * Generated styles and scripts must be committed.
-* Use `npm run browserify-prod` to generate a production build (only react transformer needs this, but it must be run on every build).
+* Use `npm run browserify` to generate a production build
 * Anything merged on `master` branch automatically gets deployed by GitHub Pages.
 
 ## License
