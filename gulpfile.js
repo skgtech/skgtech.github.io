@@ -44,7 +44,6 @@ gulp.task('browser-sync', ['browserify','sass', 'jekyll-build'], function() {
 gulp.task('browserify', function () {
   var b = browserify({
     entries: './_app/app.js',
-    transform: ['reactify'],
     debug: true,
   });
 
@@ -67,10 +66,10 @@ gulp.task('sass', function () {
         .pipe(sass({
             includePaths: ['scss'],
             onError: browserSync.notify,
-            sourceComments: true
+            // sourceComments: true
         }))
         .pipe(gulp.dest('_site/css'))
-        .pipe(browserSync.reload({stream:true}))
+        // .pipe(browserSync.reload({stream:true}))
         .pipe(gulp.dest('css'));
 });
 
@@ -88,7 +87,6 @@ gulp.task('watch', function () {
         'submit-event/*.html',
         'startups/*.html',
         'projects/*.html',
-        'jobs/*.html',
         'blog/*.html',
         'about/*.html',
         '_data/*.yaml',
