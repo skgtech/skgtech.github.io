@@ -10,12 +10,8 @@
  * @fileOverview Frontend application bootstrap file
  */
 
-var React = require('react');
-var ReactDOM = require('react-dom');
-
 var Calendar = require('./calendar');
 var Slack = require('./slack');
-var Jobs = require('./jobs');
 require('./theme');
 require('./newsletter');
 
@@ -28,10 +24,3 @@ slack.init({
   cta: '.slack-submit',
   form: '.slack-form',
 });
-
-if (window.location.href.match(/jobs/)) {
-  ReactDOM.render(
-    <Jobs />,
-    document.getElementById('jobBoard')
-  );
-}
