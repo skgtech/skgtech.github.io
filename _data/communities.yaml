@@ -230,3 +230,12 @@
   maintainers:
     - name: "Panagiotis Tzamtzis"
       website: "https://tzamtzis.gr/"
+- name: "Robotics & STEM Meetup, Thessaloniki"
+  period: "Monthly"
+  image: robotics-stem-thessaloniki-meetup-cover.jpg
+  description: "A meeting point for STEM educators, robotics and technology enthousiasts, where we present and discuss educational technologies that develop kids computational thinking and spark interest in computer science and STEM careers in their future." 
+  website: "https://www.meetup.com/robotics-stem/"
+  maintainers:
+    - name: "Giorgos Melas"
+      email: "melas@idrogios.com"
+      website: "https://www.linkedin.com/in/george-melas/"
