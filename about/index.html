@@ -65,30 +65,6 @@ title: SKGTech - About Us
         </div>
       </div>
 
-      <div class="row team_members_row">
-        <div class="col-sm-12">
-          <h3 class="team_page_title">CORE TEAM MEMBERS</h3>
-          <div class="row">
-            {% assign people = site.data.people | sort: "last_name" %} {% for p in people %}
-            <div class="col-xs-3 col-sm-4 col-md-3 team_member">
-              <img src="{{ p.img }}" alt="{{ p.first_name }} {{ p.last_name }}" class="img-responsive">
-              <h4>{{ p.first_name }} {{ p.last_name }}</h4>
-              <h6>{{ p.title }}</h6>
-              <ul class="social-links list-inline">
-                {% for link in p.links %}
-                <li>
-                  <a href="{{ link.href }}" title="{{ link.title }}">
-                    <i class="fa fa-{{ link.type }} fa-lg"></i>
-                  </a>
-                </li>
-                {% endfor %}
-              </ul>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-
 <!-- Acknowledgements -->
 <div class="row acknowledgments">
     <div class="col-sm-12">
