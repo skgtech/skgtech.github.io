@@ -37,7 +37,7 @@ npm install
 ### Working with the project
 
 ```shell
-gulp
+jekyll serve
 ```
 
 The default gulp task will:
