@@ -20,7 +20,6 @@
             <a href="/">home</a>
         </li>
 
-        <li><a href="/#calendar">calendar</a></li>
         <li><a href="/#communities">communities</a></li>
 
         <!-- STARTUPS -->
@@ -29,7 +28,6 @@
         {% else %}
             <li>
         {% endif %}
-            <a href="/startups">startups</a>
         </li>
 
         <!-- PROJECTS -->
@@ -39,6 +37,15 @@
             <li>
         {% endif %}
             <a href="/projects">projects</a>
+        </li>
+
+        <!-- PROJECTS -->
+        {% if page.url == '/rules/' %}
+            <li class="active">
+        {% else %}
+            <li>
+        {% endif %}
+            <a href="/rules">rules</a>
         </li>
 
         <!-- BLOG -->
