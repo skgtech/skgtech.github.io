@@ -1,6 +1,7 @@
 _site
 .jekyll-metadata
 .sass-cache
+.jekyll-cache
 
 .idea
 Thumbs.db
