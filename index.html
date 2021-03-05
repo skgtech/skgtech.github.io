@@ -31,105 +31,23 @@ layout: default
             {% endif %}
         </div>
     </div>
-    <!-- {% assign news = site.data.featured_news %}
-    {% for n in news %}
-    <div class="item">
-        <img src="/assets/img/featured_news/{{ n.image }}" alt="{{ n.title }}">
-        <div class="row caption m0">
-            <div class="container">
-                <div class="col-lg-5 col-md-10">
-                    {% if n.tagTitle %}
-                    <h6 class="label label-default white">{{ n.tagTitle }}</h6>
-                    {% endif %}
-                    <h3 class="news-title"><a href="{{ n.link }}">{{ n.title }}</a></h3>
-                    <p>{{ n.description }}</p>
-                    <a href="{{ n.link }}" class="btn-primary" target="_blank">learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endfor %} -->
 </section>
 
-<div class="page-wrapper row">
-    <section class="how-to-help row" id="slack-invite">
-        <div class="col-md-4 help-process">
-            <div class="media">
-                <div class="media-left"><span><img src="assets/img/icons/add_to_calendar_icon.png" alt=""></span></div>
-                <div class="media-body">
-                    <h5>add event on the calendar</h5>
-                    <p>Know of a noteworthy event? <a href="/submit-event">Add to calendar.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 help-process">
-            <div class="media">
-                <div class="media-left"><span><img src="assets/img/icons/communities_icon.png" alt=""></span></div>
-                <div class="media-body">
-                    <h5>add your community</h5>
-                    <p>Want to feature your community here? <a href="https://github.com/skgtech/skgtech.github.io/blob/master/_data/communities.yaml">Send a pull request.</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 help-process">
-            <div class="media">
-                <div class="media-left"><span><img src="assets/img/icons/startups_icon.png" alt=""></span></div>
-                <div class="media-body">
-                    <h5>add your startup</h5>
-                    <p>Are you part of a startup in Thessaloniki? <a href="mailto:hello@skgtech.io">Send us an e-mail.</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-{% include slack.html %}
-
-<!-- Calendar -->
-<a name="calendar"></a>
-<section class="row upcoming_recent_events style2">
-    <div class="container">
-        <div class="row sectionTitle text-center">
-            <h6 class="label label-default">SKGTech Events</h6>
-            <h3>Noteworthy events and happenings in the city</h3>
-        </div>
-        <div class="row" id="upcoming-events">
-
-            <div id="event-item">
-            <div class="loading"></div>
-            <div class="col-sm-12 col-md-6 upcoming_events_sizer"></div>
-            <div class="col-sm-12 col-md-6 upcoming_events hide">
-
-                <div class="row event_cover_photo">
-                    <img src="" alt="" class="img-responsive">
-                    <div class="upcoming_label label"><i class="fa fa-calendar"></i> <span>August 15 - 18:00</span></div>
-                    <h6 class="event_time_loc">
-                        <span class="loc">Hosted at: <span class="location"></span></span>
-                    </h6>
-                </div>
-                <h4 class="event_title"><a href="single-event.html"><span>Node.js Meetup</span></a></h4>
-                <p class="event_summery">No description.</p>
-                <div class="row shareOnRow m0">
-                    <ul class="list-unstyled">
-                        <li>SHARE IT</li>
-                        <li><a class="facebook-url" href="" rel="nofollow" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter-url" href="" rel="nofollow" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-
-        </div>
-        <!-- calendar maintainer shesharp -->
-        <div class="row maintainer">
-            <div class="col-md-4 col-md-offset-4">
-                <h4>Calendar kindly maintained by</h4>
-                <a href="http://www.shesharp.org/"><img src="/assets/img/shesharp-logo-small.png" alt="shesharp" class="img-responsive center-block"></a>
-
-            </div>
-        </div>
-
-    </div>
+<section class="row newsletter-signup">
+  <div class="container">
+      <div class="row">
+          <div class="col-sm-5">
+              <h4>JOIN US ON DISCORD</h4>
+              <p>SKGTech is on Discord, join us for technical, technology and lifestyle related chat.</p>
+          </div>
+          <div class="col-sm-offset-3 col-sm-1">
+              <a href="https://discord.gg/BtyMYpDacK" target="_blank" class="btn btn-primary white">Join us on Discord</a>
+          </div>
+      </div>
+  </div>
 </section>
+
 
 <!-- Communities -->
 <a name="communities"></a>

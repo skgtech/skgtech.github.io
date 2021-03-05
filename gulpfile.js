@@ -20,23 +20,6 @@ gulp.task('jekyll-build', function (done) {
         .on('close', done);
 });
 
-/**
- * Rebuild Jekyll & do page reload
- */
-gulp.task('jekyll-rebuild', ['browserify','jekyll-build'], function () {
-    browserSync.reload();
-});
-
-/**
- * Wait for jekyll-build, then launch the Server
- */
-gulp.task('browser-sync', ['browserify','sass', 'jekyll-build'], function() {
-    browserSync({
-        server: {
-            baseDir: '_site'
-        }
-    });
-});
 
 /**
  * Browserify js scripts
@@ -62,15 +45,33 @@ gulp.task('browserify', function () {
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
  */
 gulp.task('sass', function () {
-    return gulp.src('_scss/style.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify,
-            // sourceComments: true
-        }))
-        .pipe(gulp.dest('_site/css'))
-        // .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'));
+  return gulp.src('_scss/style.scss')
+      .pipe(sass({
+          includePaths: ['scss'],
+          onError: browserSync.notify,
+          // sourceComments: true
+      }))
+      .pipe(gulp.dest('_site/css'))
+      // .pipe(browserSync.reload({stream:true}))
+      .pipe(gulp.dest('css'));
+});
+
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', gulp.series('browserify','jekyll-build'), function () {
+    browserSync.reload();
+});
+
+/**
+ * Wait for jekyll-build, then launch the Server
+ */
+gulp.task('browser-sync', gulp.series('browserify','sass', 'jekyll-build'), function() {
+    browserSync({
+        server: {
+            baseDir: '_site'
+        }
+    });
 });
 
 /**
@@ -99,4 +100,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browserify', 'browser-sync', 'watch']);
+gulp.task('default', gulp.series('browserify', 'browser-sync', 'watch'));

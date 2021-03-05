@@ -1,4 +1,5 @@
 .newsletter-signup {
+    overflow: hidden;
 
     padding: 38px 0;
     h4{
@@ -39,26 +40,6 @@
 
         }
     }
-
-    &.slack {
-        overflow: hidden;
-        &:before{
-            font-family: "FontAwesome";
-            content: "\f198";
-            font-size: 172px;
-            display: block;
-
-            opacity: 0.2;
-            position: absolute;
-            right: -35px;
-            top: -3px;
-            line-height: 1;
-        }
-        h4,p{
-
-        }
-    }
-
 }
 
 
@@ -116,26 +97,4 @@
             font-weight: bold;
         }
     }
-
-
-
-    .slack-alert {
-
-        &.slack-success p {
-            margin-top: 15px;
-            text-align: center;
-            color: #fff;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        &.slack-already-subscribed p, &.slack-invalid-email p {
-            color: #FF2E63;
-            font-weight: bold;
-        }
-
-    }
-
-
-
 }

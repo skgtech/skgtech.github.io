@@ -3,7 +3,8 @@
   "version": "3.0.0",
   "description": "SKGTech Official Website",
   "scripts": {
-    "build": "export NODE_ENV=production gulp sass && gulp browserify"
+    "build": "export NODE_ENV=production gulp sass && gulp browserify",
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -21,19 +22,19 @@
   },
   "homepage": "https://github.com/skgtech/skgtech.github.io#readme",
   "devDependencies": {
-    "browser-sync": "2.13.0",
-    "browserify": "13.0.1",
+    "browser-sync": "2.26.14",
+    "browserify": "17.0.0",
     "calendarth": "0.0.6",
-    "eslint": "3.9.1",
-    "eslint-plugin-react": "6.5.0",
-    "gulp": "3.9.1",
-    "gulp-load-plugins": "0.10.0",
-    "gulp-sass": "2.3.1",
-    "gulp-sourcemaps": "1.6.0",
-    "gulp-uglify": "1.5.3",
+    "eslint": "7.21.0",
+    "eslint-plugin-react": "7.22.0",
+    "gulp": "4.0.2",
+    "gulp-load-plugins": "2.0.6",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "3.0.0",
+    "gulp-uglify": "3.0.2",
     "gulp-util": "3.0.6",
-    "jquery": "2.2.4",
-    "vinyl-buffer": "1.0.0",
-    "vinyl-source-stream": "1.1.0"
+    "jquery": "3.6.0",
+    "vinyl-buffer": "1.0.1",
+    "vinyl-source-stream": "2.0.0"
   }
 }

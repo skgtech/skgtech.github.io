@@ -862,6 +862,7 @@ a, .btn, button {
       margin-right: 6px; }
 
 .newsletter-signup {
+  overflow: hidden;
   padding: 38px 0; }
   .newsletter-signup h4 {
     margin: 0 0 3px;
@@ -889,18 +890,6 @@ a, .btn, button {
       -moz-transform: matrix(0.9551, 0.29627, -0.29627, 0.9551, 0, 0);
       -webkit-transform: matrix(0.9551, 0.29627, -0.29627, 0.9551, 0, 0);
       -ms-transform: matrix(0.9551, 0.29627, -0.29627, 0.9551, 0, 0); }
-  .newsletter-signup.slack {
-    overflow: hidden; }
-    .newsletter-signup.slack:before {
-      font-family: "FontAwesome";
-      content: "\f198";
-      font-size: 172px;
-      display: block;
-      opacity: 0.2;
-      position: absolute;
-      right: -35px;
-      top: -3px;
-      line-height: 1; }
 
 .newsletter-signup-form .form-control {
   border-radius: 2px;
@@ -925,17 +914,6 @@ a, .btn, button {
   line-height: 40px; }
 
 .newsletter-signup-form.style2 .newsletter-error p {
-  color: #FF2E63;
-  font-weight: bold; }
-
-.newsletter-signup-form .slack-alert.slack-success p {
-  margin-top: 15px;
-  text-align: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold; }
-
-.newsletter-signup-form .slack-alert.slack-already-subscribed p, .newsletter-signup-form .slack-alert.slack-invalid-email p {
   color: #FF2E63;
   font-weight: bold; }
 
