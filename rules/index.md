@@ -79,6 +79,19 @@ Each channel has its own particular theme, flavor and guidelines. You will find 
 
 The guidelines apply equally to public and private channels. If you’ve created a private channel where a moderator is not present, you are responsible for moderating and / or reporting issues to the moderators if you want intervention.
 
+### 1.2.5 Kindness, Respect And Courtesy Also Applies to People You Personally Know
+
+It is inevitable that you will meet and develop friendships with other SKGTech members. This should not be used as an excuse to be less kind and courteous with them on your online conduct. There are two risks in doing that:
+
+a. Your comments may be misinterpreted by the other member, as it is very easy to misunderstand the intentions of a written communication. You may laugh when writing it, the other member may be offended.
+
+b. Acts of affection and familiarity between members is likely to discourage members without that personal connection to participate. Essentially creating a “closed group of friends”. SKGTech wants to actively encourage the participation of all members and most importantly new ones.
+
+### 1.2.6 Please Feel Free to Plug Other Communities
+
+Feel free to mention and advertise other communities as you see fit. At SKGTech we strongly believe in the networking effect. So we want to encourage the connections and collaborations that can come up from mixing and connecting people with other communities.
+
+
 ### 1.2.10 Slack’s End-User Terms of Service Apply
 
 DEVit chat community is on Slack, therefore we have to abide by [Slack’s End-User Terms of Service][slack-tos].
