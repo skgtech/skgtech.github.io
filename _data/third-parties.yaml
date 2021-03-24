@@ -1,3 +1,12 @@
+- name: "SKGTech"
+  services:
+    - service: "Google Workspaces"
+      reason: "Store and process your data"
+      privacy: "https://policies.google.com/privacy?hl=en-US"
+    - service: "Mailchimp"
+      reason: "Send email campaigns"
+      privacy: "https://mailchimp.com/legal/privacy/"
+
 - name: "SKGTech Website"
   services:
     - service: "Google Analytics"
@@ -9,6 +18,15 @@
     - service: "Discord Server"
       reason: "Provides the Chat Service"
       privacy: "https://discord.com/privacy"
-    - service: "Heroku a subsidiary of Salesforce"
+    - service: "Heroku, a subsidiary of Salesforce"
       reason: "Provides hosting services to the onboarding bot 'skgbot'"
       privacy: "https://www.salesforce.com/company/privacy/"
+
+- name: "DEVit - as per 'SKGTech' and in addition:"
+  services:
+    - service: "Slack, a subsidiary of Salesforce"
+      reason: "Provides the Chat Service for the DEVit conference"
+      privacy: "https://www.salesforce.com/company/privacy/"
+    - service: "Pretix"
+      reason: "Provides ticketing service for the conferance"
+      privacy: "https://pretix.eu/about/en/privacy"
