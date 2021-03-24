@@ -1,0 +1,14 @@
+- name: "SKGTech Website"
+  services:
+    - service: "Google Analytics"
+      reason: "Website Analytics"
+      privacy: "https://policies.google.com/privacy?hl=en-US"
+
+- name: "SKGTech Discord"
+  services:
+    - service: "Discord Server"
+      reason: "Provides the Chat Service"
+      privacy: "https://discord.com/privacy"
+    - service: "Heroku a subsidiary of Salesforce"
+      reason: "Provides hosting services to the onboarding bot 'skgbot'"
+      privacy: "https://www.salesforce.com/company/privacy/"

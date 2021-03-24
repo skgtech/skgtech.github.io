@@ -63,7 +63,32 @@ Our default practice is to not access your information. The only times we’ll e
 
 ### To provide products or services you’ve requested
 
-We do use some third-party services to run our applications and only to the extent necessary process some or all of your personal information via these third parties. You can view the list of third-party services we use in each service: 
+We do use some third-party services to run our applications and only to the extent necessary process some or all of your personal information via these third parties. You can view the list of third-party services we use in each service:
+
+
+{% assign thirdparties = site.data.third-parties %}
+{% for tp in thirdparties %}
+#### {{tp.name}}
+
+<table class="table table-striped table-bordered"> 
+    <thead> 
+        <tr> 
+            <th>Third-Party</th> 
+            <th>Reason</th> 
+            <th>Their Privacy Policy</th> 
+        </tr> 
+    </thead> 
+    <tbody>
+{% for service in tp.services %}    
+        <tr> 
+            <td>{{service.service }}</td> 
+            <td>{{service.reason }}</td> 
+            <td>{{service.privacy }}</td> 
+        </tr>
+{% endfor %}
+    </tbody> 
+</table>
+{% endfor %}
 
 ### To investigate, prevent, or take action regarding [restricted uses](/rules/).
 
