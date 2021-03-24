@@ -83,7 +83,7 @@ We do use some third-party services to run our applications and only to the exte
         <tr> 
             <td>{{service.service }}</td> 
             <td>{{service.reason }}</td> 
-            <td>{{service.privacy }}</td> 
+            <td><a href="{{service.privacy }}" target="_blank">Privacy Policy</a></td> 
         </tr>
 {% endfor %}
     </tbody> 
