@@ -96,7 +96,7 @@ Accessing a member’s account when investigating potential abuse is a measure o
 
 ## Your rights with respect to your information
 
-At Basecamp, we apply the same data rights to all members, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. Basecamp recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
+At SKGTech, we apply the same data rights to all members, regardless of their location. Currently some of the most privacy-forward regulations in place are the European Union’s General Data Protection Regulation (“GDPR”) and California Consumer Privacy Act (“CCPA”) in the US. SKGTech recognizes all of the rights granted in these regulations, except as limited by applicable law. These rights include:
 
 * **Right to Know.** You have the right to know what personal information is collected, used, shared or sold. We outline both the categories and specific bits of data we collect, as well as how they are used, in this privacy policy.
 * **Right of Access.** This includes your right to access the personal information we gather about you, and your right to obtain information about the sharing, storage, security and processing of that information. Τhis applies to information SKGTech collects about you.
@@ -127,6 +127,6 @@ Our services and other web properties are operated in the European Union. If you
 
 ## Changes & questions
 
-We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of the changes to our policies since mid-2018 [on GitHub](https://github.com/skgtech/privacy-policy/commits/master). Whenever we make a significant change to our policies, we will also announce them on our Discord Server.
+We may update this policy as needed to comply with relevant regulations and reflect any new practices. You can view a history of the changes to our policies since early-2021 [on GitHub](https://github.com/skgtech/privacy-policy/commits/master). Whenever we make a significant change to our policies, we will also announce them on our Discord Server.
 
 Have any questions, comments, or concerns about this privacy policy, your data, or your rights with respect to your information? Please get in touch by emailing us at [privacy@skgtech.io](mailto:privacy@skgtech.io) and we’ll be happy to answer them!
