@@ -239,3 +239,11 @@
     - name: "Giorgos Melas"
       email: "melas@idrogios.com"
       website: "https://www.linkedin.com/in/george-melas/"
+- name: "Thessaloniki Salesforce Developer Group"
+  period: "It depends"
+  image: salesforce.jpg
+  website: "https://trailblazercommunitygroups.com/salesforce-developer-group-thessaloniki-greece/"
+  description: "The Trailblazer Community helps everyone thrive in the Salesforce economy. We welcome all, and we love to succeed together. Join us as we learn, connect, have fun, and give back together. Join Community Groups to learn Salesforce with your peers, build your network, and find mentors."
+  maintainers:
+    - name: "Christos Papadopoulos"
+      website: "https://trailblazer.me/id/chris"
